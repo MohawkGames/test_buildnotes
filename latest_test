@@ -1,0 +1,24 @@
+Test Branch: Old World Version 1.0.62179 Test 08/10/2022 
+Test Branch: Old World Version 1.0.62336 Test 08/17/2022 
+Main Branch: Old World Version 1.0.62422 Release 08/24/2022
+Main Hotfix: Old World Version 1.0.62443 Release 08/25/2022
+
+Design
+  It is now possible to ask your tribal ally to declare war on another player
+  Adjusted victory condition for Greece Campaign 5
+
+Programming
+  Improvements to performance
+
+UI
+  
+
+Bug Fixes
+  Fixed issue where some events in Learn to Play were not showing up
+  Fixed observer client not updating unless observed player is connected
+  Fixed issue where event-based achievements weren't completing in no-characters mode
+  Fixed issue with tooltip delay slider
+  Fixed issue with flickering tooltip
+  Minor changes to Russian text
+  Various text and event fixes
+  
