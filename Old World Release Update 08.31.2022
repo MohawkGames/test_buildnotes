@@ -8,7 +8,8 @@ Design
   It is now possible to influence religion heads if you have contact with their nation
   Adjusted victory condition for Greece Campaign 5
   Reduced event level in Learn By Playing scenarios 1 and 2
-  Adjusted MP map dimensions so SP and MP maps have identical city site capacity, so the size is more consistent across gameplay modes.
+  Adjusted MP map dimensions so SP and MP maps have identical city site capacity, so the size is more consistent across gameplay modes
+  Drop down added to give players more flexibility in how map size is generated
   Added achievements to Learn by playing scenario
 
 Programming
