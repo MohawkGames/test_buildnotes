@@ -4,9 +4,9 @@ Design
   Ships can now enter their team's coastal cities
     Will not prevent hostile units from entering city
     City docked ships cannot attack or defend
-  Player victory has been added to the to turn summary and PBC email
+  Player victory has been added to the turn summary and PBC email
   New units are placed on XP improvements (Barracks, Ranges, Harbors) before trying to place them inside a city
-  The Hill MP Dual Scenario has been added
+  The Hill MP Duel Scenario has been added
   
 UI
   Improved naming scheme for Network MP UI buttons
