@@ -1,0 +1,26 @@
+Test Branch: Old World Version 1.0.62681 Test 09/07/2022 
+
+Design
+  Ships can now enter their team's coastal cities
+    Will not prevent hostile units from entering city
+    City docked ships cannot attack or defend
+  Player victory has been added to the to turn summary and PBC email
+  New units are placed on XP improvements (Barracks, Ranges, Harbors) before trying to place them inside a city
+  The Hill MP Dual Scenario has been added
+  
+UI
+  Improved naming scheme for Network MP UI buttons
+  
+Localization
+  Chinese text has been updated
+  Japanese text has been updated
+  
+Bug Fixes
+  Map aspect ratio fixes
+  Fixed Tetsudo orders cost
+  Various text and event fixes
+  Fixed some attack preview issues on units with rout
+  Fixed missing reminders for pagan religion heads
+  Fixed border expansion preview sometimes incorrectly showing changes within already-owned territory
+  Fix for Free-for-all achievement, requires more than 2 players
+  Fixed some cases where floating keyboard doesn't show up on Steam Deck
