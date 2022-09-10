@@ -4,10 +4,9 @@ Design
   Ships can now enter their team's coastal cities
     Will not prevent hostile units from entering city
     City docked ships cannot attack or defend
-  
-    The highest level urban improvements (Fairs, Palaces, etc) now allow skipping Apprentice and Master Specialists.
-    The middle level urban improvements allow skipping Apprentices. 
-    Specialist build time bonus for middle and highest level urban improvements has been removed
+  The highest level urban improvements (Fairs, Palaces, etc) now allow skipping Apprentice and Master Specialists.
+  The middle level urban improvements allow skipping Apprentices. 
+  Specialist build time bonus for middle and highest level urban improvements has been removed
   Player victory has been added to the turn summary and PBC email
   New units are placed on XP improvements (Barracks, Ranges, Harbors) before trying to place them inside a city
   The Hill MP Duel Scenario has been added
