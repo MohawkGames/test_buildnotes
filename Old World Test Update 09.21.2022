@@ -1,0 +1,26 @@
+Test Branch: Old World Version 1.0.62903 Test 09/21/2022 
+
+Design
+   Additional tutorial events have been added
+   Balance adjustments to Carthage 4 Scenario
+   Reduced number of improvements required for some ambition goals
+
+Bug Fixes
+  Various text and event fixes
+  Localization improvements
+  Pagan religions will still show on religion list when player loses all cities following that religion
+  Fixed issue on Mac where autosave wasn't being refreshed
+  Fixed issue where action panel was not always displaying correctly
+  Fixed oversized religion icons on city sites
+  Improvements to Steak Deck kyboard interface
+  Fixed issue where ships could anchor on land tiles
+  Minor fixes to Mediterranean and Middle-East Maps
+  Fixed workers that were not always continuing construction after being damaged
+  Fixed issue where trees were not always regrowing
+  Fixed click audio playing when click only clears locked tooltips instead of triggering widget
+  Multiplayer menus, fixed issue where escape key wasn't functioning as intended
+  Fixed issue with city text not properly wrapping
+  Fixed game mode not being set when navigating to cloud games screen via main menu
+  Fixed yield rates not updating after undoing Council queue
+  Improvements to flickering when hovering over unit healthbar
+  
