@@ -1,29 +1,38 @@
-Test Branch: Old World Version 1.0.62707 Test 09/07/2022 
+Test Branch: Old World Version 1.0.62930 Test 09/21/2022 
 
 Design
-  Ships can now enter their team's coastal cities
-    Will not prevent hostile units from entering city
-    City docked ships cannot attack or defend
-  The highest level urban improvements (Fairs, Palaces, etc) now allow skipping Apprentice and Master Specialists.
-  The middle level urban improvements allow skipping Apprentices. 
-  Specialist build time bonus for middle and highest level urban improvements has been removed
-  Player victory has been added to the turn summary and PBC email
-  New units are placed on XP improvements (Barracks, Ranges, Harbors) before trying to place them inside a city
-  The Hill MP Duel Scenario has been added
+   Balance adjustments to Carthage 4 Scenario
+   Reduced number of improvements required for some ambitions
+   Eloped events reworked
+   Added upkeep details to Choose Law events
+   Allied nations can use each others anchored ships for movement
   
-UI
-  Improved naming scheme for Network MP UI buttons
-  
-Localization
-  Chinese text has been updated
-  Japanese text has been updated
-  
+UI 
+   Improvements to Steam Deck keyboard interface
+   Event options are now only auto-selected on Steam Deck
+   
 Bug Fixes
-  Map aspect ratio fixes
-  Fixed Testudo orders cost
   Various text and event fixes
-  Fixed some attack preview issues on units with rout
-  Fixed missing reminders for pagan religion heads
-  Fixed border expansion preview sometimes incorrectly showing changes within already-owned territory
-  Fix for Free-for-all achievement, requires more than 2 players
-  Fixed some cases where floating keyboard doesn't show up on Steam Deck
+  Localization improvements
+  Pagan religions will still show on religion list when player loses all cities following that religion
+  Fixed issue on Mac where autosave wasn't being refreshed
+  Fixed issue where action panel was not always displaying correctly
+  Fixed oversized religion icons on city sites
+  Fixed issue where ships could anchor on land tiles
+  Minor fixes to Mediterranean and Middle-East Maps
+  Fixed workers that were not always continuing construction after being damaged
+  Fixed click audio playing when click only clears locked tooltips instead of triggering widget
+  Multiplayer menus, fixed issue where escape key wasn't functioning as intended
+  Fixed issue with city text not properly wrapping
+  Fixed game mode not being set when navigating to cloud games screen via main menu
+  Fixed yield rates not updating after undoing Council queue
+  Improvements to flickering when hovering over unit healthbar
+  Fixed issue where left click was sometimes registered twice
+  Fixed Learn to Play notifications appearing behind other windows
+  Overlay keyboard shortcuts now showing again in Learn to Play
+  Fixed border expansion preview not always showing
+  Fixed crash caused by player not having a nation
+  Reminder notifications now updating when character traits change (i.e. Child goes exploring and becomes ineligible for tutoring)
+  Fixed Ask to Declare War mission sometimes failing silently
+  Fixed logic for disabling add general button
+  Fixed missing tooltips on city widget
