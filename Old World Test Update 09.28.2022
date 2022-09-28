@@ -1,0 +1,22 @@
+Test Branch: Old World Version 1.0.63055 Test 09/28/2022 
+
+Design
+  Theology tiers now require specific techs to become available
+  National alliances allow units to benefit from being in allied territory, and move allied units
+  Improvments to AI retreat behavior
+  Multiplayer scenarios are now hidden in the single-player scenarios menu
+  Greece 4: theaters and baths now give + influence
+  Adjustments to easiest difficulty for Greece 3
+
+Bugs Fixed
+  Various minor text and event fixes
+  Fixed family selection not being changeable in pick later menu
+  Fixes to ambition frequency
+  Fixed citizens text color not showing on city list tab
+  Fixed issue with city cycling when there are agents in foreign cities
+  Fixes to German and Russian text
+  Fixed issues with Learn to Play 4
+  Fixed undo not working with double fatigue march
+  Game no longer shows empty section if no custom reminder is set
+  Fixed issue with text wrapping on tooltips
+  Fixed issue where adopt state religion button was not updating
