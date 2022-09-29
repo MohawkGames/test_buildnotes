@@ -1,12 +1,15 @@
-Test Branch: Old World Version 1.0.63765 Test 09/28/2022 
+Test Branch: Old World Version 1.0.63065 Test 09/28/2022 
 
 Design
   Theology tiers now require specific techs to become available
   National alliances allow units to benefit from being in allied territory, and move allied units
-  Improvments to AI retreat behavior
+  Improvements to AI retreat behavior
   Multiplayer scenarios are now hidden in the single-player scenarios menu
   Greece 4: theaters and baths now give + influence
   Adjustments to easiest difficulty for Greece 3
+  
+Programming
+  Improvements to performance
 
 Bugs Fixed
   Various minor text and event fixes
