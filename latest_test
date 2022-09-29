@@ -1,38 +1,25 @@
-Test Branch: Old World Version 1.0.62930 Test 09/21/2022 
+Test Branch: Old World Version 1.0.63065 Test 09/28/2022 
 
 Design
-   Balance adjustments to Carthage 4 Scenario
-   Reduced number of improvements required for some ambitions
-   Eloped events reworked
-   Added upkeep details to Choose Law events
-   Allied nations can use each others anchored ships for movement
+  Theology tiers now require specific techs to become available
+  National alliances allow units to benefit from being in allied territory, and move allied units
+  Improvements to AI retreat behavior
+  Multiplayer scenarios are now hidden in the single-player scenarios menu
+  Greece 4: theaters and baths now give + influence
+  Adjustments to easiest difficulty for Greece 3
   
-UI 
-   Improvements to Steam Deck keyboard interface
-   Event options are now only auto-selected on Steam Deck
-   
-Bug Fixes
-  Various text and event fixes
-  Localization improvements
-  Pagan religions will still show on religion list when player loses all cities following that religion
-  Fixed issue on Mac where autosave wasn't being refreshed
-  Fixed issue where action panel was not always displaying correctly
-  Fixed oversized religion icons on city sites
-  Fixed issue where ships could anchor on land tiles
-  Minor fixes to Mediterranean and Middle-East Maps
-  Fixed workers that were not always continuing construction after being damaged
-  Fixed click audio playing when click only clears locked tooltips instead of triggering widget
-  Multiplayer menus, fixed issue where escape key wasn't functioning as intended
-  Fixed issue with city text not properly wrapping
-  Fixed game mode not being set when navigating to cloud games screen via main menu
-  Fixed yield rates not updating after undoing Council queue
-  Improvements to flickering when hovering over unit healthbar
-  Fixed issue where left click was sometimes registered twice
-  Fixed Learn to Play notifications appearing behind other windows
-  Overlay keyboard shortcuts now showing again in Learn to Play
-  Fixed border expansion preview not always showing
-  Fixed crash caused by player not having a nation
-  Reminder notifications now updating when character traits change (i.e. Child goes exploring and becomes ineligible for tutoring)
-  Fixed Ask to Declare War mission sometimes failing silently
-  Fixed logic for disabling add general button
-  Fixed missing tooltips on city widget
+Programming
+  Improvements to performance
+
+Bugs Fixed
+  Various minor text and event fixes
+  Fixed family selection not being changeable in pick later menu
+  Fixes to ambition frequency
+  Fixed citizens text color not showing on city list tab
+  Fixed issue with city cycling when there are agents in foreign cities
+  Fixes to German and Russian text
+  Fixed issues with Learn to Play 4
+  Fixed undo not working with double fatigue march
+  Game no longer shows empty section if no custom reminder is set
+  Fixed issue with text wrapping on tooltips
+  Fixed issue where adopt state religion button was not updating
