@@ -1,25 +1,59 @@
-Test Branch: Old World Version 1.0.63065 Test 09/28/2022 
+Test Branch: Old World Version 1.0.63322 Test 10/12/2022 
 
 Design
-  Theology tiers now require specific techs to become available
-  National alliances allow units to benefit from being in allied territory, and move allied units
-  Improvements to AI retreat behavior
-  Multiplayer scenarios are now hidden in the single-player scenarios menu
-  Greece 4: theaters and baths now give + influence
-  Adjustments to easiest difficulty for Greece 3
+  Coin Debasement now costs Money for Upkeep and Monetary Reform costs Civics
+  Tribes are now at Peace with each other by default (instead of Truce)
+  Free technologies are selected from a wider pool
+  Projects that become invalid can no longer be rushed (i.e. when a Scholar governor leaves a city)
+  Improvements that give Legitimacy now give Orders in No Characters mode
   
 Programming
-  Improvements to performance
+  AI improvements to retreat behavior
+  Turn time performance optimizations
+  Reduced memory usage
+  Better error handling for platform managers when loading game
+  
+UI
+  Theology unlocks now shown on tech tree
+  Improved error message when failing to start a Play by Cloud game
+  New Map button now hidden on premade maps 
+  Changed Hall of Fame to display achievements consistently with platforms
+  Improvements to queued action UI
+  Eligible agents now shown in filtered character list even if agent assignment is not yet unlocked
 
 Bugs Fixed
+  Events now correctly grant bonuses and penalties when at maximum strengths or weaknesses
   Various minor text and event fixes
-  Fixed family selection not being changeable in pick later menu
-  Fixes to ambition frequency
-  Fixed citizens text color not showing on city list tab
-  Fixed issue with city cycling when there are agents in foreign cities
-  Fixes to German and Russian text
-  Fixed issues with Learn to Play 4
-  Fixed undo not working with double fatigue march
-  Game no longer shows empty section if no custom reminder is set
-  Fixed issue with text wrapping on tooltips
-  Fixed issue where adopt state religion button was not updating
+  Fixed Control All Holy Cities ambition
+  Fixed minimap terrain rendering offset issue
+  Possible fix for network games occasionally disappearing from the list
+  Fixed family border icons changing during the game
+  Fixed out of date family class descriptions
+  Fixed issue preventing multiple restarts of modded games
+  Updated achievement descriptions and fixed spelling errors
+  Fixed 10 leaders achievement
+  Fixed Persian cavalry landing spots in Heroes of the Aegean scenario 1 
+  Fixed progress blocker in Heroes of the Aegean scenario 1 
+  Fixed disband button never showing as disabled
+  Fixed minimized decisions persisting after undo
+  Fixed tribe site list links not moving camera
+  Fixed "100" text appearing on unit action buttons
+  Fixed Learn to Play 4 Victory event not appearing immediately
+  Fixed issues allowing Learn to Play goals to be bypassed
+  Fixed improvement team color not updating upon city captured
+  Fixed units occluding tribal site spawn time
+  Fixed hang when attempting to start a cloud game without being connected to an online platform
+  Fixed bug that disabled religions were still showing in the relationship tab.
+  Fixed clicks on links on locked tooltips not working
+  Fixed missing icons on loading screens
+  Fixed several null reference errors
+  Fixed doubled % in victory point helptext
+  Points to Win setting resets to default when switching to sim setup
+  AI bug fixes
+  Fixed the capitalization and double subject appearance in trait gain bonuses helptexts
+  Mission cost now consistently discounted from Pleased opinion
+  Fixed marriage candidates being offered who were already married
+  Fixed Game of the Week difficulty not being randomized
+  Removing a trait that grants a title also removes the title
+  Notification popups auto-focus again which allows using the keyboard to dismiss them
+  Fixed some cases of clicks on recommended improvements selecting units instead
