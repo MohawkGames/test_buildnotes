@@ -1,0 +1,48 @@
+Test Branch: Old World Version 1.0.63322 Test 10/12/2022 
+
+Design
+  Coin Debasement now costs Money for Upkeep and Monetary Reform costs Civics
+  Tribes are now at Peace with each other by default (instead of Truce)
+  Increased range of technologies possible when free tech granted
+  
+Programming
+  AI improvements to retreat behaviour
+  Turn time performance optimizations
+  Reduced memory usage
+  Better error handling for platform managers when loading game
+  
+UI
+  Theology unlocks now shown on tech tree
+  Improved error message when failing to start a Play by Cloud game
+  New Map button now hidden on premade maps 
+  Changed Hall of Fame to display achievements consistently with platforms
+
+Bugs Fixed
+  Ratings
+  Various minor text and event fixes
+  Various ambition fixes
+  Fixed minimap terrain rendering offset issue
+  Possible fix for network games occasionally dissappearing from the list
+  Fixed family border icons changing during the game
+  Fixed out of date family class descriptions
+  Fixed issue preventing multiple restarts of modded games
+  Updated achievement descriptions and fixed spelling errors
+  Fixed 10 leaders achievement
+  Fixed Persian cavalry landing spots in Heroes of the Aegean scenario 1 
+  Fixed disband button never showing as disabled
+  Fixed minimized decisions persisting after undo
+  Fixed tribe site list links not moving camera
+  Fixed "100" text appearing on unit action buttons
+  Fixed Learn to Play 4 Victory event not appearing immediately
+  Fixed issues allowing Learn to Play goals to be bypassed
+  Fixed improvement team color not updating upon city captured
+  Fixed units occluding tribal site spawn time
+  Fixed hang when attempting to start a cloud game without being connected to an online platform
+  Fixed bug that disabled religions were still showing in relationship tab.
+  Fixed clicks on links on locked tooltips not working
+  Fixed missing icons on loading screens
+  Fixed several null reference errors
+  Fixed doubled % in victory point helptext
+  Points to Win setting resets to default when switching to sim setup
+  AI bug fixes
+  Fixed the capitalization and double subject appearance in trait gain bonuses helptexts
