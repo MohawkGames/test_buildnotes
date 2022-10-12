@@ -4,6 +4,8 @@ Design
   Coin Debasement now costs Money for Upkeep and Monetary Reform costs Civics
   Tribes are now at Peace with each other by default (instead of Truce)
   Increased range of technologies possible when free tech granted
+  Projects that become invalid can no longer be rushed (i.e. when a Scholar governor leaves a city)
+  Improvements that give Legitimacy now give Orders in No Characters mode
   
 Programming
   AI improvements to retreat behaviour
@@ -16,11 +18,13 @@ UI
   Improved error message when failing to start a Play by Cloud game
   New Map button now hidden on premade maps 
   Changed Hall of Fame to display achievements consistently with platforms
+  Improvements to queued action UI
+  Eligible agents now shown in filtered character list even if agent assignment is not yet unlocked
 
 Bugs Fixed
-  Ratings
+  Events now correctly grant bonuses and penalties when at maximum strengths or weaknesses
   Various minor text and event fixes
-  Various ambition fixes
+  Fixed Control All Holy Cities ambition
   Fixed minimap terrain rendering offset issue
   Possible fix for network games occasionally dissappearing from the list
   Fixed family border icons changing during the game
@@ -29,6 +33,7 @@ Bugs Fixed
   Updated achievement descriptions and fixed spelling errors
   Fixed 10 leaders achievement
   Fixed Persian cavalry landing spots in Heroes of the Aegean scenario 1 
+  Fixed progress blocker in Heroes of the Aegean scenario 1 
   Fixed disband button never showing as disabled
   Fixed minimized decisions persisting after undo
   Fixed tribe site list links not moving camera
@@ -46,3 +51,9 @@ Bugs Fixed
   Points to Win setting resets to default when switching to sim setup
   AI bug fixes
   Fixed the capitalization and double subject appearance in trait gain bonuses helptexts
+  Missions cost now consistently discounted from Pleased opinion
+  Fixed marriage candidates being offered who were already married
+  Fixed Game of the Week difficulty not being randomised
+  Removing a trait that grants a title also removes the title
+  Notification popups auto-focus again which allows using the keyboard to dismiss them
+  Fixed some cases of clicks on recommended improvements selecting units instead
