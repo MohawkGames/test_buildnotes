@@ -3,12 +3,12 @@ Test Branch: Old World Version 1.0.63322 Test 10/12/2022
 Design
   Coin Debasement now costs Money for Upkeep and Monetary Reform costs Civics
   Tribes are now at Peace with each other by default (instead of Truce)
-  Increased range of technologies possible when free tech granted
+  Free technologies are selected from a wider pool
   Projects that become invalid can no longer be rushed (i.e. when a Scholar governor leaves a city)
   Improvements that give Legitimacy now give Orders in No Characters mode
   
 Programming
-  AI improvements to retreat behaviour
+  AI improvements to retreat behavior
   Turn time performance optimizations
   Reduced memory usage
   Better error handling for platform managers when loading game
@@ -26,7 +26,7 @@ Bugs Fixed
   Various minor text and event fixes
   Fixed Control All Holy Cities ambition
   Fixed minimap terrain rendering offset issue
-  Possible fix for network games occasionally dissappearing from the list
+  Possible fix for network games occasionally disappearing from the list
   Fixed family border icons changing during the game
   Fixed out of date family class descriptions
   Fixed issue preventing multiple restarts of modded games
@@ -43,7 +43,7 @@ Bugs Fixed
   Fixed improvement team color not updating upon city captured
   Fixed units occluding tribal site spawn time
   Fixed hang when attempting to start a cloud game without being connected to an online platform
-  Fixed bug that disabled religions were still showing in relationship tab.
+  Fixed bug that disabled religions were still showing in the relationship tab.
   Fixed clicks on links on locked tooltips not working
   Fixed missing icons on loading screens
   Fixed several null reference errors
@@ -51,9 +51,9 @@ Bugs Fixed
   Points to Win setting resets to default when switching to sim setup
   AI bug fixes
   Fixed the capitalization and double subject appearance in trait gain bonuses helptexts
-  Missions cost now consistently discounted from Pleased opinion
+  Mission cost now consistently discounted from Pleased opinion
   Fixed marriage candidates being offered who were already married
-  Fixed Game of the Week difficulty not being randomised
+  Fixed Game of the Week difficulty not being randomized
   Removing a trait that grants a title also removes the title
   Notification popups auto-focus again which allows using the keyboard to dismiss them
   Fixed some cases of clicks on recommended improvements selecting units instead
