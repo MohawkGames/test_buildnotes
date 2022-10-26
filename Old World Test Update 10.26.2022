@@ -6,7 +6,6 @@ Design
   Fort build time in neutral territory increased from 1 to 2
   Made traits that replace each other and have negative opinions of each other 1:1, new trait opinion pairings added
   Free laws from events no longer require having the prerequisite tech
-  Encyclopedia now shows tech prereqs for laws
   Reworked some events so Tribes won't give you a chance for truce/peace if you are at war with their ally 
   Mourning trait now gives 25XP/turn
     
@@ -21,6 +20,7 @@ Programming
 UI
   Removed some irrelevant mission targets from action menus (e.g. under 18 characters for missions that target adults, religion head for conversion missions)
   Traits that change ratings (i.e. Wisdom) now show the yield difference from having the trait and not having it, rather than what another bonus would give
+  Encyclopedia now shows tech prereqs for laws
   Added star next to players whose turn it is in cloud games (mainly helpful for team games) 
 
 Bugs Fixed
