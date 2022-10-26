@@ -1,62 +1,54 @@
-Test Branch: Old World Version 1.0.63322 Test 10/12/2022 
-Test Branch: Old World Version 1.0.63419 Test 10/19/2022
+Test Branch: Old World Version 1.0.63540 Test 10/26/2022
 
 Design
-  Coin Debasement now costs Money for Upkeep and Monetary Reform costs Civics
-  Tribes are now at Peace with each other by default (instead of Truce)
-  Free technologies are selected from a wider pool
-  Projects that become invalid can no longer be rushed (i.e. when a Scholar governor leaves a city)
-  Improvements that give Legitimacy now give Orders in No Characters mode
-  
+  Allied tribal units now count for flanking purposes
+  Units Enlisted via a Zealot leader are now fully healed but start on cooldown
+  Fort build time in neutral territory increased from 1 to 2
+  Made traits that replace each other and have negative opinions of each other 1:1, new trait opinion pairings added
+  Free laws from events no longer require having the prerequisite tech
+  Reworked some events so Tribes won't give you a chance for truce/peace if you are at war with their ally 
+  Mourning trait now gives 25XP/turn
+    
 Programming
-  AI improvements to retreat behavior
-  Turn time performance optimizations
-  Reduced memory usage
-  Better error handling for platform managers when loading game
+  Improvements to AI
+  Steam workshop mod subscriptions are not installed until opening the Mods screen, show a notification when installing and install faster.
+  Team cloud games now allow teammates to play their turns in any order.  
+  Added LAN support for network MP games
+  Added support for alternative historical names for characters
+  Added Egyptian font support
   
 UI
-  Theology unlocks now shown on tech tree
-  Improved error message when failing to start a Play by Cloud game
-  New Map button now hidden on premade maps 
-  Changed Hall of Fame to display achievements consistently with platforms
-  Improvements to queued action UI
-  Eligible agents now shown in filtered character list even if agent assignment is not yet unlocked
+  Removed some irrelevant mission targets from action menus (e.g. under 18 characters for missions that target adults, religion head for conversion missions)
+  Traits that change ratings (i.e. Wisdom) now show the yield difference from having the trait and not having it, rather than what another bonus would give
+  Encyclopedia now shows tech prereqs for laws
+  Added star next to players whose turn it is in cloud games (mainly helpful for team games) 
 
 Bugs Fixed
-  Events now correctly grant bonuses and penalties when at maximum strengths or weaknesses
-  Various minor text and event fixes
-  Fixed Control All Holy Cities ambition
-  Fixed minimap terrain rendering offset issue
-  Possible fix for network games occasionally disappearing from the list
-  Fixed family border icons changing during the game
-  Fixed out of date family class descriptions
-  Fixed issue preventing multiple restarts of modded games
-  Updated achievement descriptions and fixed spelling errors
-  Fixed 10 leaders achievement
-  Fixed Persian cavalry landing spots in Heroes of the Aegean scenario 1 
-  Fixed progress blocker in Heroes of the Aegean scenario 1 
-  Fixed disband button never showing as disabled
-  Fixed minimized decisions persisting after undo
-  Fixed tribe site list links not moving camera
-  Fixed "100" text appearing on unit action buttons
-  Fixed Learn to Play 4 Victory event not appearing immediately
-  Fixed issues allowing Learn to Play goals to be bypassed
-  Fixed improvement team color not updating upon city captured
-  Fixed units occluding tribal site spawn time
-  Fixed hang when attempting to start a cloud game without being connected to an online platform
-  Fixed bug that disabled religions were still showing in the relationship tab.
-  Fixed clicks on links on locked tooltips not working
-  Fixed missing icons on loading screens
-  Fixed several null reference errors
-  Fixed doubled % in victory point helptext
-  Points to Win setting resets to default when switching to sim setup
-  AI bug fixes
-  Fixed the capitalization and double subject appearance in trait gain bonuses helptexts
-  Mission cost now consistently discounted from Pleased opinion
-  Fixed marriage candidates being offered who were already married
-  Fixed Game of the Week difficulty not being randomized
-  Removing a trait that grants a title also removes the title
-  Notification popups auto-focus again which allows using the keyboard to dismiss them
-  Fixed some cases of clicks on recommended improvements selecting units instead
-  Fixed missing available promotion icon
-  Fixed missing helptext for State Religion Cities law effects
+ Localisation text fixes
+ Event fixes
+ Amended the order of War/Truce/Peace so they appear in a more logical manner in event requirements 
+ Fixed Learn to Play 4 completion achievement not triggering
+ Fixed Learn to Play 4 tribal truce mission not completing
+ Fixed issue with Destroy Rivals ambition
+ Fixed timing of unit heal effects to appear after movement animation when follow unit actions is off
+ Fixed Learn by Playing scenarios not using intended settings
+ Fixed some text appearing in host language for multiplayer clients
+ Fixed some terrain camera issues at max zoom
+ Fixed issues with unit icon display
+ Fixed issues with characters sometimes being hidden in the family tree 
+ Fixed city capture not updating city border symbols
+ Fixed event requirements incorrectly showing in red when requirement is met
+ Fixed units appearing to be standing on water in some cases
+ Fixed issue with old characters not becoming infertile
+ Fixed wonder started notifications zooming to location of wonder 
+ Fixed bug with character undo
+ Fixed border expansion preview not being removed when changing from an urban building to a rural in the worker action tab
+ Fixed units losing visibility when using undo/redo
+ Fixed issue where events could appear before turn start notifications
+ Fixed resource unit occupancy transparency disregarding unit visibility
+ Fixed character death notifications not appearing until the following turn when a character dies during a turn
+ Fixed invalid bonus cards appearing in Scholar redraw discard pile 
+ Fixed flickering issue from hovering over improvement recommendations 
+ Fixed F1 not working on some tile tooltip links
+ Fixed worker recommendations sometimes not updating after starting other improvements
+ Teammates can no longer move another players allied tribal units when No Team Movement option is set
