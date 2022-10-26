@@ -1,0 +1,54 @@
+Test Branch: Old World Version 1.0.63540 Test 10/26/2022
+
+Design
+  Allied tribal units now count for flanking purposes
+  Units Enlisted via a Zealot leader are now fully healed but start on cooldown
+  Fort build time in neutral territory increased from 1 to 2
+  Made traits that replace each other and have negative opinions of each other 1:1, new trait opinion pairings added
+  Free laws from events no longer require having the prerequisite tech
+  Encyclopedia now shows tech prereqs for laws
+  Reworked some events so Tribes won't give you a chance for truce/peace if you are at war with their ally 
+  Mourning trait now gives 25XP/turn
+    
+Programming
+  Improvements to AI
+  Steam workshop mod subscriptions are not installed until opening the Mods screen, show a notification when installing and install faster.
+  Team cloud games now allow teammates to play their turns in any order.  
+  Added LAN support for network MP games
+  Added support for alternative historical names for characters
+  Added Egyptian font support
+  
+UI
+  Removed some irrelevant mission targets from action menus (e.g. under 18 characters for missions that target adults, religion head for conversion missions)
+  Traits that change ratings (i.e. Wisdom) now show the yield difference from having the trait and not having it, rather than what another bonus would give
+  Added star next to players whose turn it is in cloud games (mainly helpful for team games) 
+
+Bugs Fixed
+ Localisation text fixes
+ Event fixes
+ Amended the order of War/Truce/Peace so they appear in a more logical manner in event requirements 
+ Fixed Learn to Play 4 completion achievement not triggering
+ Fixed Learn to Play 4 tribal truce mission not completing
+ Fixed issue with Destroy Rivals ambition
+ Fixed timing of unit heal effects to appear after movement animation when follow unit actions is off
+ Fixed Learn by Playing scenarios not using intended settings
+ Fixed some text appearing in host language for multiplayer clients
+ Fixed some terrain camera issues at max zoom
+ Fixed issues with unit icon display
+ Fixed issues with characters sometimes being hidden in the family tree 
+ Fixed city capture not updating city border symbols
+ Fixed event requirements incorrectly showing in red when requirement is met
+ Fixed units appearing to be standing on water in some cases
+ Fixed issue with old characters not becoming infertile
+ Fixed wonder started notifications zooming to location of wonder 
+ Fixed bug with character undo
+ Fixed border expansion preview not being removed when changing from an urban building to a rural in the worker action tab
+ Fixed units losing visibility when using undo/redo
+ Fixed issue where events could appear before turn start notifications
+ Fixed resource unit occupancy transparency disregarding unit visibility
+ Fixed character death notifications not appearing until the following turn when a character dies during a turn
+ Fixed invalid bonus cards appearing in Scholar redraw discard pile 
+ Fixed flickering issue from hovering over improvement recommendations 
+ Fixed F1 not working on some tile tooltip links
+ Fixed worker recommendations sometimes not updating after starting other improvements
+ Teammates can no longer move another players allied tribal units when No Team Movement option is set
