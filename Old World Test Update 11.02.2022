@@ -1,0 +1,39 @@
+Test Branch: Old World Version 1.0.63721 Test 11/02/2022
+
+Design
+  New spymaster mission - Expose Agent Network (requires Scholarship)
+  New agent mission - Move Agent Network (requires Manor)
+  Free Longbowman bonus tech added (requires Bodkin Arrow)
+  Enlisted units are now healed to half health
+  Ambition tier and weight adjustments
+    
+Programming
+  AI improvements
+  Achievements - "Leader Count" achievement now "Ten Crowns" achievement
+  Enabled new network system in Test
+  
+UI
+  Family tree UI amendments to highlight leader and heirs
+  Map dimensions added to map size tooltip
+  Added searchable dropdown for Steam friends in Cloud game setup on Steam
+  Added tech prerequisites to mission help
+  Default key mappings changed - Q/E now cycles tabs, with arrow keys or A/D cycling cities instead 
+  Opinion triangle shown on general portrait for selected unit
+  Improved Hall of Fame scenario helptext
+
+Bugs Fixed
+  Localisation text fixes
+  Misceallaenous event fixes
+  Possible fix to intermittent issue with tooltip links not displaying
+  Fixed replay data being discarded for cloud games
+  Fixed unit animation in replay
+  Fixed 'press Alt to buy goods' help text
+  Fixed Roman army moving before it should have done in Learn to Play 5
+  Fixed Alexander the Who achievement not triggering in some cases
+  Fixed resources becoming transparent when occupied by units where player has no visibility
+  Fixed incorrect interaction between ballista and city widget
+  Unit widgets now start with the correct mouse-over color without being selected
+  Fixed Map Editor save bug
+  Fixed duplicate floating text on replay for team games
+  Fixed scenario icons on the scenario menu
+  Fixed bug allowing characters to gain more than 3 strengths
