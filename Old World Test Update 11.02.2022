@@ -22,8 +22,8 @@ UI
   Improved Hall of Fame scenario helptext
 
 Bugs Fixed
-  Localisation text fixes
-  Misceallaenous event fixes
+  Localization text fixes
+  Miscellaneous event fixes
   Possible fix to intermittent issue with tooltip links not displaying
   Fixed replay data being discarded for cloud games
   Fixed unit animation in replay
