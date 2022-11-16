@@ -4,12 +4,12 @@ Design
   City widget culture level icon tooltip no longer reveals the exact culture of rival cities
   Teammates stats are now displayed on the Records screen
   Units with generals can no longer be gifted
-  Can now select Garrison location in capital - ctrl+left click on preferred tile before settling
+  Can now select Garrison location in capital - ctrl+left click on preferred urban tile before settling
   Artisan families get +10 opinion per Artist character.  
   Champion families no longer get opinion bonus for Bold characters.
   Blocked control Holy City ambitions from appearing in One City Challenge
   Added combat tutorials when units do low damage
-  Competetive mode now disables off-map tribal raids and prevents cognomens with negative legitimacy
+  Competitive mode now disables off-map tribal raids and prevents cognomens with negative legitimacy
     
 Programming
   AI performance improvements
@@ -27,7 +27,7 @@ UI
   In One City Challenge, the city screen will show the button to build Settlers but the tooltip explains that they're unavailable in OCC
   Separated city widget production text and build time text to avoid build time getting hidden with overflowing text
   City list now defaults to sort by last ownership change (i.e. captured cities will appear at the bottom of the list)
-  Cloud games where the next player has the same cloud ID as the current player now allow you to play the next turn without returning to the menu
+  Cloud games where the next player is the same as the current player now allow you to play the next turn without returning to the menu
   Cloud games are automatically saved locally for the host each turn
   Added Urban Tile count to population help 
   Fatigue pips are hidden when a unit is fatigued and force march is toggled under unlimited force march
@@ -36,7 +36,7 @@ UI
   Luxury management buttons now appear for hostile nations/tribes
 
 Bugs Fixed
-  Localization text addtions and fixes
+  Localization text additions and fixes
   Miscellaneous event fixes
   Adjusted Hittite UU model to prevent potential overlaps
   Fixed double victory point threshold being incorrectly displayed on Victory Screen 
