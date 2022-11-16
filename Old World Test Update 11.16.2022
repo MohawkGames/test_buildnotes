@@ -1,0 +1,19 @@
+Test Branch: Old World Version 1.0.63721 Test 11/02/2022
+
+Design
+  City widget culture level icon tooltip no longer reveals the exact culture of rival cities 
+    
+Programming
+  AI is more proactive in healing units that are not in immediate danger
+  AI now knows to place improvements adjacent to tiles that can have adjacency bonuses, even before those tile have improvements
+
+  
+UI
+  Added Team Color Intensity option under Options - UI
+  Can now select Garrison location in captial - ctrl+left click on preferred tile before settling
+
+Bugs Fixed
+  Localization text fixes
+  Miscellaneous event fixes
+  Adjusted Hittite UU model to prevent potential overlaps
+  Fixed double victory point threshold being incorrectly display on 
