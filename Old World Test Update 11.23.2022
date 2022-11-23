@@ -1,0 +1,52 @@
+Test Branch: Old World Version 1.0.64108 Test 11/23/2022
+
+Design
+  The Hill: Added scenario description/rules to victory popup screen
+  Can now build Farms on Marsh with Centralization. Farms on Marsh produce +2 Wood/Turn
+  More marsh tiles will be generated near lakes
+  Ambition rebalancing
+  Middle East map improvements
+  Removed demand/offer tribute variations of national peace ambassador mission
+
+New Events
+  An Embassy
+  All too Quick
+  Exacting Union
+  Everyone Wants a Peace
+  {PLAYER}'s Best Friend
+  The Will of the Profit
+  The Might of {PLAYER}
+  The Price of Peace
+  The Grand Hunt
+  One For The Storybooks
+  A Remarkable Discovery
+  The Sword In The Stone
+  Legacy of the Ruler
+  Together in the World
+  Trusted
+  The City to Come
+  Several tutorial events for yield deficits and caps
+
+Programming
+  AI better defends its endangered cities
+  AI city garrison improvements
+  AI fort building logic updated
+  AI tries harder to preserve units' fortified, testudo, unlimbered, and anchored states
+  
+UI
+  Added graphics option to reduce game framerate when application is not in focus
+  Divination tooltip now shows all nation shrine types instead of only the generic shrine class
+  Added text auto-resizing for city production buttons if necessary
+
+Bugs Fixed
+  Fixed MP game tooltip stars to show the players currently expected to take their turn
+  Fix for Shrine of Vesta ember effect flickering on some machines
+  Fixed inconsistent UI portrait background assignment 
+  Network game player information fixes
+  Fixed city widget healthbar sorting issue
+  Fixed issue where a unit widget behind a city widget would steal focus from the city widget, making it hard to mouse over elements on the city widget when a unit widget was nearby
+  Fixed AI behavior issues
+  Fixed combat tutorial Highlander/Ranger events
+  Fixed BonusUnitClass hang if the class includes multiple units without a tech prerequisite
+  Fixed potential issue with Control all cities goal not completing in Greece 4
+  Fixed issues with terrain cell detail level selection and terrain cells at the edge of maps creating flickering mountains 
