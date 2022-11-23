@@ -1,7 +1,6 @@
 Test Branch: Old World Version 1.0.64108 Test 11/23/2022
 
 Design
-  The Hill: Added scenario description/rules to victory popup screen
   Can now build Farms on Marsh with Centralization. Farms on Marsh produce +2 Wood/Turn
   More marsh tiles will be generated near lakes
   Ambition rebalancing
@@ -37,6 +36,7 @@ UI
   Added graphics option to reduce game framerate when application is not in focus
   Divination tooltip now shows all nation shrine types instead of only the generic shrine class
   Added text auto-resizing for city production buttons if necessary
+  The Hill: Added scenario description/rules to victory popup screen
 
 Bugs Fixed
   Fixed MP game tooltip stars to show the players currently expected to take their turn
