@@ -1,62 +1,52 @@
-Test Branch: Old World Version 1.0.64005 Test 11/16/2022
+Test Branch: Old World Version 1.0.64108 Test 11/23/2022
 
 Design
-  City widget culture level icon tooltip no longer reveals the exact culture of rival cities
-  Teammates stats are now displayed on the Records screen
-  Units with generals can no longer be gifted
-  Can now select Garrison location in capital - ctrl+left click on preferred urban tile before settling
-  Artisan families get +10 opinion per Artist character.  
-  Champion families no longer get opinion bonus for Bold characters.
-  Blocked control Holy City ambitions from appearing in One City Challenge
-  Added combat tutorials when units do low damage
-  Competitive mode now disables off-map tribal raids and prevents cognomens with negative legitimacy
-    
+  Can now build Farms on Marsh with Centralization. Farms on Marsh produce +2 Wood/Turn
+  More marsh tiles will be generated near lakes
+  Ambitions have been rebalanced
+  Middle East map improvements
+  Removed demand/offer tribute variations of national peace ambassador mission
+
+New Events (includes some older events that were previously disabled)
+  An Embassy
+  All too Quick
+  Exacting Union
+  Everyone Wants a Peace
+  {PLAYER}'s Best Friend
+  The Will of the Profit
+  The Might of {PLAYER}
+  The Price of Peace
+  The Grand Hunt
+  One For The Storybooks
+  A Remarkable Discovery
+  The Sword In The Stone
+  Legacy of the Ruler
+  Together in the World
+  Trusted
+  The City to Come
+  Several tutorial events for yield deficits and caps
+
 Programming
-  AI performance improvements
-  AI is more proactive in healing units that are not in immediate danger
-  AI now knows to place improvements adjacent to tiles that can have adjacency bonuses, even before those tile have improvements
-  Worker AI improvements
-  Early-game AI move priority tweak
-  Increased AI emphasis on training production in its cities and AI improvement selection to better match the terrain
-  Added cuneiform font support
+  AI better defends its endangered cities
+  AI city garrison improvements
+  AI fort building logic updated
+  AI tries harder to preserve units' fortified, testudo, unlimbered, and anchored states
   
 UI
-  Added Team Color Intensity option under Options - UI
-  Added difficulty dropdown to scenario description screen.
-  Project help will no longer show impossible bonuses, e.g. Babylonia's +2 culture for Treasuries if you're not Babylonia
-  In One City Challenge, the city screen will show the button to build Settlers but the tooltip explains that they're unavailable in OCC
-  Separated city widget production text and build time text to avoid build time getting hidden with overflowing text
-  City list now defaults to sort by last ownership change (i.e. captured cities will appear at the bottom of the list)
-  Cloud games where the next player is the same as the current player now allow you to play the next turn without returning to the menu
-  Cloud games are automatically saved locally for the host each turn
-  Added Urban Tile count to population help 
-  Fatigue pips are hidden when a unit is fatigued and force march is toggled under unlimited force march
-  Map editor - Menu - Save now shows saved popup same as Menu - Save As and CTRL-S 
-  Improved Send Luxury button text
-  Luxury management buttons now appear for hostile nations/tribes
+  Added graphics option to reduce game framerate when application is not in focus
+  Divination tooltip now shows all nation shrine types instead of only the generic shrine class
+  Added text auto-resizing for city production buttons if necessary
+  The Hill: Added scenario description/rules to victory popup screen
 
 Bugs Fixed
-  Localization text additions and fixes
-  Miscellaneous event fixes
-  Adjusted Hittite UU model to prevent potential overlaps
-  Fixed double victory point threshold being incorrectly displayed on Victory Screen 
-  Fixed initial family bonuses being applied after the initial units have already been created
-  Fixed some eliminated player issues in both network and cloud multiplayer
-  Fixed tribal marriage issue
-  Fix for hover helptext on overlay tile widgets
-  Moved out of bounds ruins on Middle East map
-  Fixed adopt religion and enact law costs not appearing in Role Playing mode
-  Added missing icons for Move Network, Expose Network missions and Enlisted cooldown
-  Fixed character random trait generation
-  Broken mods now get unloaded on game start with a notification rather than preventing the game from loading
-  Fixed network turn time extension
-  Fixed critical hits only happening after the unit has been idle, when critical hit preview was on
-  Fixed city list text not updating after governor candidates are assigned
-  Fixed bug with retreating AI
-  Fixed unit visibility issues on map reveal/unreveal
-  Fixed scenario MP setup screen showing incorrect nations
-  Fixed river movement helptext, movement bonus comes from Exploration
-  Fixed mission icon scaling issue
-  Prevented vegetation spread to wheat or barley tiles
-  Fixed self-reference in Courtier helptext
-  Fixed server mode "uploading game" popup not clearing
+  Fixed MP game tooltip stars to show the players currently expected to take their turn
+  Fix for Shrine of Vesta ember effect flickering on some machines
+  Fixed inconsistent UI portrait background assignment 
+  Network game player information fixes
+  Fixed city widget healthbar sorting issue
+  Fixed issue where a unit widget behind a city widget would steal focus from the city widget, making it hard to mouse over elements on the city widget when a unit widget was nearby
+  Fixed AI behavior issues
+  Fixed combat tutorial Highlander/Ranger events
+  Fixed BonusUnitClass hang if the class includes multiple units without a tech prerequisite
+  Fixed potential issue with Control all cities goal not completing in Greece 4
+  Fixed issues with terrain cell detail level selection and terrain cells at the edge of maps creating flickering mountains 
