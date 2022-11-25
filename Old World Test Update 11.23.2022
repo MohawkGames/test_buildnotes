@@ -1,7 +1,8 @@
 Test Branch: Old World Version 1.0.64108 Test 11/23/2022
 
 Design
-  Can now build Farms on Marsh with Centralization. Farms on Marsh produce +2 Wood/Turn (in addition to food)
+  Centralization allows building farms on marsh, no longer gives +10 civics.
+  Farms on marsh produce +2 Wood/Turn (in addition to food)
   More marsh tiles will be generated near lakes
   Ambitions have been rebalanced
   Middle East map improvements
