@@ -1,4 +1,5 @@
 Test Branch: Old World Version 1.0.64108 Test 11/23/2022
+Test Branch: Old World Version 1.0.64195 Test 11/30/2022
 
 Design
   Centralization allows building farms on marsh, no longer gives +10 civics.
@@ -51,3 +52,5 @@ Bugs Fixed
   Fixed BonusUnitClass hang if the class includes multiple units without a tech prerequisite
   Fixed potential issue with Control all cities goal not completing in Greece 4
   Fixed issues with terrain cell detail level selection and terrain cells at the edge of maps creating flickering mountains 
+  Fixed crash when AI razed a city
+  Fixed Steam Deck option selection bug
