@@ -1,5 +1,6 @@
-Test Branch: Old World Version 1.0.64108 Test 11/23/2022
-Test Branch: Old World Version 1.0.64206 Test 11/30/2022
+Test Branch: 1.0.64108 Test 11/23/2022
+Test Branch: 1.0.64206 Test 11/30/2022
+Test Branch hotfix: 1.0.64243 release 12/02/2022
 
 Design
   Centralization allows building farms on marsh, no longer gives +10 civics.
@@ -54,3 +55,4 @@ Bugs Fixed
   Fixed issues with terrain cell detail level selection and terrain cells at the edge of maps creating flickering mountains 
   Fixed crash when AI razed a city
   Fixed Steam Deck option selection bug
+  Fixed hotseat bug that prevented some players from carrying out actions like chopping and pillaging
