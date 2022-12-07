@@ -1,0 +1,48 @@
+Test Branch: 1.0.64302 Test 12/07/2022
+
+Design
+  Free city site location now takes into account distance over land, not distance as the crow flies
+  Events which give traits are no longer blocked when a character already has the trait.  They will now give improvements to character ratings instead.
+  New mapscript 'Donut' added
+
+Programming
+  Significant improvements to AI use of forts
+  Improved AI city siege and other combat tactics
+  Improved AI unit build selection 
+  Improved AI city founding tile choice
+  Improved AI exploration with more than one unit
+  Improved AI evaluation of city projects
+  Improved AI improvement repairing
+  Improved AI reinforcements
+  Improved AI tile buying
+  AI now values discardable techs less
+  AI less likely to hire mercenaries that are damaged and/or far away 
+
+UI
+  Added look-ahead terrain texture renderer.  This should reduce the instances of terrain briefly appearing at lower quality when moving to the next unit/city. 
+  Hotseat games can now be restarted 
+  Hotseat games support different languages for each player
+  Added Random Resource and Random Element Names buttons to Map Editor
+  Map start tiles for set maps can now be defined in mapStartTile.xml.  This allows modded nations to be given set start points on premade maps. 
+  Steam Input updates
+
+Bugs Fixed
+  Miscellaneous event fixes and rebalancing
+  Spanish text fixes
+  Fixed AI city site guarding bug
+  Fixed bug with character links on minimized events
+  Fixed bug with Barbarian Horde scneario difficulty not being applied when selected from description screen
+  Fixed error handling for incorrect network game host password
+  Fixed game restart for mods
+  Fixed bug allowing multi-couple polygamous marriages
+  Fixed bug with adopted children not being added to the line of succession
+  Fixed some cases where tile player ownership was checked instead of tile city territory
+  Fixed issue where units would stop their walking animation if they received a second move order while already moving 
+  Fixed display issue with cooldown icons on non-player-owned units
+  Fixed issue with resources of city sites on the centerline of mirror maps
+  Fixed server game host settings back button 
+  Fixed inconsistent button behavior between tribe/player selection and leader selection
+  Fixed revealmap and unrevealmap console commands
+  Fixed bug slowing religion spread to connected cities
+  Fixed attack preview bug
+  Fixed bug causing MP players to sometimes miss their turn when switching turn style
