@@ -31,7 +31,7 @@ Bugs Fixed
   Spanish text fixes
   Fixed AI city site guarding bug
   Fixed bug with character links on minimized events
-  Fixed bug with Barbarian Horde scneario difficulty not being applied when selected from description screen
+  Fixed bug with Barbarian Horde scenario difficulty not being applied when selected from description screen
   Fixed error handling for incorrect network game host password
   Fixed game restart for mods
   Fixed bug allowing multi-couple polygamous marriages
