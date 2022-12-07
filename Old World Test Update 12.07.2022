@@ -3,7 +3,7 @@ Test Branch: 1.0.64302 Test 12/07/2022
 Design
   Free city site location now takes into account distance over land, not distance as the crow flies
   Events which give traits are no longer blocked when a character already has the trait.  They will now give improvements to character ratings instead.
-  New mapscript 'Donut' added
+  New mapscript 'Donut' added (this is a work in progress)
 
 Programming
   Significant improvements to AI use of forts
