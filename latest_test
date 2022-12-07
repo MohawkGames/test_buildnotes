@@ -1,58 +1,48 @@
-Test Branch: 1.0.64108 Test 11/23/2022
-Test Branch: 1.0.64206 Test 11/30/2022
-Test Branch hotfix: 1.0.64243 release 12/02/2022
+Test Branch: 1.0.64302 Test 12/07/2022
 
 Design
-  Centralization allows building farms on marsh, no longer gives +10 civics.
-  Farms on marsh produce +2 Wood/Turn (in addition to food)
-  More marsh tiles will be generated near lakes
-  Ambitions have been rebalanced
-  Middle East map improvements
-  Removed demand/offer tribute variations of national peace ambassador mission
-
-New Events (includes some older events that were previously disabled)
-  An Embassy
-  All too Quick
-  Exacting Union
-  Everyone Wants a Peace
-  (Nation)'s Best Friend
-  The Will of the Profit
-  The Might of (Nation)
-  The Price of Peace
-  The Grand Hunt
-  One For The Storybooks
-  A Remarkable Discovery
-  The Sword In The Stone
-  Legacy of the Ruler
-  Together in the World
-  Trusted
-  The City to Come
-  Several tutorial events for yield deficits and caps
+  Free city site location now takes into account distance over land, not distance as the crow flies
+  Events which give traits are no longer blocked when a character already has the trait.  They will now give improvements to character ratings instead.
+  New map script 'Donut' added (this is a work in progress)
 
 Programming
-  AI better defends its endangered cities
-  AI city garrison improvements
-  AI fort building logic updated
-  AI tries harder to preserve units' fortified, testudo, unlimbered, and anchored states
-  
+  Significant improvements to AI use of forts
+  Improved AI city siege and other combat tactics
+  Improved AI unit build selection 
+  Improved AI city founding tile choice
+  Improved AI exploration with more than one unit
+  Improved AI evaluation of city projects
+  Improved AI improvement repairing
+  Improved AI reinforcements
+  Improved AI tile buying
+  AI now values discardable techs less
+  AI less likely to hire mercenaries that are damaged and/or far away 
+
 UI
-  Added graphics option to reduce game framerate when application is not in focus
-  Divination tooltip now shows all nation shrine types instead of only the generic shrine class
-  Added text auto-resizing for city production buttons if necessary
-  The Hill: Added scenario description/rules to victory popup screen
+  Added look-ahead terrain texture renderer.  This should reduce the instances of terrain briefly appearing at lower quality when moving to the next unit/city. 
+  Hotseat games can now be restarted 
+  Hotseat games support different languages for each player
+  Added Random Resource and Random Element Names buttons to Map Editor
+  Map start tiles for set maps can now be defined in mapStartTile.xml.  This allows modded nations to be given set start points on premade maps. 
+  Steam Input updates
 
 Bugs Fixed
-  Fixed MP game tooltip stars to show the players currently expected to take their turn
-  Fix for Shrine of Vesta ember effect flickering on some machines
-  Fixed inconsistent UI portrait background assignment 
-  Network game player information fixes
-  Fixed city widget healthbar sorting issue
-  Fixed issue where a unit widget behind a city widget would steal focus from the city widget, making it hard to mouse over elements on the city widget when a unit widget was nearby
-  Fixed AI behavior issues
-  Fixed combat tutorial Highlander/Ranger events
-  Fixed BonusUnitClass hang if the class includes multiple units without a tech prerequisite
-  Fixed potential issue with Control all cities goal not completing in Greece 4
-  Fixed issues with terrain cell detail level selection and terrain cells at the edge of maps creating flickering mountains 
-  Fixed crash when AI razed a city
-  Fixed Steam Deck option selection bug
-  Fixed hotseat bug that prevented some players from carrying out actions like chopping and pillaging
+  Miscellaneous event fixes and rebalancing
+  Spanish text fixes
+  Fixed AI city site guarding bug
+  Fixed bug with character links on minimized events
+  Fixed bug with Barbarian Horde scenario difficulty not being applied when selected from description screen
+  Fixed error handling for incorrect network game host password
+  Fixed game restart for mods
+  Fixed bug allowing multi-couple polygamous marriages
+  Fixed bug with adopted children not being added to the line of succession
+  Fixed some cases where tile player ownership was checked instead of tile city territory
+  Fixed issue where units would stop their walking animation if they received a second move order while already moving 
+  Fixed display issue with cooldown icons on non-player-owned units
+  Fixed issue with resources of city sites on the centerline of mirror maps
+  Fixed server game host settings back button 
+  Fixed inconsistent button behavior between tribe/player selection and leader selection
+  Fixed revealmap and unrevealmap console commands
+  Fixed bug slowing religion spread to connected cities
+  Fixed attack preview bug
+  Fixed bug causing MP players to sometimes miss their turn when switching turn style
