@@ -1,0 +1,41 @@
+Test Branch: 1.0.64411 Test 12/14/2022
+
+There is a potential issue with Epic not allowing access to DLC or Cloud games when the Epic account has been restricted.  You may be able to resolve this by logging into your Epic account at epicgames.com and entering your date of birth when prompted.
+
+Design
+  New World Map - Imperium Romanum: The Roman World!
+  Hotseat games with 1 Human player are now treated as Multiplayer games.  This fixes teams not starting together in these games.
+  Donut map script updated, new options added
+  Inland Sea map script updated to give less regular sea and more mountain ranges
+
+Programming
+  Performance improvements on terrain display and animations
+  AI improvements to use of forts, water control, anchoring and island movement
+  
+New Events
+  New Strings
+  Sorry State of Furnishings
+
+UI
+  Steam Input updates
+  Added project prerequisites to event option helptext
+  Unit tooltips in city screen now show per-unit cost increase (affects Settlers, Workers and Disciples)
+  Worker recommendation icons now show improvement yields and adjacency boni from all valid tiles, not just in the current city.
+  Added ambition progress to ambition bonus helptext in event options
+  Workers now have the Worker unit trait (icon art not added yet)
+
+Bugs Fixed
+  Miscellaneous event fixes and rebalancing
+  Fixed bug where an already settled city site was still being treated as a tribe site in some cases
+  Fixed missing information for Council assignment and Diplomacy events in Role Playing mode
+  Fixed AI unit movement bug introduced last week
+  Fixed some AI regressions
+  Fixed unit widgets not reappearing after hiding the UI
+  Fixed issues with tundra tile heightmap rendering
+  Fixed rare unit conversion bug
+  Fixed event browser errors for event tree and advanced text editor popups
+  Fixed impossible ambition to enact Elites in Carthage 3 scenario 
+  Fixed spacing in production text on city widget
+  Fixed dynasty dropdown behavior for MP setup
+  Fixed dowry research bug 
+  Fixed issue where units hit or killed by splash damage didn't play any animations 
