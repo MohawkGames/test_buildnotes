@@ -1,0 +1,53 @@
+Test Branch: 1.0.64666 Test 01/05/2023
+
+Design
+  City Discontent Level can now go negative.
+  Discontent increase rate reduced by 4 on all diificulty levels.
+  Citizens now give -5 family opinion 
+  Repair project is now 1 + (10% of HP)/turn instead of (20% of HP)/turn
+  Heroes of the Aegean 1 scenario improvements
+  New tutorial event that warns against using a single family
+  Diplomats can now be the Governor of any city
+
+Programming
+  Performance improvements
+  AI no longer builds so many forts and defends them more
+  AI water control improvements
+  AI knows to use anchored boats as a shortcut for its units, even if the two land points being bridged are on the same land mass.
+  If you steal a city site from the AI, it will won't hold back from stealing one of yours
+
+UI
+  Added Portuguese to available languages
+  New World Map icon added
+  Added a Random Ruins button to map editor
+  Updated Modio logos
+  Changed agent selection from click to ctrl+click to be consistent with governor selection behavior
+  Include agent's city in idle agent reminders
+  Foreign characters no longer shown in mission target lists 
+  Inheritance screen now shows all branches that contain a character in the line of succession 
+  Added family archetype multipliers to their tooltips
+  Steam Input improvements
+  System time in the UI now takes timezone into account, relevant when the BIOS time is in UTC  
+
+Bugs Fixed
+  Miscellaneous event fixes and rebalancing
+  Fixed worker button text wrapping incorrectly in some cases
+  Fixed AI threading issue
+  Fixed nested link issue for some characters in turn summary text
+  Fixed border expansion/yield previews sometimes not clearing after starting a build
+  Fixed context buttons for some missions with own leader selected
+  Fixed modal decision undo/redo
+  Fixed trade network bug
+  Fixed issues causing replay data to be discarded unnesecarily
+  Fixed options reset not saving default hotkeys 
+  Fixed turn being skipped after turn timer is turned on
+  Fixed breaking menu behavior between map editor/event browser 
+  City ownership change triggers an immediate mission check, in case it was being pacified, for example
+  Fixed Learn to Play 5 event text and missing notification icon issues
+  Fixed some cases where idle councillors wouldn't have their position shown 
+  Fixed game restart fail when mods are loaded
+  Fixed governor help text issues
+  Expose agent mission text fixes
+  Fix for choice_ tags not working when subject not found;
+  Bones no longer appear on water
+  Fixed AI bug of overestimating damage when multiple units are used in an attack
