@@ -2,7 +2,7 @@ Test Branch: 1.0.64666 Test 01/05/2023
 
 Design
   City Discontent Level can now go negative.
-  Discontent increase rate reduced by 4 on all diificulty levels.
+  Discontent increase rate reduced by 4 on all difficulty levels.
   Citizens now give -5 family opinion 
   Repair project is now 1 + (10% of HP)/turn instead of (20% of HP)/turn
   Heroes of the Aegean 1 scenario improvements
@@ -38,13 +38,13 @@ Bugs Fixed
   Fixed context buttons for some missions with own leader selected
   Fixed modal decision undo/redo
   Fixed trade network bug
-  Fixed issues causing replay data to be discarded unnesecarily
+  Fixed issues causing replay data to be discarded unnecessarily
   Fixed options reset not saving default hotkeys 
   Fixed turn being skipped after turn timer is turned on
   Fixed breaking menu behavior between map editor/event browser 
   City ownership change triggers an immediate mission check, in case it was being pacified, for example
   Fixed Learn to Play 5 event text and missing notification icon issues
-  Fixed some cases where idle councillors wouldn't have their position shown 
+  Fixed some cases where idle councilors wouldn't have their position shown 
   Fixed game restart fail when mods are loaded
   Fixed governor help text issues
   Expose agent mission text fixes
