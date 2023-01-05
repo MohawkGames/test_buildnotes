@@ -1,41 +1,53 @@
-Test Branch: 1.0.64411 Test 12/14/2022
-
-There is a potential issue with Epic not allowing access to DLC or Cloud games when the Epic account has been restricted.  You may be able to resolve this by logging into your Epic account at epicgames.com and entering your date of birth when prompted.
+Test Branch: 1.0.64666 Test 01/05/2023
 
 Design
-  New World Map - Imperium Romanum: The Roman World!
-  Hotseat games with 1 Human player are now treated as Multiplayer games.  This fixes teams not starting together in these games.
-  Donut map script updated, new options added
-  Inland Sea map script updated to give less regular sea and more mountain ranges
+  City Discontent Level can now go negative.
+  Discontent increase rate reduced by 4 on all difficulty levels.
+  Citizens now give -5 family opinion 
+  Repair project is now 1 + (10% of HP)/turn instead of (20% of HP)/turn
+  Heroes of the Aegean 1 scenario improvements
+  New tutorial event that warns against using a single family
+  Diplomats can now be the Governor of any city
 
 Programming
-  Performance improvements to terrain display and animations
-  AI improvements to use of forts, water control, anchoring and island movement
-  
-New Events
-  New Strings
-  Sorry State of Furnishings
+  Performance improvements
+  AI no longer builds so many forts and defends them more
+  AI water control improvements
+  AI knows to use anchored boats as a shortcut for its units, even if the two land points being bridged are on the same land mass.
+  If you steal a city site from the AI, it will won't hold back from stealing one of yours
 
 UI
-  Steam Input updates
-  Added project prerequisites to event option helptext
-  Unit tooltips in city screen now show per-unit cost increase (affects Settlers, Workers and Disciples)
-  Worker recommendation icons now show improvement yields and adjacency boni from all valid tiles, not just in the current city.
-  Added ambition progress to ambition bonus helptext in event options
-  Workers now have the Worker unit trait (icon art not added yet)
+  Added Portuguese to available languages
+  New World Map icon added
+  Added a Random Ruins button to map editor
+  Updated Modio logos
+  Changed agent selection from click to ctrl+click to be consistent with governor selection behavior
+  Include agent's city in idle agent reminders
+  Foreign characters no longer shown in mission target lists 
+  Inheritance screen now shows all branches that contain a character in the line of succession 
+  Added family archetype multipliers to their tooltips
+  Steam Input improvements
+  System time in the UI now takes timezone into account, relevant when the BIOS time is in UTC  
 
 Bugs Fixed
   Miscellaneous event fixes and rebalancing
-  Fixed bug where an already settled city site was still being treated as a tribe site in some cases
-  Fixed missing information for Council assignment and Diplomacy events in Role Playing mode
-  Fixed AI unit movement bug introduced last week
-  Fixed some AI regressions
-  Fixed unit widgets not reappearing after hiding the UI
-  Fixed issues with tundra tile heightmap rendering
-  Fixed rare unit conversion bug
-  Fixed event browser errors for event tree and advanced text editor popups
-  Fixed impossible ambition to enact Elites in Carthage 3 scenario 
-  Fixed spacing in production text on city widget
-  Fixed dynasty dropdown behavior for MP setup
-  Fixed dowry research bug 
-  Fixed issue where units hit or killed by splash damage didn't play any animations 
+  Fixed worker button text wrapping incorrectly in some cases
+  Fixed AI threading issue
+  Fixed nested link issue for some characters in turn summary text
+  Fixed border expansion/yield previews sometimes not clearing after starting a build
+  Fixed context buttons for some missions with own leader selected
+  Fixed modal decision undo/redo
+  Fixed trade network bug
+  Fixed issues causing replay data to be discarded unnecessarily
+  Fixed options reset not saving default hotkeys 
+  Fixed turn being skipped after turn timer is turned on
+  Fixed breaking menu behavior between map editor/event browser 
+  City ownership change triggers an immediate mission check, in case it was being pacified, for example
+  Fixed Learn to Play 5 event text and missing notification icon issues
+  Fixed some cases where idle councilors wouldn't have their position shown 
+  Fixed game restart fail when mods are loaded
+  Fixed governor help text issues
+  Expose agent mission text fixes
+  Fix for choice_ tags not working when subject not found;
+  Bones no longer appear on water
+  Fixed AI bug of overestimating damage when multiple units are used in an attack
