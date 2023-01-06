@@ -2,6 +2,7 @@ Test Branch: 1.0.64664 Test 01/05/2023
 
 Design
   City Discontent Level can now go negative.
+  Negative discontent level gives bonuses to growth and reduces maintenance.  Positive discontent level no longer reduces growth.
   Discontent increase rate reduced by 4 on all difficulty levels.
   Citizens now give -5 family opinion 
   Repair project is now 1 + (10% of HP)/turn instead of (20% of HP)/turn
