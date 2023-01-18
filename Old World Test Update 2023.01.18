@@ -41,7 +41,7 @@ Bugs Fixed
   Fixed null reference from event killing attacking unit
   Fixed clergy yield display
   Fixed bug with improvements that give city effects (such as luxuries) not getting properly handled when the city changes hands
-  Fixed missing sound issues on Linux / Steam Deck
+  Fixed missing event sounds on Linux / Steam Deck
   Fixed issue with server games on new network system
   Fixed on-hover context menus incorrectly disabling when moving mouse to submenu 
   Fixed events from popping on AI turns 
