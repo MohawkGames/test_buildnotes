@@ -55,3 +55,4 @@ Bugs Fixed
   Fix for scrollbars sometimes not initializing  correctly
   Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
   Fixed inconsistent action list for tribe/player leaders
+  Fixed player getting notified when an agent network is moved in one of their cities.
