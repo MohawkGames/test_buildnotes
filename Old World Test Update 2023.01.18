@@ -5,9 +5,11 @@ Design
   Leveraging luxuries event no longers offers ill or dying courtier candidates
   Cult improvements rebalanced
   Clergy religion bonus lowered from 40 to 20
+  More likely for all players to get ore and horses with balanced starts option
 
 Programming
   Improved AI retreat
+  AI optimization for spreading religion and establishing theologies
 
 UI
   Network system changes re-enabled
@@ -17,6 +19,8 @@ UI
   Scrolling through buttons using arrow keys (or controller) now properly adjusts tooltip display and highlight effects 
   UI adjustments to better accommodate long short-form turn names
   Yield rates now updated when city discontent levels change 
+  Added unit religion to unit tooltip
+  Undo/redo pans the camera for city actions
 
 Bugs Fixed
   Miscellaneous text and event fixes
@@ -31,7 +35,7 @@ Bugs Fixed
   Fixed issue with unit move animations continuing to play when they shouldn't
   Fixed cloud game rewind 
   Fixed turns for returning scout when agent network is moved
-  Fixed innacurate help entries relating to Discontent
+  Fixed inaccurate help entries relating to Discontent
   Fixed trees on coastal tile in Middle East map
   Fixed display of Semesters in Russian
   Fixed null reference from event killing attacking unit
@@ -45,3 +49,9 @@ Bugs Fixed
   Fixed AI getting too many cities for development
   Fixed Sappho portrait
   Removed redundant text on Traders family tooltip
+  Potential fix for double border bug
+  Potential fix for AMD Mac terrain issues
+  Fixed "Pick Later" not working in basic setup for standalone scenarios 
+  Fix for scrollbars sometimes not initializing  correctly
+  Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
+  Fixed inconsistent action list for tribe/player leaders
