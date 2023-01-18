@@ -20,7 +20,6 @@ UI
   UI adjustments to better accommodate long short-form turn names
   Yield rates now updated when city discontent levels change 
   Added unit religion to unit tooltip
-  Undo/redo pans the camera for city actions
 
 Bugs Fixed
   Miscellaneous text and event fixes
