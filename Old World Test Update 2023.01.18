@@ -50,6 +50,7 @@ Bugs Fixed
   Fixed Sappho portrait
   Removed redundant text on Traders family tooltip
   Potential fix for double border bug
+  Potential fix for AMD Mac terrain bug
   Fixed "Pick Later" not working in basic setup for standalone scenarios 
   Fix for scrollbars sometimes not initializing  correctly
   Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
