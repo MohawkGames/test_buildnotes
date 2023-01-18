@@ -2,7 +2,7 @@ Test Branch: 1.0.64886 Test 01/18/2023
 
 Design
   Removed 8 towns ambition from OCC games
-  Leveraging luxuries event no longers offers ill or dying courtier candidates
+  Leveraging luxuries event no longer offers ill or dying courtier candidates
   Cult improvements rebalanced
   Clergy religion bonus lowered from 40 to 20
   More likely for all players to get ore and horses with balanced starts option
@@ -25,7 +25,7 @@ Bugs Fixed
   Miscellaneous text and event fixes
   Fixed connection indicator for network games
   Fixed assert errors on surrendering
-  Fixed attacking with a teammates unit not giving 2 turn cooldown in Strict Players turnstyle
+  Fixed attacking with a teammates unit not giving 2 turn cooldown in Strict Players turn style
   Fixed AI attack targeting bug
   Fixed spelling of Zalpuwan family   
   Fixed religious improvement name icons not showing religion color 
