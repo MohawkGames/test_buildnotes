@@ -1,0 +1,47 @@
+Test Branch: 1.0.64864 Test 01/18/2023
+
+Design
+  Removed 8 towns ambition from OCC games
+  Leveraging luxuries event no longers offers ill or dying courtier candidates
+  Cult improvements rebalanced
+  Clergy religion bonus lowered from 40 to 20
+
+Programming
+  Improved AI retreat
+
+UI
+  Network system changes re-enabled
+  Added progress indicator and additional help for religious council ambitions
+  Added Retry option when cloud games fail to upload
+  Added hidden option to enter cloud game user IDs.  To enable, add 'allowOnlineIDAsUsername=true' to GameOptionsSave.xml.  This allows cross platform cloud games to be started using the players platform ID number.
+  Scrolling through buttons using arrow keys (or controller) now properly adjusts tooltip display and highlight effects 
+  UI adjustments to better accommodate long short-form turn names
+  Yield rates now updated when city discontent levels change 
+
+Bugs Fixed
+  Miscellaneous text and event fixes
+  Fixed connection indicator for network games
+  Fixed assert errors on surrendering
+  Fixed attacking with a teammates unit not giving 2 turn cooldown in Strict Players turnstyle
+  Fixed AI attack targeting bug
+  Fixed spelling of Zalpuwan family   
+  Fixed religious improvement name icons not showing religion color 
+  Fixed replay data being cleared on load
+  Carthage 4 scenario fix, crossing Alps goal now triggers correctly
+  Fixed issue with unit move animations continuing to play when they shouldn't
+  Fixed cloud game rewind 
+  Fixed turns for returning scout when agent network is moved
+  Fixed innacurate help entries relating to Discontent
+  Fixed trees on coastal tile in Middle East map
+  Fixed display of Semesters in Russian
+  Fixed null reference from event killing attacking unit
+  Fixed clergy yield display
+  Fixed bug with improvements that give city effects (such as luxuries) not getting properly handled when the city changes hands
+  Fixed missing sound issues on Linux / Steam Deck
+  Fixed issue with server games on new network system
+  Fixed on-hover context menus incorrectly disabling when moving mouse to submenu 
+  Fixed events from popping on AI turns 
+  Fixed reserved city site sometimes being claimed by an AI during initial development
+  Fixed AI getting too many cities for development
+  Fixed Sappho portrait
+  Removed redundant text on Traders family tooltip
