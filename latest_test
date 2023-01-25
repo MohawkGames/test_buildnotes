@@ -15,7 +15,7 @@ UI
   Network system changes re-enabled
   Added progress indicator and additional help for religious council ambitions
   Added Retry option when cloud games fail to upload
-  Added hidden option to enter cloud game user IDs.  To enable, add 'allowOnlineIDAsUsername=true' to GameOptionsSave.xml.  This allows cross platform cloud games to be started using the players platform ID number.
+  Added hidden option to enter cloud game user IDs.  To enable, add <allowOnlineIDAsUsername>true</allowOnlineIDAsUsername> to GameOptionsSave.xml.  This allows cross platform cloud games to be started using the players platform ID number.
   Scrolling through buttons using arrow keys (or controller) now properly adjusts tooltip display and highlight effects 
   UI adjustments to better accommodate long short-form turn names
   Yield rates now updated when city discontent levels change 
