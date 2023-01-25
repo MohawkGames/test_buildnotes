@@ -1,4 +1,5 @@
 Test Branch: 1.0.64886 Test 01/18/2023
+Test Branch: 1.0.64998 Test 01/25/2023
 
 Design
   Removed 8 towns ambition from OCC games
@@ -55,3 +56,5 @@ Bugs Fixed
   Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
   Fixed inconsistent action list for tribe/player leaders
   Fixed player getting notified when an agent network is moved in one of their cities.
+  Fixed missing Heavy Chariot texture on combat preview
+  Fixed Declare War mission being incorrectly disabled 
