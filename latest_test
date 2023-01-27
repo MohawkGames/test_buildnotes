@@ -55,3 +55,5 @@ Bugs Fixed
   Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
   Fixed inconsistent action list for tribe/player leaders
   Fixed player getting notified when an agent network is moved in one of their cities.
+  Fixed UI issues when dealing with foreign nations
+  Fixed buttons someimes being disabled inadvertently
