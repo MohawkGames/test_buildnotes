@@ -58,6 +58,7 @@ UI
   Added notifications of mod xml issues
   Added turn timer text between turns so players don't expect to be able to act when turn is processing
   Updated Turn Style help
+  Added city yield floating text on start of turn
 
 Bugs Fixed
   Text and event fixes
