@@ -1,7 +1,7 @@
 Test Branch: 1.0.65192 Test 02/01/2023
 
 Design
-  Added Happiness.  Cities now have a Happiness level with positive happiness which changes to a Discontent level when happiness is negative.  
+  Added Happiness.  Cities now have a Happiness level with positive happiness which changes to a Discontent level when happiness is negative.  This changes the presentation of discontent but has no mechanical effect.
   Families get -1 opinion per turn without a leader from that family
   Citizens now give -1 Family Opinion (down from -5)
   Orators now give +1 Order per Friendly city (down from +2)
@@ -60,8 +60,6 @@ UI
 
 Bugs Fixed
   Text and event fixes
-  Possible fix to black holes appearing on terrain on Radeon Macs
-  Possible fix for tooltips sometimes not showing
   Fixed Hide Vegetation not hiding Trees
   Fixed city site green highlight appearing when there is no visibility on site
   Fixed City Luxury Assignment text overlap
