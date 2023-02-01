@@ -16,6 +16,7 @@ Design
   Production cost increase of Settlers, Workers, and Disciples is now per unit type 
   Razing a city gets pillage yields from all improvements before destroying them
   Teenagers can now adopt a religion
+  Scouts in foreign territory that are hidden due to a Schemer leader no longer get pushed out on war declaration
   New Bay mapscript added - temperate coastal map broken up by a large but shallow inland sea 
   The Old World map updated to fix disconnected sea tile that could strand ships
   Imperium Romanum map updated to allow passage between the Bay of Biscay and the Alboran Sea
@@ -98,3 +99,5 @@ Bugs Fixed
   Fixed leader-based stats showing on Records screen with No Characters
   Fixed rivers and surrounding trees flickering on undo
   Fixed mission popups not appearing when not your turn
+  Fixed Ascetic characters having children through events
+  Fixed invalid characters in custom reminders blocking turn end
