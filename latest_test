@@ -1,61 +1,106 @@
-Test Branch: 1.0.64886 Test 01/18/2023
-Test Branch: 1.0.64998 Test 01/25/2023
-Test Branch: 1.0.65075 Test 01/26/2023
+Test Branch: 1.0.65192 Test 02/01/2023
 
 Design
-  Removed 8 towns ambition from OCC games
-  Leveraging luxuries event no longer offers ill or dying courtier candidates
-  Cult improvements rebalanced
-  Clergy religion bonus lowered from 40 to 20
-  More likely for all players to get ore and horses with balanced starts option
+  Added Happiness.  Cities now have a Happiness level with positive happiness which changes to a Discontent level when happiness is negative.  This changes the presentation of discontent but has no mechanical effect.
+  Families get -1 opinion per turn without a leader from that family
+  Citizens now give -1 Family Opinion (down from -5)
+  Orators now give +1 Order per Friendly city (down from +2)
+  Disciples now consume Food 
+  Induct into Clergy now can be applied to all characters except Oligarchs, Dukes, or Princes
+  Removed clergy rating yield bonuses, removed money upkeep cost, religion opinion bonus set to 30
+  Renamed The Great Ziggurat to The Ziggurat 
+  Combat damage now rounds up after collateral modifier instead of before
+  Landowners now get +5 Money per farm instead of +20 Money from Crops 
+  Can no longer stun units in cities or settlements
+  Competitive mode now prevents events that give free Laws without the prerequisite tech
+  Production cost increase of Settlers, Workers, and Disciples is now per unit type 
+  Razing a city gets pillage yields from all improvements before destroying them
+  Teenagers can now adopt a religion
+  Scouts in foreign territory that are hidden due to a Schemer leader no longer get pushed out on war declaration
+  New Bay mapscript added - temperate coastal map broken up by a large but shallow inland sea 
+  The Old World map updated to fix disconnected sea tile that could strand ships
+  Imperium Romanum map updated to allow passage between the Bay of Biscay and the Alboran Sea
 
 Programming
-  Improved AI retreat
-  AI optimization for spreading religion and establishing theologies
+  Memory and performance improvements
+  Reduced performance cost of toggling ruins pickup particle effects when selecting or deselecting units
+  AI economy improvements:
+    Science valued more, Discontent valued less
+    Walls valued less in non-border cities
+    Trees more likely to be preserved for lumbermills
+    Wartime economy no longer triggered just by Tribe wars, allowing development to continue
+    Fixed a bug that caused citizens to be overvalued
+    Avoid placing Courthouses on tiles that can't have adjacent Courthouse class improvements
+    Prefer Granaries and Mills where they have immediate effect to adjacent tiles, instead of potential effect
+  More AI optimizations
+  Fixed AI anchoring bug
+  Correction to AI value for improvements that grant free units
+  Revised AI family selection to take into account the possibility of negative tile modifiers
+  AI effectCity value improvements
+  Parallelized some event and mission calculations to speed up interturn processing
 
 UI
-  Network system changes re-enabled
-  Added progress indicator and additional help for religious council ambitions
-  Added Retry option when cloud games fail to upload
-  Added hidden option to enter cloud game user IDs.  To enable, add <allowOnlineIDAsUsername>true</allowOnlineIDAsUsername> to GameOptionsSave.xml.  This allows cross platform cloud games to be started using the players platform ID number.
-  Scrolling through buttons using arrow keys (or controller) now properly adjusts tooltip display and highlight effects 
-  UI adjustments to better accommodate long short-form turn names
-  Yield rates now updated when city discontent levels change 
-  Added unit religion to unit tooltip
+  Removed workshop mod subscription check when there are no mod subscriptions
+  For server games, entering an incorrect host password no longer joins the game without host access
+  New console command: addcharacter CHARACTER_TYPE (playerID) (FAMILY_TYPE)
+  Reduced size of hamlet development world text
+  Description of effect for defending family units updated
+  Added UI support for toggling DLCs on a per game basis in Advanced setup
+  Revised competitive mode help text 
+  Custom reminder now shown in turn summary
+  Play/Win LAN mode achievements have been combined with Play/Win Network mode. Network OR LAN mode now give the Network achievements
+  New achievement added - The Royal Couple
+  Reversed Units Killed ranking in Records screen - you are now allocated a higher rank for losing less units.
+  Show disabled wonders with an appropriate explanation tooltip if the Wonder filter is selected 
+  Removed multiplayer network games that are still active are re-listed automatically 
+  City widgets are now updated after council assignments to account for changes in city yields
+  Added subject prereq helptext for job, council, and courtier subjects
+  Added notifications of mod xml issues
+  Added turn timer text between turns so players don't expect to be able to act when turn is processing
+  Updated Turn Style help
+  Added city yield floating text on start of turn
 
 Bugs Fixed
-  Miscellaneous text and event fixes
-  Fixed connection indicator for network games
-  Fixed assert errors on surrendering
-  Fixed attacking with a teammates unit not giving 2 turn cooldown in Strict Players turn style
-  Fixed AI attack targeting bug
-  Fixed spelling of Zalpuwan family   
-  Fixed religious improvement name icons not showing religion color 
-  Fixed replay data being cleared on load
-  Carthage 4 scenario fix, crossing Alps goal now triggers correctly
-  Fixed issue with unit move animations continuing to play when they shouldn't
-  Fixed cloud game rewind 
-  Fixed turns for returning scout when agent network is moved
-  Fixed inaccurate help entries relating to Discontent
-  Fixed trees on coastal tile in Middle East map
-  Fixed display of Semesters in Russian
-  Fixed null reference from event killing attacking unit
-  Fixed clergy yield display
-  Fixed bug with improvements that give city effects (such as luxuries) not getting properly handled when the city changes hands
-  Fixed missing event sounds on Linux / Steam Deck
-  Fixed issue with server games on new network system
-  Fixed on-hover context menus incorrectly disabling when moving mouse to submenu 
-  Fixed events from popping on AI turns 
-  Fixed reserved city site sometimes being claimed by an AI during initial development
-  Fixed AI getting too many cities for development
-  Fixed Sappho portrait
-  Removed redundant text on Traders family tooltip
-  Potential fix for double border bug
-  Potential fix for black holes appearing on terrain for AMD Macs
-  Fixed "Pick Later" not working in basic setup for standalone scenarios 
-  Fix for scrollbars sometimes not initializing  correctly
-  Fixed Stepmother incorrectly displaying as Aunt in Inheritance screen
-  Fixed inconsistent action list for tribe/player leaders
-  Fixed player getting notified when an agent network is moved in one of their cities.
-  Fixed UI issues when dealing with foreign nations
-  Fixed buttons someimes being disabled inadvertently
+  Text and event fixes
+  Potential fix for black holes showing on Radeon Macs
+  Potential fix for tooltips sometimes not appearing
+  Fixed Hide Vegetation not hiding Trees
+  Fixed city site green highlight appearing when there is no visibility on site
+  Fixed City Luxury Assignment text overlap
+  Fixed attack preview not working when hovering over unit banners
+  Fixed some issues with missing nation colors on icons
+  Fixed some context menu behavior 
+  Fixed missing text icons for suppress dissent projects 
+  Fixed null ref/missing reference when changing dropdown options
+  Changed lifetime management and initialization of unit widgets to potentially avoid some errors
+  Fixed state religion goal being offered if the player has that state religion
+  Fixed mission button opinion values being split over two lines 
+  Fixed new cloud game not uploading when loaded from disk and it's not the host's turn
+  Fixed tracker promotion not taking immediate effect
+  Heroes of the Aegean scenario 4 fixes
+  Fixed mission button text issues
+  Fixed some slowdown on MP setup screen
+  Fix for {LANDMARK} event text tag use on maps that use strings for map element names
+  Fixed clear active context menus when clicking off UI
+  Fixed null reference error when dropdown options change
+  Fixed searchable dropdowns not selecting properly
+  Fixed some text issues for games with different players using different languages 
+  Fixes to keep replay data from being discarded
+  Removed error from loading old saves
+  Fixed possible use of rapid clicking to buy orders with legitimacy more than once per turn
+  Fixed occasional text overflow when hovering over city queue progress
+  Fixed some issues with visibility 
+  Fixed some action button hover issues 
+  Fixed highlight effects not working on some context menu buttons
+  MP games browser fix for the new network system
+  Fixed network games not being removed from list on exit
+  Fixed some events not listing all possible requirements
+  Fixed teams turnstyle cloud games uploading on exit, even without ending turn
+  Fixed duplicate text when hovering over the Release General command
+  Fixed popups not being processed by the client in multiplayer
+  Fixed some leader diplomacy missions showing incorrectly
+  Fixed leader-based stats showing on Records screen with No Characters
+  Fixed rivers and surrounding trees flickering on undo
+  Fixed mission popups not appearing when not your turn
+  Fixed Ascetic characters having children through events
+  Fixed invalid characters in custom reminders blocking turn end
