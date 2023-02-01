@@ -62,6 +62,8 @@ UI
 
 Bugs Fixed
   Text and event fixes
+  Potential fix for black holes showing on Radeon Macs
+  Potential fix for tooltips sometimes not appearing
   Fixed Hide Vegetation not hiding Trees
   Fixed city site green highlight appearing when there is no visibility on site
   Fixed City Luxury Assignment text overlap
