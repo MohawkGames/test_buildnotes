@@ -9,7 +9,7 @@ Design
   Induct into Clergy now can be applied to all characters except Oligarchs, Dukes, or Princes
   Removed clergy rating yield bonuses, removed money upkeep cost, religion opinion bonus set to 30
   Renamed The Great Ziggurat to The Ziggurat 
-  Combat damage now rounds up after collateral modifier instead of before
+  Combat damage now rounds up after collateral modifier instead of before.  The effect of this is to increase splash damage (pierce, cleave, shrapnel etc) by 1 in some circumstances.
   Landowners now get +5 Money per farm instead of +20 Money from Crops 
   Can no longer stun units in cities or settlements
   Competitive mode now prevents events that give free Laws without the prerequisite tech
