@@ -1,0 +1,57 @@
+Test Branch: 1.0.65321 Test 02/08/2023
+
+Headline changes
+  Hunters no longer a get bonus to Nets (they still get their Camp bonus)
+  Traders now have +100% Nets output instead of faster Hamlet growth
+  The Lighthouse now gives faster Hamlet growth in all cities instead of +5 money per specialist.
+  Ranged units no longer get a land/water penalty attacking ships, but an extra tile is added to the range for calculating damage.
+
+Design
+
+  Ships no longer have the Brave and Shieldbearer promotions available
+  Stuns works again against tribal camps (but not against units in cities)
+  Bay mapscript updates
+  The Middle East premade map updates
+  Launch Offensive will also reset Rout Cooldown
+  Can swap unit tiles with teammates, even with No Team Movement option selected
+  Added notification to player when someone stealing their research was exposed
+  Preset characters are less likely to become religion heads
+  Disabled the Imprison mission in Heroes of the Aegean scenario 4 
+  Slander mission is now available to use against human players
+  Multiplayer games with more than two teams but only two human teams have the human teams placed at the extreme edges of the map, with AI teams in the center
+
+Programming
+  Better default mapscript support for mods that add new Tribes
+  Removed hardcoded tribe placement from most map scripts
+  Added tribe preferred terrain, used by map scripts for tribe placement
+  Improved tribe placement algorithm
+
+UI
+  Undo/redo no longer clears unit selection
+  Cover Debt warnings for Training/Civics now show up in the Turn Summary 
+  Only trigger city selection sound if not cycling from another city
+  Changed default MP nation to Pick Later.  
+  Removed yieldPositive check from most UI text coloring
+  Moved city widget citizen/specialist/happiness item type assignment to ClientUI.start for easier modding
+
+Bugs Fixed
+  Text and event fixes
+  Fixed death event sort orders
+  Fixed Greece4 save/load bug
+  Fixed tutor notification turn in semester turn scale
+  Fixed error on starting Learn by Playing 2
+  Fixed SteamInput errors on shutdown
+  LTP3 minor text fixes
+  Fixed cloud access errors on server list screen 
+  Fixed Game Uploading popup sticking after setting up server game
+  Fixed server game unloading 
+  Fixed null/missing ref when UI element is destroyed while hovering over it
+  Map scrolling bug fix for controllers
+  Fixed victory conditions ignoring options save and always defaulting to on in MP setup
+  Correction to Civics yield help text
+  Fixed display issue for event bonuses to all cities that differ by culture level
+  Fixed AI sometimes pillaging its own forts
+  Fix for animation sometimes skipping during AI turn
+  Fixed repair preview not accounting for base 1 HP repair 
+  Fixed network games not getting relisted after a network outage 
+  Fixed culture rate/progress not being shown on the culture tooltip of foreign cities with agents
