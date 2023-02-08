@@ -1,7 +1,7 @@
 Test Branch: 1.0.65321 Test 02/08/2023
 
 Headline changes
-  Hunters no longer a get bonus to Nets (they still get their Camp bonus)
+  Hunters no longer get a bonus to Nets (they still get their Camp bonus)
   Traders now have +100% Nets output instead of faster Hamlet growth
   The Lighthouse now gives faster Hamlet growth in all cities instead of +5 money per specialist.
   Ranged units no longer get a land/water penalty attacking ships, but an extra tile is added to the range for calculating damage.
