@@ -31,7 +31,7 @@ UI
   Cover Debt warnings for Training/Civics now show up in the Turn Summary 
   Only trigger city selection sound if not cycling from another city
   Changed default MP nation to Pick Later.  
-  Removed yieldPositive check from most UI text coloring
+  Removed yieldPositive check from most UI text coloring (this fixes negative discontent appearing green instead of red)
   Moved city widget citizen/specialist/happiness item type assignment to ClientUI.start for easier modding
 
 Bugs Fixed
