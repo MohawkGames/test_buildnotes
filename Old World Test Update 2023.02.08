@@ -13,12 +13,12 @@ Design
   Bay mapscript updates
   The Middle East premade map updates
   Launch Offensive will also reset Rout Cooldown
-  Can swap unit tiles with teammates, even with No Team Movement option selected
-  Added notification to player when someone stealing their research was exposed
   Preset characters are less likely to become religion heads
-  Disabled the Imprison mission in Heroes of the Aegean scenario 4 
+  Can swap unit tiles with teammates, even with No Team Movement option selected
   Slander mission is now available to use against human players
   Multiplayer games with more than two teams but only two human teams have the human teams placed at the extreme edges of the map, with AI teams in the center
+  Added notification to player when someone stealing their research was exposed
+  Disabled the Imprison mission in Heroes of the Aegean scenario 4 
 
 Programming
   Better default mapscript support for mods that add new Tribes
