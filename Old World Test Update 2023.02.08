@@ -1,4 +1,5 @@
 Test Branch: 1.0.65321 Test 02/08/2023
+Test Branch: 1.0.65549 Test 02/17/2023
 
 Headline changes
   Hunters no longer get a bonus to Nets (they still get their Camp bonus)
@@ -55,3 +56,7 @@ Bugs Fixed
   Fixed repair preview not accounting for base 1 HP repair 
   Fixed network games not getting relisted after a network outage 
   Fixed culture rate/progress not being shown on the culture tooltip of foreign cities with agents
+  Fixed Council project not providing yields
+  Fixed Old World map starting positions
+  Fixed AIs on teams sometimes not founding starting city
+  Fixed map generation exception
