@@ -1,0 +1,77 @@
+Test Branch: 1.0.65663 Test 02/22/2023
+
+Headline changes
+  Family bonus changes to Traders and Patrons
+  Citizens now give -5 family opinion
+  Added Accessibility option to disable main menu background scrolling
+  Fixes to terrain bugs for AMD Macs
+
+Design
+  Traders now get 2 culture per Specialist instead of per bullion Resource
+  Patrons now get 3 culture per Bullion Resource instead of per specialist
+  Citizens now give -5 family opinion
+  Prevented events featuring characters under age 10 where this would not be appropriate
+  Raiders get less easily distracted by targets that belong to nations other than the one they are supposed to be raiding
+  Starting location improvements for free-for-all games with AI players.  
+  AI players always start beween humans in games with 2 human teams
+  Coastal tribes in Continent and Donut map scripts are no longer necessarily mounted
+  All Sacred and Profane cult improvements are now urban
+  Removed event triggering the ambition to become The Great
+  Increased likelihood of autonomous rule follow-up events 
+  Foreign pagan religions now always appear in religion tab when the player owns a city with that religion
+  Mirror and Balanced Resources added to Bay, Continent, and Donut maps. Balanced Resources added to Seaside. (MP only)
+  Implemented Item traits - some traits are now classified as Items (Monkey Paw, Sword of the Gods etc)
+  Conscripts now have Pierce instead of Cleave
+  Renamed Ratings (Wisdom, Charisma etc) to Attributes. 
+
+Programming
+  Performance optimizations 
+  More robust algorithm for placing free city sites
+  AI military improvements - better order conservation
+  Improvements to network connectivity
+
+UI
+  Updated Happiness icon
+  Alt-hover gives damage preview against non-hostile units 
+  Added Accessibility option to disable main menu background scrolling
+  Changed context menus to expand downwards by default instead of upwards
+  Movement pips are now shown for allied tribe units 
+  Enabled mods and game version now shown in game parameters
+  LAN matches no longer shown on main menu, only on the LAN games browser
+  Event Browser redesign and improvements
+  Always show all options in Play by Cloud username dropdown, with options that match input field sorted to the top (Steam only)
+  Changed the in-event text for a mission triggered via a mission from 'Mission Finished:' to 'Mission Result:
+  Added icon to MP game browser linking to Discord
+  Tweak to Discontent/Happiness display when city yield is negative
+  Remote servers of a different version are now excluded from the list of them
+  Games hosted by remote server update the game's server password 
+  Clear selection hotkey also clears tech tree and other screens
+  Allow hotkeys to function when research popup is up 
+
+Bugs Fixed  
+  Fixed Mac AMD bug with missing terrain
+  Potential fix for Mac AMD terrain holes
+  Fixed some button-text click interactions
+  Fixed agent icon on city widget not appearing for teammate agents
+  Fixed tribe alliance visibility issue 
+  Fixed host connection indicator in MP clients
+  Fixed unit movement rings display for teammates with No Team Movement option enabled
+  Fixed issue where tile widgets showed specialists on tiles without resources after entering/exiting a city with the Resource Improvements overlay toggled 
+  Fixed bug allowing leader to also be the heir  
+  Fixed rare Heroes of the Aegean sceanrio 1 bug granting victory on turn 2
+  Fixed popups breaking the undo/redo queue
+  Fixed ALT for tooltip not working when hovering over city links 
+  Fixed Barbarian Horde scenario not appearing in MP setup
+  Fixed city money display bug 
+  Fixed Continent and Donut map script player start restrictions which sometimes were impossible to fulfill
+  Fixed events not being deterministic 
+  Fixed icons sometimes not showing on loading screen tips
+  Fixed replay data getting discarded for no reason - should help with cases where replay doesn't work after loading a save
+  Fixed the AI unlimbering when it's better to heal
+  Fixed AI declaring war on tribes for no reason 
+  Fixed out of date Aristocracy help text
+  Fixed owned DLC always getting enabled when loading a save where it had been disabled
+  Fixed text bug - different -> smiliar when opinion modifier is positive
+  Fixed luxuries panel potentially going off screen at high HUD scale
+  Fixed potential crash when razing a city - caused an issue in Heroes of the Aegean scenario 5.
+  Text and event fixes
