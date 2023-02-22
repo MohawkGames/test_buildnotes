@@ -13,7 +13,7 @@ Design
   Prevented events featuring characters under age 10 where this would not be appropriate
   Raiders get less easily distracted by targets that belong to nations other than the one they are supposed to be raiding
   Starting location improvements for free-for-all games with AI players.  
-  AI players always start beween humans in games with 2 human teams
+  AI players always start between humans in games with 2 human teams
   Coastal tribes in Continent and Donut map scripts are no longer necessarily mounted
   All Sacred and Profane cult improvements are now urban
   Removed event triggering the ambition to become The Great
@@ -58,7 +58,7 @@ Bugs Fixed
   Fixed unit movement rings display for teammates with No Team Movement option enabled
   Fixed issue where tile widgets showed specialists on tiles without resources after entering/exiting a city with the Resource Improvements overlay toggled 
   Fixed bug allowing leader to also be the heir  
-  Fixed rare Heroes of the Aegean sceanrio 1 bug granting victory on turn 2
+  Fixed rare Heroes of the Aegean scenario 1 bug granting victory on turn 2
   Fixed popups breaking the undo/redo queue
   Fixed ALT for tooltip not working when hovering over city links 
   Fixed Barbarian Horde scenario not appearing in MP setup
@@ -71,7 +71,7 @@ Bugs Fixed
   Fixed AI declaring war on tribes for no reason 
   Fixed out of date Aristocracy help text
   Fixed owned DLC always getting enabled when loading a save where it had been disabled
-  Fixed text bug - different -> smiliar when opinion modifier is positive
+  Fixed text bug - different -> simliar when opinion modifier is positive
   Fixed luxuries panel potentially going off screen at high HUD scale
   Fixed potential crash when razing a city - caused an issue in Heroes of the Aegean scenario 5.
   Text and event fixes
