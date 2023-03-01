@@ -1,0 +1,67 @@
+Test Branch: 1.0.65816 Test 03/01/2023
+
+Headline changes
+
+
+Design
+  Happiness and Discontent changes are now always positive, as is Maintenance. 
+  Happiness / Discontent level bar always increases the level when filling up and reduces it when emptying
+  Patrons now get +4 Culture/Bullion (up from +3)
+  Clerics now get +1 Happiness (down from +2)
+  Barracks/Ranges now always give XP, even if the unit is on cooldown
+  Agent yield percent now comes from unmodified city yields, excluding percentage bonuses
+  Schemer agent yield bonus is now 10% (down from 20%)
+  Added No Unit Gifting game option to MP
+  New religious units appear on Monasteries, Temples, or Cathedrals instead of the city tile
+
+Programming
+  Memory usage reductions
+  Improvements to network relay server system
+  AI now avoids fortifying and unlimbering on marsh
+  AI fort building adjustment
+  AI somewhat more conservative with its units when not able to get complete kills
+  
+UI
+  Color coding changes to city widget
+  Event Browser search and filter improvements
+  Added reminder for adopting state religion
+  Removed positive + sign from many yields
+  Better handling of failing map script mods. Runtime or compilation failures should not result in main menu failures. 
+  Allowed tab panel to stretch if minimap is minimized 
+
+Bugs Fixed  
+  Fixed player characters adopting a foreign family on marriage
+  Fixed bug with character age sorting
+  Fixed bug where unitialized city screen could appear at start of turn
+  Fixed potential lock on SP setup screen
+  Fixed orders rate not updating UI after Schemer war declaration 
+  Fixed multiple goods gifts not showing in notifications
+  Fixes cloud game failing to upload when illegal characters used in game name
+  Fixed several tooltip scaling issues
+  Fixed city screen and tech screen top offset for different scaling/resolutions 
+  Fixed bugs with Carthage scenarios 1 and 2 which could prevent goals from appearing
+  Fixed bug with specialist border expansion preview when cycling away from a city
+  Fixed ZOC overlay for mounted units
+  Fixed polygamy bug 
+  Fixed issue with inconsistent ping heights
+  Fixed Builder leader stacked workers getting prematurely bounced after finishing an improvement 
+  Fixed map editor errors
+  Fixed issue where ruins particle effect played when selecting foreign units
+  Removed duplicated tecnology entries from the Encyclopedia
+  Critical hit preview option fixes
+  Fixed Unique Unit city build and upgrade help for captured cities with Citadels but not Strong culture
+  Fixed agent yield bug 
+  Fixed Religious Council ambition bug
+  Fixed discontent from governor opinion 
+  Fixed doubled courtier prereq helptext
+  Fixed some tab panel selection/hover issues
+  Fixed some events immediately being invalid upon being triggered when the player has no city yet
+  Fixed AI discontent value
+  Fixed research tech button tooltip exception
+  Removed misleading default green color from "Requires" text in event options
+  Fixed tooltip consistency issues on tech tree status icons
+  Fixed issue where clicks over non-link text would not trigger buttons 
+  Fixed free city site sometimes not being revealed
+  Fixed scrollbar positon not resetting cycling between decisions
+  Event and text fixes
+  
