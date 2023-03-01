@@ -1,77 +1,68 @@
-Test Branch: 1.0.65663 Test 02/22/2023
+Test Branch: 1.0.65823 Test 03/01/2023
 
 Headline changes
-  Family bonus changes to Traders and Patrons
-  Citizens now give -5 family opinion
-  Added Accessibility option to disable main menu background scrolling
-  Fixes to terrain bugs for AMD Macs
+  Happiness and Maintenance display changes
+  Family rebalancing
+  Agent yields reduced
 
 Design
-  Traders now get 2 culture per Specialist instead of per bullion Resource
-  Patrons now get 3 culture per Bullion Resource instead of per specialist
-  Citizens now give -5 family opinion
-  Prevented events featuring characters under age 10 where this would not be appropriate
-  Raiders get less easily distracted by targets that belong to nations other than the one they are supposed to be raiding
-  Human players now start far away from each other in free for all games unless they are on the same team
-  AI players always start between humans in games with 2 human teams
-  Coastal tribes in Continent and Donut map scripts are no longer necessarily mounted
-  All Sacred and Profane cult improvements are now urban
-  Removed event triggering the ambition to become The Great
-  Increased likelihood of autonomous rule follow-up events 
-  Foreign pagan religions now always appear in religion tab when the player owns a city with that religion
-  Mirror and Balanced Resources added to Bay, Continent, and Donut maps. Balanced Resources added to Seaside. (MP only)
-  Implemented Item traits - some traits are now classified as Items (Monkey Paw, Sword of the Gods etc)
-  Conscripts now have Pierce instead of Cleave
-  Renamed Ratings (Wisdom, Charisma etc) to Attributes. 
+  Happiness and Discontent changes are now always positive, as is Maintenance. 
+  Happiness / Discontent level bar always increases the level when filling up and reduces it when emptying
+  Patrons now get +4 Culture/Bullion (up from +3)
+  Clerics now get +1 Happiness (down from +2)
+  Agent yield percent now comes from unmodified city yields, excluding city percentage bonuses
+  Schemer agent yield bonus is now 10% (down from 20%)
+  Barracks/Ranges now always give XP, even if the unit is on cooldown
+  Added No Unit Gifting game option to MP
+  New religious units appear on Monasteries, Temples, or Cathedrals instead of the city tile
 
 Programming
-  Performance optimizations 
-  More robust algorithm for placing free city sites
-  AI military improvements - better order conservation
-  Improvements to network connectivity
-
+  Memory usage reductions
+  Improvements to network relay server system
+  AI now avoids fortifying and unlimbering on marsh
+  AI fort building adjustment
+  AI somewhat more conservative with its units when not able to get complete kills
+  
 UI
-  Updated Happiness icon
-  Alt-hover gives damage preview against non-hostile units 
-  Added Accessibility option to disable main menu background scrolling
-  Changed context menus to expand downwards by default instead of upwards
-  Movement pips are now shown for allied tribe units 
-  Enabled mods and game version now shown in game parameters
-  LAN matches no longer shown on main menu, only on the LAN games browser
-  Event Browser redesign and improvements
-  Always show all options in Play by Cloud username dropdown, with options that match input field sorted to the top (Steam only)
-  Changed the in-event text for a mission triggered via a mission from 'Mission Finished:' to 'Mission Result:
-  Added icon to MP game browser linking to Discord
-  Tweak to Discontent/Happiness display when city yield is negative
-  Remote servers of a different version are now excluded from the list of them
-  Games hosted by remote server update the game's server password 
-  Clear selection hotkey also clears tech tree and other screens
-  Allow hotkeys to function when research popup is up 
+  Color coding changes to city widget
+  Event Browser search and filter improvements
+  Added reminder for adopting state religion
+  Removed positive + sign from many yields
+  Better handling of failing map script mods. Runtime or compilation failures should not result in main menu failures. 
+  Allowed tab panel to stretch if minimap is minimized 
 
 Bugs Fixed  
-  Fixed Mac AMD bug with missing terrain
-  Potential fix for Mac AMD terrain holes
-  Fixed some button-text click interactions
-  Fixed agent icon on city widget not appearing for teammate agents
-  Fixed tribe alliance visibility issue 
-  Fixed host connection indicator in MP clients
-  Fixed unit movement rings display for teammates with No Team Movement option enabled
-  Fixed issue where tile widgets showed specialists on tiles without resources after entering/exiting a city with the Resource Improvements overlay toggled 
-  Fixed bug allowing leader to also be the heir  
-  Fixed rare Heroes of the Aegean scenario 1 bug granting victory on turn 2
-  Fixed popups breaking the undo/redo queue
-  Fixed ALT for tooltip not working when hovering over city links 
-  Fixed Barbarian Horde scenario not appearing in MP setup
-  Fixed city money display bug 
-  Fixed Continent and Donut map script player start restrictions which sometimes were impossible to fulfill
-  Fixed events not being deterministic 
-  Fixed icons sometimes not showing on loading screen tips
-  Fixed replay data getting discarded for no reason - should help with cases where replay doesn't work after loading a save
-  Fixed the AI unlimbering when it's better to heal
-  Fixed AI declaring war on tribes for no reason 
-  Fixed out of date Aristocracy help text
-  Fixed owned DLC always getting enabled when loading a save where it had been disabled
-  Fixed text bug - different -> simliar when opinion modifier is positive
-  Fixed luxuries panel potentially going off screen at high HUD scale
-  Fixed potential crash when razing a city - caused an issue in Heroes of the Aegean scenario 5.
-  Text and event fixes
+  Fixed player characters adopting a foreign family on marriage
+  Fixed bug with character age sorting
+  Fixed bug where uninitialized city screen could appear at start of turn
+  Fixed potential lock on SP setup screen
+  Fixed orders rate not updating UI after Schemer war declaration 
+  Fixed multiple goods gifts not showing in notifications
+  Fixes cloud game failing to upload when illegal characters used in game name
+  Fixed several tooltip scaling issues
+  Fixed city screen and tech screen top offset for different scaling/resolutions 
+  Fixed bugs with Carthage scenarios 1 and 2 which could prevent goals from appearing
+  Fixed bug with specialist border expansion preview when cycling away from a city
+  Fixed ZOC overlay for mounted units
+  Fixed polygamy bug 
+  Fixed issue with inconsistent ping heights
+  Fixed Builder leader stacked workers getting prematurely bounced after finishing an improvement 
+  Fixed map editor errors
+  Fixed issue where ruins particle effect played when selecting foreign units
+  Removed duplicated technology entries from the Encyclopedia
+  Critical hit preview option fixes
+  Fixed Unique Unit city build and upgrade help for captured cities with Citadels but not Strong culture
+  Fixed agent yield bug 
+  Fixed Religious Council ambition bug
+  Fixed discontent from governor opinion 
+  Fixed doubled courtier prereq helptext
+  Fixed some tab panel selection/hover issues
+  Fixed some events immediately being invalid upon being triggered when the player has no city yet
+  Fixed AI discontent value
+  Fixed research tech button tooltip exception
+  Removed misleading default green color from "Requires" text in event options
+  Fixed tooltip consistency issues on tech tree status icons
+  Fixed issue where clicks over non-link text would not trigger buttons 
+  Fixed free city site sometimes not being revealed
+  Fixed scrollbar position not resetting cycling between decisions
+  Event and text fixes
