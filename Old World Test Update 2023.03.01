@@ -34,7 +34,7 @@ UI
 Bugs Fixed  
   Fixed player characters adopting a foreign family on marriage
   Fixed bug with character age sorting
-  Fixed bug where unitialized city screen could appear at start of turn
+  Fixed bug where uninitialized city screen could appear at start of turn
   Fixed potential lock on SP setup screen
   Fixed orders rate not updating UI after Schemer war declaration 
   Fixed multiple goods gifts not showing in notifications
@@ -49,7 +49,7 @@ Bugs Fixed
   Fixed Builder leader stacked workers getting prematurely bounced after finishing an improvement 
   Fixed map editor errors
   Fixed issue where ruins particle effect played when selecting foreign units
-  Removed duplicated tecnology entries from the Encyclopedia
+  Removed duplicated technology entries from the Encyclopedia
   Critical hit preview option fixes
   Fixed Unique Unit city build and upgrade help for captured cities with Citadels but not Strong culture
   Fixed agent yield bug 
@@ -64,5 +64,5 @@ Bugs Fixed
   Fixed tooltip consistency issues on tech tree status icons
   Fixed issue where clicks over non-link text would not trigger buttons 
   Fixed free city site sometimes not being revealed
-  Fixed scrollbar positon not resetting cycling between decisions
+  Fixed scrollbar position not resetting cycling between decisions
   Event and text fixes
