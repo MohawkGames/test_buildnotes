@@ -1,16 +1,18 @@
 Test Branch: 1.0.65816 Test 03/01/2023
 
 Headline changes
-
+  Happiness and Maintenance display changes
+  Family rebalancing
+  Agent yields reduced
 
 Design
   Happiness and Discontent changes are now always positive, as is Maintenance. 
   Happiness / Discontent level bar always increases the level when filling up and reduces it when emptying
   Patrons now get +4 Culture/Bullion (up from +3)
   Clerics now get +1 Happiness (down from +2)
-  Barracks/Ranges now always give XP, even if the unit is on cooldown
   Agent yield percent now comes from unmodified city yields, excluding percentage bonuses
   Schemer agent yield bonus is now 10% (down from 20%)
+  Barracks/Ranges now always give XP, even if the unit is on cooldown
   Added No Unit Gifting game option to MP
   New religious units appear on Monasteries, Temples, or Cathedrals instead of the city tile
 
@@ -64,4 +66,3 @@ Bugs Fixed
   Fixed free city site sometimes not being revealed
   Fixed scrollbar positon not resetting cycling between decisions
   Event and text fixes
-  
