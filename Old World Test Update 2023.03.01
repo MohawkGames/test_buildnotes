@@ -10,7 +10,7 @@ Design
   Happiness / Discontent level bar always increases the level when filling up and reduces it when emptying
   Patrons now get +4 Culture/Bullion (up from +3)
   Clerics now get +1 Happiness (down from +2)
-  Agent yield percent now comes from unmodified city yields, excluding percentage bonuses
+  Agent yield percent now comes from unmodified city yields, excluding city percentage bonuses
   Schemer agent yield bonus is now 10% (down from 20%)
   Barracks/Ranges now always give XP, even if the unit is on cooldown
   Added No Unit Gifting game option to MP
