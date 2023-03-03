@@ -8,6 +8,8 @@ Headline changes
 Design
   Happiness and Discontent changes are now always positive, as is Maintenance. 
   Happiness / Discontent level bar always increases the level when filling up and reduces it when emptying
+  Cities now start at Discontent Level 1 (instead of halfway through Level 0, which has been removed)
+  Champions Seat now gets +50% Training (up from 25%)
   Patrons now get +4 Culture/Bullion (up from +3)
   Clerics now get +1 Happiness (down from +2)
   Agent yield percent now comes from unmodified city yields, excluding city percentage bonuses
