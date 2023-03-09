@@ -1,5 +1,6 @@
 Test Branch: 1.0.65823 Test 03/01/2023
 Test Branch: 1.0.65694 Test 03/08/2023
+Test Hotfix: 1.0.66006 Test 03/09/2023
 
 Headline changes
   Happiness and Maintenance display changes
@@ -70,3 +71,4 @@ Bugs Fixed
   Fixed free city site sometimes not being revealed
   Fixed scrollbar position not resetting cycling between decisions
   Event and text fixes
+  Fixed a crash bug in Heroes of the Aegean scenario 1
