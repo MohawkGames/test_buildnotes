@@ -2,7 +2,9 @@ Test Branch: 1.0.66119 Test 03/15/2023
 
 Headline changes
   More family rebalancing
-  Improvement pings system added for ease of city planning
+  Improvement pings system added. City planning just got a lot easier!
+  Text for all language localizations updated
+  Memory optimizations
 
 Design
   Cleric seat no longer gets a free Religion on founding.  Instead they get access to a one-time city project which founds a religion, available at Developing culture.
@@ -24,11 +26,11 @@ Programming
   Improved AI getting out of the way of its own units for retreat
   AI is more frugal with its yield expenses
   AI more likely to choose Tacticians and Zealots as generals
-  Moved recruit mercenary legitimacy cost, city build queue decay rate and promotion cost per XP to XML
+  Exposed recruit mercenary legitimacy cost, city build queue decay rate and promotion cost per XP to XML
   Optimized load time of Event Browser
   
 UI
-  Improvement pings system added.  Click on a tile while holding Alt and select the down arrow.  City planning just got a lot easier!
+  Improvement pings system added.  Click on a tile while holding Alt and select the down arrow. This allows you to plan out your city layout visually.  
   Text for all language localizations updated
   Added hotkey (by default '/' ) to show known visibility of other players.  Select another player and press hotkey to highlight tiles they have visibility on.
   Added UX to explain to players how to resume construction of a wonder 
@@ -41,6 +43,7 @@ UI
   Scenario screen background can change per scenario
   Nation help text no longer shows irrelevant information
   Added URL field to characters.  Some historical characters now have a globe symbol which can be clicked for more information about them.
+  Undo turn now skips animations for each move.
   
 Bugs Fixed 
   Fixed requirements text sometimes showing in the wrong color
