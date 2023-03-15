@@ -1,0 +1,76 @@
+Test Branch: 1.0.66119 Test 03/15/2023
+
+Headline changes
+  More family rebalancing
+  Improvement pings system added for ease of city planning
+
+Design
+  Cleric seat no longer gets a free Religion on founding.  Instead they get access to a one-time city project which founds a religion, available at Developing culture.
+  Trader cities get Money per Specialist instead of Culture
+  Sage cities now get a free Archive I and lose the Urban Specialist Cost discount
+  Statesmen cities get a -25% Specialist Resource Cost and lose the free Treasury I
+  Bullion Resources have been renamed to Precious Resources.  Map scripts amended to make these resources more common.
+  Discontent penalty for having more citizens than urban tiles removed.
+  Stunned cooldown now reduces at the start of the player's turn instead of the end.  This prevents teammates from using a stunned unit later in the same turn.
+  Stunned cooldown now changes to Attacked Cooldown after one turn, for UI clarity.
+  Damaged Tribal cities no longer produce units
+  Hurried builds now never have production overflow
+  Eliminated players auto-gift units and goods to closest teammate
+  Seaside map script improvements 
+  Better city site generation with hopefully fewer all-flat boring starts
+  
+Programming
+  Memory optimizations
+  Improved AI getting out of the way of its own units for retreat
+  AI is more frugal with its yield expenses
+  AI more likely to choose Tacticians and Zealots as generals
+  Moved recruit mercenary legitimacy cost, city build queue decay rate and promotion cost per XP to XML
+  Optimized load time of Event Browser
+  
+UI
+  Improvement pings system added.  Click on a tile while holding Alt and select the down arrow.  City planning just got a lot easier!
+  Text for all language localizations updated
+  Added hotkey (by default '/' ) to show known visibility of other players.  Select another player and press hotkey to highlight tiles they have visibility on.
+  Added UX to explain to players how to resume construction of a wonder 
+  Improved ping interactions with animated resources
+  Scrollbar position now reset when cycling between decisions
+  Improved clarity of city happiness and discontent bar when level is decreasing
+  Added outlines to yield progress text on city screen, for readability on happiness bar
+  Added more descriptive text on religion tab for unfounded religions
+  Wonders are sorted by culture and appear after other improvements in worker actions
+  Scenario screen background can change per scenario
+  Nation help text no longer shows irrelevant information
+  Added URL field to characters.  Some historical characters now have a globe symbol which can be clicked for more information about them.
+  
+Bugs Fixed 
+  Fixed requirements text sometimes showing in the wrong color
+  Fixed issue on Epic build that would cause mouse inputs to sometimes not work as intended
+  Fixed issues with national alliance vision
+  Fixed Capture Three City ambition for OCC 
+  Fixed Barracks helptext still showing the requirement for a unit to be idle in order to gain XP
+  Fixed city widget happiness color not applying in some cases
+  Fixed low level specialist being lost when upgrading improvement
+  Fixed issue where anchoring radii were culled when they shouldn't be
+  Fixed issues with happiness/discontent display
+  Fixed filename inside zipped save files
+  Fixed AI being too cautious when capturing cities and sites
+  Fixed Elephant Panic messing with AI danger tiles cache
+  Fixed AI build hurrying
+  Fixed yield previews sometimes getting stuck
+  Fixed bug with production overflow
+  Fixed movement pips initializing with wrong rotation
+  Fix tribe succession issues
+  Fixed bug with display of culture requirements for free city projects in events
+  Fixed some units with the siege trait not showing up under the siege filter
+  Fixed missing subtitle on Barbarian Horde scenario and updated rules text
+  Fixed display of city gift and luxury menus
+  Fixed bug with locked save remote server hosting
+  Fixed bug with Improvements that give Legitimacy 
+  Fixed inconsistent specialist background color on city screen city widget
+  Fixed bug with animal model display when hiding units
+  Fixed map pings appearing for all players in MP
+  Fixed yield rates not updating when connecting hamlets
+  Fixed tooltip positioning null reference on research popup
+  Fixed unit cycling after closing popup
+  Fixed end turn button effect not persisting in some cases 
+  Fixed bug with only one custom mapscript showing
