@@ -15,7 +15,7 @@ Design
   Discontent penalty for having more citizens than urban tiles removed.
   Stunned cooldown now reduces at the start of the player's turn instead of the end.  This prevents teammates from using a stunned unit later in the same turn.
   Stunned cooldown now changes to Attacked Cooldown after one turn, for UI clarity.
-  Damaged Tribal cities no longer produce units
+  Damaged Tribal cities no longer produce units.  This only affects cities taken over by Tribes, not Tribal camps.
   Hurried builds now never have production overflow
   Eliminated players auto-gift units and goods to closest teammate
   Seaside map script improvements 
