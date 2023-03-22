@@ -63,5 +63,6 @@ Bugs Fixed
   Fixed Heroes of the Aegean scenario 6 nations not displaying correctly in the Hall of Fame
   Fixed distant raids spawning in inaccessible locations
   Fixed research button widget error
-  Fixed issues with holding Alt to see a damage preview for non hostile units.  Now works inside neutral borders and with other nations units selected.
+  Fixed issues with holding Alt to see a damage preview for non hostile units.  Now works inside neutral borders and with other nations units selected
+  Fixed mission audio sometimes not playing
   Text and event fixes
