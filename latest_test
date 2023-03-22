@@ -1,79 +1,68 @@
-Test Branch: 1.0.66119 Test 03/15/2023
+Test Branch: 1.0.66263 Test 03/22/2023
 
 Headline changes
-  More family rebalancing
-  Improvement pings system added. City planning just got a lot easier!
-  Text for all language localizations updated
-  Memory optimizations
+  New events added
+  Raider AI improved 
+  Many UI improvements
 
 Design
-  Cleric seat no longer gets a free Religion on founding.  Instead they get access to a one-time city project which founds a religion, available at Developing culture.
-  Trader cities get Money per Specialist instead of Culture
-  Sage cities now get a free Archive I and lose the Urban Specialist Cost discount
-  Statesmen cities get a -25% Specialist Resource Cost and lose the free Treasury I
-  Bullion Resources have been renamed to Precious Resources.  Map scripts amended to make these resources more common.
-  Discontent penalty for having more citizens than urban tiles removed.
-  Stunned cooldown now reduces at the start of the player's turn instead of the end.  This prevents teammates from using a stunned unit later in the same turn.
-  Stunned cooldown now changes to Attacked Cooldown after one turn, for UI clarity.
-  Damaged Tribal cities no longer produce units.  This only affects cities taken over by Tribes, not Tribal camps.
-  Hurried builds now never have production overflow
-  Eliminated players auto-gift units and goods to closest teammate
-  Seaside map script improvements 
-  Better city site generation with hopefully fewer all-flat boring starts
+  Cities captured by a tribe start at 50% HP
+  Fixed the random seed for some event bonuses, to reduce undoing and redoing moves in a different order giving a different result
+  
+New Events
+  Research at Rest
+  Three Days of Solace
+  On the Payroll
+  Fled in the Night
+  Sorry State of Furnishings
+  New Strings
+  Building Better Governors
+  Governor School
+  Governor Training
+  Heart of the Empire
+  Glory and Heroes
+  Tales Spread
+  Rule of Wisdom
+  Sow Discord
   
 Programming
-  Memory optimizations
-  Improved AI getting out of the way of its own units for retreat
-  AI is more frugal with its yield expenses
-  AI more likely to choose Tacticians and Zealots as generals
-  Exposed recruit mercenary legitimacy cost, city build queue decay rate and promotion cost per XP to XML
-  Optimized load time of Event Browser
+  Improved raider priorities.  They will now move to the target city and are then free to attack units and pillage rather than just attack the city.
+  AI now properly takes into account the yield consumption cost of free units  
+  Better support for cloud games with multiple players having the same online ID
   
 UI
-  Improvement pings system added.  Click on a tile while holding Alt and select the down arrow. This allows you to plan out your city layout visually.  
-  Text for all language localizations updated
-  Added hotkey (by default '/' ) to show known visibility of other players.  Select another player and press hotkey to highlight tiles they have visibility on.
-  Added UX to explain to players how to resume construction of a wonder 
-  Improved ping interactions with animated resources
-  Scrollbar position now reset when cycling between decisions
-  Improved clarity of city happiness and discontent bar when level is decreasing
-  Added outlines to yield progress text on city screen, for readability on happiness bar
-  Added more descriptive text on religion tab for unfounded religions
-  Wonders are sorted by culture and appear after other improvements in worker actions
-  Scenario screen background can change per scenario
-  Nation help text no longer shows irrelevant information
-  Added URL field to characters.  Some historical characters now have a globe symbol which can be clicked for more information about them.
-  Undo turn now skips animations for each move.
+  Advanced Options in Single Player setup are now organized by category
+  Improvement ping enhancements.  They now show yields and are dimmed if they cannot be built yet. 
+  Pings with a reminder turn now show on the map
+  Event Browser tab improvements
+  Rival player visibility overlay hotkey works with a selected rival unit as well as a selected rival player
+  Placeholder icon added for Rival Player visibility overlay
+  Added icon for Found Religion project
+  Initial tech tree screen position now based on current tech
+  Removed advanced options from Heroes of the Aegean scenarios that didn't do anything
+  Added more custom backgrounds to scenario screens
+  Law adoption added to timeline
+  Added lines for opinion thresholds on family opinion graphs
+  Added subtotal to city yields tooltip, if that yield is being modified 
+  When a theology is established, the establishing nation is now shown in the turn summary message
   
 Bugs Fixed 
-  Fixed requirements text sometimes showing in the wrong color
-  Fixed issue on Epic build that would cause mouse inputs to sometimes not work as intended
-  Fixed issues with national alliance vision
-  Fixed Capture Three City ambition for OCC 
-  Fixed Barracks helptext still showing the requirement for a unit to be idle in order to gain XP
-  Fixed city widget happiness color not applying in some cases
-  Fixed low level specialist being lost when upgrading improvement
-  Fixed issue where anchoring radii were culled when they shouldn't be
-  Fixed issues with happiness/discontent display
-  Fixed filename inside zipped save files
-  Fixed AI being too cautious when capturing cities and sites
-  Fixed Elephant Panic messing with AI danger tiles cache
-  Fixed AI build hurrying
-  Fixed yield previews sometimes getting stuck
-  Fixed bug with production overflow
-  Fixed movement pips initializing with wrong rotation
-  Fix tribe succession issues
-  Fixed bug with display of culture requirements for free city projects in events
-  Fixed some units with the siege trait not showing up under the siege filter
-  Fixed missing subtitle on Barbarian Horde scenario and updated rules text
-  Fixed display of city gift and luxury menus
-  Fixed bug with locked save remote server hosting
-  Fixed bug with Improvements that give Legitimacy 
-  Fixed inconsistent specialist background color on city screen city widget
-  Fixed bug with animal model display when hiding units
-  Fixed map pings appearing for all players in MP
-  Fixed yield rates not updating when connecting hamlets
-  Fixed tooltip positioning null reference on research popup
-  Fixed unit cycling after closing popup
-  Fixed end turn button effect not persisting in some cases 
-  Fixed bug with only one custom mapscript showing
+  Fixed bug with number of Barbarian camps spawned around player start
+  Fixed some luxury menu overlap issues in Russian/German
+  Fixed AI getting Legitimacy in No Characters games
+  Fixed city tooltip sometimes not updating
+  Fixed bugs with coastal improvement orientation
+  Fixed citrus trees missing from groves
+  Fixed elephant resource model animation
+  Fixed scrolling sometimes not working in mod manager
+  Fix for cycling to a stacked unit not always updating the other stacked unit's banner 
+  Fixed character url links showing in generated character tooltips
+  Fixed cloud game replay turning active player into observer 
+  Fixed incorrect UI yield values when changing from governors with yield-granting traits 
+  Fixes for Heroes of the Aegean scenario 4 discontent 
+  Fixed Heroes of the Aegean scenario 6 nations not displaying correctly in the Hall of Fame
+  Fixed distant raids spawning in inaccessible locations
+  Fixed research button widget error
+  Fixed issues with holding Alt to see a damage preview for non hostile units.  Now works inside neutral borders and with other nations units selected
+  Fixed mission audio sometimes not playing
+  Text and event fixes
