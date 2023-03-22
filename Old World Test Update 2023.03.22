@@ -26,8 +26,8 @@ New Events
   Sow Discord
   
 Programming
-  AI now properly takes into account the yield consumption cost of free units
   Improved raider priorities.  They will now move to the target city and are then free to attack units and pillage rather than just attack the city.
+  AI now properly takes into account the yield consumption cost of free units  
   Better support for cloud games with multiple players having the same online ID
   
 UI
