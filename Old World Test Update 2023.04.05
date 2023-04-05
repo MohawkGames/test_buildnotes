@@ -1,6 +1,9 @@
 Test Branch: 1.0.66468 Test 04/05/2023
 
 Headline changes
+  Added categories and icons to turn summary popup
+  AI improvements
+  Memory optimizations
 
 Design
   Added Mercenary Tribe Units hired to Records screen
@@ -10,12 +13,12 @@ Design
   Events which could give Governor related traits to Generals and vice versa are no longer blocked
   Events which give traits no longer blocked by attribute prerequisites 
   All opinion boosts from Laws are now +20 (previously ranged from +10 to +50)
+  Purge Religion opinion modifier changed to -40 for 20 years (from -20 for 80 years)
   Roman shrines renamed. Vulcan -> Sol, Venus -> Feronia, Vesta -> Ceres, Mars -> Bellona
   Carthage's Shrine of Astarte is now Shrine of Baal Hammon
   Can now only demand tribute from a nation once every 10 turns
   Found religion project production no longer decays faster than other production when queued
   Added fallback ratings to Sacred and Profane traits
-  Purge Religion opinion modifier changed to -40 for 20 years (from -20 for 80 years)
   
 Programming
   AI improvements 
