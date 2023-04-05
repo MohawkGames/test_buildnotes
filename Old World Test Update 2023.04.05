@@ -1,0 +1,62 @@
+Test Branch: 1.0.66468 Test 04/05/2023
+
+Headline changes
+
+Design
+  Added Mercenary Tribe Units hired to Records screen
+  Leaders can no longer be courtiers
+  Cities captured by Tribes start at 0 health and restore 20% per turn
+  Event bonuses which damage units now never kill them
+  Events which could give Governor related traits to Generals and vice versa are no longer blocked
+  Events which give traits no longer blocked by attribute prerequisites 
+  All opinion boosts from Laws are now +20 (previously ranged from +10 to +50)
+  Roman shrines renamed. Vulcan -> Sol, Venus -> Feronia, Vesta -> Ceres, Mars -> Bellona
+  Carthage's Shrine of Astarte is now Shrine of Baal Hammon
+  Can now only demand tribute from a nation once every 10 turns
+  Found religion project production no longer decays faster than other production when queued
+  Added fallback ratings to Sacred and Profane traits
+  Purge Religion opinion modifier changed to -40 for 20 years (from -20 for 80 years)
+  
+Programming
+  AI improvements 
+  Memory optimizations
+  Gendered text refactor
+  Improved code maintenance and thread safety
+  
+UI
+  Added categories and icons to turn summary popup
+  Changed improvement ping (map tacks) popup dropdown to searchable dropdown
+  Cleaned up Carthage campaign advanced options
+  Disabled options button for scenarios where it is not relevant
+  Damage preview for non-hostile units when holding Alt now shows potential damage to cities as well as units 
+  Improved city yield help text
+  Added Ctrl+Click option to agent cities list to sort by city base production
+  Agent cities with no visible info always sorted to the bottom of the list
+  Improved layout of Mods Manage screen
+  + symbol for free promotions now show up even if you don't have orders or unit is on cooldown
+  Steam controller improvements
+  Redo pans the camera to a moving unit's destination tile instead of its start location
+  Changed city widget name/production text to use a less heavy outline/underlay 
+ 
+Bugs Fixed 
+  Fixed highlight behavior for newly-enacted laws 
+  Fixed errors on starting Carthage 3 scenario
+  Fixed game option toggles not appearing in advanced setup for scenarios
+  Fixed family opinion graph issues
+  Fixed issue that prevented Learn To Play 4 scenario from completing correctly when using automated scouts
+  Fixed Alliance Proposal event option showing truce icon instead of alliance icon 
+  Fixed language detection from Epic and Steam
+  Fixed found city incorrectly showing invalid nation tooltip instead of unit/turn warning when not players turn (MP)
+  Fixed team color load/save inconsistency (MP)
+  Fixed improvement ping list not showing lumbermills on cut trees
+  Fixed improvement pings not working correctly with undo/redo
+  Fixed missing requirement warning color coding for a project when all requirements are links
+  Removed outdated hint about lack of urban tiles leading to discontent
+  Fixed city discontent change log help
+  Fixed maximum number of players issues in MP setup
+  Fixed unique nations check in MP setup
+  Fixed tutor event occurring and immediately becoming invalid
+  Fixed current construction yield tooltip flicker
+  Fixed disciple improvement list getting filtered
+  Fixed technology screen tooltip text 
+  Text and event fixes
