@@ -36,7 +36,7 @@ UI
   Added Ctrl+Click option to agent cities list to sort by city base production
   Agent cities with no visible info always sorted to the bottom of the list
   Improved layout of Mods Manage screen
-  + symbol for free promotions now show up even if you don't have orders or unit is on cooldown
+  + symbol for free promotions now shown even if you don't have orders or unit is on cooldown
   Steam controller improvements
   Redo pans the camera to a moving unit's destination tile instead of its start location
   Changed city widget name/production text to use a less heavy outline/underlay 
