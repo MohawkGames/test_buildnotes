@@ -10,7 +10,7 @@ Design
   Leaders can no longer be courtiers
   Cities captured by Tribes start at 0 health and restore 20% per turn
   Event bonuses which damage units now never kill them
-  Events which could give Governor related traits to Generals and vice versa are no longer blocked
+  Events which could give Governor or General related traits to characters ineligble for that role are no longer blocked
   Events which give traits no longer blocked by attribute prerequisites 
   All opinion boosts from Laws are now +20 (previously ranged from +10 to +50)
   Purge Religion opinion modifier changed to -40 for 20 years (from -20 for 80 years)
