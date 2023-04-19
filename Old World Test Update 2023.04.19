@@ -1,0 +1,27 @@
+Test Branch: 1.0.66664 Test 04/19/2023
+
+Design
+  Multiple Continents map script improvements.  It now places continents right and left which works better with mirror and wide map options and is more consistent with other map scripts.
+  Improved player start locations for team games. Teams will be placed near each other and on the same continent where possible
+  Visibility in completed hotseat games is now consistent with other multiplayer modes (the map is revealed after the game is won or lost)
+
+Programming
+  Memory optimizations 
+
+UI
+  Queued production items that are prerequisites for other queued production can now be removed with ctrl+click, which removes all related production from the queue
+  Added UI support for user IDs in cloud game setup to make cross platform cloud games easier to set up
+  Added improvement filter buttons for disciples
+  Steam Input improvements
+ 
+Bugs Fixed 
+  Fixed some issues with production overflow display
+  Fixed issues with family opinion graph on records screen not getting updated
+  Fixed Sacred and Profane event frame not having offsets to avoid blocking the UI on the top bar 
+  Fixed save file browser prompting to delete file when using delete key while the input field is focused
+  Fixed tooltip flicker on city widget
+  Fixed server password field resetting on server list update 
+  Fixed found city archetype help bug 
+  Fixed broken encyclopedia links for religious improvement classes
+  Fixed missing icon for victory messages in turn summary
+  Text and event fixes
