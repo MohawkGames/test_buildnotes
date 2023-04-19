@@ -1,4 +1,4 @@
-Test Branch: 1.0.66664 Test 04/19/2023
+Test Branch: 1.0.66674 Test 04/19/2023
 
 Design
   Multiple Continents map script improvements.  It now places continents right and left which works better with mirror and wide map options and is more consistent with other map scripts.
