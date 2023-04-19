@@ -1,33 +1,27 @@
-Test Branch: 1.0.66611 Test 04/14/2023
+Test Branch: 1.0.66674 Test 04/19/2023
+
+Design
+  Multiple Continents map script improvements.  Continents are now placed east west rather than north south which works better with mirror and wide map options and is more consistent with other map scripts.
+  Improved player start locations for team games. Teams will be placed near each other and on the same continent where possible
+  Visibility in completed hotseat games is now consistent with other multiplayer modes (the map is revealed after the game is won or lost)
 
 Programming
-  Unity version upgrade to 2021.3.22f1
-  Memory optimizations, less memory held when changing save or restarting / generating new map
+  Memory optimizations 
 
 UI
-  Replay now skips animations of your own previous actions
-  Added validator log to Event Browser to check if newly created events are invalid
-  Trait bonuses listed in event text area are now less verbose unless hovered over
-  Steam Deck controller improvements
-  Improved display of production, stockpile yields and breakdowns in city screen and global stockpiles, reflecting overflow & hurrying effects
+  Queued production items that are prerequisites for other queued production can now be removed with ctrl+click, which removes all related production from the queue
+  Added UI support for user IDs in cloud game setup to make cross platform cloud games easier to set up
+  Added improvement filter buttons for disciples
+  Steam Input improvements
  
 Bugs Fixed 
-  Fixed music manager null reference 
-  Fixed issue causing undo to perform slowly in Learn to Play 4
-  Fixed tab panel tooltips overlapping right-click missions menu
-  Tooltip sizing fix
-  Learn to Play text fixes
-  Fixed player opinion UI not updating when player leader opinion changes 
-  Fixed theology display showing in former religion slot after adopting state religion
-  Fixed tile overlay widgets sometimes appearing on invalid tiles
-  Fixed hover targeting issue for mission indicators
-  Fixed multiple instances of Shrines by having your teammate build them for you 
-  Fixed hidden stacked units not being revealed when they should have been
-  Fixed duplicate tribe leader in Carthage 4 scenario
-  Fixed player list text not updating after changes in alliance status
-  Fixed intermittent overlay button click handling issues
-  Fixed icons in loading screen hints
-  Fixed Event Browser causing input issues when loading a game
-  Fixed free promotion icon showing on non-player units
-  Fixed turn summary popup showing at incorrect time in hotseat
+  Fixed some issues with production overflow display
+  Fixed issues with family opinion graph on records screen not getting updated
+  Fixed Sacred and Profane event frame not having offsets to avoid blocking the UI on the top bar 
+  Fixed save file browser prompting to delete file when using delete key while the input field is focused
+  Fixed tooltip flicker on city widget
+  Fixed server password field resetting on server list update 
+  Fixed found city archetype help bug 
+  Fixed broken encyclopedia links for religious improvement classes
+  Fixed missing icon for victory messages in turn summary
   Text and event fixes
