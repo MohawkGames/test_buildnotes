@@ -1,7 +1,7 @@
 Test Branch: 1.0.66674 Test 04/19/2023
 
 Design
-  Multiple Continents map script improvements.  It now places continents right and left which works better with mirror and wide map options and is more consistent with other map scripts.
+  Multiple Continents map script improvements.  Continents are now placed east west rather than north south which works better with mirror and wide map options and is more consistent with other map scripts.
   Improved player start locations for team games. Teams will be placed near each other and on the same continent where possible
   Visibility in completed hotseat games is now consistent with other multiplayer modes (the map is revealed after the game is won or lost)
 
