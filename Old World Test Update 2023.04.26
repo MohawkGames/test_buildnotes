@@ -1,11 +1,11 @@
-Test Branch: 1.0.667?? Test 04/26/2023
+Test Branch: 1.0.66763 Test 04/26/2023
 
 Design
   New mapscript - Desert
   Hardwood Forest mapscript redesign. More Tundra and Mountains in the north and more resources in the south.
   Can no longer use a unit to swap positions with an adjacent unit if it has no fatigue left
   Removed mirror map option from Multiple Continents 3-continent option in MP setup
-  Generals can no longer be re-assigned on the same turn as the unit they are leading is killed (only affects network MP)
+  Generals can no longer be reassigned on the same turn as the unit they are leading is killed (only affects network MP)
   Tweaked event occurrence rates
 
 Programming
@@ -14,7 +14,7 @@ Programming
   Fixed AI anchoring indecision
   
 UI
-  Iprovement filters are now stored separately by unit type (i.e. workers and disciples)
+  Improvement filter selection is now stored separately by unit type (i.e. workers and disciples)
   Skull icon will now be shown on units that will be killed by splash damage in attack preview
   
 Bugs Fixed 
