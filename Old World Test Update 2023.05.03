@@ -1,0 +1,27 @@
+Test Branch: 1.0.66853 Test 05/03/2023
+
+Design
+  Build Wonder ambitions no longer fail when a Wonder is started by another nation. Instead, they fail when the Wonder has been completed.
+
+Programming
+  Improved AI tile improvement selection to better account for adjacency bonuses
+  
+UI
+  Steam input updates
+  
+Bugs Fixed 
+  Fixed crash affecting some Windows 7 PCs
+  Fixed Head of Pagan Religion starting off dead in the Learn to Play 5 scenario
+  Fixed crash caused by trying to start a caravan mission with no target player 
+  Fixed Steam achievements not syncing to local options file
+  Fixed music player icon highlight behavior
+  Fixed camera controls activating when navigating buttons and added restrictions on when and where button navigation is active. WASD no longer scrolls tech screen.
+  Fixed MP issues caused by authentication timeouts
+  Fixed AI/UI threading issue
+  Fixed rendering issue when navigating through buttons at some scales 
+  Fixed turn summary appearing before the turn has been fully processed
+  Fixed expanded tooltips collapsing when locking with middle mouse button
+  Fixed character action menu on family tree screen 
+  Fixed Tribe units not capturing empty cities 
+  Fixed issue with overlapping characters on Inheritance screen
+  Text and event fixes
