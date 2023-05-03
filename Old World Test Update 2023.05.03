@@ -1,4 +1,4 @@
-Test Branch: 1.0.66853 Test 05/03/2023
+Test Branch: 1.0.66860 Test 05/03/2023
 
 Design
   Build Wonder ambitions no longer fail when a Wonder is started by another nation. Instead, they fail when the Wonder has been completed.
@@ -8,6 +8,7 @@ Programming
   
 UI
   Steam input updates
+  Added toggle to UI Options to Allow Keyboard Button Navigation, disabled by default
   
 Bugs Fixed 
   Fixed crash affecting some Windows 7 PCs
@@ -24,4 +25,5 @@ Bugs Fixed
   Fixed character action menu on family tree screen 
   Fixed Tribe units not capturing empty cities 
   Fixed issue with overlapping characters on Inheritance screen
+  Fixed MP turn indicator text
   Text and event fixes
