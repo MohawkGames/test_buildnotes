@@ -1,7 +1,7 @@
 Test Branch: 1.0.67092 Test 05/17/2023
 
 Design
-  Exploring trait now gives XP per turn
+  Exploring trait now gives +20XP per turn
   Alliance Victory now works in single player (previously it was MP only) 
   Impassable tiles no longer need to be owned for Minor Cities
   Land tribe units no longer pillage water tiles
