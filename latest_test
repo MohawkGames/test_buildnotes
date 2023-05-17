@@ -2,7 +2,7 @@ Test Branch: 1.0.67092 Test 05/17/2023
 
 Design
   Exploring trait now gives +20XP per turn
-  Alliance Victory now works in single player (previously it was MP only) 
+  Alliance Victory now works in single player (previously MP only) 
   Impassable tiles no longer need to be owned for Minor Cities
   Land tribe units no longer pillage water tiles
   Added a 10-turn memory for tribal invasions. Truce offers via the Matchmaker event will no longer happen with a recently invaded tribe.
@@ -12,7 +12,7 @@ Design
 
 Programming
    AI tile improvement selection improvements
-   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  Stops error spam when playing offline.
+   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  This prevents repeatings errors when playing offline.
    Converting a server game to cloud now unloads the server
   
 UI
