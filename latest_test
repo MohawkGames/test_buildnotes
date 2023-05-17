@@ -1,29 +1,58 @@
-Test Branch: 1.0.66860 Test 05/03/2023
+Test Branch: 1.0.67092 Test 05/17/2023
 
 Design
-  Build Wonder ambitions no longer fail when a Wonder is started by another nation. Instead, they fail when the Wonder has been completed.
+  Exploring trait now gives +20XP per turn
+  Alliance Victory now works in single player (previously it was MP only) 
+  Impassable tiles no longer need to be owned for Minor Cities
+  Land tribe units no longer pillage water tiles
+  Added a 10-turn memory for tribal invasions. Truce offers via the Matchmaker event will no longer happen with a recently invaded tribe.
+  Control 3 specialists ambition changed to 5 specialists
+  Tribal leaders are now eligible marriage candidates
+  Favored laws rebalanced
 
 Programming
-  Improved AI tile improvement selection to better account for adjacency bonuses
+   AI tile improvement selection improvements
+   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  Stops error spam when playing offline.
+   Converting a server game to cloud now unloads the server
   
 UI
-  Steam input updates
-  Added toggle to UI Options to Allow Keyboard Button Navigation, disabled by default
+  Steam Deck controller improvements
+  Improved turn summary display and added OK button
+  Added player option to omit replay data from saved games.  This will substantially reduce save game file size. Undo and replay data will be held in memory and available during a game session.
+  Luxury panel now shows happiness/discontent rate for cities, luxury name changed to icon (to prevent overlap issues)
+  Added tech prereq to 'free tech' encyclopedia entries
+  Damage preview now shows reduction in fortify meter
+  Carthage scenario 3 now uses a generic progress meter for showing Naval Dominance
+  Added support for navigating file browser entries with up/down arrow keys 
+  Negative yields no longer shown on tile labels in city screen 
+  Ill, Wounded and Incubated traits now remain after death (to give more clues as to how a character died  
+  Mission target shown on mission buttons when applicable
+  Missions added via DLC now indicate this in the mission help
+  Added tooltip for historical info button
   
 Bugs Fixed 
-  Fixed crash affecting some Windows 7 PCs
-  Fixed Head of Pagan Religion starting off dead in the Learn to Play 5 scenario
-  Fixed crash caused by trying to start a caravan mission with no target player 
-  Fixed Steam achievements not syncing to local options file
-  Fixed music player icon highlight behavior
-  Fixed camera controls activating when navigating buttons and added restrictions on when and where button navigation is active. WASD no longer scrolls tech screen.
-  Fixed MP issues caused by authentication timeouts
-  Fixed AI/UI threading issue
-  Fixed rendering issue when navigating through buttons at some scales 
-  Fixed turn summary appearing before the turn has been fully processed
-  Fixed expanded tooltips collapsing when locking with middle mouse button
-  Fixed character action menu on family tree screen 
-  Fixed Tribe units not capturing empty cities 
-  Fixed issue with overlapping characters on Inheritance screen
-  Fixed MP turn indicator text
+  Fixed progress tooltip for religious ambitions if the ambition has not yet been started
+  Fixed empty tile tooltips appearing on boundary tiles 
+  Fixed bug with unavailable trait and Semesters turnscale
+  Fixed helptext for strength breakdown and Tough promotion
+  Fixed inaccurate governor preview
+  Fixed governor rating help text
+  Fixed some animation/sound/tile text/camera bugs during AI turn
+  Fixed issue where camera would sometimes pan to a location without showing the unit action
+  Fixed some minor issues in Carthage scenario 3 
+  Fixed HUD scaling slider value range
+  Fix for swapping units mid-move-animation leading to incorrect placement of unit icons 
+  Fixed server host not automatically rejoining game after server has been recreated
+  Fixed some AI thread safety issues
+  Fixed highlighting behavior on orders widget in no characters mode
+  Fixed bug with Council yield breakdown
+  Fixed unit cost increase help
+  Fixed random and competitive preset options
+  Fixed Convert to State Religion leader mission
+  Eliminated tribes no longer generate new leaders
+  Fix for being offered a foreign leader as a suitor 
+  Fixed searchable dropdown text editing issue in event browser
+  Draggable click fix
+  Fixed unit display issues when using GPU animations
+  Fixed display issues for horses and harbors
   Text and event fixes
