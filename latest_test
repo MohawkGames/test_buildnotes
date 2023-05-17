@@ -12,7 +12,7 @@ Design
 
 Programming
    AI tile improvement selection improvements
-   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  This prevents repeatings errors when playing offline.
+   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  This prevents repeating errors when playing offline.
    Converting a server game to cloud now unloads the server
   
 UI
