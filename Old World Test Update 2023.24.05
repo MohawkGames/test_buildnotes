@@ -1,0 +1,36 @@
+Test Branch: 1.0.67197 Test 05/24/2023
+
+Design
+  Chaste trait is no longer a strength 
+  Free ship tech cards will no longer appear until the player owns a coast tile. 
+  Free ships will appear in the player's borders if possible. 
+  Distant raids on coastal cities can now contain ships of the same type the city is able to build
+  Tribal units are 25% more expensive to hire if the tribe is currently invading you
+  
+Programming
+  Improved accuracy of AI specialist evaluation
+  Improved AI water control - now uses ships when a land path is blocked by truced nations
+  
+UI
+  Steam Deck input improvements
+  Confirmation popup on exiting game will no longer appear when the game has just been saved or when a client in a network game
+  All links that open a web browser now display the URL in their tooltip
+  Team games no longer show 'Waiting for...' message for players that have been eliminated
+  Reordered turn summary categories, injuries are now shown above deaths in the turn summary
+  Added yield effect of laws to tooltip help text 
+  Character assignment now selects hovered character as candidate to assign rather than setting them as a preview character
+  Improved city help text
+  
+Bugs Fixed 
+  Fixed inconsistent play/pause button graphic, turn processing text overlap
+  Fixed rename city button not working from selected city screen
+  Fixed resolution getting re-applied on exiting options menu when no options were changed
+  Fixed hotseat hang when skipping animations
+  Fixed specialist and governor yield help text 
+  Fixed embedded link helptext issue with goals/ambitions
+  Fixed tribe alliance icon color 
+  Fixed city production category toggles
+  Fixed missing icon for ping reminders in turn summary
+  Fixed city tooltip not populating when accessed via locked tile tooltip 
+  Fixed issue with conditional text not displaying correctly in events
+  Text and event fixes
