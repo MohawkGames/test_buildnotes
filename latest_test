@@ -1,58 +1,36 @@
-Test Branch: 1.0.67092 Test 05/17/2023
+Test Branch: 1.0.67197 Test 05/24/2023
 
 Design
-  Exploring trait now gives +20XP per turn
-  Alliance Victory now works in single player (previously MP only) 
-  Impassable tiles no longer need to be owned for Minor Cities
-  Land tribe units no longer pillage water tiles
-  Added a 10-turn memory for tribal invasions. Truce offers via the Matchmaker event will no longer happen with a recently invaded tribe.
-  Control 3 specialists ambition changed to 5 specialists
-  Tribal leaders are now eligible marriage candidates
-  Favored laws rebalanced
-
+  Chaste trait is no longer a strength 
+  Free ship tech cards will no longer appear until the player owns a coast tile. 
+  Free ships will appear in the player's borders if possible. 
+  Distant raids on coastal cities can now contain ships of the same type the city is able to build
+  Tribal units are 25% more expensive to hire if the tribe is currently invading you
+  
 Programming
-   AI tile improvement selection improvements
-   Unity service authentication limited to 5 retries, unless the authentication expired in the middle of a network game.  This prevents repeating errors when playing offline.
-   Converting a server game to cloud now unloads the server
+  Improved accuracy of AI specialist evaluation
+  Improved AI water control - now uses ships when a land path is blocked by truced nations
   
 UI
-  Steam Deck controller improvements
-  Improved turn summary display and added OK button
-  Added player option to omit replay data from saved games.  This will substantially reduce save game file size. Undo and replay data will be held in memory and available during a game session.
-  Luxury panel now shows happiness/discontent rate for cities, luxury name changed to icon (to prevent overlap issues)
-  Added tech prereq to 'free tech' encyclopedia entries
-  Damage preview now shows reduction in fortify meter
-  Carthage scenario 3 now uses a generic progress meter for showing Naval Dominance
-  Added support for navigating file browser entries with up/down arrow keys 
-  Negative yields no longer shown on tile labels in city screen 
-  Ill, Wounded and Incubated traits now remain after death (to give more clues as to how a character died  
-  Mission target shown on mission buttons when applicable
-  Missions added via DLC now indicate this in the mission help
-  Added tooltip for historical info button
+  Steam Deck input improvements
+  Confirmation popup on exiting game will no longer appear when the game has just been saved or when a client in a network game
+  All links that open a web browser now display the URL in their tooltip
+  Team games no longer show 'Waiting for...' message for players that have been eliminated
+  Reordered turn summary categories, injuries are now shown above deaths in the turn summary
+  Added yield effect of laws to tooltip help text 
+  Character assignment now selects hovered character as candidate to assign rather than setting them as a preview character
+  Improved city help text
   
 Bugs Fixed 
-  Fixed progress tooltip for religious ambitions if the ambition has not yet been started
-  Fixed empty tile tooltips appearing on boundary tiles 
-  Fixed bug with unavailable trait and Semesters turnscale
-  Fixed helptext for strength breakdown and Tough promotion
-  Fixed inaccurate governor preview
-  Fixed governor rating help text
-  Fixed some animation/sound/tile text/camera bugs during AI turn
-  Fixed issue where camera would sometimes pan to a location without showing the unit action
-  Fixed some minor issues in Carthage scenario 3 
-  Fixed HUD scaling slider value range
-  Fix for swapping units mid-move-animation leading to incorrect placement of unit icons 
-  Fixed server host not automatically rejoining game after server has been recreated
-  Fixed some AI thread safety issues
-  Fixed highlighting behavior on orders widget in no characters mode
-  Fixed bug with Council yield breakdown
-  Fixed unit cost increase help
-  Fixed random and competitive preset options
-  Fixed Convert to State Religion leader mission
-  Eliminated tribes no longer generate new leaders
-  Fix for being offered a foreign leader as a suitor 
-  Fixed searchable dropdown text editing issue in event browser
-  Draggable click fix
-  Fixed unit display issues when using GPU animations
-  Fixed display issues for horses and harbors
+  Fixed inconsistent play/pause button graphic, turn processing text overlap
+  Fixed rename city button not working from selected city screen
+  Fixed resolution getting re-applied on exiting options menu when no options were changed
+  Fixed hotseat hang when skipping animations
+  Fixed specialist and governor yield help text 
+  Fixed embedded link helptext issue with goals/ambitions
+  Fixed tribe alliance icon color 
+  Fixed city production category toggles
+  Fixed missing icon for ping reminders in turn summary
+  Fixed city tooltip not populating when accessed via locked tile tooltip 
+  Fixed issue with conditional text not displaying correctly in events
   Text and event fixes
