@@ -6,6 +6,7 @@ Design
   Free ships will appear in the player's borders if possible. 
   Distant raids on coastal cities can now contain ships of the same type the city is able to build
   Tribal units are 25% more expensive to hire if the tribe is currently invading you
+  Found Religion project cost reduced from 80 to 60 civics
   
 Programming
   Improved accuracy of AI specialist evaluation
