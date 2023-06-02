@@ -1,0 +1,34 @@
+Test Branch: 1.0.67??? Test 06/07/2023
+(up to date as of 67337)
+
+Design
+  Mourning trait removed automatically after 4 turns
+  Tribal units without sites now have a 10% chance of converting to a Raider each turn instead of disappearing
+  Christian Clergy title has been changed from Bishop to Presbyter (to avoid conflict with the Cathedral specialist)
+  Desert Mapscript player start position improvements
+  Marshes no longer interrupt rivers
+  
+Programming
+  Automated workers now favor improvement pings (map tacks)
+  
+UI
+  Add Urban Worker action now shows border expansion preview and hovering over the action shows the other valid tiles it can be performed in
+  Added player option to only show improvement pings (map tacks) with eligible unit selected
+  Event Editor UI improvements
+  Tooltips show improvement class instead of improvement where relevant (i.e. Palaces now say they must be adjacent to courthouse class, not courthouse)
+  
+Bugs Fixed
+  Fixed anchoring bug in Carthage4
+  Fixed improvement filters showing on opponent workers
+  Fixed ship stacking in city center
+  Fixed some Steam Deck tooltip issues
+  Fixed Steam Deck unit movement bug
+  Fixed innacurate and missing combat modifiers on tile tooltips
+  Fixed possible null pointer exceptions when viewing some bonus/law effects without an active game
+  Fixed issue with caravans not revealing tiles along their entire movement path
+  Fixed missing cult improvement effects for Cult of the Mother and Cult of Mithras
+  Fixed allied victories not granting achievements
+  Fixed leaders getting offered traits that make them ineligible to be leader (eloped, imprisoned etc)
+  Fixed Council project not giving as much Training and Money as advertised and clearing Civics overflow
+  Fixed check for internet connection
+  Text and event fixes
