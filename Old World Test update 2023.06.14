@@ -1,23 +1,28 @@
-Test Branch: 1.0.67??? Test 06/14/2023
-(up to date as of 67408)
+Test Branch: 1.0.67481 Test 06/14/2023
 
 Design
-  Mourning trait removed automatically after 4 turns
-  Tribal units without sites now have a 10% chance of converting to a Raider each turn instead of disappearing
+  Marshes no longer interrupt rivers
+  Heroes of the Aegean scenario 3 rebalanced, now easier paticuarly on lower difficulties 
+  Tribal units without sites now have a 10% chance of converting to a Raider each turn (instead of disappearing)
+  Tribes you have not yet met will no longer raid
+  Mourning trait now removed automatically after 4 turns
   Christian Clergy title has been changed from Bishop to Presbyter (to avoid conflict with the Cathedral specialist)
   Desert Mapscript player start position improvements
-  Marshes no longer interrupt rivers
   
 Programming
   Automated workers now favor improvement pings (map tacks)
+  Improved unit placement algorithm 
+  Improved performance when switching scenarios
+  Unit and improvement animation controller files now appear in the Reference folder to aid 3D asset modding.
   
 UI
   Add Urban Worker action now shows border expansion preview and hovering over the action shows the other valid tiles it can be performed in
-  Added player option to only show improvement pings (map tacks) with eligible unit selected
+  Added "Only Show Map Tacks for Woker" UI option to only show improvement pings (map tacks) with an eligible unit selected
+  Added "Disable environmental sounds" audio option which disables thunder, bird chirps, and a few more environmental sounds 
   Event Editor UI improvements
   Tooltips show improvement class instead of improvement where relevant (i.e. Palaces now say they must be adjacent to courthouse class, not courthouse)
-  Disable thunder, bird chirps, and a few more environmental sounds if "Disable Ambient Sound" is on
   Steam Deck control improvements
+  On monitors with 120+ Hz refresh rates, Frame Limit now defaults to Vsync 2
   
 Bugs Fixed
   Fixed improvement filters showing on opponent workers
@@ -37,4 +42,6 @@ Bugs Fixed
   Fixed tech cards sometimes scrolling past borders on SP setup info screen
   Fixed some issues relating to undo
   Possible fix for server games eventually disappearing
+  Fixed being able to queue multiple unique projects (ie Found Religion) 
+  Fixed infertile characters becoming pregnant
   Text and event fixes
