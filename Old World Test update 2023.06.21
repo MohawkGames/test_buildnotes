@@ -1,7 +1,7 @@
 Test Branch: 1.0.67574 Test 06/21/2023
 
 Design
-  Traders now get +6 Money per Specialists (up from +5)
+  Traders now get +6 Money per Specialist (up from +5)
   Cognomen adjustments - reduced effect of improvements built, landmarks discovered and ruins explored on Cognomen progress
   Tribes now raze captured cities, if the game option to allow cities to be razed is on.  AI nations may also choose to raze captured cities.
   Rural tiles completely surrounded by urban tiles no longer prevent a minor city from forming
