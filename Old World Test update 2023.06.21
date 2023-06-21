@@ -1,5 +1,8 @@
 Test Branch: 1.0.67574 Test 06/21/2023
 
+Known bugs
+  Mods can fail to update when uploading a new version to modio
+
 Design
   Traders now get +6 Money per Specialist (up from +5)
   Cognomen adjustments - reduced effect of improvements built, landmarks discovered and ruins explored on Cognomen progress
