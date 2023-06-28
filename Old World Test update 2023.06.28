@@ -1,0 +1,32 @@
+Test Branch: 1.0.67669 Test 06/28/2023
+
+Design
+  Dynasties now have their own starting tiles on premade maps.  Particularly affects Ptolemy who now starts in Alexandria.  Egypt starting tiles amended
+  Raiders no longer take the long way around towards their target if the path is blocked. They try to power through whatever is blocking them instead
+  
+Programming
+  Updated modio to 2023.6.1.  Fixes some bugs and improves mod download speed
+  Map script mods now allow Infos folder with preload-text, mapOption, mapOptionsMulti and mapOptionsSingle -add xml files
+  Improved algorithm for determining holes in urban areas that should not prevent minor cities from forming
+  
+UI
+  Added "clear players" button to network game host player join screen, to allow changing players mid game.  Can right click to assign a nation to an AI
+  Default to lower resolution matching aspect ratio on screens higher than 3840x2160
+  Added Event Browser subject re-ordering tool
+  Enabled uninstall button for map script mods
+  Added 'Downloading' message for automatic modio subscription downloads
+  Overflow now shown on all production tooltips where relevant
+  
+Bugs Fixed
+  Fixed bug preventing modio mod uploads (from previous test patch)
+  Fixed bug where border expansion preview did not match actual expansion (from previous test patch)
+  Fixed city tooltip sometimes not updating after adding ping
+  Fixed family data not being assigned to characters in your nation with foreign origins
+  Handle possible exception from the platform API during DLC check on GoG build
+  Prevented cities from being founded out of order in Learn to Play 4
+  Fixed minor city site being removed when city is razed
+  City Site improvement is added to city site after a city is razed
+  Fixed bug with inconsistent border fill after tile owner change
+  Fixed AI city site evaluation
+  Fixed bug in Infos override so mods can have their own xml files override the default xml.
+  Text and event fixes
