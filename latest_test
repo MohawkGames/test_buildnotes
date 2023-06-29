@@ -1,42 +1,38 @@
-Test Branch: 1.0.67574 Test 06/21/2023
-
-Known bugs
-  Mods can fail to update when uploading a new version to modio
+Test Branch: 1.0.67686 Test 06/29/2023
 
 Design
-  Traders now get +6 Money per Specialist (up from +5)
-  Cognomen adjustments - reduced effect of improvements built, landmarks discovered and ruins explored on Cognomen progress
-  Tribes now raze captured cities, if the game option to allow cities to be razed is on.  AI nations may also choose to raze captured cities.
-  Rural tiles completely surrounded by urban tiles no longer prevent a minor city from forming
-  Heroes of the Aegean scenario 5 rebalanced.  Hard difficulty is now harder.
-  Can no longer capture an undefended 0HP city with a rout attack or rout after capturing a city.
-  Desert Mapscript: Adding tooltip warning about trade networks not always being possible
+  Dynasties now have their own starting tiles on premade maps.  Particularly affects Ptolemy who now starts in Alexandria.  Egypt starting tiles amended
+  AI can have a leader from any available dynasty of that nation
+  Raiders no longer take the long way around towards their target if the path is blocked. They try to power through whatever is blocking them instead
   
 Programming
-  Performance optimization for when multiple tiles change ownership 
-  Optimized UI sprite repository loading to improve scenario loading times
-  Modio v2 upgrade.  This fixes some bugs and allows automatic downloading of subscribed mods.
+  Updated modio to 2023.6.1.  Fixes some bugs and improves mod download speed
+  Map script mods now allow Infos folder with preload-text, mapOption, mapOptionsMulti and mapOptionsSingle -add xml files
+  Mods can now have their own xml files override the default xml
+  Improved algorithm for determining holes in urban areas that should not prevent minor cities from forming
+  Adjusted AI city site priority for founding new cities
   
 UI
-  Added + sign to yield predictions for Laws etc
-  Changed default replay data toggle hotkey from Ctrl+X to Ctrl+Shift+X to make it harder to accidentally trigger  
-  More background sound effects removed when using the 'Disable environmental sounds' option
-  Opinion level tooltips in event subject requirements now display the generic opinion tooltip
+  Added "clear players" button to network game host player join screen, to allow changing players mid game.  Can right click to assign a nation to an AI
+  Default to lower resolution matching aspect ratio on screens higher than 3840x2160
+  Added Event Browser subject re-ordering tool
+  Enabled uninstall button for map script mods
+  Added 'Downloading' message for automatic modio subscription downloads
+  Overflow now shown on all production tooltips where relevant
   
 Bugs Fixed
-  Fixed shrine links on religion pages in Encyclopedia 
-  Fixed text container sizing issues after UI hiding
-  Fixed helptext for replay button with replay disabled
-  Fixed some cases where city yield breakdown text for a different governor was incorrect
-  Fixed raiders not turning into barbarians when they should
-  Fixed crash from raider being converted to barbarian mid-movement
-  Achievements and scenario progress is now properly updated even if the relevant player is offline when it occurs (fixes achievements for cloud games)
-  Fixed resettling the site of a razed city not assigning the old name to the new city 
-  Fixed timeline map fog of war after surrender undo
-  Fixed unique projects being automatically canceled (issue introduced in last test update)
-  Fixed AI not attacking empty cities (issue introduced in last test update)
-  Removed duplicate base yield amount from city yield help text breakdown
-  Fixed pings not showing up in city tooltip 
-  Fix for Holy Site tooltip if trying to build in a holy city of the wrong religion
-  Fixed map getting revealed on conquest defeat in single player
+  Fixed bug preventing modio mod uploads (from previous test patch)
+  Fixed bug where border expansion preview did not match actual expansion (from previous test patch)
+  Fixed city tooltip sometimes not updating after adding ping
+  Fixed family data not being assigned to characters in your nation with foreign origins
+  Handle possible exception from the platform API during DLC check on GoG build
+  Prevented cities from being founded out of order in Learn to Play 4
+  Fixed minor city site being removed when city is razed
+  City Site improvement is added to city site after a city is razed
+  Fixed bug with inconsistent border fill after tile owner change
+  Fixed AI city site evaluation
+  Fixed dynasty drop down tooltip on World Map scenario screen
+  Fixed missing dynasty drop down on Mediterranean scenario screen
+  Fixed game UI checks for client input
+  Fixed mission button context menu display
   Text and event fixes
