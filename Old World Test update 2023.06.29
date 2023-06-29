@@ -1,12 +1,14 @@
-Test Branch: 1.0.67679 Test 06/28/2023
+Test Branch: 1.0.67686 Test 06/29/2023
 
 Design
   Dynasties now have their own starting tiles on premade maps.  Particularly affects Ptolemy who now starts in Alexandria.  Egypt starting tiles amended
+  AI can have a leader from any available dynasty of that nation
   Raiders no longer take the long way around towards their target if the path is blocked. They try to power through whatever is blocking them instead
   
 Programming
   Updated modio to 2023.6.1.  Fixes some bugs and improves mod download speed
   Map script mods now allow Infos folder with preload-text, mapOption, mapOptionsMulti and mapOptionsSingle -add xml files
+  Mods can now have their own xml files override the default xml
   Improved algorithm for determining holes in urban areas that should not prevent minor cities from forming
   Adjusted AI city site priority for founding new cities
   
@@ -29,7 +31,6 @@ Bugs Fixed
   City Site improvement is added to city site after a city is razed
   Fixed bug with inconsistent border fill after tile owner change
   Fixed AI city site evaluation
-  Fixed bug in Infos override so mods can have their own xml files override the default xml.
   Fixed dynasty drop down tooltip on World Map scenario screen
   Fixed missing dynasty drop down on Mediterranean scenario screen
   Fixed game UI checks for client input
