@@ -41,5 +41,3 @@ Bugs Fixed
   Fixed null ref when ending Occurrence with bonus, which was causing problems for some play by cloud games
   Fixed some inconsistencies with allied tribe unit, city, and tile ownership as compared to allied nation ownership
   Text and event fixes
-
-
