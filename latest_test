@@ -1,38 +1,42 @@
-Test Branch: 1.0.67686 Test 06/29/2023
+Test Branch: 1.0.67871 Test 07/12/2023
 
 Design
-  Dynasties now have their own starting tiles on premade maps.  Particularly affects Ptolemy who now starts in Alexandria.  Egypt starting tiles amended
-  AI can have a leader from any available dynasty of that nation
-  Raiders no longer take the long way around towards their target if the path is blocked. They try to power through whatever is blocking them instead
+  The No Ancient Ruins option will now work on premade maps. Ruins tiles get cleared and changed to a nearby terrain type
+  Can no longer start a diplomatic mission to change war/truce/peace state until both sides have met each other.  This is particularly relevant for Schemer archetypes who can no longer declare war immediately on meeting a nation with an invisible scout
+  AI now builds the Found Religion project
+  2 new ambitions added for Hittites to build their unique units
+  In the Barbarian Horde scenario, Cunning governors grant +20 family opinion instead of unlocking Caravans (which are disabled)
   
 Programming
-  Updated modio to 2023.6.1.  Fixes some bugs and improves mod download speed
-  Map script mods now allow Infos folder with preload-text, mapOption, mapOptionsMulti and mapOptionsSingle -add xml files
-  Mods can now have their own xml files override the default xml
-  Improved algorithm for determining holes in urban areas that should not prevent minor cities from forming
-  Adjusted AI city site priority for founding new cities
+  UI xml files are now allowed in user mods.  UI xml files have been added to the Reference folder
   
 UI
-  Added "clear players" button to network game host player join screen, to allow changing players mid game.  Can right click to assign a nation to an AI
-  Default to lower resolution matching aspect ratio on screens higher than 3840x2160
-  Added Event Browser subject re-ordering tool
-  Enabled uninstall button for map script mods
-  Added 'Downloading' message for automatic modio subscription downloads
-  Overflow now shown on all production tooltips where relevant
+  Ping popup style consistency pass
+  Added city found cost to tile tooltip (for allied tribal sites)
+  Added pending critical hit icon to unit list (when Show Critical Hits game option enabled)
+  City Site help text now shown only when the tutorial is enabled 
+  Changed character tooltip yield rating effect to match choose governor help text 
+  Added helptext explicitly explaining that you lose if you die without an heir to all refusal options in the NO_HEIRS event class
   
 Bugs Fixed
-  Fixed bug preventing modio mod uploads (from previous test patch)
-  Fixed bug where border expansion preview did not match actual expansion (from previous test patch)
-  Fixed city tooltip sometimes not updating after adding ping
-  Fixed family data not being assigned to characters in your nation with foreign origins
-  Handle possible exception from the platform API during DLC check on GoG build
-  Prevented cities from being founded out of order in Learn to Play 4
-  Fixed minor city site being removed when city is razed
-  City Site improvement is added to city site after a city is razed
-  Fixed bug with inconsistent border fill after tile owner change
-  Fixed AI city site evaluation
-  Fixed dynasty drop down tooltip on World Map scenario screen
-  Fixed missing dynasty drop down on Mediterranean scenario screen
-  Fixed game UI checks for client input
-  Fixed mission button context menu display
+  Fixed load game failing for saves using mods with additional sprites 
+  Fixed event options having a higher resource cost than the cap (affects Training and Civics)
+  Fixed Establish Theology goal being canceled when a competing Theology is established if the player has access to another religion where the goal could still be completed
+  Scenario setup screen fixes
+  Fixed dynasty dropdown changing to blank entry when previous selection becomes invalid 
+  Fixed password field showing as cleared in some cases
+  Fixed tribe/player opinion not updating when leader opinion changes 
+  Fixed mission result testing bug where no event fires after a mission even though the game says you get an event, most often seen with tutoring 
+  Event Browser UI fixes
+  Fixed asterisk showing on helptext that can show up with debug help option off
+  Fixed world space UI not initializing position properly after UI layer is toggled
+  Fixed infos file name bug
+  Fixed ESC not clearing locked tooltips
+  Fixed city health not displaying properly after founding with damaged settler and undoing
+  Clicking on a Launch Offensive notification will no longer zoom to the relevant tile unless it is visible
+  Events for removing Severely Ill should no longer happen when Doomed
+  Can no longer claim an unowned urban tile that is connected to an active city site
+  Fixed raiders appearing in Heroes of the Aegean scenario 1
+  Fixed null ref when ending Occurrence with bonus, which was causing problems for some play by cloud games
+  Fixed some inconsistencies with allied tribe unit, city, and tile ownership as compared to allied nation ownership
   Text and event fixes
