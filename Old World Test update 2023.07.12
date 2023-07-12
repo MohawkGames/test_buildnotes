@@ -14,7 +14,7 @@ Programming
 UI
   Ping popup style consistency pass
   Added city found cost to tile tooltip (for allied tribal sites)
-  Added pending critical hit icon to unit list (when show Critical Hits game option enabled)
+  Added pending critical hit icon to unit list (when Show Critical Hits game option enabled)
   City Site help text now shown only when the tutorial is enabled 
   Changed character tooltip yield rating effect to match choose governor help text 
   Added helptext explicitly explaining that you lose if you die without an heir to all refusal options in the NO_HEIRS event class
