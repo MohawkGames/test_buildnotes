@@ -13,7 +13,7 @@ Programming
   
 UI
   Ping popup style consistency pass
-  Added city found cost to tile tooltip (for allied tribes)
+  Added city found cost to tile tooltip (for allied tribal sites)
   Added pending critical hit icon to unit list (when show Critical Hits game option enabled)
   City Site help text now shown only when the tutorial is enabled 
   Changed character tooltip yield rating effect to match choose governor help text 
