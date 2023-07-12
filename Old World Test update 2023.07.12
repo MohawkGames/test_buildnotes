@@ -8,7 +8,6 @@ Design
   In the Barbarian Horde scenario, Cunning governors grant +20 family opinion instead of unlocking Caravans (which are disabled)
   
 Programming
-  Eliminated some unnecessary urban surrounded rural tile calculations
   UI xml files are now allowed in user mods.  UI xml files have been added to the Reference folder
   
 UI
