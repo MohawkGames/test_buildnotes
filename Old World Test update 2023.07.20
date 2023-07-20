@@ -7,7 +7,7 @@ Design
   Added city site density map option: High, Medium, and Low.  High is the default, Medium has 1.5x distance between city sites and Low has 2x
   Chaste trait will no longer be randomly assigned to characters
   Units of a tribe without settlements but with a player ally do not convert to Raiders
-  Cities captured by Tribes now go through a period of Anarchy before switching hands or being razed
+  All captured cities (including tribal and OCC cpatures) now go through a period of Anarchy before switching hands or being razed
   Ending a tribal or national alliance now bounces units out of tiles they can no longer occupy (i.e city center)
   
 Programming
