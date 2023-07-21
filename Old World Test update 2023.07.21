@@ -1,6 +1,4 @@
-Test Branch: 1.0.679?? Test 07/20/2023
-
-Known Bugs:  Customize Leader options not currently available for clients in MP games.
+Test Branch: 1.0.67984 Test 07/21/2023
 
 Design
   Added Customize Leader option to game setup when Pick Later Archetype is selected.  This allows you to choose your leader's portrait, name, age, gender and starting trait as well as their archetype.
