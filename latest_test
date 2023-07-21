@@ -1,42 +1,33 @@
-Test Branch: 1.0.67871 Test 07/12/2023
+Test Branch: 1.0.67984 Test 07/21/2023
 
 Design
-  The No Ancient Ruins option will now work on premade maps. Ruins tiles get cleared and changed to a nearby terrain type
-  Can no longer start a diplomatic mission to change war/truce/peace state until both sides have met each other.  This is particularly relevant for Schemer archetypes who can no longer declare war immediately on meeting a nation with an invisible scout
-  AI now builds the Found Religion project
-  2 new ambitions added for Hittites to build their unique units
-  In the Barbarian Horde scenario, Cunning governors grant +20 family opinion instead of unlocking Caravans (which are disabled)
+  Added Customize Leader option to game setup when Pick Later Archetype is selected.  This allows you to choose your leader's portrait, name, age, gender and starting trait as well as their archetype.
+  Added city site density map option: High, Medium, and Low.  High is the default, Medium has 1.5x distance between city sites and Low has 2x
+  Chaste trait will no longer be randomly assigned to characters
+  Units of a tribe without settlements but with a player ally no longer convert to Raiders
+  Cities captured by tribes and by the player in One City Challenge now go through the normal capturing period before switching hands or being razed
+  Ending a tribal or national alliance now bounces units out of tiles they can no longer occupy (i.e city center)
   
 Programming
-  UI xml files are now allowed in user mods.  UI xml files have been added to the Reference folder
+  Improved AI anchoring
   
 UI
-  Ping popup style consistency pass
-  Added city found cost to tile tooltip (for allied tribal sites)
-  Added pending critical hit icon to unit list (when Show Critical Hits game option enabled)
-  City Site help text now shown only when the tutorial is enabled 
-  Changed character tooltip yield rating effect to match choose governor help text 
-  Added helptext explicitly explaining that you lose if you die without an heir to all refusal options in the NO_HEIRS event class
+  Encyclopedia now lists if an Improvement can't be adjacent to another religion
+  Changed "Reveal N% of the Map" goal text to "Reveal N% of the Land"
   
 Bugs Fixed
-  Fixed load game failing for saves using mods with additional sprites 
-  Fixed event options having a higher resource cost than the cap (affects Training and Civics)
-  Fixed Establish Theology goal being canceled when a competing Theology is established if the player has access to another religion where the goal could still be completed
-  Scenario setup screen fixes
-  Fixed dynasty dropdown changing to blank entry when previous selection becomes invalid 
-  Fixed password field showing as cleared in some cases
-  Fixed tribe/player opinion not updating when leader opinion changes 
-  Fixed mission result testing bug where no event fires after a mission even though the game says you get an event, most often seen with tutoring 
-  Event Browser UI fixes
-  Fixed asterisk showing on helptext that can show up with debug help option off
-  Fixed world space UI not initializing position properly after UI layer is toggled
-  Fixed infos file name bug
-  Fixed ESC not clearing locked tooltips
-  Fixed city health not displaying properly after founding with damaged settler and undoing
-  Clicking on a Launch Offensive notification will no longer zoom to the relevant tile unless it is visible
-  Events for removing Severely Ill should no longer happen when Doomed
-  Can no longer claim an unowned urban tile that is connected to an active city site
-  Fixed raiders appearing in Heroes of the Aegean scenario 1
-  Fixed null ref when ending Occurrence with bonus, which was causing problems for some play by cloud games
-  Fixed some inconsistencies with allied tribe unit, city, and tile ownership as compared to allied nation ownership
+  Fixed color of diplomacy icons in nation and tribe help
+  Fixed hotkeys for zoom in and zoom out being reversed
+  Fixed some Missions showing incorrect durations in the Encyclopedia 
+  Fixed events promoting non-promotable units like Militia
+  Fixed active cloud game list delay in initial update
+  Fixed no heir events not firing as often as they should
+  Fixed family opinion graph
+  Fixed production list for non-player-owned cities with agents
+  Fixed border expansion bug (introduced in last test patch)
+  Fixed achievements not firing for clients in MP games
+  Fixed bug with Destroy Rival Nation ambition in OCC
+  Progress sorting by happiness levels now properly treats discontent progress as negative 
+  When character becomes leader more events that would no longer make sense are made invalid 
+  Student traits are removed on imprisonment
   Text and event fixes
