@@ -4,8 +4,8 @@ Design
   Added Customize Leader option to game setup when Pick Later Archetype is selected.  This allows you to choose your leader's portrait, name, age, gender and starting trait as well as their archetype.
   Added city site density map option: High, Medium, and Low.  High is the default, Medium has 1.5x distance between city sites and Low has 2x
   Chaste trait will no longer be randomly assigned to characters
-  Units of a tribe without settlements but with a player ally do not convert to Raiders
-  All captured cities (including tribal and OCC cpatures) now go through a period of Anarchy before switching hands or being razed
+  Units of a tribe without settlements but with a player ally no longer convert to Raiders
+  Cities captured by tribes and by the player in One City Challenge now go through the normal capturing period before switching hands or being razed
   Ending a tribal or national alliance now bounces units out of tiles they can no longer occupy (i.e city center)
   
 Programming
@@ -17,7 +17,6 @@ UI
   
 Bugs Fixed
   Fixed color of diplomacy icons in nation and tribe help
-  Progress sorting by happiness levels now properly treats discontent progress as negative 
   Fixed hotkeys for zoom in and zoom out being reversed
   Fixed some Missions showing incorrect durations in the Encyclopedia 
   Fixed events promoting non-promotable units like Militia
@@ -27,6 +26,8 @@ Bugs Fixed
   Fixed production list for non-player-owned cities with agents
   Fixed border expansion bug (introduced in last test patch)
   Fixed achievements not firing for clients in MP games
+  Fixed bug with Destroy Rival Nation ambition in OCC
+  Progress sorting by happiness levels now properly treats discontent progress as negative 
   When character becomes leader more events that would no longer make sense are made invalid 
   Student traits are removed on imprisonment
   Text and event fixes
