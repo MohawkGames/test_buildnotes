@@ -4,7 +4,7 @@ Design
   The minimum distance from human players now scales appropriately with the city site density setting
 
 Programming
-  Improved speed of Modio mod browser by reducing calls to the web API
+  Improved speed of Modio mod browser
   
 UI
   Leader is now included in reminders for available tutor targets
