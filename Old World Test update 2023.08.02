@@ -17,12 +17,12 @@ UI
   Added game log entry when other nation declares war on you on your turn
   
 Bugs Fixed
-  Fixed Trait helptext showing hidden subjects
+  Fixed issue with minimum distance between city sites
+  Fixed trait helptext showing hidden subjects
   Fixed bug with capturing some Roman cities in Carthage 4 scenario
   Fixed traits being added to a character while iterating over their traits
   Fix for index out of range crash
   Fixed bug allowing players to build improvements and roads in non-allied player's territory
-  Fixed minimum distance between city sites not always getting applied
   Fixed bug in sprite repository asset unloading and loading, which resolves sprite sheet errors when loading games with modded art assets
   Fixed bug with delayed random traits and relationships
   Fixed rare trade network bug
