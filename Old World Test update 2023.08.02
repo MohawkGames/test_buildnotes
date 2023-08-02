@@ -1,7 +1,7 @@
 Test Branch: 1.0.68117 Test 08/02/2023
 
 Design
-  The minimum distance from human players is now given as a percentage of the minimum city site distance, so that it scales appropriately with the city site density setting
+  The minimum distance from human players now scales appropriately with the city site density setting
 
 Programming
   Improved speed of Modio mod browser by reducing calls to the web API
