@@ -1,0 +1,35 @@
+Test Branch: 1.0.68117 Test 08/02/2023
+
+Design
+  The minimum distance from human players is now given as a percentage of the minimum city site distance, so that it scales appropriately with the city site density setting
+
+Programming
+  Improved speed of Modio mod browser by reducing calls to the web API
+  
+UI
+  Leader is now included in reminders for available tutor targets
+  Critical hit preview now updates when a unit's critical hit chance changes
+  Added confirmation dialogs for load hotkeys
+  Added tooltip info for added turn for building outside territory (only affects forts)
+  Added tooltips for traits in leader customizer
+  Added scroll bar to founding panel to allow use of leader customizer with high UI scaling
+  Added strike bonus to unit attack preview summary against cities
+  Added game log entry when other nation declares war on you on your turn
+  
+Bugs Fixed
+  Fixed Trait helptext showing hidden subjects
+  Fixed bug with capturing some Roman cities in Carthage 4 scenario
+  Fixed traits being added to a character while iterating over their traits
+  Fix for index out of range crash
+  Fixed bug allowing players to build improvements and roads in non-allied player's territory
+  Fixed minimum distance between players not decreasing with minimum distance between city sites
+  Fixed bug in sprite repository asset unloading and loading, which resolves sprite sheet errors when loading games with modded art assets
+  Fixed bug with delayed random traits and relationships
+  Fixed rare trade network bug
+  Fixed some cases where a rival unit in your borders was not getting bumped out of the way when you moved one of your units into its tile 
+  Fixed potential border expansion preview issue 
+  Fixed some AI city effect valuation issues
+  Fixed citizen count bug when upgrading a building with a queued specialist
+  Fixed some dynasty specific intro events not firing
+  Fixed grayed out "Found Capital" button showing wrong helptext when no Family selected
+  Text and event fixes
