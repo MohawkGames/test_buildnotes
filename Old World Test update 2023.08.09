@@ -1,0 +1,17 @@
+Test Branch: 1.0.68179 Test 08/09/2023
+
+Programming
+  AI combat improvements
+  AI no longer attacks when there is no value in doing so
+  AI no longer makes attrition attacks if attacking unit is in danger
+  AI has a better understanding of counterattack damage
+  AI more mindful of enemy units that can stun  
+  
+UI
+  Map Editor - reformatted right-side utilities to compress and shrink vertical size. Removed not-working map autosize button
+  
+Bugs Fixed
+  Fixed nicknames not being assigned for new custom characters in events
+  Fixed intro events not triggering in some circumstances
+  Fixed being unable to make truce with an AI after they declared war via an event without having met the player
+  Text and event fixes
