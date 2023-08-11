@@ -1,4 +1,4 @@
-Test Branch: 1.0.68179 Test 08/09/2023
+Test Branch: 1.0.68205 Test 08/11/2023
 
 Programming
   AI combat improvements
@@ -8,10 +8,13 @@ Programming
   AI more mindful of enemy units that can stun  
   
 UI
+  Combat preview damage text next to unit health bar now shows the unit's maximum damage even if the target has less HP or a Zealot general
   Map Editor - reformatted right-side utilities to compress and shrink vertical size. Removed not-working map autosize button
   
 Bugs Fixed
   Fixed nicknames not being assigned for new custom characters in events
   Fixed intro events not triggering in some circumstances
   Fixed being unable to make truce with an AI after they declared war via an event without having met the player
+  Fixed achievement Alexander The Great not triggering for Alexander Dynasty
+  Fixed Customize leader option not being remembered 
   Text and event fixes
