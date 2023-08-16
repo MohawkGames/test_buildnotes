@@ -1,10 +1,12 @@
 Test Branch: 1.0.68205 Test 08/11/2023
+Test Branch: 1.0.68224 Test 08/16/2023
 
 Programming
   AI combat improvements
   AI no longer attacks when there is no value in doing so
   AI no longer makes attrition attacks if attacking unit is in danger
   AI has a better understanding of counterattack damage
+  AI has a better understanding of the Zealot general ability to not die with more than 1 HP
   AI more mindful of enemy units that can stun  
   
 UI
