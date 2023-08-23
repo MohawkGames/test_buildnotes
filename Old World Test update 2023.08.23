@@ -1,4 +1,4 @@
-Test Branch: 1.0.68357 Test 08/23/2023
+Test Branch: 1.0.68373 Test 08/23/2023
 
 Design
   New map option City Site Number that limits the number of city sites available based on the number of nations.  Options are Unrestricted (default), Restricted (3 city sites per family per nation), Family Seats (1 city site per family per nation) and Capitals (1 city site per nation).   Tribal settlements will still appear in places that would have been city sites but these cannot be settled by nations.
