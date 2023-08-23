@@ -1,0 +1,39 @@
+Test Branch: 1.0.68357 Test 08/23/2023
+
+Design
+  New map option City Site Number that limits the number of city sites available based on the number of nations.  Options are Unrestricted (default), Restricted (3 city sites per family per nation), Family Seats (1 city site per family per nation) and Capitals (1 city site per nation).   Tribal settlements will still appear in places that would have been city sites but these cannot be settled by nations.
+  Game of the Week games now much less likely to have non-default city spacing
+  Egypt now has -20% costs for same adjacent buildings (down from -25%)
+  Map generator tries to place at least as many free city sites as starting locations on a given land area surrounded by water and mountains.
+
+Programming
+  AI performance improvements
+  Improvements to AI value estimate of effects 
+  New features for modders:
+    Cognomen can now add a memoryCharacter
+    Added SetHeight to bonuses
+    Added EffectUnitUnlock to EffectUnit
+    Description field added to many xmls
+    Enabled adding custom variables to UnitTypes
+    Removed hardcoded assumption about water heights
+  
+UI
+  Can now assign hotkey combos that are only used for inaccessible debug hotkeys
+  Added map option help text for default selections
+  City site widget no longer blocks clicks when it has no help text (when the tutorial is disabled)
+  
+Bugs Fixed
+  Fixed several causes of replay data getting discarded
+  Fixed Modio mod tags not adding/deleting on mod updates. Added image size validation to ensure between 256 and 2048 pixels width and height.
+  Units can no longer spawn on the same tile as other, non-allied units
+  Fixed bugs with Toggle Names on the mini Tech Tree 
+  Fixed pick later found panel nation help sometimes incorrectly showing preset leaders
+  Fixed free city site location sometimes not getting revealed
+  Fixed AI cache initialization
+  Fixed null reference errors in sprite repo when using portrait mods
+  Can no longer divorce Olympias in Learn to Play 3
+  Fixed mission effects playing after entering and exiting city screen
+  Fixed load/save error with pings that have been placed but not yet been validated 
+  Fixed initial settler tooltip data being treated as cached and not being populated
+  Fixed editor not assigning tribe tile owner when placing a settlement improvement 
+  Text and event fixes
