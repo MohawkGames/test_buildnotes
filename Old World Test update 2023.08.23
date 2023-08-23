@@ -2,6 +2,7 @@ Test Branch: 1.0.68357 Test 08/23/2023
 
 Design
   New map option City Site Number that limits the number of city sites available based on the number of nations.  Options are Unrestricted (default), Restricted (3 city sites per family per nation), Family Seats (1 city site per family per nation) and Capitals (1 city site per nation).   Tribal settlements will still appear in places that would have been city sites but these cannot be settled by nations.
+  Tribe units now occupy empty settlements, when given the chance
   Game of the Week games now much less likely to have non-default city spacing
   Egypt now has -20% costs for same adjacent buildings (down from -25%)
   Map generator tries to place at least as many free city sites as starting locations on a given land area surrounded by water and mountains.
@@ -36,4 +37,5 @@ Bugs Fixed
   Fixed load/save error with pings that have been placed but not yet been validated 
   Fixed initial settler tooltip data being treated as cached and not being populated
   Fixed editor not assigning tribe tile owner when placing a settlement improvement 
+  Fixed unit status not updating after tile ownership change
   Text and event fixes
