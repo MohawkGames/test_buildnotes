@@ -10,10 +10,7 @@ Programming
   AI performance optimization
   Removed more hardcoded terrain references
   Amended coast renderer and unified mountain and volcano renderers to be more mod friendly
-  
-UI
-  SP setup screen now supports dynasties on the leader select screen
-  
+    
 Bugs Fixed
   Tribe ruins no longer show countdown timer when tribe is extinct
   Fixed city site text being updated without visibility
