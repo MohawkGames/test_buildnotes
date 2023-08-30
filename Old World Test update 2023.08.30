@@ -1,0 +1,28 @@
+Test Branch: 1.0.68464 Test 08/30/2023
+
+Design
+  The leader dying with no heir will no longer cause the game to be lost.  Instead another character will seize the throne.
+  City site location placements are now better balanced between nations when using restricted city site numbers
+
+Programming
+  AI improvements
+  AI finishes already started Wonders with more urgency
+  AI performance optimization
+  Removed more hardcoded terrain references
+  Amended coast renderer and unified mountain and volcano renderers to be more mod friendly
+  
+UI
+  SP setup screen now supports dynasties on the leader select screen
+  
+Bugs Fixed
+  Tribe ruins no longer show countdown timer when tribe is extinct
+  Fixed city site text being updated without visibility
+  Fixed issues joining MP games and replay data getting discarded with map script mods installed
+  Fixed some map script issues when using restricted city site numbers
+  Adjusted improvement construction turns widget projection distance and scale to prevent occlusion from terrain
+  Fixed city widgets getting hidden behind camels
+  Fixed knockback animation incorrectly playing on secondary attack targets
+  Fixed autonomous cities not getting queued production refunded when it is canceled
+  Fixed Rider family getting negative opinion from having a tribal spouse - now correctly only applies to a foreign nation spouse
+  Fixed bug with modded spritesheets
+  Text and event fixes
