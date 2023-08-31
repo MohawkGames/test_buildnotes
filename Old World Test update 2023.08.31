@@ -1,4 +1,4 @@
-Test Branch: 1.0.68??? Test 08/31/2023
+Test Branch: 1.0.68478 Test 08/31/2023
 
 Design
   The leader dying with no heir will no longer cause the game to be lost.  Instead another character will seize the throne.
@@ -10,6 +10,7 @@ Programming
   AI performance optimization
   Removed more hardcoded terrain references
   Amended coast renderer and unified mountain and volcano renderers to be more mod friendly
+  Added support for showing dynasty portraits, names and backgrounds on the Choose Leader and Setup screens
     
 Bugs Fixed
   Tribe ruins no longer show countdown timer when tribe is extinct
