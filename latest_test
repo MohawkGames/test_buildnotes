@@ -1,7 +1,6 @@
 Test Branch: 1.0.68478 Test 08/31/2023
 
 Design
-  The leader dying with no heir will no longer cause the game to be lost.  Instead another character will seize the throne.
   City site location placements are now better balanced between nations when using restricted city site numbers
 
 Programming
