@@ -4,7 +4,7 @@ Design
   Revised city site placement algorithm so that you can now have player starts closer than two minimum city site distances apart, if the map is too small for the number of players
   Higher-tier wonders now count toward lower-tier goals - e.g. Legendary wonders will be counted for the "have 1 Strong wonder" goal 
   Can now hurry obsolete units already in the build queue
-  End turn is canceled if there are new decisions to make after moving automated units
+  End turn is canceled if there are new decisions to make after automated units move
 
 Programming
   Tribal invasion AI improvements
