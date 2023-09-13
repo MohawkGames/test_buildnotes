@@ -1,58 +1,53 @@
-Test Branch: 1.0.68532 test 09/06/2023
-
-Headline changes:
-  New map option City Site Number 
-  AI performance improvements
-  Enhanced modding features
+Test Branch: 1.0.68629 Test 09/13/2023
 
 Design
-  New map option City Site Number that limits the number of city sites available based on the number of nations.  Options are Unrestricted (default), Restricted (3 city sites per family per nation), Family Seats (1 city site per family per nation) and Capitals (1 city site per nation).   Tribal settlements will still appear in places that would have been city sites but these cannot be settled by nations.
-  Map generator tries to place at least as many free city sites as starting locations on a given land area surrounded by water and mountains.
-  Tribe units now occupy empty settlements, when given the chance
-  Game of the Week games now much less likely to have non-default city spacing
-  Egypt now has -20% costs for same adjacent buildings (down from -25%)
+  Revised city site placement algorithm so that you can now have player starts closer than two minimum city site distances apart, if the map is too small for the number of players
+  Higher-tier wonders now count toward lower-tier goals - e.g. Legendary wonders will be counted for the "have 1 Strong wonder" goal 
+  Can now hurry obsolete units already in the build queue
+  End turn is canceled if there are new decisions to make after automated units move
 
 Programming
-  AI performance improvements
-  AI finishes already started Wonders with more urgency
-  Improvements to AI value estimate of effects 
-  Added support for showing dynasty portraits, names and backgrounds on the Choose Leader and Setup screens
-  New features for modders:
-    Cognomen can now add a memoryCharacter
-    Added SetHeight to bonuses
-    Added EffectUnitUnlock to EffectUnit
-    Description field added to many xmls
-    Enabled adding custom variables to UnitTypes
-    Removed hardcoded terrain references
-    Amended coast renderer and unified mountain and volcano renderers to be more mod friendly
-  
+  Tribal invasion AI improvements
+  Combat AI improvements
+  Added console command setTribeInvasion
+  Added mod support for specific tribes and tribe strengths to use central AI to coordinate their units
+  Change mod Infos files now processed after append mod Infos files 
+  Improved terrain mod support and performance optimizations
+  Map scripts now use internal variable/functions to set terrain formations, without persisting them to tile data since formations are only needed at generation time
+  Removed terrain formation ID and tile elevation from network data 
+  Removed some unused terrain renderers
+  Removed unnecessary calls for timeline border tiles
+  Got rid of tile latitude in network data and saves. The save now instead stores the min/max latitude of the generating mapscript, latitudes are calculated as needed
+  Optimization to avoid calls to native code in a few places
+
 UI
-  Can now assign hotkey combos that are only used for inaccessible debug hotkeys
-  Added map option help text for default selections
-  City site widget no longer blocks clicks when it has no help text (when the tutorial is disabled)
-  
+  Added list of past events to character tooltip 
+  Added toggle to tutorial events to allow the tutorial to be disabled directly from the event
+  Improved urban adjacency requirement help text
+  Tooltips for Barracks, Harbors etc now say they are a spawn point for relevant units
+  Removed city site text on tiles with settlements on them.  Tile tooltip now shows if tile is a city site.
+  Map editor UI cleanup
+  Added progress for "Establish a State Religion" ambition
+  Hurry helptext now shows warning if cannot hurry due to missing prereq, such as Scholar governor for Inquiry 
+  Event browser added new event warnings
+  Added strategy notes to Encyclopedia entries for Laws
+    
 Bugs Fixed
-  Fixed several causes of replay data getting discarded
-  Fixed Modio mod tags not adding/deleting on mod updates. Added image size validation to ensure between 256 and 2048 pixels width and height.
-  Units can no longer spawn on the same tile as other, non-allied units
-  Fixed bugs with Toggle Names on the mini Tech Tree 
-  Fixed pick later found panel nation help sometimes incorrectly showing preset leaders
-  Fixed free city site location sometimes not getting revealed
-  Fixed AI cache initialization
-  Fixed null reference errors in sprite repo when using portrait mods
-  Can no longer divorce Olympias in Learn to Play 3
-  Fixed mission effects playing after entering and exiting city screen
-  Fixed load/save error with pings that have been placed but not yet been validated 
-  Fixed initial settler tooltip data being treated as cached and not being populated
-  Fixed editor not assigning tribe tile owner when placing a settlement improvement 
-  Fixed unit status not updating after tile ownership change
-  Tribe ruins no longer show countdown timer when tribe is extinct
-  Fixed city site text being updated without visibility
-  Fixed issues joining MP games and replay data getting discarded with map script mods installed
-  Adjusted improvement construction turns widget projection distance and scale to prevent occlusion from terrain
-  Fixed city widgets getting hidden behind camels
-  Fixed knockback animation incorrectly playing on secondary attack targets
-  Fixed autonomous cities not getting queued production refunded when it is canceled
-  Fixed Rider family getting negative opinion from having a tribal spouse - now correctly only applies to a foreign nation spouse
-  Fixed bug with modded spritesheets
+  Map editor fixed generate map not placing city site improvements on city site tile 
+  Map editor fixed bug that reset active nation start sites. 
+  Map editor generate map now checks mapSizes and assigns the right number of start city sites based on map size in the editor.
+  Map editor fixed Seaside script not being selectable as off the bottom of the panel
+  Map editor fixed missing tooltips
+  Map editor fixed not clearing NationType and TribeType when removing a city site via terrain/height/improvement tools 
+  Modio fix for slow mod download speed due to buffer bottleneck 
+  Fixed bug causing game to get stuck when the Era of Peace occurrence ended via an event
+  Fixed Play/Win LAN achievement errors
+  Points to win setting no longer persists from main game to scenarios 
+  Fixed initial Settler sometimes not being placed in the build queue 
+  Fixed some raycast issues with map pins/recommendations 
+  Fixed mountain renderer hanging if there are mountain clusters outside map boundaries
+  Fixed bug where player custom name and email were being reset in multiplayer 
+  Fixed unit ModVariables not being copied when copying the unit
+  Fixed UI issue when logging out from modio
+  Fixed eliminated players in cloud games who still need to load the game not getting marked with a star
   Text and event fixes
