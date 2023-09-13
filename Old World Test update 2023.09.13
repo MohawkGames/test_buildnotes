@@ -1,4 +1,4 @@
-Test Branch: 1.0.68629 Test 08/31/2023
+Test Branch: 1.0.68629 Test 09/13/2023
 
 Design
   Revised city site placement algorithm so that you can now have player starts closer than two minimum city site distances apart, if the map is too small for the number of players
