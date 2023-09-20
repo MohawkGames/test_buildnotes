@@ -11,7 +11,7 @@ Programming
   Adjacent effectUnit refactor
 
 UI
-  The location of initial city improvements (Garrison, Fair) can be specified using improvement pings.  This replaces the old system of ctrl+clicking preferred tile.
+  The location of initial city improvements (Garrison, Fair) can be specified using improvement pings. Only urban tiles are valid for these and this replaces the old system of ctrl+clicking the preferred tile.
   Leader selection screen now uses multiple rows instead of scroll arrows
   Peace mission now shows tooltip explaining mission is disabled when one nation has not met the other
     
