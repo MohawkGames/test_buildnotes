@@ -1,0 +1,29 @@
+Test Branch: 1.0.68727 Test 09/20/2023
+
+Design
+  Commander leaders now get +100% bonus attack strength while Flanking (up from +50%)
+  City Site ownership is now determined first by who has a military unit on the tile (in the case of an ally)
+  Event options with the chance to gain 1 delayed trait now get offered as a fallback rating if the trait is invalid.
+  Non-allied tribe settlements that are not on city sites no longer get absorbed into a nation by border expansion  
+
+Programming
+  Games in the completed folder no longer include replay data
+  Adjacent effectUnit refactor
+
+UI
+  The location of initial city improvements (Garrison, Fair) can be specified using improvement pings.  This replaces the old system of ctrl+clicking preferred tile.
+  Leader selection screen now uses multiple rows instead of scroll arrows
+  Peace mission now shows tooltip explaining mission is disabled when one nation has not met the other
+    
+Bugs Fixed
+  Fixed theology ambitions getting cancelled too early
+  Fixed AI bug where city sites were sometimes claimed by non military units, when they should not have been claimed at all
+  Fixed missing icon in turn notification when in no characters mode
+  Bonuses that takes away citizens are no longer possible if it means removing specialist builds with progress from the city queue 
+  Events featuring nations that are eliminated are now correctly made invalid
+  Fixed tile status tooltips not showing
+  Fixed issues with mountainer renderer
+  Fixed save/load bugs
+  Fixed tile tooltips overlapping minimap in Windowed mode
+  Fixed potential data issue for tile text with undo 
+  Text and event fixes
