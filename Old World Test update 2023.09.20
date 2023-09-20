@@ -12,6 +12,7 @@ Programming
 
 UI
   The location of initial city improvements (Garrison, Fair) can be specified by using the relevant improvement ping on a valid urban tile. This replaces the old system of ctrl+clicking the preferred tile.
+  Improvement pings now always get removed when a tile improvement or terrain changes
   Leader selection screen now uses multiple rows instead of scroll arrows
   Peace mission now shows tooltip explaining mission is disabled when one nation has not met the other
     
@@ -26,4 +27,6 @@ Bugs Fixed
   Fixed save/load bugs
   Fixed tile tooltips overlapping minimap in Windowed mode
   Fixed potential data issue for tile text with undo 
+  Fixed non-allied units not being bounced when a unit newly occupies a tile.
+  Fixed rare issue that could cause saves started whilst offline to fail to load when online
   Text and event fixes
