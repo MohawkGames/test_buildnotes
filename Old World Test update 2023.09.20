@@ -16,13 +16,13 @@ UI
   Peace mission now shows tooltip explaining mission is disabled when one nation has not met the other
     
 Bugs Fixed
-  Fixed theology ambitions getting cancelled too early
+  Fixed theology ambitions getting canceled too early
   Fixed AI bug where city sites were sometimes claimed by non military units, when they should not have been claimed at all
   Fixed missing icon in turn notification when in no characters mode
   Bonuses that takes away citizens are no longer possible if it means removing specialist builds with progress from the city queue 
   Events featuring nations that are eliminated are now correctly made invalid
   Fixed tile status tooltips not showing
-  Fixed issues with mountainer renderer
+  Fixed issues with mountain renderer
   Fixed save/load bugs
   Fixed tile tooltips overlapping minimap in Windowed mode
   Fixed potential data issue for tile text with undo 
