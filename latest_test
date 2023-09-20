@@ -1,53 +1,32 @@
-Test Branch: 1.0.68629 Test 09/13/2023
+Test Branch: 1.0.68735 Test 09/20/2023
 
 Design
-  Revised city site placement algorithm so that you can now have player starts closer than two minimum city site distances apart, if the map is too small for the number of players
-  Higher-tier wonders now count toward lower-tier goals - e.g. Legendary wonders will be counted for the "have 1 Strong wonder" goal 
-  Can now hurry obsolete units already in the build queue
-  End turn is canceled if there are new decisions to make after automated units move
+  Commander leaders now get +100% bonus attack strength while Flanking (up from +50%)
+  City Site ownership is now determined first by who has a military unit on the tile (in the case of an ally)
+  Event options with the chance to gain 1 delayed trait now get offered as a fallback rating if the trait is invalid.
+  Non-allied tribe settlements that are not on city sites no longer get absorbed into a nation by border expansion  
 
 Programming
-  Tribal invasion AI improvements
-  Combat AI improvements
-  Added console command setTribeInvasion
-  Added mod support for specific tribes and tribe strengths to use central AI to coordinate their units
-  Change mod Infos files now processed after append mod Infos files 
-  Improved terrain mod support and performance optimizations
-  Map scripts now use internal variable/functions to set terrain formations, without persisting them to tile data since formations are only needed at generation time
-  Removed terrain formation ID and tile elevation from network data 
-  Removed some unused terrain renderers
-  Removed unnecessary calls for timeline border tiles
-  Got rid of tile latitude in network data and saves. The save now instead stores the min/max latitude of the generating mapscript, latitudes are calculated as needed
-  Optimization to avoid calls to native code in a few places
+  Games in the completed folder no longer include replay data
+  Adjacent effectUnit refactor
 
 UI
-  Added list of past events to character tooltip 
-  Added toggle to tutorial events to allow the tutorial to be disabled directly from the event
-  Improved urban adjacency requirement help text
-  Tooltips for Barracks, Harbors etc now say they are a spawn point for relevant units
-  Removed city site text on tiles with settlements on them.  Tile tooltip now shows if tile is a city site.
-  Map editor UI cleanup
-  Added progress for "Establish a State Religion" ambition
-  Hurry helptext now shows warning if cannot hurry due to missing prereq, such as Scholar governor for Inquiry 
-  Event browser added new event warnings
-  Added strategy notes to Encyclopedia entries for Laws
+  The location of initial city improvements (Garrison, Fair) can be specified by using the relevant improvement ping on a valid urban tile. This replaces the old system of ctrl+clicking the preferred tile.
+  Improvement pings now always get removed when a tile improvement or terrain changes
+  Leader selection screen now uses multiple rows instead of scroll arrows
+  Peace mission now shows tooltip explaining mission is disabled when one nation has not met the other
     
 Bugs Fixed
-  Map editor fixed generate map not placing city site improvements on city site tile 
-  Map editor fixed bug that reset active nation start sites. 
-  Map editor generate map now checks mapSizes and assigns the right number of start city sites based on map size in the editor.
-  Map editor fixed Seaside script not being selectable as off the bottom of the panel
-  Map editor fixed missing tooltips
-  Map editor fixed not clearing NationType and TribeType when removing a city site via terrain/height/improvement tools 
-  Modio fix for slow mod download speed due to buffer bottleneck 
-  Fixed bug causing game to get stuck when the Era of Peace occurrence ended via an event
-  Fixed Play/Win LAN achievement errors
-  Points to win setting no longer persists from main game to scenarios 
-  Fixed initial Settler sometimes not being placed in the build queue 
-  Fixed some raycast issues with map pins/recommendations 
-  Fixed mountain renderer hanging if there are mountain clusters outside map boundaries
-  Fixed bug where player custom name and email were being reset in multiplayer 
-  Fixed unit ModVariables not being copied when copying the unit
-  Fixed UI issue when logging out from modio
-  Fixed eliminated players in cloud games who still need to load the game not getting marked with a star
+  Fixed theology ambitions getting canceled too early
+  Fixed AI bug where city sites were sometimes claimed by non military units, when they should not have been claimed at all
+  Fixed missing icon in turn notification when in no characters mode
+  Bonuses that takes away citizens are no longer possible if it means removing specialist builds with progress from the city queue 
+  Events featuring nations that are eliminated are now correctly made invalid
+  Fixed tile status tooltips not showing
+  Fixed issues with mountain renderer
+  Fixed save/load bugs
+  Fixed tile tooltips overlapping minimap in Windowed mode
+  Fixed potential data issue for tile text with undo 
+  Fixed non-allied units not being bounced when a unit newly occupies a tile.
+  Fixed rare issue that could cause saves started whilst offline to fail to load when online
   Text and event fixes
