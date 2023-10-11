@@ -11,16 +11,19 @@ Design
   Pharaohs of the Nile scenario 6 - Climate change induced Nile flooding now has a 10 turn grace period
   Tweaked CITIES_FOREIGN ambition tiers
   Sacred and Profane - Make Clergy mission requires target to be single
+  Enabled Extreme Terrain and Tribal Lands map options for multiplayer Continent and Donut map scripts and Tribe Number map option for multiplayer Seaside and Bay map scripts
 
 Programming
   Added new EffectUnit options for modders - SelfApplyEffectUnitYieldCost, SelfApplyEffectUnitTurns, AttackApplyEffectUnitTurns, aiOccurrenceFromModifier, bMercenary
   Added new EffectPlayer option for modders - miMaxCities
   AI now waits until it has a greater power ratio before launching an attack outside of its borders 
   Clarified the distinction between a tribe city site, a tribe settlement tile, and a tribe site, which are all technically different things but in many cases the same
+  AI performance optimization
 
 UI
   Added player option to disable tile improvement recommendations
   Schemer's Adopt Child mission now visible on the leader
+  Character event log now puts all events of the same year on the same line, to save some vertical space
   Removed 16 nation display cap from Choose Leader screen
   Better improvement ping support for bonus improvements. If there is no improvement ping, an improvement ping for the same class is considered.
   Added helptext to events requiring an active Occurrence 
@@ -65,4 +68,5 @@ Bugs Fixed
   Fixed new game portraits being overwritten with second display of portraits using nation index instead of playable nation index. Was affecting Hatti and Kush if those DLC were not owned. 
   Fixed some issues with loading a save in a different game mode from where it was saved
   Reduced frequency of limit of 5 events per turn getting exceeded
+  Fixed improvement upgrade cost bug 
   Text and event fixes
