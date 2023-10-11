@@ -2,6 +2,7 @@ Test Branch: 1.0.69069 Test 10/11/2023
 
 Design
   Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civcs.  This replaces their previous 10% to enlist on kill.
+  Reworked regencies. Regents no longer lead to legitimacy decay as normal leader changes do.  The rightful heir will automatically become the Chosen Heir and this cannot be changed by the Regent. 
   The free Garrison in your Capital and Fair from a Traders seat can now appear on any valid tile instead of only on existing urban tiles.  As before, the locations of these can be set by using improvement pings.
   Exiting a cloud game mid turn will now save your progress and no longer reset to the start of the turn on reload
   Urban tiles no longer placed under tribal settlements unless they are city sites (applies when City Sites number is modified)
