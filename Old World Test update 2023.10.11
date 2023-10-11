@@ -1,4 +1,9 @@
-Test Branch: 1.0.69069 Test 10/11/2023
+Test Branch: 1.0.69073 Test 10/11/2023
+
+Headline changes
+  Zealot leader generls have a new action 'Apply Enlist'
+  Reworked Regencies
+  Added option to disable tile improvement recommendations
 
 Design
   Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civcs.  This replaces their previous 10% to enlist on kill.
@@ -13,7 +18,7 @@ Design
   Pharaohs of the Nile campaign - No leader turns family opinion penalty no longer applies
   Pharaohs of the Nile scenario 3 - Reduced raids and increased Amun units on higher difficulties
   Pharaohs of the Nile scenario 6 - Climate change induced Nile flooding now has a 10 turn grace period
-  Tweaked CITIES_FOREIGN ambition tiers
+  Tweaked capture foreign cities ambition tiers
   Sacred and Profane - Make Clergy mission requires target to be single
   Enabled Extreme Terrain and Tribal Lands map options for multiplayer Continent and Donut map scripts and Tribe Number map option for multiplayer Seaside and Bay map scripts
 
@@ -65,10 +70,10 @@ Bugs Fixed
   Fixed AI not declaring war on tribes to expand
   AI retreat fix 
   Fixed some AI exploration confusion
-  Map Editor - Fixed null ref when removing ruins tile imp from an urban tile
+  Map Editor - Fixed null ref when removing ruins improvement from an urban tile
   Old World premade map fix to Kush starting location
   Fixed events featuring players or tribes the player has not yet met
-  Fixed some rare AI behavior (encountering danger before founding the first city)
+  Fixed some rare AI behavior when encountering danger before founding the first city
   Fixed new game portraits being overwritten with second display of portraits using nation index instead of playable nation index. Was affecting Hatti and Kush if those DLC were not owned. 
   Fixed some issues with loading a save in a different game mode from where it was saved
   Reduced frequency of limit of 5 events per turn getting exceeded
