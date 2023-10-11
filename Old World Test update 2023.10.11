@@ -1,4 +1,4 @@
-Test Branch: 1.0.69062 Test 10/11/2023
+Test Branch: 1.0.69069 Test 10/11/2023
 
 Design
   Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civcs.  This replaces their previous 10% to enlist on kill.
