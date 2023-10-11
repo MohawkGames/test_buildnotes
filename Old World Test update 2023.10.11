@@ -27,7 +27,8 @@ UI
   Mod Manager - Uploading mods is now background task like downloading is. Status added to bottom of mod manager
   Mod Manager - faster Modio downloads.  Download size and percentage added to mod download status. 
   Added warning to the tooltip if assigning a general or governor is going to replace another character
-  
+  Character illness is now included in the turn summary
+
     
 Bugs Fixed
   Fixed cloud game bug where sometimes it remained locked to a player who had exited the game without ending their turn
