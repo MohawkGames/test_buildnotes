@@ -1,12 +1,12 @@
 Test Branch: 1.0.69073 Test 10/11/2023
 
 Headline changes
-  Zealot leader generls have a new action 'Apply Enlist'
+  Zealot leader generals have a new action 'Apply Enlist'
   Reworked Regencies
   Added option to disable tile improvement recommendations
 
 Design
-  Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civcs.  This replaces their previous 10% to enlist on kill.
+  Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civics.  This replaces their previous 10% chance to enlist on kill.
   Reworked regencies:
     Regents no longer lead to legitimacy decay as normal leader changes do.
     The Rightful Heir will automatically become the Chosen Heir and this cannot be changed by the Regent. 
