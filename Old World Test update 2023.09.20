@@ -4,7 +4,8 @@ Design
   Commander leaders now get +100% bonus attack strength while Flanking (up from +50%)
   City Site ownership is now determined first by who has a military unit on the tile (in the case of an ally)
   Event options with the chance to gain 1 delayed trait now get offered as a fallback rating if the trait is invalid.
-  Non-allied tribe settlements that are not on city sites no longer get absorbed into a nation by border expansion  
+  Non-allied tribe settlements that are not on city sites no longer get absorbed into a nation by border expansion
+  Reworked regencies. Regents no longer lead to legitimacy decay as normal leader changes do.  The rightful heir will automatically become the Chosen Heir and this cannot be changed by the regent.  Regents no longer cause others in the succession to be bypassed.
 
 Programming
   Games in the completed folder no longer include replay data
