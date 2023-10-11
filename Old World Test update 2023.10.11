@@ -1,0 +1,66 @@
+Test Branch: 1.0.69062 Test 10/11/2023
+
+Design
+  Zealot leader generals have a new action 'Apply Enlist', which gives their next kill a 100% chance to Enlist for 3 turns, for the cost of 600 civcs.  This replaces their previous 10% to enlist on kill.
+  The free Garrison in your Capital and Fair from a Traders seat can now appear on any valid tile instead of only on existing urban tiles.  As before, the locations of these can be set by using improvement pings.
+  Exiting a cloud game mid turn will now save your progress and no longer reset to the start of the turn on reload
+  Urban tiles no longer placed under tribal settlements unless they are city sites (applies when City Sites number is modified)
+  Pharaohs of the Nile campaign - No leader turns family opinion penalty no longer applies
+  Pharaohs of the Nile scenario 3 - Reduced raids and increased Amun units on higher difficulties
+  Pharaohs of the Nile scenario 6 - Climate change induced Nile flooding now has a 10 turn grace period
+  Tweaked CITIES_FOREIGN ambition tiers
+  Sacred and Profane - Make Clergy mission requires target to be single
+
+Programming
+  Added new EffectUnit options for modders - SelfApplyEffectUnitYieldCost, SelfApplyEffectUnitTurns, AttackApplyEffectUnitTurns, aiOccurrenceFromModifier, bMercenary
+  Added new EffectPlayer option for modders - miMaxCities
+  AI now waits until it has a greater power ratio before launching an attack outside of its borders 
+  Clarified the distinction between a tribe city site, a tribe settlement tile, and a tribe site, which are all technically different things but in many cases the same
+
+UI
+  Added player option to disable tile improvement recommendations
+  Schemer's Adopt Child mission now visible on the leader
+  Removed 16 nation display cap from Choose Leader screen
+  Better improvement ping support for bonus improvements. If there is no improvement ping, an improvement ping for the same class is considered.
+  Added helptext to events requiring an active Occurrence 
+  Mod Manager - Uploading mods is now background task like downloading is. Status added to bottom of mod manager
+  Mod Manager - faster Modio downloads.  Download size and percentage added to mod download status. 
+  Added warning to the tooltip if assigning a general or governor is going to replace another character
+  
+    
+Bugs Fixed
+  Fixed cloud game bug where sometimes it remained locked to a player who had exited the game without ending their turn
+  Fixed potential issues with transition from sequential to simultaneous turnStyle
+  Units that were under attacked cooldown and now are supposed to be allowed to move because of a turnStyle change, have their cooldown removed
+  Attacked cooldown is no longer given if an attacked unit could not move at that point in the turn anyway
+  Fixed null reference 
+  Fixed tile visibility exception
+  Fixed OccurrenceEndPlayer bonus
+  Fixed victory popup display with more than 10 ambitions or players
+  Fixed camera panning to attacked cities with Follow AI set to None
+  Fixed turn style and turn timer in the options popup being applied before you click save 
+  Fixed reset button on options panel not updating the turnStyle and turnTimer settings
+  AI now does diplomacy with other AI first before getting to humans so diplomacy events are more current
+  Fixed improvement help text bug on city sites 
+  Fixed victory event not appearing if the leader dies on the last turn
+  Pharaohs of the Nile campaign - Blocked Visitor from the East event
+  Pharaohs of the Nile scenario 2 - Blocked Monotheism law 
+  Pharaohs of the Nile scenario 3 - Change state religion hidden until appropriate time in the campaign
+  Pharaohs of the Nile scenario 3 - Fixed some Zone of Control bugs
+  Pharaohs of the Nile scenario 3 - Fixed defeat event not popping on total defeat, or loss of Akhetaten.  Improved speed of victory event popup.
+  Pharaohs of the Nile scenario 3 - fix possible AI hang when it's thinking about healing an Amun unit by pillaging
+  Pharaohs of the Nile scenario 4 - Ramesses and Muwatalli event and achievement fixes 
+  Pharaohs of the Nile scenario 5 - fix defeat event not popping.
+  Pharaohs of the Nile scenario 6 - Worst Possible Ending achievement fix 
+  Learn to Play 3 - Fixed rare null ref error if there's no heir. Fix defeat not triggering if conquered by raiders/rebels/barbs
+  Fixed AI not declaring war on tribes to expand
+  AI retreat fix 
+  Fixed some AI exploration confusion
+  Map Editor - Fixed null ref when removing ruins tile imp from an urban tile
+  Old World premade map fix to Kush starting location
+  Fixed events featuring players or tribes the player has not yet met
+  Fixed some rare AI behavior (encountering danger before founding the first city)
+  Fixed new game portraits being overwritten with second display of portraits using nation index instead of playable nation index. Was affecting Hatti and Kush if those DLC were not owned. 
+  Fixed some issues with loading a save in a different game mode from where it was saved
+  Reduced frequency of limit of 5 events per turn getting exceeded
+  Text and event fixes
