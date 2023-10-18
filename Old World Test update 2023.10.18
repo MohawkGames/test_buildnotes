@@ -1,7 +1,5 @@
-Test Branch: 1.0.69176 Test 10/18/2023
+Test Branch: 1.0.69198 Test 10/18/2023
 
-Headline changes
-  
 Design
   Zealot Enlist ability cost reduced from 600 civics to 400 civics
   Fervent trait (from the Kush Piye dynasty) now grants the bonus militia in the city the religion spreads to instead of in the capital
@@ -28,12 +26,14 @@ Bugs Fixed
   Fixed bad AI exploration with military units
   Fixed events not working for cities in anarchy
   Fixed Rise of Carthage scenario 3 failing to generate goals if player loses capital
+  Fixed Rise of Carthage scenario 3 failing to generate goals if player loses battle of Ecnomos
   Fixed stolen city/city site trigger not taking teams into account
   Fixed family luxury menu display issue
   Fixed opinion bars displaying inconsistently
-  Fixed queue panel timers not updating when city yield production changes
+  Fixed specialist widget timers not updating when city yield production changes
   Fixed Learn to Play 5 bug where player couldn't declare war again after accepting truce via an event
   Fixed unit/city stats sometimes not updating when general/governor stats change 
   Fixed frame limit functionality
   Fixed map script non-city resource placement 
+  Fixed premade maps failing to start when No Ancient Ruins option enabled
   Text and event fixes
