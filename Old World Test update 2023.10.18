@@ -1,0 +1,39 @@
+Test Branch: 1.0.69176 Test 10/18/2023
+
+Headline changes
+  
+Design
+  Zealot Enlist ability cost reduced from 600 civics to 400 civics
+  Fervent trait (from the Kush Piye dynasty) now grants the bonus militia in the city the religion spreads to instead of in the capital
+  Enlightenment Theology now gives +3 happiness per Monk class instead of +2 per Elder Monk
+  Guilds now gives happiness per Hamlet class improvement instead of just per Town
+  Random maps are more likely to have at least one luxury resource of each type (does not apply to mirror maps)
+
+Programming
+  Added AI for Zealot leader enlisting 
+  Improved performance in Heroes of the Aegean scenario 2
+
+UI
+  Rival visibility toggle (\) now show visibility from allied units as well 
+  Improved display of Zealot Enlist Next effect
+  New cognomen popup will now display the legitimacy it gives
+  Other team VPs will now display in yellow/red as they get close to victory
+  Tooltip for event bonuses that affect all cities of a religion now shows how many cities it will affect
+  Added loading hint for Slow AI option
+    
+Bugs Fixed
+  Fixed Resume and Quick Cloud Load on main menu not unloading mods first
+  Fixed bug with tribe settlement distribution
+  Fixed free tech preferring tech currently being researched
+  Fixed bad AI exploration with military units
+  Fixed events not working for cities in anarchy
+  Fixed Rise of Carthage scenario 3 failing to generate goals if player loses capital
+  Fixed stolen city/city site trigger not taking teams into account
+  Fixed family luxury menu display issue
+  Fixed opinion bars displaying inconsistently
+  Fixed queue panel timers not updating when city yield production changes
+  Fixed Learn to Play 5 bug where player couldn't declare war again after accepting truce via an event
+  Fixed unit/city stats sometimes not updating when general/governor stats change 
+  Fixed frame limit functionality
+  Fixed map script non-city resource placement 
+  Text and event fixes
