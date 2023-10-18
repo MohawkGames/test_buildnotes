@@ -12,7 +12,7 @@ Programming
   Improved performance in Heroes of the Aegean scenario 2
 
 UI
-  Rival visibility toggle (\) now show visibility from allied units as well 
+  Rival visibility toggle (\) now shows visibility from allied units as well 
   Improved display of Zealot Enlist Next effect
   New cognomen popup will now display the legitimacy it gives
   Other team VPs will now display in yellow/red as they get close to victory
@@ -25,8 +25,7 @@ Bugs Fixed
   Fixed free tech preferring tech currently being researched
   Fixed bad AI exploration with military units
   Fixed events not working for cities in anarchy
-  Fixed Rise of Carthage scenario 3 failing to generate goals if player loses capital
-  Fixed Rise of Carthage scenario 3 failing to generate goals if player loses battle of Ecnomos
+  Fixed bugs with Rise of Carthage scenario 3 sometimes failing to generate goals 
   Fixed stolen city/city site trigger not taking teams into account
   Fixed family luxury menu display issue
   Fixed opinion bars displaying inconsistently
