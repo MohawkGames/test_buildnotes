@@ -13,9 +13,9 @@ Programming
 
 UI
   Rival visibility toggle (\) now shows visibility from allied units as well 
-  Improved display of Zealot Enlist Next effect
   New cognomen popup will now display the legitimacy it gives
   Other team VPs will now display in yellow/red as they get close to victory
+  Improved display of Zealot Enlist Next effect
   Tooltip for event bonuses that affect all cities of a religion now shows how many cities it will affect
   Added loading hint for Slow AI option
     
