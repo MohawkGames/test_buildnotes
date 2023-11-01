@@ -30,6 +30,7 @@ UI
   Added Deficit concept to Encyclopedia
   Dynasty dropdown with Pick Later will use the dynasty name if available 
   Added option to only use default dynasties for AI players 
+  Loading a single player game as a network game now allows AI player reassignment 
     
 Bugs Fixed
   Fixed bugs causing replay data to get discarded unnecessarily  
