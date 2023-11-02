@@ -1,4 +1,4 @@
-Test Branch: 1.0.69354 Test 11/01/2023
+Test Branch: 1.0.69366 Test 11/02/2023
 
 Design
   Persian Unique Units (Palton Cavalry and Cataphract Archer) now have a range of 1.  This can be increased by effects which increase range (Hills, Marksman promotion etc).
@@ -21,6 +21,7 @@ Programming
 
 UI
   Alt+right mouse button is now a shortcut for improvement pings
+  Loading a single player game as a network game now allows AI player reassignment 
   Mouse click no longer triggers when releasing button after drag
   Reduced spacing in yield display for tile/specialist widgets 
   Reduced tile text font and icon size 
@@ -30,7 +31,6 @@ UI
   Added Deficit concept to Encyclopedia
   Dynasty dropdown with Pick Later will use the dynasty name if available 
   Added option to only use default dynasties for AI players 
-  Loading a single player game as a network game now allows AI player reassignment 
     
 Bugs Fixed
   Fixed bugs causing replay data to get discarded unnecessarily  
@@ -58,4 +58,5 @@ Bugs Fixed
   Fixed out of range exception 
   Fixed decision cycling sometimes not actually cycling 
   Worker selection cycling UI performance fix 
+  Fixed client background task deadlock
   Text and event fixes
