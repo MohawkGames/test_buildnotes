@@ -1,0 +1,31 @@
+Test Branch: 1.0.69452 Test 11/08/2023
+
+Design
+  Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
+  Increased AI penalties on lower difficulty levels
+  Passive AI will not capture cities from a player who originally founded them
+
+Programming
+  Better AI coordination so it doesn't get some units attacking a target while other healthy ones are retreating 
+  AI fixes and performance improvements
+  GOG SDK updated
+  Added STAT_YEARS_REGENT
+
+UI
+  Dynasties are now shown and can be selected on the Choose Leader screen
+  Moved cycle button tooltips to right of cycle button UI 
+  Tweaked tutorial events to make them less prone to cluster on the same turns
+  Added border expansion preview for under construction specialists
+  Added yields change from trade and tribute to war declaration effect tooltip and yield loss from connected cities to peace breaking effect tooltip 
+    
+Bugs Fixed
+  Fixed last page of Modio mods not displaying in install tab
+  Fixed bug with cloud games not updating correctly when exiting without completing turn, causing them to need to be rewound
+  Fixed turn style and turn timer dropdowns in server host controls
+  Fixed simultaneous mode non-dynamic turn timer length
+  Fixed map script bug causing generation to sometimes fail on Desert maps with large number of players
+  Fixed improvement construction time remaining not updating when worker goes on cooldown
+  Fixed Spartan elimination event in Rise of Carthage scenario 2
+  Fixed idle councilor reminder showing when no missions available
+  Fixed Wonders being eligible for pillage by event bonuses
+  Text and event fixes
