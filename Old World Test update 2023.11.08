@@ -1,9 +1,9 @@
 Test Branch: 1.0.69452 Test 11/08/2023
 
 Design
-  Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
   Increased AI penalties on lower difficulty levels
   Passive AI will not capture cities from a player who originally founded them
+  Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
 
 Programming
   Better AI coordination so it doesn't get some units attacking a target while other healthy ones are retreating 
