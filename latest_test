@@ -1,66 +1,31 @@
-Test Branch: 1.0.69366 Test 11/01/2023
+Test Branch: 1.0.69464 Test 11/08/2023
 
 Design
-
-Persian Unique Units (Palton Cavalry and Cataphract Archer) now have a range of 1.  This can be increased by effects which increase range (Hills, Marksman promotion etc).
-Kush now available on the Middle East premade map 
-Generals of tribal units now get XP 
-Tribes now attack civilian units at a lower priority 
-Upgrading an improvement now also upgrades the specialist, if the existing specialist is less advanced than the starting specialist of the upgraded improvement
-Rise of Carthage scenario 4 starting city happiness boosted
-Former regents now get a trait giving +1 wisdom and keep their King/Queen Regent title
+Increased AI penalties on lower difficulty levels
+Passive AI will not capture cities from a player who originally founded them
+Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
+Tweaked tutorial events to make them less prone to cluster on the same turns
 
 Programming
-
-AI strategic improvements
-Better AI awareness of power shift when it moves its units 
-Improved AI evaluation of tiles for border expansion and buying
-AI exploration and wood chopping improvements
-Reduced AI fort spam outside of borders, especially for Kush 
-Starting location resource placement order shuffled, so players later in the turn order don't always slightly benefit from rare luxury placement
-Added Pharaohs of the Nile campaign source and XML to Reference folder
-Added effectCity bAutoBuildUnits, which is like the current autonomous rule, but builds units instead of projects and specialists  
+Better AI coordination so it doesn't get some units attacking a target while other healthy ones are retreating 
+AI fixes and performance improvements
+GOG SDK updated
+Added STAT_YEARS_REGENT
 
 UI
-
-Alt+right mouse button is now a shortcut for improvement pings
-Loading a single player game as a network game now allows AI player reassignment 
-Mouse click no longer triggers when releasing button after drag
-Reduced spacing in yield display for tile/specialist widgets 
-Reduced tile text font and icon size 
-Random nation now sets random dynasty for both SP and MP 
-Negative changes in happiness/discontent now shown using opposite yield color
-Event Browser: The New Entry button now opens a new event the Wizard
-Added Deficit concept to Encyclopedia
-Dynasty dropdown with Pick Later will use the dynasty name if available 
-Added option to only use default dynasties for AI players 
+Dynasties are now shown and can be selected on the Choose Leader screen
+Moved cycle button tooltips to right of cycle button UI 
+Added border expansion preview for under construction specialists
+Added yields change from trade and tribute to war declaration effect tooltip and yield loss from connected cities to peace breaking effect tooltip 
     
 Bugs Fixed
-
-Fixed bugs causing replay data to get discarded unnecessarily  
-Fixed events not triggering on clearing tribal camps
-Fixed double folder names when mod name contains plus (+) symbol
-Fixed Cognomens getting replaced with lower value versions in some scenarios
-Fixed critical hit icons not being immediately updated on ending turn or changing turn style in MP
-Tribe units now actively occupy empty city sites to convert them to settlements again
-City widget and culture bar update fixes
-Fixed city attack damage preview for adjacent effectUnits 
-Nested link fix (affected anti-Melee, anti-Infantry etc links)
-Fixed some null references for tribal invasion AI 
-Fixed leaderboard display in Pharaohs of the Nile scenario 6
-Fixed families of starting units in Pharaohs of the Nile scenarios 3 and 6
-Fixed issue with scenarios not getting unloaded correctly
-Fixed tribe AI movement bug 
-Fixed Hittite AI chopping trees too much at the expense of exploring 
-Fixed Map Editor not setting mapWidth and mapHeight values on loading a map
-AI military fix
-A slot assigned to an AI when loading a MP game now gets full AI state
-Fixed an AI cache issue for of existing improvements outside territory
-Fixed no character UI issues 
-Happiness/discontent bar sign issue fixes
-Fixed subject reordering breaking old saves
-Fixed out of range exception 
-Fixed decision cycling sometimes not actually cycling 
-Worker selection cycling UI performance fix 
-Fixed client background task deadlock
+Fixed last page of Modio mods not displaying in install tab
+Fixed bug with cloud games not updating correctly when exiting without completing turn, causing them to need to be rewound
+Fixed turn style and turn timer dropdowns in server host controls
+Fixed simultaneous mode non-dynamic turn timer length
+Fixed map script bug causing generation to sometimes fail on Desert maps with large number of players
+Fixed improvement construction time remaining not updating when worker goes on cooldown
+Fixed Spartan elimination event in Rise of Carthage scenario 2
+Fixed idle councilor reminder showing when no missions available
+Fixed Wonders being eligible for pillage by event bonuses
 Text and event fixes
