@@ -4,6 +4,7 @@ Design
   Increased AI penalties on lower difficulty levels
   Passive AI will not capture cities from a player who originally founded them
   Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
+  Tweaked tutorial events to make them less prone to cluster on the same turns
 
 Programming
   Better AI coordination so it doesn't get some units attacking a target while other healthy ones are retreating 
@@ -14,7 +15,6 @@ Programming
 UI
   Dynasties are now shown and can be selected on the Choose Leader screen
   Moved cycle button tooltips to right of cycle button UI 
-  Tweaked tutorial events to make them less prone to cluster on the same turns
   Added border expansion preview for under construction specialists
   Added yields change from trade and tribute to war declaration effect tooltip and yield loss from connected cities to peace breaking effect tooltip 
     
