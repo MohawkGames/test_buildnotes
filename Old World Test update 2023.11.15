@@ -1,0 +1,36 @@
+Test Branch: 1.0.69587 Test 11/15/2023
+
+Design
+  New difficulty level added The New.  Reworked AI penalties on lower difficulty levels.
+  Reduced Schemer leader orders per war from 2 to 1
+  Garrison getting pillaged no longer removes existing governor
+  Autonomous rule now repairs damaged cities that cannot passively heal completely in a turn, even if it's currently building something else
+  Reduced Desert mapscript size to be in line with other maps 
+  Collateral damage (pierce, splash etc) formula simplified. This now does the percentage of the damage of a direct attack to the same unit, rounded up.  This change increases collateral damage dealt in some circumstances.
+  In the Rise of Carthage scenarios, Balearic Slingers are now buildable on the islands instead of regular Slingers. Regular Slingers can upgrade to Balearics.
+  Tweaked a few trait inheritance outcomes
+
+Programming
+  AI combat improvements.  Improved retreat and target selection.
+  Revised AI Settler movement to force march when it has excess orders
+  Fixed the AI starting multiple Settlers at the same time, when it just needs one
+  Minor Stun/Push AI optimization
+  Minor AI exploration fix
+  One AI cache per player, instead of one per game
+  Units that require a non-buildable improvement are no longer considered a possible build, unless that improvement is present
+  
+UI
+  Revised cloud game host control popup to be more consistent. Replaced general save button with individual action buttons.
+  Improvement suggestions no longer take worker safety into account
+    
+Bugs Fixed
+  Fixed AI assert
+  EffectUnit iActionsExtra are now applied immediately upon acquiring the effect 
+  Fixed a few instances where the number of tribes were miscounted
+  Fixed the Sentinel dynamic tutorial triggering in the wrong player's territory 
+  Fixed collection modification during enumeration
+  Fixed AI not viewing rebels of other nations as a threat when they actually are
+  Fixed reveal map division by zero when one of the players has been eliminated
+  Fixed city sites not keeping track of original tribe upon being cleared
+  Fixed tribe site visibility on the minimap when settlements are not city sites
+  Text and event fixes
