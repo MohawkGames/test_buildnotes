@@ -1,31 +1,36 @@
-Test Branch: 1.0.69464 Test 11/08/2023
+Test Branch: 1.0.69594 Test 11/15/2023
 
 Design
-Increased AI penalties on lower difficulty levels
-Passive AI will not capture cities from a player who originally founded them
-Added new trait flavor text and changed some to only appear dependent on character age. Reduced the likelihood of vomiting and diarrhea when characters become severely ill.
-Tweaked tutorial events to make them less prone to cluster on the same turns
+New difficulty level added The New.  Reworked AI penalties on lower difficulty levels.
+Reduced Schemer leader orders per war from 2 to 1
+Garrison getting pillaged no longer removes existing governor
+Autonomous rule now repairs damaged cities that cannot passively heal completely in a turn, even if it's currently building something else
+Reduced Desert mapscript size to be in line with other maps 
+Collateral damage (pierce, splash etc) formula simplified. This now does the percentage of the damage of a direct attack to the same unit, rounded up.  This change increases collateral damage dealt in some circumstances.
+In the Rise of Carthage scenarios, Balearic Slingers are now buildable on the islands instead of regular Slingers. Regular Slingers can upgrade to Balearics.
+Tweaked a few trait inheritance outcomes
 
 Programming
-Better AI coordination so it doesn't get some units attacking a target while other healthy ones are retreating 
-AI fixes and performance improvements
-GOG SDK updated
-Added STAT_YEARS_REGENT
-
+AI combat improvements.  Improved retreat and target selection.
+Revised AI Settler movement to force march when it has excess orders
+Fixed the AI starting multiple Settlers at the same time, when it just needs one
+Minor Stun/Push AI optimization
+Minor AI exploration fix
+One AI cache per player, instead of one per game
+Units that require a non-buildable improvement are no longer considered a possible build, unless that improvement is present
+  
 UI
-Dynasties are now shown and can be selected on the Choose Leader screen
-Moved cycle button tooltips to right of cycle button UI 
-Added border expansion preview for under construction specialists
-Added yields change from trade and tribute to war declaration effect tooltip and yield loss from connected cities to peace breaking effect tooltip 
+Revised cloud game host control popup to be more consistent. Replaced general save button with individual action buttons.
+Improvement suggestions no longer take worker safety into account
     
 Bugs Fixed
-Fixed last page of Modio mods not displaying in install tab
-Fixed bug with cloud games not updating correctly when exiting without completing turn, causing them to need to be rewound
-Fixed turn style and turn timer dropdowns in server host controls
-Fixed simultaneous mode non-dynamic turn timer length
-Fixed map script bug causing generation to sometimes fail on Desert maps with large number of players
-Fixed improvement construction time remaining not updating when worker goes on cooldown
-Fixed Spartan elimination event in Rise of Carthage scenario 2
-Fixed idle councilor reminder showing when no missions available
-Fixed Wonders being eligible for pillage by event bonuses
+Fixed AI assert
+EffectUnit iActionsExtra are now applied immediately upon acquiring the effect 
+Fixed a few instances where the number of tribes were miscounted
+Fixed the Sentinel dynamic tutorial triggering in the wrong player's territory 
+Fixed collection modification during enumeration
+Fixed AI not viewing rebels of other nations as a threat when they actually are
+Fixed reveal map division by zero when one of the players has been eliminated
+Fixed city sites not keeping track of original tribe upon being cleared
+Fixed tribe site visibility on the minimap when settlements are not city sites
 Text and event fixes
