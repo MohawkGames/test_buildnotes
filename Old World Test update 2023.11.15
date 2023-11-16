@@ -14,6 +14,10 @@ Programming
   AI combat improvements.  Improved retreat and target selection.
   Revised AI Settler movement to force march when it has excess orders
   Fixed the AI starting multiple Settlers at the same time, when it just needs one
+  Fixed AI not viewing rebels of other nations as a threat when they actually are
+  Fixed AI incorrectly estimating the cost of buying resources
+  Fixed AI risky behavior of attacking too close to the fog of war without protection
+  AI builds militia more frequently instead of festivals if it cannot build other units
   Minor Stun/Push AI optimization
   Minor AI exploration fix
   One AI cache per player, instead of one per game
@@ -29,7 +33,6 @@ Bugs Fixed
   Fixed a few instances where the number of tribes were miscounted
   Fixed the Sentinel dynamic tutorial triggering in the wrong player's territory 
   Fixed collection modification during enumeration
-  Fixed AI not viewing rebels of other nations as a threat when they actually are
   Fixed reveal map division by zero when one of the players has been eliminated
   Fixed city sites not keeping track of original tribe upon being cleared
   Fixed tribe site visibility on the minimap when settlements are not city sites
