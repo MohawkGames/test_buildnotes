@@ -1,4 +1,6 @@
 Test Branch: 1.0.69594 Test 11/15/2023
+Test Branch: 1.0.69677 Test 11/22/2023
+
 
 Design
 New difficulty level added The New.  Reworked AI penalties on lower difficulty levels.
@@ -36,4 +38,6 @@ Fixed collection modification during enumeration
 Fixed reveal map division by zero when one of the players has been eliminated
 Fixed city sites not keeping track of original tribe upon being cleared
 Fixed tribe site visibility on the minimap when settlements are not city sites
+Fixed Kush Unique Units not applying Zone of Control
+Fixed several tribe clearance events
 Text and event fixes
