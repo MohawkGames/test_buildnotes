@@ -37,13 +37,18 @@ Programming
 UI
   History of the Old World added to loading screen for new games.  This will also appear on the Game Log after the first turn
   Specialist tooltip adjusted. All yields are summarized first and the Rural/Apprentice/etc effects are no longer separated from the rest of the list
-  Added tooltips to some cloud game host control buttons
-  Added new Active DLC encyclopedia category
+  Improved succession help text for characters after the 4th in line
   When an Idle Leader reminder is active, the reminder icon replaces the General/Governor icon to the left of the leader portrait
   Added Idle Leader reminder for Tutor as Leader (Scholar ability)
+  Added tooltips to some cloud game host control buttons
+  Added new Active DLC encyclopedia category
   Fewer characters included in the turn summary 
     
 Bugs Fixed
+  Fixed context buttons not showing up consistently (Send Goods, Assign Agent etc)
+  Fixed unit upgrades requiring a city with a resource (for an upgrade of A to B, the EffectCity requirements of unit B are only checked if they're different from requirements of unit A)
+  Fixed some cases where clicking on non-link text doesn't trigger button underneath   
+  Fixed Unavailable trait not always getting removed at the start of the players turn
   Fixed replay being discarded in Learn to Play 4
   Fix Ptolemy and Seleucus being unable to adopt a state religion in Heroes of the Aegean scenario 6
   Fixed stolen city site event trigger
@@ -53,10 +58,6 @@ Bugs Fixed
   Fixed Event Browser showing new syntax message for all events 
   Fixed Theology Ambitions getting canceled as impossible too soon 
   Fixed trade events not getting canceled on war declaration
-  Fixed Unavailable trait not always getting removed at the start of the players turn
-  Fixed context buttons not showing up consistently (Send Goods, Assign Agent etc)
-  Fixed some cases where clicking on non-link text doesn't trigger button underneath 
-  Fixed unit upgrades requiring a city with a resource (for an upgrade of A to B, the EffectCity requirements of unit B are only checked if they're different from requirements of unit A)
   Fixed no-target missions not working with reminders
   Fixed some undo/redo issues (i.e. hunter family opinion not resetting after undoing unit kills in territory)
   Fixed bonus help text when adding trait
