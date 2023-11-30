@@ -1,5 +1,7 @@
 Test Branch: 1.0.69803 Test 11/29/2023
 
+Known bug - buttons do not always highlight when they become active.  This is a display issue and the buttons are useable when they should be.
+
 Design
   Sacred and Profane Clergy rework:
     The Initiate into Clergy mission run by the Head of Religion has been replaced by a new mission Suggest For Clergy.  This is run via the Chancellor and uses the target characters religion
