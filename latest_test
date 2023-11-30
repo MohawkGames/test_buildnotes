@@ -3,7 +3,7 @@ Test Branch: 1.0.69803 Test 11/29/2023
 Design
 
 Sacred and Profane Clergy rework:
-  The Initiate into Clergy mission run by the Head of Religion has been replaced by a new mission Suggest For Clergy.  This is run via the Councillor and uses the target characters religion
+  The Initiate into Clergy mission run by the Head of Religion has been replaced by a new mission Suggest For Clergy.  This is run via the Chancellor and uses the target characters religion
   A limit of 2 Clergy per nation has been added
   Clergy can now also be Courtiers and marriage restrictions have been removed
   Clergy can run the Tutor as Courtier mission (even if they are not a Courtier)
