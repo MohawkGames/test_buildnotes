@@ -63,4 +63,5 @@ Bugs Fixed
   Fixed no-target missions not working with reminders
   Fixed some undo/redo issues (i.e. hunter family opinion not resetting after undoing unit kills in territory)
   Fixed bonus help text when adding trait
+  Fixed missing city happiness modifers for Kush and Hittie pagan religions
   Text and event fixes
