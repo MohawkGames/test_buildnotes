@@ -19,7 +19,7 @@ UI
   Character tooltip always shows heir rank, if any 
   Clergy traits in Encyclopaedia show the related religion
   Added Encyclopedia description for city site improvement 
-  Removed "Could lead to future events" link help which was working inconsistently 
+  Removed "Could lead to future events" link help which was not working consistently 
   Added text scaling to reduce overlap on city production menu for some mods
   Added hint about Polytheism to the 8 shrine ambition 
     
