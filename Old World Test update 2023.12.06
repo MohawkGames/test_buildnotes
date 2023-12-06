@@ -1,4 +1,4 @@
-Test Branch: 1.0.69930 Test 12/06/2023
+Test Branch: 1.0.69935 Test 12/06/2023
 
 Design
   In Competitive mode character yields and modifiers now scale linearly.  Ratings lower than 5 will have higher effects and higher ratings lower effects.  Previous flat 50% penalty removed.  
