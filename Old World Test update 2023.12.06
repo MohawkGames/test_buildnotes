@@ -1,0 +1,37 @@
+Test Branch: 1.0.69930 Test 12/06/2023
+
+Design
+  Competitive mode character yields and modifiers now scale linearly.  Ratings lower than 5 will have higher effects and higher ratings lower effects.
+  Character upgrades for leaders, governors, and generals (under retirement age) now include only traits, if possible
+  Increased tier of grove luxuries ambition 
+
+Programming
+  More logging and a possible fix for remote server disconnections
+  Better failure reporting when an EventOption using the new syntax specifies an invalid subject alias
+  mapPath now excluded from GameParameters when writing to XML 
+  
+UI
+  Added a generic improvement ping that is used to indicate preferred placement of any improvement
+  Improvement pings are less restrictive in checking validity (i.e. can now add improvement pings to Sand that would be valid for Clerics before founding city)
+  CTRL-click Heal now automatically heals the unit every turn until fully healed or idle healing would bring unit to full health anyway
+  Clergy included in turn summary announcements and notable character list
+  Religion changes for unimportant characters no longer shown in turn summary
+  Character tooltip always shows heir rank, if any 
+  Clergy traits in Encyclopaedia show the related religion
+  Added Encyclopedia description for city site improvement 
+  Removed "Could lead to future events" link help which was working consistently 
+  Added text scaling to reduce overlap on city production menu for some mods
+  Added hint about Polytheism to the 8 shrine ambition 
+    
+Bugs Fixed
+  Fixed buttons incorrectly appearing as disabled (bug introduced in last test patch)
+  Fixed unit healthbar ticks not getting the correct material, leading to tall models obscuring the ticks
+  Fixed interrupting a unit in motion over water with a combat action failing to update the unit's model from water to land 
+  Fixed Carthage scenario null reference for tribal invasion
+  Fixed city selection lighting change bug
+  Fixed bug in Heroes of the Aegean scenario with late-game event getting invalidated upon triggering
+  Fixed display issue with Hierro in Carthage secenarios 3 and 4 
+  Fixed nested link issue with some goal links
+  Fixed history generator duplicates in game log
+  Possible fix for EOS re-authentication at 59 minutes causing Modio to reload and throw errors
+  Text and event fixes
