@@ -30,7 +30,7 @@ Bugs Fixed
   Fixed Carthage scenario null reference for tribal invasion
   Fixed city selection lighting change bug
   Fixed bug in Heroes of the Aegean scenario with late-game event getting invalidated upon triggering
-  Fixed display issue with Hierro in Carthage secenarios 3 and 4 
+  Fixed display issue with Hierro in Carthage scenarios 3 and 4 
   Fixed nested link issue with some goal links
   Fixed history generator duplicates in game log
   Possible fix for EOS re-authentication at 59 minutes causing Modio to reload and throw errors
