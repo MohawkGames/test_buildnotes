@@ -1,0 +1,63 @@
+Test Branch: 1.0.70116 Test 12/20/2023
+
+Design
+  Enabled Resource Density, City Site Density, and City Site Number map options on Random map script selection
+  Added Random options to above map options and set these with the Random game preset
+  Added Random option to Map Size
+  Increased city site density for lower density options (25% and 50% distance increases instead of 50% and 100%) 
+  Christian and Manichaean clergy can now marry like clergy of other religions 
+  Game of the week now has a 4.5% chance to use competitive mode
+  Added heir name selection popup on birth of first heir
+  Halved number of King of the Hill center area resources 
+
+Programming
+  Improved AI exploration and use of reveal territory missions
+  Added support for events that can trigger for the AI
+  New attempt to address remote server disconnection issues
+  
+UI
+  When random map options are selected, the game description help text shows which option was actually selected 
+  Permanent game log tweaks - fewer deaths, city breaches shown instead of city captures, offensives no longer shown
+  State religion notification reminder now opens the Adopt Stage Religion context menu 
+  Team games with duplicate nations no longer force team colors 
+  Revised player color assignment so that unique colors are always assigned to the active team players 
+  Made the "adopt state religion" list in the UI use the same check as gameplay logic for whether a religion can be adopted
+  Added tooltip to gift unit button
+  Nation opinion now displayed when there is at least one modifier even if the net opinion is 0
+  Removed event option text from tutorial events that directs players to options to turn off (redundant with in-event tutorial toggle)
+  Renamed Active DLC in Encylopedia to DLC Mechanics 
+  Added duplicate Steam Deck-specific GraphicsOptionsSave fields for scaling options, with higher defaults
+  Added Wonders & Dynasties DLC to announcement popup
+  Added support for preset characters with suffixes
+  Trait help now shows conditional probabilities for gaining other traits or removing this one
+  Added helptext and concept for trait fallback ratings 
+  Added helptext for a dynasty's first ruler character to link back to the dynasty description
+  Hall Of Fame screen layout tweaked
+    
+Bugs Fixed
+  Fixed some legacy issues with harvesting and forts 
+  Fixed improvement turns remaining not updating when military units go on cooldown (affects Kush when building Forts)
+  Fixed unit action indicators sorting incorrectly with other worldspace UI
+  Fixed trait layout for character encyclopedia pages
+  Fixed unit position jitter on city sites during undo
+  Fixed stacked workers using different positions
+  Fixed cloud shader clipping at certain viewing angles
+  Fixed Odeons on hills not displaying correctly 
+  Fixed resource fade not being preserved when changing graphics settings, and resource fade not occurring when a unit sharing a resource tile is revealed via exploration
+  Fixed issue with hill height textures cutting off and leaving tear lines in the terrain 
+  Fixed river start flow splats being too large, causing artifacts when it's placed next to other assets with water 
+  Fixed inconsistent hex grid outlines in the transition between passable and impassable terrain
+  Fixed undo not updating timeline screen 
+  Fixed AI not invalidating danger calculations after a city has been captured
+  Fixed tooltip overlap for Leonidas effect in Greece2 
+  Fixed unique dynasty buildings not showing on nation select stats (Ptolemy)
+  Fixed nested link issue with Pagan Clergy subject 
+  Fixed bug where iAdultProb traits would never be assigned to dynamically generated already-adult characters
+  Fixed Encyclopedia breaking if there are UnitTraits with no EffectUnits (affects mods)
+  Fixed modio upload not storing correct metadata blob 
+  Fixed event browser audio picker layout 
+  Updating mods now deletes any files from previous versions that are no longer present in the mod
+  Heirs can no longer marry other nations leaders, causing them to leave the players nation
+  Mod Manager will no longer try to display mod update popup if not in the main menus
+  Rout indicator now longer shown when unit cannot advance to target tile
+  Text and event fixes
