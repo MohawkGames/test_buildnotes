@@ -30,7 +30,7 @@ Made the "adopt state religion" list in the UI use the same check as gameplay lo
 Added tooltip to gift unit button
 Nation opinion now displayed when there is at least one modifier even if the net opinion is 0
 Removed event option text from tutorial events that directs players to options to turn off (redundant with in-event tutorial toggle)
-Renamed Active DLC in Encylopedia to DLC Mechanics 
+Renamed Active DLC in Encyclopedia to DLC Mechanics 
 Added duplicate Steam Deck-specific GraphicsOptionsSave fields for scaling options, with higher defaults
 Added Wonders & Dynasties DLC to announcement popup
 Added support for preset characters with suffixes
