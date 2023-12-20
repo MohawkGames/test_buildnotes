@@ -1,4 +1,4 @@
-Test Branch: 1.0.70116 Test 12/20/2023
+Test Branch: 1.0.70124 Test 12/20/2023
 
 Design
   Enabled Resource Density, City Site Density, and City Site Number map options on Random map script selection
@@ -8,7 +8,7 @@ Design
   Christian and Manichaean clergy can now marry like clergy of other religions 
   Game of the week now has a 4.5% chance to use competitive mode
   Added heir name selection popup on birth of first heir
-  Halved number of King of the Hill center area resources 
+  Halved number of center area resources when using the King of the Hill map option for the Disjunction mapscript
 
 Programming
   Improved AI exploration and use of reveal territory missions
@@ -36,6 +36,8 @@ UI
     
 Bugs Fixed
   Fixed some legacy issues with harvesting and forts 
+  Fixed dynasty selection being unavailable on Choose Leader screen after using a custom archetype
+  Fixed MP teammate portraits not displaying
   Fixed improvement turns remaining not updating when military units go on cooldown (affects Kush when building Forts)
   Fixed unit action indicators sorting incorrectly with other worldspace UI
   Fixed trait layout for character encyclopedia pages
