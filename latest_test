@@ -1,12 +1,13 @@
 Test Branch: 1.0.70235 Test 01/03/2024
 
 Bugs Fixed
-  Fixed heir name popup not having any options (introduced in last test update)
-  Fixed DLC ownership caching
-  Fixed More Water map script option
-  Fixed map script desert generation error
-  Fixed bug where characters with Archetypes that allowed them to be Agents could not be Agents if they were also Clergy
-  Caravans can no longer displace neutral units from their positions
-  AI discontent value correction
-  Fixed leftover sign error from discontent to happiness conversion
-  Fixed modio API url
+  
+Fixed heir name popup not having any options (introduced in last test update)
+Fixed DLC ownership caching
+Fixed More Water map script option
+Fixed map script desert generation error
+Fixed bug where characters with Archetypes that allowed them to be Agents could not be Agents if they were also Clergy
+Caravans can no longer displace neutral units from their positions
+AI discontent value correction
+Fixed leftover sign error from discontent to happiness conversion
+Fixed modio API url
