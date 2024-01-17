@@ -5,7 +5,7 @@ Design
     Infantry Square is now cheaper, requires Battleline and leads to Cohorts.
     Bodkin Arrow leads directly to Military Prestige
     Windlass requires Architecture instead of Scholarship
-    Added Luxury bonus cards to the tech tree
+    Added Luxury bonus cards to the tech tree - on Forestry, Metaphysics, Coinage, Portcullis and Lateen Sail
   Baths class improvements give one extra Happiness per turn
   New map script Player islands.  Each nation gets their own island, with optional empty islands.
   New map script Highlands.  Inland map with lots of mountain ranges and elevated terrain.
@@ -38,6 +38,7 @@ UI
   Updated character suffix localization code and added support for Chinese numerals 
   Tech selection UI is now updated immediately when available techs change 
   Disabled history generator for multiplayer games
+  Custom Leader Archetype shown on Choose Leader screen when selected
 
 Bugs Fixed
   Fixed units on cooldown getting moved when units try to move into their tile
