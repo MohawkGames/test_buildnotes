@@ -27,6 +27,7 @@ Programming
   AI now knows about effectPlayer YieldUpkeepModifier, TeamDiplomacyYields and TribeDiplomacyYields
   When at war with a tribe with multiple known settlements, Settlers are planned for one site at a time, not all at once 
   Quick Infos XML validation optimization. Eliminates most memory allocations 
+  Added support for having the same character in multiple dynasties 
   
 UI
   Temporary traits now display time remaining in parentheses
