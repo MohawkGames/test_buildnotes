@@ -1,10 +1,18 @@
 Test Branch: 1.0.70454 Test 01/17/2024
 
 Design
+  Tech tree changes: 
+    Infantry Square is now cheaper, requires Battleline and leads to Cohorts.
+    Bodkin Arrow leads directly to Military Prestige
+    Windlass requires Architecture instead of Scholarship
+  Baths class improvements give one extra Happiness per turn
   New map script Player islands.  Each nation gets their own island, with optional empty islands.
   New map script Highlands.  Inland map with lots of mountain ranges and elevated terrain.
   Inland Sea map script reworked.  Now has more variation and should be more Mediterranean-like.
   Player start adjustment to try to avoid being placed in a small area surrounded by impassable terrain
+  Free-for-all multiplayer game player start improvements:
+    All map scripts now spread out the players as much as possible, at the expense of selecting the best terrain. 
+    Added a different, experimental, player placement for highlands and coastal rain basin map scripts, which are relatively uniform land maps
   More resources between city sites, especially at low city site density
   Added Luxury bonus cards to the tech tree
   New game option Random Tech Tree.  Shuffles the position of each tech within it's column.
@@ -15,6 +23,9 @@ Design
 Programming
   Increased the minimum target unit number for the AI, to deal with military threats when it has few cities 
   AI technology value adjustments
+  AI now knows about effectPlayer YieldUpkeepModifier, TeamDiplomacyYields and TribeDiplomacyYields
+  In network games the client no longer exits to main menu immediately upon disconnection but instead tries to automatically reconnect
+  Quick Infos XML validation optimization. Eliminates most memory allocations 
   
 UI
   Temporary traits now display time remaining in parentheses
@@ -25,8 +36,11 @@ UI
   Added new icon for Explorer unit (Wonders and Dynasties)
   Added Greek dynasty leader bios 
   Updated character suffix localization code and added support for Chinese numerals 
+  Tech selection UI is now updated immediately when available techs change 
+  Disabled history generator for multiplayer games
 
 Bugs Fixed
+  Fixed units on cooldown getting moved when units try to move into their tile
   Heir births are entered into the game log only ofter they have a name 
   Fixed bug where cut trees could be cleared on Lumbermill tiles 
   Fixed Restart Game button in cases where a premade map was picked through Advanced Setup instead of going through the Scenarios screen
@@ -35,7 +49,10 @@ Bugs Fixed
   Fix for Event Browser UI 
   Likely fix for map element names sometimes not matching between client and server 
   Fixed some scenario load/save inconsistencies
+  Fixed Wonder and Dynasties content being missing from World Maps and Barbarian Horde scenarios
   Fixed Caesar's dynasty description (Wonders and Dynasties)
+  Fixed null ref on leader select helptext for dynasties with free tech (Wonders and Dynasties)
+  Jerwan Aqueduct now has a history that prevents it from changing drastically when city layouts change (Wonders and Dynasties)
   Fixed AI exploration bug 
   Fixed AI AdjacentSameModifier value 
   Corrected some inconsistent use of the AI in-city yield evaluation
