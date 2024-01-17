@@ -1,10 +1,11 @@
-Test Branch: 1.0.70454 Test 01/17/2024
+Test Branch: 1.0.70456 Test 01/17/2024
 
 Design
   Tech tree changes: 
     Infantry Square is now cheaper, requires Battleline and leads to Cohorts.
     Bodkin Arrow leads directly to Military Prestige
     Windlass requires Architecture instead of Scholarship
+    Added Luxury bonus cards to the tech tree
   Baths class improvements give one extra Happiness per turn
   New map script Player islands.  Each nation gets their own island, with optional empty islands.
   New map script Highlands.  Inland map with lots of mountain ranges and elevated terrain.
@@ -14,7 +15,6 @@ Design
     All map scripts now spread out the players as much as possible, at the expense of selecting the best terrain. 
     Added a different, experimental, player placement for highlands and coastal rain basin map scripts, which are relatively uniform land maps
   More resources between city sites, especially at low city site density
-  Added Luxury bonus cards to the tech tree
   New game option Random Tech Tree.  Shuffles the position of each tech within it's column.
   AI (nations and tribes) now have a chance to cancel an alliance when at cautious opinion or lower 
   Split Away from Court event class into individual classes. This lowers the frequency of some events that were triggering too often (i.e. imprisoned events)
