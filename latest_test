@@ -1,14 +1,71 @@
-Test Branch: 1.0.70235 Test 01/03/2024
-Test Branch: 1.0.70343 Test 01/11/2024
+Test Branch: 1.0.70456 Test 01/17/2024
+
+Design
+
+Tech tree changes: 
+  Infantry Square is now cheaper, requires Battleline and leads to Cohorts.
+  Bodkin Arrow leads directly to Military Prestige
+  Windlass requires Architecture instead of Scholarship
+  Added Luxury bonus cards to the tech tree - on Forestry, Metaphysics, Coinage, Portcullis and Lateen Sail
+Baths class improvements give one extra Happiness per turn
+New map script Player islands.  Each nation gets their own island, with optional empty islands.
+New map script Highlands.  Inland map with lots of mountain ranges and elevated terrain.
+Inland Sea map script reworked.  Now has more variation and should be more Mediterranean-like.
+Player start adjustment to try to avoid being placed in a small area surrounded by impassable terrain
+Free-for-all multiplayer game player start improvements:
+    All map scripts now spread out the players as much as possible, at the expense of selecting the best terrain. 
+    Added a different, experimental, player placement for highlands and coastal rain basin map scripts, which are relatively uniform land maps
+More resources between city sites, especially at low city site density
+New game option Random Tech Tree.  Shuffles the position of each tech within its column.
+AI (nations and tribes) now have a chance to cancel an alliance when at cautious opinion or lower 
+Split Away from Court event class into individual classes. This lowers the frequency of some events that were triggering too often (i.e. imprisoned events)
+Players without an online ID (e.g. not running through Steam, Epic Launcher or GoG Galaxy) are now able to play network multiplayer 
+
+
+Programming
+
+Increased the minimum target unit number for the AI, to deal with military threats when it has few cities 
+AI technology value adjustments
+AI no longer places value on bonus units if no such units are needed (e.g. free Settler with no vacant city sites)
+AI now knows about effectPlayer YieldUpkeepModifier, TeamDiplomacyYields and TribeDiplomacyYields
+When at war with a tribe with multiple known settlements, Settlers are planned for one site at a time, not all at once 
+Quick Infos XML validation optimization. Eliminates most memory allocations 
+Added support for having the same character in multiple dynasties 
+  
+
+UI
+
+Temporary traits now display time remaining in parentheses
+Added tooltip about the loss/gain of tribute yields by declaring war on a tribe 
+Added Tribal Strength game setup option help text for empty city sites
+Added missing icons for some Wonders & Dynasty missions and effects 
+Added new icon for Zealot's Enlist Next effect
+Added new icon for Explorer unit (Wonders and Dynasties)
+Added Greek dynasty leader bios 
+Updated character suffix localization code and added support for Chinese numerals 
+Tech selection UI is now updated immediately when available techs change 
+Disabled history generator for multiplayer games
+Custom Leader Archetype shown on Choose Leader screen when selected
+In network games the client no longer exits to main menu immediately upon disconnection but instead tries to automatically reconnect
+
 
 Bugs Fixed
-  
-Fixed heir name popup not having any options (introduced in last test update)
-Fixed DLC ownership caching
-Fixed More Water map script option
-Fixed map script desert generation error
-Fixed bug where characters with Archetypes that allowed them to be Agents could not be Agents if they were also Clergy
-Caravans can no longer displace neutral units from their positions
-AI discontent value correction
-Fixed leftover sign error from discontent to happiness conversion
-Fixed modio API url
+
+Fixed units on cooldown getting moved when units try to move into their tile
+Heir births are entered into the game log only after they have a name 
+Fixed bug where cut trees could be cleared on Lumbermill tiles 
+Fixed Restart Game button in cases where a premade map was picked through Advanced Setup instead of going through the Scenarios screen
+Fixed cycle military button tooltip text
+Learn to Play fixes. Prevented some player actions that could cause LTP scenarios to break.
+Fix for Event Browser UI 
+Likely fix for map element names sometimes not matching between client and server 
+Fixed some scenario load/save inconsistencies
+Fixed Wonder and Dynasties content being missing from World Maps and Barbarian Horde scenarios
+Fixed Caesar's dynasty description (Wonders and Dynasties)
+Fixed null ref on leader select helptext for dynasties with free tech (Wonders and Dynasties)
+Jerwan Aqueduct now has a history that prevents it from changing drastically when city layouts change (Wonders and Dynasties)
+Fixed AI exploration bug 
+Fixed AI AdjacentSameModifier value 
+Fixed AI research selection actually following the AI evaluation instead of being random 
+Corrected some inconsistent use of the AI in-city yield evaluation
+Text and event fixes
