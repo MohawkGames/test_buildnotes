@@ -15,7 +15,7 @@ Design
     All map scripts now spread out the players as much as possible, at the expense of selecting the best terrain. 
     Added a different, experimental, player placement for highlands and coastal rain basin map scripts, which are relatively uniform land maps
   More resources between city sites, especially at low city site density
-  New game option Random Tech Tree.  Shuffles the position of each tech within it's column.
+  New game option Random Tech Tree.  Shuffles the position of each tech within its column.
   AI (nations and tribes) now have a chance to cancel an alliance when at cautious opinion or lower 
   Split Away from Court event class into individual classes. This lowers the frequency of some events that were triggering too often (i.e. imprisoned events)
   Players without an online ID (e.g. not running through Steam, Epic Launcher or GoG Galaxy) are now able to play network multiplayer 
@@ -45,7 +45,7 @@ UI
 
 Bugs Fixed
   Fixed units on cooldown getting moved when units try to move into their tile
-  Heir births are entered into the game log only ofter they have a name 
+  Heir births are entered into the game log only after they have a name 
   Fixed bug where cut trees could be cleared on Lumbermill tiles 
   Fixed Restart Game button in cases where a premade map was picked through Advanced Setup instead of going through the Scenarios screen
   Fixed cycle military button tooltip text
