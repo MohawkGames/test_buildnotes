@@ -23,8 +23,9 @@ Design
 Programming
   Increased the minimum target unit number for the AI, to deal with military threats when it has few cities 
   AI technology value adjustments
+  AI no longer places value on bonus units if no such units are needed (e.g. free Settler with no vacant city sites)
   AI now knows about effectPlayer YieldUpkeepModifier, TeamDiplomacyYields and TribeDiplomacyYields
-  In network games the client no longer exits to main menu immediately upon disconnection but instead tries to automatically reconnect
+  When at war with a tribe with multiple known settlements, Settlers are planned for one site at a time, not all at once 
   Quick Infos XML validation optimization. Eliminates most memory allocations 
   
 UI
@@ -39,6 +40,7 @@ UI
   Tech selection UI is now updated immediately when available techs change 
   Disabled history generator for multiplayer games
   Custom Leader Archetype shown on Choose Leader screen when selected
+  In network games the client no longer exits to main menu immediately upon disconnection but instead tries to automatically reconnect
 
 Bugs Fixed
   Fixed units on cooldown getting moved when units try to move into their tile
@@ -56,6 +58,6 @@ Bugs Fixed
   Jerwan Aqueduct now has a history that prevents it from changing drastically when city layouts change (Wonders and Dynasties)
   Fixed AI exploration bug 
   Fixed AI AdjacentSameModifier value 
+  Fixed AI research selection actually following the AI evaluation instead of being random 
   Corrected some inconsistent use of the AI in-city yield evaluation
-  Miscellaneous AI fixes
   Text and event fixes
