@@ -72,4 +72,5 @@ Fixed AI exploration bug
 Fixed AI AdjacentSameModifier value 
 Fixed AI research selection actually following the AI evaluation instead of being random 
 Corrected some inconsistent use of the AI in-city yield evaluation
+Fix for mod dependency bug
 Text and event fixes
