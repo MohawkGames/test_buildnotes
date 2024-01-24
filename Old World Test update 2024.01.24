@@ -103,11 +103,11 @@ UI
   Changed Remind Turn to Turns until Reminder in Improvement and Text pings
   Added Free Luxury bonus tech art
   Smoke particles on mines are now hidden when the smokestack is hidden
-  New Game option enabled on premade maps
+  New Game option enabled on premade maps, will reroll nation and dynasty selection if these have been randomised
   Made Religion/Family/Nation/Tribe sections on tab panels collapsible 
-  Proscription mission is now hidden unless enabled (Wonders and Dynasties)
   Added concepts/linkable helptext about the tech card system
   Added intermediate Scripted/Freeform menu to Learn to Play
+  Proscription mission is now hidden unless enabled (Wonders and Dynasties)
 
 Bugs Fixed
   Fixed archetype icon not reflecting selected dynasty leader on SP setup screen 
@@ -116,13 +116,13 @@ Bugs Fixed
   Fixed Stun from Push not working, and other unit stacking issues
   Fixed default improvements/units shown as unique when no nation/dynasty is specified
   Fixed landmark names sometimes displaying incorrectly in MP games
-  Fixed Jebel Barkal bonus description (Wonders and Dynasties)
   Random nation on premade maps now correctly remain random on new game 
   Premade map selection now remembered for next game
-  Fixed Heroes of the Aegean scenario 5 save/load bug
-  Fixed Heroes of the Aegean scenario 5 bugs with Darius events, rebels and autonomous rule
-  Fixed Carthage scenario 1 goal (Markets and Money) 
   Fixed top section of tab headers getting cut off
   Fixed Pick Later nation and Random Dynasty setting the dynasty to Default
   Fixed queued actions triggering unit selection before decision selection
+  Fixed Heroes of the Aegean scenario 5 save/load bug
+  Fixed Heroes of the Aegean scenario 5 bugs with Darius events, rebels and autonomous rule
+  Fixed Carthage scenario 1 goal (Markets and Money) 
+  Fixed Jebel Barkal bonus description (Wonders and Dynasties)
   Text and event fixes
