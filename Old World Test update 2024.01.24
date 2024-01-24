@@ -1,11 +1,125 @@
 Test Branch: 1.0.70563 Test 01/24/2024
 
 Design
+  Infantry Square tech cost reverted, still follows Battleline but is no longer a requirement for Cohorts
+  Rider family seat bonus now includes the addition of horses, elephants, and camels to tiles within the city territory, no longer allows building units without resources.
+  Generals over 50 now get general-related traits offered on upgrade (previously only Generals elgibile for assigmnent were offered these)
+  Regents will always be offered for child leaders up to age 6 
+  No longer possible to lose when dying without an heir, another character will take over
+  Autonomous rule no longer clears the build queue, but AI can change it to build what it wants to
+  Added Kush UU bonus techs - Free Medjay Archer (Compostie Bow) and Free Beja Archer (Bodkin Arrow)
+  Hittite UU 2 bonus tech (Free Three Man Chariot) science cost reduced from 800 to 600 (to be consistent with other UU bonus techs)
+  Khufu now has a family penalty for each wonder built (Wonders and Dynasties)
+  Meritities is now Righteous instead of Revered (Wonders and Dynasties)
+  Leaders can no longer be Exploring
+  New inland sea map script now has more tiles to compensate for more of it being ocean
+
+New Events
+
+Base game events:
+
+A Brush With Death
+A Child No More (x4)
+A Famous Hill
+A Gracious Welcome
+A Greater Calling Just Called
+A Little More Time
+A Narrow Escape
+A Matter of Faith
+A Royal Suspect
+A Shift in Thought
+Age Of Unrest
+Alien Traditions
+An Ignominious Wound
+Arrow To The Eye
+Bonds of Faith
+Celebration of Our Many Blessings
+Champions of the Guard
+Complications
+Cultural Similarities (x10)
+Elephants of City
+Entwined Beliefs
+Familial Ties
+Family Needs
+Family Power Play
+Family Traditions (x10)
+Fangs Of Our Foes
+Felled By Arrows
+Hard Rain
+Heaven Help Us
+Hero Of The Realm
+In The Hands Of God
+Influence Of Weakness
+Keepsake
+Laches
+Last Of His Line
+Lucky Break
+Naming and Necessity
+National Tour
+National Treasure
+No Time Wasted
+Not Without Risk
+Poisoned Tips
+Prime Surplus
+Rain Of Arrows
+Rebel Phase
+Select Timber
+Shattered Shield
+Stalwart Spouse (x2)
+Stronger For It
+Test Of Metal
+The Captured Agent
+The End of an Era (x2)
+The Freedom Of Divorce (x2)
+The Goal Of Life
+The Hunt Continues
+The Pále
+The Peoples Shield
+The Third Man
+Too Young To Rule
+Tribe Eliminated Nickname
+Two Birds
+Untimely
+Ward No Longer
+Welcome Return
+Wondrous Nation
+
+Sacred and Profane events:
+
+Fugitive From God
+General Devotion 
+Joined in Mystery 
+The Eyes of God
+Turning Mani (x2)
 
 
 Programming
+  AI chooses Navigation with higher priority
+  AI yield value corrections
+  Can now set a religion to be not Pagan or World
   
 UI
+  Localization text update for all languauges including all missing Wonders and Dynasties text
+  Changed Remind Turn to Turns until Reminder in Improvment and Text pings
+  Smoke particles on mines are now hidden when the smokestack is hidden
+  New Game option enabled on premade maps
+  Made Religion/Family/Nation/Tribe sections on tab panels collapsible 
+  Proscription mission is now hidden unless enabled (Wonders and Dynasties)
+  Added concepts/linkable helptext about the tech card system
+  Added intermediate Scripted/Freeform menu to Learn to Play
 
 Bugs Fixed
+  Fixed archetype icon not reflecting selected dynasty leader on SP setup screen 
+  Fixed incorrect estimate of effectPlayer on help text when it involved adjacency bonuses from existing improvements (e.g. science output of Pilgramage)
+  Removed double spaces betwixt icons and yield names in some cases  
+  Fixed Stun from Push not working, and other unit stacking issues
+  Fixed default improvements/units shown as unique when no nation/dynasty is specified
+  Fixed landmark names sometimes displaying incorrectly in MP games
+  Fixed Jebel Barkal bonus description (Wonders and Dynasties)
+  Random nation on premade maps now correctly remain random on new game 
+  Premade map selection now remembered for next game
+  Fixed Heroes of the Aegean scenario 5 save/load bug
+  Fixed Heroes of the Aegean scenario 5 bugs with Darius events, rebels and autonomous rule
+  Fixed Carthage scenario 1 goal (Markets and Money) 
+  Fixed top section of tab headers getting cut off
   Text and event fixes
