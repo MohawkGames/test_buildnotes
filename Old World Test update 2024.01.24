@@ -1,13 +1,13 @@
-Test Branch: 1.0.70568 Test 01/24/2024
+Test Branch: 1.0.70578 Test 01/24/2024
 
 Design
   No longer possible to lose when dying without an heir, another character will take over
   Regents will always be offered for child leaders up to age 6 
   Infantry Square tech cost reverted, still follows Battle Line but is no longer a requirement for Cohorts
   Rider family seat bonus now includes the addition of horses, elephants, and camels to tiles within the city territory, no longer allows building units without resources.
-  Generals over 50 now get general-related traits offered on upgrade (previously only Generals elgibile for assigmnent were offered these)
+  Generals over 50 now get general-related traits offered on upgrade (previously only Generals eligible for assignment were offered these)
   Autonomous rule no longer clears the build queue, but AI can change it to build what it wants to
-  Added Kush UU bonus techs - Free Medjay Archer (Compostie Bow) and Free Beja Archer (Bodkin Arrow)
+  Added Kush UU bonus techs - Free Medjay Archer (Composite Bow) and Free Beja Archer (Bodkin Arrow)
   Hittite UU 2 bonus tech (Free Three Man Chariot) science cost reduced from 800 to 600 (to be consistent with other UU bonus techs)
   Leaders can no longer be Exploring
   New inland sea map script now has more tiles to compensate for more of it being ocean
@@ -99,8 +99,9 @@ Programming
   Can now set a religion to be not Pagan or World
   
 UI
-  Localization text update for all languauges including all missing Wonders and Dynasties text
-  Changed Remind Turn to Turns until Reminder in Improvment and Text pings
+  Localization text update for all languages including all missing Wonders and Dynasties text
+  Changed Remind Turn to Turns until Reminder in Improvement and Text pings
+  Added Free Luxury bonus tech art
   Smoke particles on mines are now hidden when the smokestack is hidden
   New Game option enabled on premade maps
   Made Religion/Family/Nation/Tribe sections on tab panels collapsible 
@@ -110,7 +111,7 @@ UI
 
 Bugs Fixed
   Fixed archetype icon not reflecting selected dynasty leader on SP setup screen 
-  Fixed incorrect estimate of effectPlayer on help text when it involved adjacency bonuses from existing improvements (e.g. science output of Pilgramage)
+  Fixed incorrect estimate of effectPlayer on help text when it involved adjacency bonuses from existing improvements (e.g. science output of Pilgrimage)
   Removed double spaces betwixt icons and yield names in some cases  
   Fixed Stun from Push not working, and other unit stacking issues
   Fixed default improvements/units shown as unique when no nation/dynasty is specified
@@ -123,4 +124,5 @@ Bugs Fixed
   Fixed Carthage scenario 1 goal (Markets and Money) 
   Fixed top section of tab headers getting cut off
   Fixed Pick Later nation and Random Dynasty setting the dynasty to Default
+  Fixed queued actions triggering unit selection before decision selection
   Text and event fixes
