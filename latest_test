@@ -3,7 +3,7 @@ Test Branch: 1.0.70578 Test 01/24/2024
 Design
   
 No longer possible to lose when dying without an heir, another character will take over
-Regents will always be offered for child leaders up to age 6 
+Regents will now be forced for child leaders up to age 6 when previous leader died and up to age 12 if previous leader abdicated
 Infantry Square tech cost reverted, still follows Battle Line but is no longer a requirement for Cohorts
 Rider family seat bonus now includes the addition of horses, elephants, and camels to tiles within the city territory, no longer allows building units without resources.
 Generals over 50 now get general-related traits offered on upgrade (previously only Generals eligible for assignment were offered these)
