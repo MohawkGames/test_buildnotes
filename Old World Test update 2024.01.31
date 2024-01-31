@@ -1,0 +1,6 @@
+Test Branch: 1.0.70610 Test 01/31/2024
+Update to match release branch
+
+Bugs fixed
+  Fixed Tooltip Scale and Popup Text Size options not saving on Steam Deck
+  Added missing Wonders and Dynasties event art
