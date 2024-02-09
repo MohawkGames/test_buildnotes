@@ -24,6 +24,7 @@ AI now takes better advantage of the Jerwan Aqueduct
 Added AI for new Rider ability
 AI expansion improvements
 Improved AI luxury strategy
+AI cache memory optimization
 Sprite repo optimization
 XML reading optimization
 Compressed MeshAnimator animations
