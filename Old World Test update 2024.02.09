@@ -1,4 +1,4 @@
-Test Branch: 1.0.70578 Test 01/24/2024
+Test Branch: 1.0.70827 Test 02/09/2024
 
 Design
   New turn scale 'Seasons' 
@@ -12,6 +12,7 @@ Design
   Improved multiplayer start location selection, especially for team games 
   Tribal raiders are now willing to take a long path to their target if they cannot do anything else 
   Damaged cities can only be gifted to a teammate or their original owner 
+  Regents no longer get a suffix
 
 Programming
   Unity upgrade to 2021.3.34
@@ -32,12 +33,12 @@ UI
   City production can now be automated
   Worker icon replaced with a shovel (to disambiguate it from Axemen)
   Research popup no longer always appears at the start of the turn and follows the priority set for events
+  Visual improvements for Royal Library, Jerwan Aqueducts, Hanging Gardens, Hovel and Range Improvements
   Added action menu when right clicking military units in the Units tab
   Hid "F1 to open encyclopedia entry" helptext for hidden projects 
-  Heir name popup gets invalidated when the character is no longer the heir 
-  Visual improvements for Royal Library, Jerwan Aqueducts, Hanging Gardens, Hovel and Range Improvements
   Added Encyclopedia category for "Traits (Items)" 
   Encyclopedia now defaults to a random Hints page instead of a completely random page 
+  Removed obsolete warnings about losing the game due to having no heirs
 
 Bugs Fixed
   Fixed history generator not showing for SP games
@@ -69,5 +70,9 @@ Bugs Fixed
   Fixed lower tier ambitions being offered as crowning ambitions when higher tier ambitions are still valid
   Fixed null reference on start when default dynasty in saved player options is random
   Fixed trait helptext not displaying rating change in some cases 
+  Fixed character rename undo bug
+  Fixed game restart on premade maps
+  Fixed city right-click menu clipping
+  Heir name popup gets invalidated when the character is no longer the heir 
   Fixed bug with Carthage scenario 3 calculation for ship damage goal
   Text and event fixes
