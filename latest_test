@@ -1,86 +1,33 @@
-Test Branch: 1.0.70827 Test 02/09/2024
+Test Branch: 1.0.70906 Test 02/14/2024
 
 Design
 
-New turn scale 'Seasons' 
-New game option 'Random Improvements', which randomizes the unique improvements (Shrines) for each nation
-New map script 'Lakes and Gulfs'
-Artisans no longer get the Ingenuity promotion for Ship and Siege units, instead get a 25% resource cost reduction on these units
-Promotion options of a general no longer include invalid effects for their unit 
-The Jerwan Aqueduct gives free Farmers even to new farms after it has been built
-Added +6 Culture/turn to Necropolis 
-Added Player Start Location map option to Seaside map script
-Improved multiplayer start location selection, especially for team games 
-Tribal raiders are now willing to take a long path to their target if they cannot do anything else 
-Damaged cities can only be gifted to a teammate or their original owner 
-Regents no longer get a suffix
+Rider family import resource projects civics cost reduced from 40 to 20
 
 
 Programming
 
-Unity upgrade to 2021.3.34
-Refactor non-event legitimacy for completing wonders so the AI understands it
-AI now takes better advantage of the Jerwan Aqueduct
-Added AI for new Rider ability
-AI expansion improvements
-Improved AI luxury strategy
-AI cache memory optimization
-Sprite repo optimization
-XML reading optimization
-Compressed MeshAnimator animations
-Improved performance of scenario menu when switching scenarios
-Fall back to using default nation/dynasty if the player options file contains a disabled nation
+AI economy improvements 
+Infos and validation refactor
+Enabled parallel loading of Infos
+Persistent text asset cache for internal mods
   
 
 UI
 
-Portrait Interpolation enabled.  Character portraits will gradually age each year instead of having fixed ages at which they change.  They will also change depending on their opinion of you.  This can be enabled and disabled in the Graphics Options menu.
-Portrait Editor added to Extras menu
-City production can now be automated
-Worker icon replaced with a shovel (to disambiguate it from Axemen)
-Research popup no longer always appears at the start of the turn and follows the priority set for events
-Visual improvements for Royal Library, Jerwan Aqueducts, Hanging Gardens, Hovel and Range Improvements
-Added action menu when right clicking military units in the Units tab
-Hid "F1 to open encyclopedia entry" helptext for hidden projects 
-Added Encyclopedia category for "Traits (Items)" 
-Encyclopedia now defaults to a random Hints page instead of a completely random page 
-Removed obsolete warnings about losing the game due to having no heirs
+Improved Riders family helptext
+Converted bug report screen to use TextTypes (for future localization)
+Removed popup warning about losing progress when exiting a cloud game, as progress is automatically saved
 
 
 Bugs Fixed
 
-Fixed history generator not showing for SP games
-Fixed game of the week using the premade map in the options file 
-Fixed razed city undo/redo visibility issue 
-Fixed LAN menu being unavailable with no internet connection 
-Fixed non-host cloud game deleting
-Fixed username field in cloud setup screen not being copyable
-Fixed cloud load null reference
-Fixed "Join as any player" multiplayer game option 
-Fixed player team assignments not getting saved
-Fixed heir name in notable events
-Fixed case where heir could have the same name as a sibling 
-Fixed AI stun consideration bug
-Fixed AI passively healing when it would be better to attack 
-Fixed some AI improvement selection bugs
-Fixed AI specialist value calculation
-Fixed AI yields values
-Fixed bug with AI not realizing that adjacent unit bonus applies only for the same type of units
-Fixed worker AI that resulted in sub-optimal improvement placement decisions
-Fixed AI wasting orders shuffling their units around 
-Fixed rout indicator issues
-Fixed an issue with undo/redo in hotseat and cloud games 
-Fixed theology effects help text
-Fixed regent legitimacy bug where leaders after a regent would pass down too much legitimacy 
-Fixed Regent / Usurper bugs
-Fixed remote server host controls sometimes not working 
-Fixed misleading Ruthless AI tooltip
-Fixed lower tier ambitions being offered as crowning ambitions when higher tier ambitions are still valid
-Fixed null reference on start when default dynasty in saved player options is random
-Fixed trait helptext not displaying rating change in some cases 
-Fixed character rename undo bug
-Fixed game restart on premade maps
-Fixed city right-click menu clipping
-Heir name popup gets invalidated when the character is no longer the heir 
-Fixed bug with Carthage scenario 3 calculation for ship damage goal
+Fixed bug that prevented units in their own territory from bumping other units out of the way 
+Fixed Portrait Editor behavior when a selected mod has no portraits
+Fixed game load exception  
+Fixed for team color slider not working
+Fixed unit religion not being preserved upon upgrade 
+Tab panel layout fixes 
+Fixed Heores of the Aegean scenario 3 bug where the Control Thessaly cities goal did not complete if the final city was acquired peacefully 
+Premade maps with tiles that have no terrain now load and terrain is treated as out of bounds instead of causing map load to fail
 Text and event fixes
