@@ -1,12 +1,26 @@
 Test Branch: 1.0.70895 Test 02/14/2024
 
 Design
-
+  Rider family import resource projects civics cost reduced from 40 to 20
 
 Programming
+  AI economy improvements 
+  Infos and validation refactor
+  Enabled parallel loading of InfosText
+  Persistent text asset cache for internal mods
   
 UI
+  Improved Riders family helptext
+  Converted bug report screen to use TextTypes (for future localization)
+  Removed popup warning about losing progress when exiting a cloud game, as progress is automatically saved
 
 Bugs Fixed
-
+  Fixed bug that prevented units in their own territory from bumping other units out of the way 
+  Fixed Portrait Editor behavior when a selected mod has no portraits
+  Fixed game load exception  
+  Fixed for team color slider not working
+  Fixed unit religion not being preserved upon upgrade 
+  Tab panel layout fixes 
+  Fixed Heores of the Aegean scenario 3 bug where the Control Thessaly cities goal did not complete if the final city was acquired peacefully 
+  Premade maps with tiles that have no terrain now load and terrain is treated as out of bounds instead of causing map load to fail
   Text and event fixes
