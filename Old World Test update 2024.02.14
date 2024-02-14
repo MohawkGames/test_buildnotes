@@ -6,7 +6,7 @@ Design
 Programming
   AI economy improvements 
   Infos and validation refactor
-  Enabled parallel loading of InfosText
+  Enabled parallel loading of Infos
   Persistent text asset cache for internal mods
   
 UI
