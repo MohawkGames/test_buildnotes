@@ -21,6 +21,6 @@ Bugs Fixed
   Fixed for team color slider not working
   Fixed unit religion not being preserved upon upgrade 
   Tab panel layout fixes 
-  Fixed Heores of the Aegean scenario 3 bug where the Control Thessaly cities goal did not complete if the final city was acquired peacefully 
+  Fixed Heroes of the Aegean scenario 3 bug where the Control Thessaly cities goal did not complete if the final city was acquired peacefully 
   Premade maps with tiles that have no terrain now load and terrain is treated as out of bounds instead of causing map load to fail
   Text and event fixes
