@@ -1,1 +1,19 @@
+Test Branch: 1.0.71033 Test 02/21/2024
 
+Design
+
+
+Programming
+  AI economy improvements 
+  
+UI
+
+Bugs Fixed
+  Fixed Clergy opinion calculation bug 
+  Fixed generic ping null reference
+  Fixed null reference from razing a city near the map boundary 
+  Fixed city production icon not showing correctly on loading save
+  Fixed division by zero on tile mouseover
+  Fixed divide-by-zero client exception
+  Fixed bug report text appearing on game load
+  Text and event fixes
