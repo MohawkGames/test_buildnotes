@@ -1,33 +1,41 @@
-Test Branch: 1.0.70906 Test 02/14/2024
+Test Branch: 1.0.71033 Test 02/21/2024
 
 Design
 
-Rider family import resource projects civics cost reduced from 40 to 20
+New game option Revealed Map
+Added multiple selection to the build queue for ships in cities with borders in multiple bodies of water to allow selection of where to build the ship
+When hovering over unit production the tile it will appear in will be highlighted
+Some Dynasty leaders now have a preferred family and will convert to that family if it is founded
+Carthage scenario 3 tweaks
+Added Theagenes as a historically correct general to the Sacred Band unit in Heroes of the Aegean scenario 3
 
 
 Programming
 
 AI economy improvements 
-Infos and validation refactor
-Enabled parallel loading of Infos
-Persistent text asset cache for internal mods
-  
+AI performance optimizations
+Improved speed of scenario selection
+
 
 UI
 
-Improved Riders family helptext
-Converted bug report screen to use TextTypes (for future localization)
-Removed popup warning about losing progress when exiting a cloud game, as progress is automatically saved
+Added Current Tile worker filter and made it the default. Valid Improvements filter now ignores terrain requirements.
+F1 will now always open the encyclopedia even if no related tooltip showing.
 
 
 Bugs Fixed
 
-Fixed bug that prevented units in their own territory from bumping other units out of the way 
-Fixed Portrait Editor behavior when a selected mod has no portraits
-Fixed game load exception  
-Fixed for team color slider not working
-Fixed unit religion not being preserved upon upgrade 
-Tab panel layout fixes 
-Fixed Heroes of the Aegean scenario 3 bug where the Control Thessaly cities goal did not complete if the final city was acquired peacefully 
-Premade maps with tiles that have no terrain now load and terrain is treated as out of bounds instead of causing map load to fail
+Fixed Clergy opinion calculation bug 
+Fixed generic ping null reference
+Fixed null reference from razing a city near the map boundary 
+Fixed city production icon not showing correctly on loading save
+Fixed division by zero on tile mouseover
+Fixed divide-by-zero client exception
+Fixed bug report text appearing on game load
+Fixed load/save error related to Jerwan Aqueduct
+Fixed XML first-entry validation for mods that derive from existing Infos and add new fields
+Fixed empty text sometimes not updating properly in Encyclopedia
+Fixed clicking on preset character links in Encyclopedia not going to character page
+Fixed bugs with when African Elephants are valid to build in Carthage scenario 4
+Fixed Donut mascript sometimes generating maps with a square hole
 Text and event fixes
