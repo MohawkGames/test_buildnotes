@@ -1,9 +1,6 @@
-Test Branch: 1.0.71??? Test 03/01/2024
+Test Branch: 1.0.71219 Test 03/01/2024
 
-
-Programming
-  
-UI
+This is a small bug-fix only patch in preperation for an upcoming release build.
   
 Bugs Fixed
   Fixed missing unit production tooltips
