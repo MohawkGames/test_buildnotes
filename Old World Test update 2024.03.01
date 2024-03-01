@@ -1,0 +1,15 @@
+Test Branch: 1.0.71??? Test 03/01/2024
+
+
+Programming
+  
+UI
+  
+Bugs Fixed
+  Fixed missing unit production tooltips
+  Fixed resource model animations on Radeon graphics cards
+  Fixed Map Editor null references
+  Fixed Map Editor not using specified size for generating maps
+  Fixed missing platform DLL on GOG Mac build
+  Fixed rare game freeze when exiting to main menu
+  Potential fix for Multiplayer disconnect issues
