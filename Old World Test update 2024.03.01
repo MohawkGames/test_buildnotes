@@ -12,4 +12,5 @@ Bugs Fixed
   Fixed Map Editor not using specified size for generating maps
   Fixed missing platform DLL on GOG Mac build
   Fixed rare game freeze when exiting to main menu
+  Fixed context buttons sometimes incorrectly showing character portraits 
   Potential fix for Multiplayer disconnect issues
