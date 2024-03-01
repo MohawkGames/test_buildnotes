@@ -1,4 +1,4 @@
-Test Branch: 1.0.71219 Test 03/01/2024
+Test Branch: 1.0.71221 Test 03/01/2024
 
 This is a small bug-fix only patch in preperation for an upcoming release build.
   
@@ -10,4 +10,5 @@ Bugs Fixed
   Fixed missing platform DLL on GOG Mac build
   Fixed rare game freeze when exiting to main menu
   Fixed context buttons sometimes incorrectly showing character portraits 
+  Fixed loading with Revealed Map option
   Potential fix for Multiplayer disconnect issues
