@@ -1,0 +1,9 @@
+Test Branch: 1.0.71306 Test 03/06/2024
+
+Update to match release build
+  
+Bugs Fixed
+  Fixed hang when loading saves in game
+  Fixed model and shader issues wtih GPU Unit Animations enabled
+  Fixed revealed but not currently visible resources not animating
+  Fixed error when saving changes in the Event Wizard
