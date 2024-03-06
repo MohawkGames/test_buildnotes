@@ -1,41 +1,15 @@
-Test Branch: 1.0.71033 Test 02/21/2024
+Test Branch: 1.0.71221 Test 03/01/2024
 
-Design
-
-New game option Revealed Map
-Added multiple selection to the build queue for ships in cities with borders in multiple bodies of water to allow selection of where to build the ship
-When hovering over unit production the tile it will appear in will be highlighted
-Some Dynasty leaders now have a preferred family and will convert to that family if it is founded
-Carthage scenario 3 tweaks
-Added Theagenes as a historically correct general to the Sacred Band unit in Heroes of the Aegean scenario 3
-
-
-Programming
-
-AI economy improvements 
-AI performance optimizations
-Improved speed of scenario selection
-
-
-UI
-
-Added Current Tile worker filter and made it the default. Valid Improvements filter now ignores terrain requirements.
-F1 will now always open the encyclopedia even if no related tooltip showing.
-
-
+This is a small bug-fix only patch in preparation for an upcoming release build.
+  
 Bugs Fixed
 
-Fixed Clergy opinion calculation bug 
-Fixed generic ping null reference
-Fixed null reference from razing a city near the map boundary 
-Fixed city production icon not showing correctly on loading save
-Fixed division by zero on tile mouseover
-Fixed divide-by-zero client exception
-Fixed bug report text appearing on game load
-Fixed load/save error related to Jerwan Aqueduct
-Fixed XML first-entry validation for mods that derive from existing Infos and add new fields
-Fixed empty text sometimes not updating properly in Encyclopedia
-Fixed clicking on preset character links in Encyclopedia not going to character page
-Fixed bugs with when African Elephants are valid to build in Carthage scenario 4
-Fixed Donut mascript sometimes generating maps with a square hole
-Text and event fixes
+Fixed missing unit production tooltips
+Fixed resource model animations on Radeon graphics cards
+Fixed Map Editor null references
+Fixed Map Editor not using specified size for generating maps
+Fixed missing platform DLL on GOG Mac build
+Fixed rare game freeze when exiting to main menu
+Fixed context buttons sometimes incorrectly showing character portraits 
+Fixed loading with Revealed Map option
+Potential fix for Multiplayer disconnect issues
