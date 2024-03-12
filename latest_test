@@ -1,4 +1,5 @@
 Test Branch: 1.0.71308 Test 03/06/2024
+Test Branch Hotfix: 1.0.71426 Test 03/12/2024
 
 Update to match release build
   
@@ -8,3 +9,10 @@ Fixed hang when loading saves in game
 Fixed model and shader issues wtih GPU Unit Animations enabled
 Fixed revealed but not currently visible resources not animating
 Fixed error when saving changes in the Event Wizard
+
+Fixed crash to desktop from new game screen with random nation selected
+Fixed scenario loading in MP
+Fixed worker value AI bug
+Possible fix for joining network games with mods
+Fixed Heroes of the Aegean scenario 3 Thessaly goal
+Added Safe Mode launch option for Steam
