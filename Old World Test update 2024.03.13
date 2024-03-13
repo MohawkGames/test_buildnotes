@@ -1,1 +1,28 @@
+Test Branch: 1.0.71454 Test 2024-03-13
 
+Design
+  Sulla's Dictator trait now included in Terrifying trait group (Wonders and Dynasties)
+  Added preferred families for more dynasty leaders (Wonders and Dynasties)
+
+Programming
+
+UI
+  Added connected icon to cities tab
+  Added per-culture level limits to improvement Encyclopedia entries 
+  Adjusted character portrait selection to be more likely to choose same portraits if characters' age difference is large, all else being equal 
+  Added popup for when connection is restored in network multiplayer 
+  Changed Mod Browser resources link to Modding Guide page
+  Added button with link to documentation to Portrait Editor
+  Added Turns to Hall of Fame and allowed sorting by Legitimacy, VPs, Turns and Ambitions 
+  Allow deselection on inheritance screen by clicking background
+
+Bugs Fixed
+  Fixed non-visible tribal camp widget on load
+  Fixed DLL mods not shutting down when loading a save in-game
+  Mod assemblies are now reference counted to fix DLL load/unload issues  
+  Fixed inconsistent header sizing on tab panel
+  Fixed unit action buttons not appearing for units of allied nations
+  Fix tile yield calculation with maiYieldRateSpecialistUrban only getting counted once per EffectCity
+  Fixed assert error in Heroes of the Aegean scenario 5
+  Fixed double mission display in Hero tooltip with Shammuramat selected (Wonders and Dynasties)
+  Text and event fixes
