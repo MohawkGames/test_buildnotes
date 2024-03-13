@@ -65,6 +65,7 @@ UI
 
 Bugs Fixed
   Fixed units incorrectly advancing when rout not possible 
+  Fixed event level not being visible in scenario MP screen
   Fixed missing Resource density, city site density, and city site number options on some map scripts
   Fixed some mod load/unload issues 
   Fixed DLL mods not shutting down when loading a save in-game
@@ -92,5 +93,3 @@ Bugs Fixed
   Fixed dynasty dropdowns not populating correctly on scenario setup screen
   Fixed decision update bug for MP games 
   Text and event fixes
-
-
