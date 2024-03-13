@@ -1,23 +1,40 @@
 Test Branch: 1.0.71454 Test 2024-03-13
 
 Design
+  Added per player Development setting to multiplayer setup.  All players, Human and AI, can have their own development setting, which gives additional starting cities and techs.
+  Rider family seat now gives 1 Order / turn 
+  Old World premade map tweaks.  Extended map one tile north, fixed some resources and ruins out of borders.  Added Lavender to several locations on map. 
+  You can now shift-click a law to abolish it without replacing it.  This will increase the cost of establishing a law in that pair by 100.
+  When moving allied units, the moving player now gets exploratation and ruins yields instead of the unit owner.  Moving allied units can no longer trigger events.
   Sulla's Dictator trait now included in Terrifying trait group (Wonders and Dynasties)
   Added preferred families for more dynasty leaders (Wonders and Dynasties)
+  Parsa renamed to Persepolis in Heroes of the Aegean scenario 5
 
 Programming
+  Moved map scripts to their own folder 
+  Network code cleanup
 
 UI
+  Popups and tooltips now have scrollbars when needed, will no longer make text smaller to fit
+  HUD changes to prevent overlap.  Research is now centred according to the other HUD elements rather than the centre of the screen
+  Added founded turn to city sort.  This was always the default sort and can now be selected again after changing the sort order
+  City screen (F7) now applies default founding turn sort when clicking the city name column 
   Added connected icon to cities tab
   Added per-culture level limits to improvement Encyclopedia entries 
+  Raider unit tooltips now show original tribe
+  Unit tooltips now show original unit owner
+  Improvement yield modifiers are shown even if they sum to zero
   Adjusted character portrait selection to be more likely to choose same portraits if characters' age difference is large, all else being equal 
   Added popup for when connection is restored in network multiplayer 
   Changed Mod Browser resources link to Modding Guide page
   Added button with link to documentation to Portrait Editor
   Added Turns to Hall of Fame and allowed sorting by Legitimacy, VPs, Turns and Ambitions 
   Allow deselection on inheritance screen by clicking background
+  Added email reminder to non-strict turnstyle team server and cloud games for the last player to take their turn
+  Added unsubscribe instructions to multiplayer turn emails
+  Mod browser speed improvements
 
 Bugs Fixed
-  Fixed non-visible tribal camp widget on load
   Fixed DLL mods not shutting down when loading a save in-game
   Mod assemblies are now reference counted to fix DLL load/unload issues  
   Fixed inconsistent header sizing on tab panel
@@ -25,4 +42,9 @@ Bugs Fixed
   Fix tile yield calculation with maiYieldRateSpecialistUrban only getting counted once per EffectCity
   Fixed assert error in Heroes of the Aegean scenario 5
   Fixed double mission display in Hero tooltip with Shammuramat selected (Wonders and Dynasties)
+  Fixed unit harvest tooltip to display yields gained for allied units
+  Fixed initialization of mod browser scrollbar on manage mod list. 
+  Fixed clicking some input fields (text ping, bug report screen) selecting all text
+  Fixed settlement religion icon update on undo
+  Fixed bug where raiders could raid the wrong player
   Text and event fixes
