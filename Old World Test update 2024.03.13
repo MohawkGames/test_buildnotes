@@ -3,38 +3,70 @@ Test Branch: 1.0.71454 Test 2024-03-13
 Design
   Added per player Development setting to multiplayer setup.  All players, Human and AI, can have their own development setting, which gives additional starting cities and techs.
   Rider family seat now gives 1 Order / turn 
-  Old World premade map tweaks.  Extended map one tile north, fixed some resources and ruins out of borders.  Added Lavender to several locations on map. 
+  Legitimacy cost for adoption reduced from 4 to 2
+  Miserable trait has a chance per turn of being removed
+  Competitive mode back to giving a flat rate of science, civics, training, and money
+  Improved city site resource placement so that it is less likely that one of them is unreachable
+  Old World premade map tweaks.  Extended map one tile north, fixed some resources and ruins that were out of borders.  Added Lavender to several locations on map. 
   You can now shift-click a law to abolish it without replacing it.  This will increase the cost of establishing a law in that pair by 100.
   When moving allied units, the moving player now gets exploratation and ruins yields instead of the unit owner.  Moving allied units can no longer trigger events.
-  Sulla's Dictator trait now included in Terrifying trait group (Wonders and Dynasties)
+  Khufu's wonder cost reduction lowered from 50% to 25% (Wonders and Dynasties)
+  Marius' enrolment post now gives -25% for warriors only instead of all infantry, training cost for project removed.  Sulla now more likely to cause Marius problems. (Wonders and Dynasties)
+  Hannibal now gets -20 family opinions and an increased legitimacy penalty in some Hannibal specific events (Wonders and Dynasties)
   Added preferred families for more dynasty leaders (Wonders and Dynasties)
+  Sulla's Dictator trait now included in Terrifying trait group (Wonders and Dynasties)  
+  Agrippina unlocking a spymaster is now tied to a trait, the current one will stay if she dies but a new one cannot be appointed (Wonders and Dynasties)  
   Parsa renamed to Persepolis in Heroes of the Aegean scenario 5
 
 Programming
   Moved map scripts to their own folder 
   Network code cleanup
+  Adjusted character portrait selection to be more likely to choose same portraits if characters' age difference is large, all else being equal 
+  Fallback for DLL mods that fail to load. A message will be shown and mods disabled.
+  AI now purposely builds ships in specific water areas, like humans can 
+  Map files now support DynastySites in the tile data. Mods can append nation start tiles to premade maps
+  Hotseat with one human player now behaves like single player for achievements, save files, discord, death with no heir, tutorial, hall of fame, etc 
 
 UI
+  Clicking a link within a mission button will activate the mission rather than opening the link
   Popups and tooltips now have scrollbars when needed, will no longer make text smaller to fit
+  Adjusted floating text to better accommodate some bonuses
   HUD changes to prevent overlap.  Research is now centred according to the other HUD elements rather than the centre of the screen
   Added founded turn to city sort.  This was always the default sort and can now be selected again after changing the sort order
   City screen (F7) now applies default founding turn sort when clicking the city name column 
   Added connected icon to cities tab
+  Moved family/religion actions to bottom of selection panel 
   Added per-culture level limits to improvement Encyclopedia entries 
+  Ships show a text status while anchoring
   Raider unit tooltips now show original tribe
   Unit tooltips now show original unit owner
+  Improvements to unit range tooltips. Fixed range now indicated in the unit's tooltip
   Improvement yield modifiers are shown even if they sum to zero
-  Adjusted character portrait selection to be more likely to choose same portraits if characters' age difference is large, all else being equal 
+  Trait gain / loss bonus helptext now shows yield change for traits with leader effects 
   Added popup for when connection is restored in network multiplayer 
   Changed Mod Browser resources link to Modding Guide page
   Added button with link to documentation to Portrait Editor
   Added Turns to Hall of Fame and allowed sorting by Legitimacy, VPs, Turns and Ambitions 
+  Show character subject requirements in red when no valid characters found for a mission 
   Allow deselection on inheritance screen by clicking background
+  Aligned ping popup dropdown/input field 
+  Added a hint about customizing opponent player parameters in a single player game
+  Former regents now included in turn summary
+  Improvement helptext displays when max improvement count is 1 for a city
+  Updated National Alliance helptext to include that player's can move and attack with allied units
+  Added descriptions to Make Clergy and Pagan Sacrifice missions
+  Add Road button now shown on invalid terrain 
+  Wonders now shown on city Improvements tooltip
+  Negative penalty for missing family luxuries shown on send luxury to family button 
   Added email reminder to non-strict turnstyle team server and cloud games for the last player to take their turn
   Added unsubscribe instructions to multiplayer turn emails
   Mod browser speed improvements
+  Display the build's date in unambiguous international format instead of American 
 
 Bugs Fixed
+  Fixed units incorrectly advancing when rout not possible 
+  Fixed missing Resource density, city site density, and city site number options on some map scripts
+  Fixed some mod load/unload issues 
   Fixed DLL mods not shutting down when loading a save in-game
   Mod assemblies are now reference counted to fix DLL load/unload issues  
   Fixed inconsistent header sizing on tab panel
@@ -47,4 +79,16 @@ Bugs Fixed
   Fixed clicking some input fields (text ping, bug report screen) selecting all text
   Fixed settlement religion icon update on undo
   Fixed bug where raiders could raid the wrong player
+  Fixed fortification bar for AI units showing even when they are moving
+  Fixed leader background not being updated when switching due to premade map 
+  Fixed heir naming popup title
+  Fixed overlap on dynasty portraits in SP setup 
+  Fixed free ships spawning on smaller bodies of water when a larger one is available
+  Fixed missing options menu tooltips 
+  Fixed city luxury list tooltip not appearing 
+  Fixed an AI-related UI assert
+  Fixed an assert for automated human units 
+  Fixed leader tooltip overlap with actions menu 
+  Fixed dynasty dropdowns not populating correctly on scenario setup screen
+  Fixed decision update bug for MP games 
   Text and event fixes
