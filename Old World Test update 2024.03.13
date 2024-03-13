@@ -7,9 +7,9 @@ Design
   Miserable trait has a chance per turn of being removed
   Competitive mode back to giving a flat rate of science, civics, training, and money
   Improved city site resource placement so that it is less likely that one of them is unreachable
-  Old World premade map tweaks.  Extended map one tile north, fixed some resources and ruins that were out of borders.  Added Lavender to several locations on map. 
+  Old World pre-made map tweaks.  Extended map one tile north, fixed some resources and ruins that were out of borders.  Added Lavender to several locations on map. 
   You can now shift-click a law to abolish it without replacing it.  This will increase the cost of establishing a law in that pair by 100.
-  When moving allied units, the moving player now gets exploratation and ruins yields instead of the unit owner.  Moving allied units can no longer trigger events.
+  When moving allied units, the moving player now gets exploration and ruins yields instead of the unit owner.  Moving allied units can no longer trigger events.
   Khufu's wonder cost reduction lowered from 50% to 25% (Wonders and Dynasties)
   Marius' enrolment post now gives -25% for warriors only instead of all infantry, training cost for project removed.  Sulla now more likely to cause Marius problems. (Wonders and Dynasties)
   Hannibal now gets -20 family opinions and an increased legitimacy penalty in some Hannibal specific events (Wonders and Dynasties)
@@ -31,7 +31,7 @@ UI
   Clicking a link within a mission button will activate the mission rather than opening the link
   Popups and tooltips now have scrollbars when needed, will no longer make text smaller to fit
   Adjusted floating text to better accommodate some bonuses
-  HUD changes to prevent overlap.  Research is now centred according to the other HUD elements rather than the centre of the screen
+  HUD changes to prevent overlap.  Research is now centered according to the other HUD elements rather than the center of the screen
   Added founded turn to city sort.  This was always the default sort and can now be selected again after changing the sort order
   City screen (F7) now applies default founding turn sort when clicking the city name column 
   Added connected icon to cities tab
@@ -53,7 +53,7 @@ UI
   Added a hint about customizing opponent player parameters in a single player game
   Former regents now included in turn summary
   Improvement helptext displays when max improvement count is 1 for a city
-  Updated National Alliance helptext to include that player's can move and attack with allied units
+  Updated National Alliance helptext to include that players can move and attack with allied units
   Added descriptions to Make Clergy and Pagan Sacrifice missions
   Add Road button now shown on invalid terrain 
   Wonders now shown on city Improvements tooltip
@@ -92,3 +92,5 @@ Bugs Fixed
   Fixed dynasty dropdowns not populating correctly on scenario setup screen
   Fixed decision update bug for MP games 
   Text and event fixes
+
+
