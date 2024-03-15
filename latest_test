@@ -99,4 +99,5 @@ Fixed an assert for automated human units
 Fixed leader tooltip overlap with actions menu 
 Fixed dynasty dropdowns not populating correctly on scenario setup screen
 Fixed decision update bug for MP games 
+Fixed assign general audio level
 Text and event fixes
