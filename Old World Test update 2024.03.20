@@ -16,6 +16,7 @@ Programming
   Portrait Editor now automatically attempts to regenerate portraits without feature points
   Network connection improvements
   AI saves yields for Wonders less aggressively
+  Dynasty start sites are now definable directly in map files
 
 UI
   Adjusted mapping between portrait ages and rendered portraits.  This lowers the apparent age of characters portraits when using Portrait Age Interpolation.
