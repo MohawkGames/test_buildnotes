@@ -1,0 +1,48 @@
+Test Branch: 1.0.71580 Test 2024-03-20
+
+Design
+  Added new victory point setting: Very High.  This increases VP required for winning by 50%.  The previous High setting now increases VP required by 25%. 
+  Sages no longer have +25% science in their seat 
+  Events giving a free siege unit will now give an Onager instead of a Ballista if the player has not yet researched Hydraulics
+  Can no longer invalidate an ambition offer just by getting a bit closer during the turn in which it was offered
+  Heroes of the Aegean scenario 5 tweaks - boost science and units on Easy difficulty and limit Persian tech.  Persia can no longer build ships.
+  Ship build water area now takes priority over city territory (ships will spwan in selected ocean even if there is no space within player borders)
+  Event trait delay no longer happens when there is no undo 
+  Swapped names of Persian Cleric and Rider families (for historical acccuracy)  
+  Changed improvement adjacency requirements to be fulfilled in team territory, to be consistent with adjacency bonuses
+
+Programming
+  Portrait Editor now automatically attempts to regenerate portraits without feature points
+  Network connection improvements
+  AI saves yields for Wonders less aggressively
+
+UI
+  Adjusted mapping between portrait ages and rendered portraits.  This lowers the apparent age of characters portraits when using Portrait Age Interpolation.
+  Character name is now always show in character help tooltip to give a link for selection
+  Player option to follow moves of AI at war no longer includes civilian units
+  Added target/prereq icons to techs tooltip while hovering over tech tree button
+  Killed unit log entry now includes the killed unit's promotions 
+  Added reminders for clergy missions 
+
+Bugs Fixed
+  Fixed some team contact issues
+  Fixed a movement bug where you could spend orders but not complete the entire move 
+  Fixed mixed language text appearing in cloud games
+  Fixed difficulty dropdown in SP advanced setup
+  Fixed tribes entering their own camp getting credit for capturing a settlement
+  Fixed highlighted tiles for selected Disciples
+  Fixed human development not applying due to defaults 
+  Fixed empty parenthesis on trait loss when no ratings change involved
+  Fixed some button links still activating on click
+  Fixed some settings getting reverted to default 
+  Development fix in event editor 
+  Portrait Editor fixes
+  Heroes of the Aegean scenario 5 fixes
+  Fixed Rome over expanding in Learn to Play 5
+  Fixed raiders sometimes not raiding
+  Fixed missing option defaults in Safe Mode
+  Fixed hotkey rebinding in Safe Mode 
+  Fixed tooltip locking on inheritance screen
+  Fixed some cases where border preview showed the wrong color 
+  Fixed tooltip positioning issues
+  Text and event fixes
