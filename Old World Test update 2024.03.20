@@ -1,15 +1,15 @@
 Test Branch: 1.0.71580 Test 2024-03-20
 
 Design
-  Added new victory point setting: Very High.  This increases VP required for winning by 50%.  The previous High setting now increases VP required by 25%. 
+  Added new victory point setting: Very High.  This increases the VP required for winning by 50%.  The previous High setting now increases the VP required by 25%. 
   Sages no longer have +25% science in their seat 
   Patrons now get a +25% city culture bonus per Precious Resource instead of the flat +4.  Patrons seat now gets 2 happiness levels per culture event instead of 1.
   Events giving a free siege unit will now give an Onager instead of a Ballista if the player has not yet researched Hydraulics
   Can no longer invalidate an ambition offer just by getting a bit closer during the turn in which it was offered
   Heroes of the Aegean scenario 5 tweaks - boost science and units on Easy difficulty and limit Persian tech.  Persia can no longer build ships.
-  Ship build water area now takes priority over city territory (ships will spwan in selected ocean even if there is no space within player borders)
+  Ship build water area now takes priority over city territory (ships will spawn in selected ocean even if there is no space within player borders)
   Event trait delay no longer happens when there is no undo 
-  Swapped names of Persian Cleric and Rider families (for historical acccuracy)  
+  Swapped names of Persian Cleric and Rider families (for historical accuracy)  
   Changed improvement adjacency requirements to be fulfilled in team territory, to be consistent with adjacency bonuses
 
 Programming
