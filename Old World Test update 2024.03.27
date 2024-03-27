@@ -1,7 +1,7 @@
 Test Branch: 1.0.71689 Test 2024-03-27
 
 Design
-  Bonus tech cards position and cost in the tech tree reorganised
+  Bonus tech cards position and cost in the tech tree reorganized
   Free units now unlocked on a different tech than the one that would allow that unit to be built.  Free Longbowmen, Crossbowmen and Dromon cards now grant 2 units.
   AI diplomatic event chance now decreases with number of AI players
   Marriage events now only occur for the leader and their children 
@@ -10,16 +10,16 @@ Design
 
 New Events
   A More Disciplined Approach
-	Battle Diary
-	Emergency War Taxes
-	Enough Missiles to Block the Sun
-	Family Power Play
-	Learning From Our Mistakes
-	Masquerade
-	Taking the Reins
-	The Fluffy Bunny
-	Too Young to Rule
-	Whispers from the Gods
+  Battle Diary
+  Emergency War Taxes
+  Enough Missiles to Block the Sun
+  Family Power Play
+  Learning From Our Mistakes
+  Masquerade
+  Taking the Reins
+  The Fluffy Bunny
+  Too Young to Rule
+  Whispers from the Gods
 
 Programming
   Worker AI improvements
@@ -30,10 +30,10 @@ Programming
 UI
   Research choice event no longer appears.  Research popup shown on trying to end turn without having selected anything to research.
   Map Editor now handles setting DynastySites for defining where a dynasty will start from 
-  Imporved Hall of Fame column header formatting
+  Improved Hall of Fame column header formatting
   Improved tooltip for heir naming options 
   Renamed Enlist Next to Enlist Next Kill
-  Units that level up no longer wake up.  This fixes auto-heal getting cancelled on level up. 
+  Units that level up no longer wake up.  This fixes auto-heal getting canceled on level up. 
 
 Bugs Fixed
   Fixed clergy reminder text reference 
