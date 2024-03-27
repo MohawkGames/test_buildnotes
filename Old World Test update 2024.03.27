@@ -3,7 +3,7 @@ Test Branch: 1.0.71689 Test 2024-03-27
 Design
   Bonus tech cards position and cost in the tech tree reorganized
   Free units now unlocked on a different tech than the one that would allow that unit to be built.  Free Longbowmen, Crossbowmen and Dromon cards now grant 2 units.
-  AI diplomatic events occur less frequently with a high number of AI players
+  Improved scaling of diplomatic event chance with number of AIs
   Marriage events now only occur for the leader and their children 
   Added Greedy to Seven Sins trait group and removed Extravagant
   Removed turn delay on more event bonuses when No Undo is enabled
