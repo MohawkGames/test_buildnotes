@@ -1,67 +1,7 @@
-Test Branch: 1.0.71689 Test 2024-03-27
+Test Branch: 1.0.71794 Test 04/04/2024
 
-Design
-
-Bonus tech cards position and cost in the tech tree reorganized
-Free units now unlocked on a different tech than the one that would allow that unit to be built.  Free Longbowmen, Crossbowmen and Dromon cards now grant 2 units.
-Improved scaling of diplomatic event chance with number of AIs
-Marriage events now only occur for the leader and their children 
-Added Greedy to Seven Sins trait group and removed Extravagant
-Removed turn delay on more event bonuses when No Undo is enabled
-
-
-New Events
-
-A More Disciplined Approach
-Battle Diary
-Emergency War Taxes
-Enough Missiles to Block the Sun
-Learning From Our Mistakes
-Masquerade
-Taking the Reins
-The Fluffy Bunny
-Whispers from the Gods
-
-
-Programming
-
-Worker AI improvements
-Improved AI consideration for connecting its cities to foreign cities
-AI no longer spends orders to place military units on city sites when it has not yet met any opponents
-Removed explicit construction states asset definitions for wonders that shouldn't have one
-
-
-UI
-
-Research choice event no longer appears.  Research popup shown on trying to end turn without having selected anything to research.
-Map Editor now handles setting DynastySites for defining where a dynasty will start from 
-Improved Hall of Fame column header formatting
-Improved tooltip for heir naming options 
-Renamed Enlist Next to Enlist Next Kill
-Units that level up no longer wake up.  This fixes auto-heal getting canceled on level up. 
-
+Update to match release build
 
 Bugs Fixed
 
-Fixed clergy reminder text reference 
-Fixed network multiplayer with non-internal mods
-Fixed an issue with loading modded games for network play
-Fixed issue with premade maps where all dynasty sites were given to an AI nation rather than random city sites based on development
-Fixed some button clicks not triggering button audio 
-Fixed errors on leader selection screen after coming from the scenario selection screen
-Fixed single player start menu sometimes not showing character portraits 
-Fixed an issue with the way player starting tiles are picked to include any dynasty starting tiles 
-Fixed automated icon showing on city list 
-Fixed free extra action effectUnit load/save inconsistency
-Fixed mod error notification when no mods loaded
-Fixed null exception on shutdown in hotkey manager 
-Fixed yield modifier bug
-Fixed invalid index exception
-Fixed text preventing tooltips from locking in some cases 
-Fixed tooltips incorrectly stating that the Pious trait increases the chance of a pagan religion spreading
-Fixed techs being able to give invalid bonuses i.e. courtiers in No Characters mode 
-Fixed Capture Buhen goal in Pharaohs of the Nile scenario 1 not triggering when moving a unit into the city when it has no HP
-City tooltip fixes
-Added Victory point level backwards compatibility (so that existing games don't have their VPs changed) 
-Default AI Dynasties option is hidden when No Characters is enabled 
-Text and event fixes
+Fixed bug with modded portraits not showing
