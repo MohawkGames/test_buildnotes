@@ -1,0 +1,51 @@
+Test Branch: 1.0.71896 Test 2024-04-10
+Up to 71756
+
+Design
+  The number of reserved city sites (sites near start location not occupied by Tribes) is now set by the Tribal Strength setting
+  The percentage of reserved city sites that are occupied by Barbarians is set by Difficulty
+  Empty reserved sites are revealed on founding your captial  
+  Launch Offensive now costs 800 training, up from 600
+  Peaceful nations borders now count as neutral instead of friendly territory for the purposes of healing
+  Events that offer ambitions are no longer cancelled if the ambition is completed before dealing with the event
+  Tribal invasions can occur only if one of the player's cities is reachable from one of the tribe's settlements
+  Minor Cities now give +10% defense and no longer give Discontent 
+  Removed Cult events from Competitive mode (Sacred and Profane)
+  Removed Kush's nation opinion modifier with Egypt
+  Many events restructured and tweaked
+  
+Programming
+  City starting culture now properly defined through InfoGlobals (for modders use)
+  Added bAbandonCity bonus (for modders use)
+  Better network match check logging
+  Added GreeceCampaign source folder and LearnByPlaying xml folders to the public reference folders
+
+UI
+  Turn summary now always shows birth of royal children
+  Events are now included in cloud game turn summary emails
+  Changed attack preview UI to be a tooltip so it can be locked
+  Removed redundant job line in character tooltip
+  Character tooltip no longer shows agent status for characters on other teams
+  Added new construction states for the Great Cothon and the Colosseum
+  Player turn text now shown in cooperative MP games
+  Cloud game descriptions now stored in the correct language for each player 
+  Increased text ping character limit from 40 to 255
+  Removed heir-naming popup when the leader is not the parent
+  Notification header text can no longer wrap to a new line
+  
+Bugs Fixed
+  Fixed issue with animated resource display on AMD GPUs
+  Fixed some family icon issues
+  Fixed bonus ship cards not being shown on tooltips and the tech tree when the player has no coastal cities
+  Fixed automate button being shown in non-player cities 
+  Fixed some UI interactions with cancelling missions
+  Fixed null reference on religious council goal helptext
+  Fixed AI assigning a governor upon settling a new city, when it doesn't have the orders to do so 
+  Fixed enter/return not interacting with save browser prompts 
+  Fixed Disjunction One Continent per Team maps sometimes having multiple teams on the same continent
+  Fixed duplicated tech prereq indicators 
+  Fixed newly arrived characters past the fertility age being fertile 
+  Fixed some asserts and null references when converting a cloud game to network
+  Fixed city links not spawning tooltips in some cases
+  Player and game names can no longer include multiple lines
+  Text and event fixes
