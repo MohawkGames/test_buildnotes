@@ -4,10 +4,10 @@ Up to 71756
 Design
   The number of reserved city sites (sites near start location not occupied by Tribes) is now set by the Tribal Strength setting
   The percentage of reserved city sites that are occupied by Barbarians is set by Difficulty
-  Empty reserved sites are revealed on founding your captial  
+  Empty reserved sites are revealed on founding your capital  
   Launch Offensive now costs 800 training, up from 600
   Peaceful nations borders now count as neutral instead of friendly territory for the purposes of healing
-  Events that offer ambitions are no longer cancelled if the ambition is completed before dealing with the event
+  Events that offer ambitions are no longer canceled if the ambition is completed before dealing with the event
   Tribal invasions can occur only if one of the player's cities is reachable from one of the tribe's settlements
   Minor Cities now give +10% defense and no longer give Discontent 
   Removed Cult events from Competitive mode (Sacred and Profane)
@@ -38,7 +38,7 @@ Bugs Fixed
   Fixed some family icon issues
   Fixed bonus ship cards not being shown on tooltips and the tech tree when the player has no coastal cities
   Fixed automate button being shown in non-player cities 
-  Fixed some UI interactions with cancelling missions
+  Fixed some UI interactions with canceling missions
   Fixed null reference on religious council goal helptext
   Fixed AI assigning a governor upon settling a new city, when it doesn't have the orders to do so 
   Fixed enter/return not interacting with save browser prompts 
