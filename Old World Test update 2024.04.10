@@ -1,5 +1,4 @@
 Test Branch: 1.0.71896 Test 2024-04-10
-Up to 71756
 
 Design
   The number of reserved city sites (sites near start location not occupied by Tribes) is now set by the Tribal Strength setting
