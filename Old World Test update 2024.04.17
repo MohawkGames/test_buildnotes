@@ -21,6 +21,7 @@ UI
   Tribal cities (not camps) now show player diplomacy status icon on the city banner 
   
 Bugs Fixed
+  Fixed fertile children sometimes becoming infertile before adulthood (introduced in last weeks test update)
   Fixed difficulty level tooltip 
   Fixed issues preventing missions from being canceled
   Fixed mini tech display button not respecting tech tree settings
