@@ -1,57 +1,43 @@
-Test Branch: 1.0.71896 Test 2024-04-10
+Test Branch: 1.0.71985 Test 2024-04-17
 
 Design
 
-The number of reserved city sites (sites near start location not occupied by Tribes) is now set by the Tribal Strength setting
-The percentage of reserved city sites that are occupied by Barbarians is set by Difficulty
-Empty reserved sites are revealed on founding your capital  
-Launch Offensive now costs 800 training, up from 600
-Peaceful nations borders now count as neutral instead of friendly territory for the purposes of healing
-Events that offer ambitions are no longer canceled if the ambition is completed before dealing with the event
-Tribal invasions can occur only if one of the player's cities is reachable from one of the tribe's settlements
-Minor Cities now give +10% defense and no longer give Discontent 
-Removed Cult events from Competitive mode (Sacred and Profane)
-Removed Kush's nation opinion modifier with Egypt
-Many events restructured and tweaked
-  
+Added difficulty restriction (minimum the Just) for some events that might contain only war options
+Improvements now allowed to be replaced by improvements of the same class (relevant for shrines)
+Archipelago map script improvements.  Maps are now 20% bigger than normal maps (down from 40%)
+
 
 Programming
 
-City starting culture now properly defined through InfoGlobals (for modders use)
-Added bAbandonCity bonus (for modders use)
-Better network match check logging
-Added GreeceCampaign source folder and LearnByPlaying xml folders to the public reference folders
+Increased AI value for walls
+Added InfoCulture.mePrevCulture/meNextCulture so culture levels are properly moddable. 
+Game editor can now decrease city culture by right-clicking 
 
 
 UI
 
-Turn summary now always shows birth of royal children
-Events are now included in cloud game turn summary emails
-Changed attack preview UI to be a tooltip so it can be locked
-Removed redundant job line in character tooltip
-Character tooltip no longer shows agent status for characters on other teams
-Added new construction states for the Great Cothon and the Colosseum
-Player turn text now shown in cooperative MP games
-Cloud game descriptions now stored in the correct language for each player 
-Increased text ping character limit from 40 to 255
-Removed heir-naming popup when the leader is not the parent
-Notification header text can no longer wrap to a new line
-
+Technology display is now right justified
+Tooltip verbosity and formatting improvements
+Changed 'no worker suggestions' option to 'no action suggestions'. Enabling this option removes all unit, city and research recommendations.
+Improvement ping dropdown improvements
+In-game options popup shows the email address for that game, can be different per save
+UI now updates after you kick a player from a cloud game through host settings
+Added Occurrence log category for notifications and PBC emails
+Tribal cities (not camps) now show player diplomacy status icon on the city banner 
 
 Bugs Fixed
 
-Fixed issue with animated resource display on AMD GPUs
-Fixed some family icon issues
-Fixed bonus ship cards not being shown on tooltips and the tech tree when the player has no coastal cities
-Fixed automate button being shown in non-player cities 
-Fixed some UI interactions with canceling missions
-Fixed null reference on religious council goal helptext
-Fixed AI assigning a governor upon settling a new city, when it doesn't have the orders to do so 
-Fixed enter/return not interacting with save browser prompts 
-Fixed Disjunction One Continent per Team maps sometimes having multiple teams on the same continent
-Fixed duplicated tech prereq indicators 
-Fixed newly arrived characters past the fertility age being fertile 
-Fixed some asserts and null references when converting a cloud game to network
-Fixed city links not spawning tooltips in some cases
-Player and game names can no longer include multiple lines
+Fixed children sometimes becoming infertile before adulthood (introduced in last weeks test update)
+Fixed difficulty level tooltip 
+Fixed issues preventing missions from being canceled
+Fixed mini tech display button not respecting tech tree settings
+Fixed build recommendation stars not appearing
+Fixed map script boundary tiles sometimes blocking out important sections of the map
+Fixed Pharaohs of the Nile scenario 3 major victory not triggering on turn 40 
+No longer possible to rewind a cloud game to a surrendered player
 Text and event fixes
+
+
+Known Issues
+
+Assert error messages can occur on the city screen with action suggestions enabled
