@@ -29,3 +29,6 @@ Bugs Fixed
   Fixed Pharaohs of the Nile scenario 3 major victory not triggering on turn 40 
   No longer possible to rewind a cloud game to a surrendered player
   Text and event fixes
+
+Known Issues
+  Assert error messages can occur on the city screen with action suggestions enabled
