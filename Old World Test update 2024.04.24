@@ -1,0 +1,24 @@
+Test Branch: 1.0.72072 Test 2024-04-24
+
+Design
+  More Archipelago map script changes, large islands are bigger and added Water Size map option
+  Most missions that can result in an event no longer do so on Minimal event level
+  
+Programming
+  Recommended builds performance optimization
+
+UI
+  The power/knowledge display is now unambiguous in who it refers to
+  Help text for the spread religion option now shows yields that will be gained (from the Oracle, Tolerance etc)
+  Improved display of dropdowns on setup screen when scrolling
+  
+Bugs Fixed
+  Fixed Alt key sometimes getting stuck down, preventing keyboard shortcuts from working correctly
+  Fixed city screen recommendation assert errors
+  Fixed Arid Plateau random map settings
+  Fixed councillors not being selectable if slot is disabled (i.e. Spymasters after Agrippina dies)
+  Fixed city sort issues
+  Fixed city build recommendations and improvement ping icons not always updating immediately
+  Fixed lateral and dynastic succession when the founder is not related to the current leader
+  Fixed leader tooltip not locking on timeline screen
+  Text and event fixes
