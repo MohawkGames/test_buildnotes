@@ -16,7 +16,7 @@ Bugs Fixed
   Fixed Alt key sometimes getting stuck down, preventing keyboard shortcuts from working correctly
   Fixed city screen recommendation assert errors
   Fixed Arid Plateau random map settings
-  Fixed councillors not being selectable if slot is disabled (i.e. Spymasters after Agrippina dies)
+  Fixed councilors not being selectable if slot is disabled (i.e. Spymasters after Agrippina dies)
   Fixed city sort issues
   Fixed city build recommendations and improvement ping icons not always updating immediately
   Fixed lateral and dynastic succession when the founder is not related to the current leader
