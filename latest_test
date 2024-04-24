@@ -1,43 +1,31 @@
-Test Branch: 1.0.71985 Test 2024-04-17
+Test Branch: 1.0.72075 Test 2024-04-24
 
 Design
 
-Added difficulty restriction (minimum the Just) for some events that might contain only war options
-Improvements now allowed to be replaced by improvements of the same class (relevant for shrines)
-Archipelago map script improvements.  Maps are now 20% bigger than normal maps (down from 40%)
-
+More Archipelago map script changes, large islands are bigger and added Water Size map option
+Most missions that can result in an event no longer do so on Minimal event level
+  
 
 Programming
 
-Increased AI value for walls
-Added InfoCulture.mePrevCulture/meNextCulture so culture levels are properly moddable. 
-Game editor can now decrease city culture by right-clicking 
+Recommended builds performance optimization
 
 
 UI
 
-Technology display is now right justified
-Tooltip verbosity and formatting improvements
-Changed 'no worker suggestions' option to 'no action suggestions'. Enabling this option removes all unit, city and research recommendations.
-Improvement ping dropdown improvements
-In-game options popup shows the email address for that game, can be different per save
-UI now updates after you kick a player from a cloud game through host settings
-Added Occurrence log category for notifications and PBC emails
-Tribal cities (not camps) now show player diplomacy status icon on the city banner 
+The power/knowledge display is now unambiguous in who it refers to
+Help text for the spread religion option now shows yields that will be gained (from the Oracle, Tolerance etc)
+Improved display of dropdowns on setup screen when scrolling
+  
 
 Bugs Fixed
 
-Fixed children sometimes becoming infertile before adulthood (introduced in last weeks test update)
-Fixed difficulty level tooltip 
-Fixed issues preventing missions from being canceled
-Fixed mini tech display button not respecting tech tree settings
-Fixed build recommendation stars not appearing
-Fixed map script boundary tiles sometimes blocking out important sections of the map
-Fixed Pharaohs of the Nile scenario 3 major victory not triggering on turn 40 
-No longer possible to rewind a cloud game to a surrendered player
+Fixed Alt key sometimes getting stuck down, preventing keyboard shortcuts from working correctly
+Fixed city screen recommendation assert errors
+Fixed Arid Plateau random map settings
+Fixed councilors not being selectable if slot is disabled (i.e. Spymasters after Agrippina dies)
+Fixed city sort issues
+Fixed city build recommendations and improvement ping icons not always updating immediately
+Fixed lateral and dynastic succession when the founder is not related to the current leader
+Fixed leader tooltip not locking on timeline screen
 Text and event fixes
-
-
-Known Issues
-
-Assert error messages can occur on the city screen with action suggestions enabled
