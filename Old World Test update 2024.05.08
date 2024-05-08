@@ -1,13 +1,59 @@
 Test Branch: 1.0.72267 Test 2024-05-08
 
 Design
-  
+  You can now buy water tiles that are adjacent to land in the same way as land tiles (with Colonies / Landowners seat)
+  Removed restriction on Shrines not being adjacent and the adjacency requirements for Cathedrals and the Courthouse line of improvements
+  Temples now give +1 happiness per adjacent Cathedral
+  Unit vision is now consistently equal to their movement plus 2
+  Removed VP cap. Large and Huge maps with few players can now have a victory point requirement of more than 100 VPs on Normal Points to Win setting
+  The AI now builds fewer units at the lower aggression settings
   
 Programming
-  
+  AI now takes into account improvements and specialists already being built when evaluating border expansions 
+  AI now saves kills for units that can gain XP, all else being equal
+  AI now less eager to replace improvements 
+  AI no longer swaps unit positions
+  AI no longer treats vacant city sites as available to settle unless it has visibility, or unless they are reserved sites 
+  Fixed AI valuation of Divine Rule 
+  Fixed AI effectCity valuation for units that require resources
+  Better recovery from network games being unlisted from Unity's relay servers
 
 UI
+  Added a new improvement ping 'Resource' for specifying the location of new resources (i.e. from Riders Import Horses project)
+  Moved Scenario button from single player to main menu
+  Added button to start multiplayer scenario games to the scenario screen
+  World map scenarios now have all game options available 
+  Multiplayer specific game options are now always avaialble for MP scenarios
+  Moved map options up so that they are next to the scenario dropdown in the MP setup screen
+  MP scenario setup screen defaults to having the maximum number of teams and players for the scenario, with players assigned to random nations.
+  Connected foreign cities at Peace now show an icon, its tooltip lists connection yields 
+  Clicking on a gift unit/city notification now pans the camera to the location of the gift
+  Tooltip behavior when hovering over links now more consistent
+  Tooltip now warns if a character who's about to leave a job is currently running a mission 
+  Added suitor opinion to marriage tooltip 
+  Moved land unit vision bonuses to effectUnits, so that they are more visible on the UI 
+  VP breakdown now combines endgame techs as one line
+  Disabled word wrapping for city production button cost line for potential mods with additional costs
+  History values for military power and yield rates are now set to zero on the turn a player is eliminated so they display correctly on the Records screen after the game has finished
+  Expanded river clutter splats to improve river visibility in vegetation 
   
 Bugs Fixed
-  
+  Units from eliminated players that are inside another player's borders are bumped before turning into Rebels 
+  Fixed improvement pings producing log entries and sound effects for teammates 
+  Fixed turn style and turn timer dropdowns bug 
+  Fixed hotseat selection cycling 
+  Fixed Fortify and Testudo actions not immediately triggering the relevant unit animation
+  Fixed default teams on MP Scenario setup screen   
+  Fixed Opulence VPs showing in the VP tooltip if Behind the Throne isn't active
+  Fixed council conversion ambitions counting council slots from unavailable DLCs
+  Fixed language mods not displaying some icons on first load
+  Fixed encyclopedia vision value
+  Fixed missing links in turn summary and notifications
+  Fixed portrait editor failing to load portraits on second load
+  Fixed culture reduction bug in game editor
+  Fixed Destroy Fleet goal not completing in Heroes of the Aegean scenario 2
+  Fixed Carthage 2 resource goal not completing
+  Fixed Carthage 3 scenario Epic victory not being granted if Messana is not owned
+  Fixed multiple influence icons showing in events and goals in Learn to Play 3
+  Fixed unset player language causing Unity text asset unload from worker thread
   Text and event fixes
