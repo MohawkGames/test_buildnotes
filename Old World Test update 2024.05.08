@@ -23,7 +23,7 @@ UI
   Moved Scenario button from single player to main menu
   Added button to start multiplayer scenario games to the scenario screen
   World map scenarios now have all game options available 
-  Multiplayer specific game options are now always avaialble for MP scenarios
+  Multiplayer specific game options are now always available for MP scenarios
   Moved map options up so that they are next to the scenario dropdown in the MP setup screen
   MP scenario setup screen defaults to having the maximum number of teams and players for the scenario, with players assigned to random nations.
   Connected foreign cities at Peace now show an icon, its tooltip lists connection yields 
