@@ -1,0 +1,9 @@
+Test Branch: 1.0.72342 Test 2024-05-14
+  
+Bugs Fixed
+  Fixed a nested link issue with council characters
+  Fixed load save inconsistency
+  Fixed characters getting dynasty specific traits in Pharaohs of the Nile scenario 4
+  Fixed some Occurrence bugs
+  Fixed tile issue in Dead Sea Duel map
+  Text and event fixes
