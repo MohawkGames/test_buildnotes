@@ -1,10 +1,17 @@
-Test Branch: 1.0.72342 Test 2024-05-14
-  
+Test Branch 1.0.72435 Test 2024-05-22
+
 Bugs Fixed
 
-Fixed a nested link issue with council characters
-Fixed load save inconsistency
-Fixed characters getting dynasty specific traits in Pharaohs of the Nile scenario 4
-Fixed some Occurrence bugs
-Fixed tile issue in Dead Sea Duel map
+Fixed missing Game of the Week menu tooltip
+Fixed units sometimes not deselecting
+Fixed bug with resource placement from improvement pings
+Fixed Pharaohs of the Nile scenario 5 goal help 
+Fixed Pharaohs of the Nile scenario 5 crash 
+Fixed Rise of Carthage scenario 1 Bireme goal becoming impossible
+Fixed missing syntax in Rise of Carthage scenario 1 Spanish translation
+Fixed errors viewing Rise of Carthage scenario events in event browser
+Fixed Mod Browser missing tooltips
+Fixed flickering on tribe widget
+Fixed dynasty dropdown with random nation selected 
+Fixed options toggles not showing tooltips on setup screens
 Text and event fixes
