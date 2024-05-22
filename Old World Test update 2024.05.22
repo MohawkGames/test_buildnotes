@@ -12,4 +12,6 @@ Fixed missing syntax in Rise of Carthage scenario 1 Spanish translation
 Fixed errors viewing Rise of Carthage scenario events in event browser
 Fixed Mod Browser missing tooltips
 Fixed flickering on tribe widget
+Fixed dynasty dropdown with random nation selected 
+Fixed options toggles not showing tooltips on setup screens
 Text and event fixes
