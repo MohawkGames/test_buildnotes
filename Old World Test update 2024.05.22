@@ -1,0 +1,14 @@
+Test Branch 1.0.72429 Test 2024-05-22
+
+Bugs Fixed
+
+Fixed units sometimes not deselecting
+Fixed bug with resource placement from improvement pings
+Fixed Pharaohs of the Nile scenario 5 goal help 
+Fixed Pharaohs of the Nile scenario 5 crash 
+Fixed Rise of Carthage scenario 1 Bireme goal becoming impossible
+Fixed missing syntax in Rise of Carthage scenario 1 Spanish translation
+Fixed errors viewing Rise of Carthage scenario events in event browser
+Fixed Mod Browser missing tooltips
+Fixed flickering on tribe widget
+Text and event fixes
