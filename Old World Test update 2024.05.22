@@ -2,6 +2,7 @@ Test Branch 1.0.72429 Test 2024-05-22
 
 Bugs Fixed
 
+Fixed missing Game of the Week menu tooltip
 Fixed units sometimes not deselecting
 Fixed bug with resource placement from improvement pings
 Fixed Pharaohs of the Nile scenario 5 goal help 
