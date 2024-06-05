@@ -1,0 +1,38 @@
+Test Branch 1.0.72631 Test 2024-06-05
+
+Design
+  Wonder rebalancing:
+    Ishtar Gate: increased growth per culture level in the city from 1 to 2
+    Necropolis: Now gives all cities 3 civics per pagan religion instead of 2 happiness per temple
+    Royal Library: increased science output from connection to other teams, but reduced output from own team
+    Al Khazneh: Now gives free silk, perfume, ebony, porcelain, and furs, and a Caravan every 5 turns.  Removed money bonus and 3 instant Caravans
+    Mausoleum: increased culture modifier from 40% to 50%
+    Hagia Sophia: Now gives 2 happiness levels for every city on completion and 2 happiness per turn per culture level in the wonder city. Removed global happiness per turn
+    Via Recta Souk: Now gives all on-map luxury resources. Replaced wonder city growth by 2 growth per culture level. Removed happiness per luxury and Caravans
+    All improvements that produce units create one on the first turn they are built. Affects Holy Sites, Al Khazneh, Cothon and Colosseum
+    Al Khazneh and Royal Library disabled in FFA games with two or fewer human players and no AI nations
+  Added game option to ignore premade map nation starting locations
+  Renamed Inland Sea map script to Mediterranean and made it the default initial map for single player games. The original Inland Sea is no longer hidden
+  Swapping the position of units now consumes a fatigue point for both units.  Units without fatigue can use Force March to enabled them to be swapped
+
+Programming
+   Steam now respects the DLC checkboxes in the Steam library, treating any DLCs disabled there as unowned. 
+   Mod Browser change to ensure Mod.io website mod commenting is enabled properly on mods
+
+UI
+  Game option positions in setup menu re-organised
+  Unit effects now show both the general trait and promotion icons when the unit has the same effect from both 
+  Notification reminder button now bigger and shine effect applied
+
+Bugs Fixed
+  Fixed a nested link issue with council characters 
+  Fixed some AI issues where it had trouble getting out of its own way 
+  Fixed particle sound effects firing too often
+  Fixed duplicate crest in notification text for units killed or captured 
+  Fixed doubled pillage/burn buttons for allied tribe units
+  Fixed bug allowing fort or road construction in non-allied tribe city territory, including territory of cities being captured 
+  Fixed resource improvement pings not always setting the location for resources for some events that add them
+  Fixed reform eras getting stuck from imprisoned or exiled viziers (Behind the Throne)
+  Fixed wine harvest goal not failing in event of death or divorce of spouse (Behind the Throne)
+  Fixed mod browser tooltips not showing for picture & changelog edit boxes, and dependency/incompatibility/whitelist buttons on mod upload screen 
+  
