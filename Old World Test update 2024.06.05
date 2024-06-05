@@ -35,6 +35,7 @@ Programming
   Added the Behind the Throne XML files to the Reference folder
   Added setsafe console command which sets characterID safe (not able to die) for numberOfTurns
   Added some logging to better identify client reconnection failures
+  Added SUBJECT_CHARACTER_WORLD_RELIGION for use by modders
 
 UI
   Grand Vizier icon no longer blinks (Behind the Throne)
