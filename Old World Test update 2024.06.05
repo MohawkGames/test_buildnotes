@@ -16,13 +16,13 @@ Design
   Renamed newer Inland Sea map script to Mediterranean and made it the default initial map for single player games. The original Inland Sea map script is no longer hidden
   Swapping the position of units now consumes a fatigue point for both units.  Units without fatigue can use Force March to enabled them to be swapped
   The Formation effect (Greek UU) now gives +20% strength from having the same unit adjacent, not just +20% defense
-  All retiring Generals now get the Retring General trait, allowing them to become governors
+  All retiring Generals now get the Retiring General trait, allowing them to become governors
   Relaxed restrictions on ambition validity when there are no valid ambitions of the correct tier available
   Improved east-west team starting location placement adjustment 
   New crowning ambition added: six Strong cities with positive happiness 
   Team contact is now always symmetric 
   Grand Viziers can no longer be assigned manually and will only appear through events (Wonders and Dynasties)
-  The Found Religion project will now preferrentially found Zoroastrianism for the Shapur dynasty (Wonders and Dynasties)
+  The Found Religion project will now preferentially found Zoroastrianism for the Shapur dynasty (Wonders and Dynasties)
   Some dynasty starting characters now have the Rising Star and Power Hungry traits (Wonders and Dynasties / Behind the Throne)
 
 Programming
@@ -30,7 +30,7 @@ Programming
   AI now attacks tribe settlements with a higher priority than roaming tribe units 
   Improved vizier city build management (Behind the Throne)
   Steam now respects the DLC checkboxes in the Steam library, treating any DLCs disabled there as unowned. 
-  Steam now uses rich prescence and displays information about the current game state
+  Steam now uses rich presence and displays information about the current game state
   Mod Browser change to ensure Mod.io website mod commenting is enabled properly on mods
   Added the Behind the Throne XML files to the Reference folder
   Added setsafe console command which sets characterID safe (not able to die) for numberOfTurns
@@ -66,8 +66,10 @@ Bugs Fixed
   Fixed bug with events that remove citizens
   Fixed gender prerequisites not showing in event options
   Fixed Heroes of the Aegean scenario 4 intrigue techs sometimes not triggering events (Heroes of the Aegean)
-  Fixied Nero wiki link (Wonders and Dynasties)
+  Fixed Nero wiki link (Wonders and Dynasties)
   Fixed reform eras getting stuck from imprisoned or exiled viziers (Behind the Throne)
   Fixed wine harvest goal not failing in event of death or divorce of spouse (Behind the Throne)
   Fixed delay in victory triggering when final VP came from Opulence project (Behind the Throne)
   Text and event fixes
+
+
