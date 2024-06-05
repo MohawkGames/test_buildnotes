@@ -11,10 +11,10 @@ Design
     Via Recta Souk: Now gives all on-map luxury resources. Replaced wonder city growth by 2 growth per culture level. Removed happiness per luxury and Caravans
     All improvements that produce units create one on the first turn they are built. Affects Holy Sites, Al Khazneh, Cothon and Colosseum
     Al Khazneh and Royal Library disabled in FFA games with two or fewer human players and no AI nations (Wonders and Dynasties)
-  Added game option to ignore premade map nation starting locations
-  Added game option preset Introductory. This sets low events, low mortality and no AI development
+  Added game option preset Introductory and made it the default. This sets low events, low mortality and no AI development
   Renamed newer Inland Sea map script to Mediterranean and made it the default initial map for single player games. The original Inland Sea map script is no longer hidden
-  Swapping the position of units now consumes a fatigue point for both units.  Units without fatigue can use Force March to enabled them to be swapped
+  Added game option to ignore premade map nation starting locations
+  Swapping the position of units now consumes a fatigue point for both units.  Units that have used all their fatigue can use Force March to enabled them to be swapped
   The Formation effect (Greek UU) now gives +20% strength from having the same unit adjacent, not just +20% defense
   All retiring Generals now get the Retiring General trait, allowing them to become governors
   Relaxed restrictions on ambition validity when there are no valid ambitions of the correct tier available
