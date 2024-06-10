@@ -1,4 +1,4 @@
-Test Branch 1.0.72631 Test 2024-06-05
+Test Branch 1.0.72685 Test 2024-06-10
 
 Design
   Wonder rebalancing:
@@ -22,12 +22,21 @@ Design
   New crowning ambition added: six Strong cities with positive happiness 
   Team contact is now always symmetric 
   Grand Viziers can no longer be assigned manually and will only appear through events (Behind the Throne)
+  Ambushed by rebels trait no longer removes character job (Behind the Throne)
   The Found Religion project will now preferentially found Zoroastrianism for the Shapur dynasty (Wonders and Dynasties)
   Some dynasty starting characters now have the Rising Star and Power Hungry traits (Wonders and Dynasties / Behind the Throne)
+  
 
 Programming
   Increased value AI places on gaining orders 
   AI now attacks tribe settlements with a higher priority than roaming tribe units 
+  AI takes into account the strength of allies and enemies of both players when deciding whether to go to war or ask for truce 
+  
+  Tweaks to AI diplomacy with Ruthless AI set:
+  AI will not accept a player mission to declare war on a third party, if it would not consider doing so independently
+  AI will not accept truce from a player, if it has zero chance of initiating truce from its side
+  AI will not automatically accept peace or truce when another AI player offers it
+  
   Improved vizier city build management (Behind the Throne)
   Steam now respects the DLC checkboxes in the Steam library, treating any DLCs disabled there as unowned. 
   Steam now uses rich presence and displays information about the current game state
@@ -39,6 +48,8 @@ Programming
 
 UI
   Game option positions in setup menu re-organised
+  Split "Show Single Objects" into "Show Single Units" and "Show Single Resources" in graphics options
+  Added "Increase Border Visibility" to accessibility
   Unit effects now show both the general trait and promotion icons when the unit has the same effect from both 
   Notification reminder button now bigger and shine effect applied
   Updated Learn by Playing scenario icon
@@ -46,6 +57,7 @@ UI
   Revised description of traits that do not allow any jobs (e.g. Ascetic) to dynamically include all jobs
   Changed the art for Shrine of Serapis (Ptolemy's unique shrine) so that the dynasties shrines art are unique (Heroes of the Aegean)
   Border expansion preview now contains city territory information so that players know which city will get which tile
+  Updated display of rivers when using Minimal graphics setting
 
 Bugs Fixed
   Fixed a nested link issue with council characters 
@@ -65,11 +77,13 @@ Bugs Fixed
   Fixed autobuild governor not honoring items that it had previously queued
   Fixed bug with events that remove citizens
   Fixed gender prerequisites not showing in event options
+  Fixed locked tooltips causing issues on SP setup screen
+  Fixed issue where selecting things between turns could lead to UI issues
+  Fixed ask to declare war mission sometimes failing to lead to a result
   Fixed Heroes of the Aegean scenario 4 intrigue techs sometimes not triggering events (Heroes of the Aegean)
   Fixed Nero wiki link (Wonders and Dynasties)
   Fixed reform eras getting stuck from imprisoned or exiled viziers (Behind the Throne)
   Fixed wine harvest goal not failing in event of death or divorce of spouse (Behind the Throne)
   Fixed delay in victory triggering when final VP came from Opulence project (Behind the Throne)
+  Fixed Behind the Throne being unavailable in World Map and Barbarian Horde scenarios
   Text and event fixes
-
-
