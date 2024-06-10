@@ -33,9 +33,9 @@ Programming
   AI takes into account the strength of allies and enemies of both players when deciding whether to go to war or ask for truce 
   
   Tweaks to AI diplomacy with Ruthless AI set:
-  AI will not accept a player mission to declare war on a third party, if it would not consider doing so independently
-  AI will not accept truce from a player, if it has zero chance of initiating truce from its side
-  AI will not automatically accept peace or truce when another AI player offers it
+    AI will not accept a player mission to declare war on a third party, if it would not consider doing so independently
+    AI will not accept truce from a player, if it has zero chance of initiating truce from its side
+    AI will not automatically accept peace or truce when another AI player offers it
   
   Improved vizier city build management (Behind the Throne)
   Steam now respects the DLC checkboxes in the Steam library, treating any DLCs disabled there as unowned. 
