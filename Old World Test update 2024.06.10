@@ -11,6 +11,7 @@ Design
     Via Recta Souk: Now gives all on-map luxury resources. Replaced wonder city growth by 2 growth per culture level. Removed happiness per luxury and Caravans
     All improvements that produce units create one on the first turn they are built. Affects Holy Sites, Al Khazneh, Cothon and Colosseum
     Al Khazneh and Royal Library disabled in FFA games with two or fewer human players and no AI nations (Wonders and Dynasties)
+
   Added game option preset Introductory and made it the default. This sets low events, low mortality and no AI development
   Renamed newer Inland Sea map script to Mediterranean and made it the default initial map for single player games. The original Inland Sea map script is no longer hidden
   Added game option to ignore premade map nation starting locations
