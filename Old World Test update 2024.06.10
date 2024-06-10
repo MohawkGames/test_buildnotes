@@ -81,6 +81,7 @@ Bugs Fixed
   Fixed locked tooltips causing issues on SP setup screen
   Fixed issue where selecting things between turns could lead to UI issues
   Fixed ask to declare war mission sometimes failing to lead to a result
+  Fixed resource display issue in the Map Editor
   Fixed Heroes of the Aegean scenario 4 intrigue techs sometimes not triggering events (Heroes of the Aegean)
   Fixed Nero wiki link (Wonders and Dynasties)
   Fixed reform eras getting stuck from imprisoned or exiled viziers (Behind the Throne)
