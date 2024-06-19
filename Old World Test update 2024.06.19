@@ -30,7 +30,7 @@ UI
   Added turn summary entry for new techs and consolidated some categories 
   Border expansion now shown when hovering over the unit widget of a worker constructing an improvement
   Changed 'Default Settings' Option Preset name to 'Standard Settings' to reflect it no longer being the default
-  Added loading hourglass cursor to scenario menu
+  Added loading hourglass cursor to menu screens
   City founding previews now update only borders, rather than all terrain. Borders now only update vegetation when "increase border visibility" is enabled
   Ignore to-be-occupied tile for calculating potential bounces during attack preview
   Tweaks to notification tooltip for Steam Deck
