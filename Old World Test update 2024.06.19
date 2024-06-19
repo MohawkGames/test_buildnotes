@@ -24,7 +24,7 @@ Programming
   Removed UI XML hotloading
   Added more multiplayer client logging
   Possible fix for occasional reconnection failures in MP
-  Script mods now deprecated and will show warning message in Manage mods screen
+  Mapscript mods consisting of a source file are now deprecated and will show warning message in Manage mods screen
 
 UI
   Added turn summary entry for new techs and consolidated some categories 
