@@ -1,91 +1,59 @@
-Test Branch 1.0.72692 Test 2024-06-10
+Test Branch 1.0.72825 Test 2024-06-19
 
 Design
-  Wonder rebalancing:
-    Ishtar Gate: increased growth per culture level in the city from 1 to 2
-    Necropolis: Now gives all cities 3 civics per pagan religion instead of 2 happiness per temple
-    Royal Library: increased science output from connection to other teams, but reduced output from own team (Wonders and Dynasties)
-    Al Khazneh: Now gives free silk, perfume, ebony, porcelain, and furs, and a Caravan every 5 turns.  Removed money bonus and 3 instant Caravans (Wonders and Dynasties)
-    Mausoleum: increased culture modifier from 40% to 50%
-    Hagia Sophia: Now gives 2 happiness levels for every city on completion and 2 happiness per turn per culture level in the wonder city. Removed global happiness per turn
-    Via Recta Souk: Now gives all on-map luxury resources. Replaced wonder city growth by 2 growth per culture level. Removed happiness per luxury and Caravans
-    All improvements that produce units create one on the first turn they are built. Affects Holy Sites, Al Khazneh, Cothon and Colosseum
-    Al Khazneh and Royal Library disabled in FFA games with two or fewer human players and no AI nations (Wonders and Dynasties)
 
-  Added game option preset Introductory and made it the default. This sets low events, low mortality and no AI development
-  Renamed newer Inland Sea map script to Mediterranean and made it the default initial map for single player games. The original Inland Sea map script is no longer hidden
-  Added game option to ignore premade map nation starting locations
-  Swapping the position of units now consumes a fatigue point for both units.  Units that have used all their fatigue can use Force March to enabled them to be swapped
-  The Formation effect (Greek UU) now gives +20% strength from having the same unit adjacent, not just +20% defense
-  All retiring Generals now get the Retiring General trait, allowing them to become governors
-  Relaxed restrictions on ambition validity when there are no valid ambitions of the correct tier available
-  Improved east-west team starting location placement adjustment 
-  New crowning ambition added: six Strong cities with positive happiness 
-  Team contact is now always symmetric 
-  Grand Viziers can no longer be assigned manually and will only appear through events (Behind the Throne)
-  Ambushed by rebels trait no longer removes character job (Behind the Throne)
-  The Found Religion project will now preferentially found Zoroastrianism for the Shapur dynasty (Wonders and Dynasties)
-  Some dynasty starting characters now have the Rising Star and Power Hungry traits (Wonders and Dynasties / Behind the Throne)
-  
+Added advanced setup option No Events.  This disables all events except those necessary for game progression or for leaders' unique abilities.
+New crowning ambitions added:
+  8 Elder specialists in each Family Seat 
+  Polytheism and 4 Elder Acolytes in each Family Seat
+  Stockpile 2000 of each resource 
+  Send 20 luxuries
+  Amended crowning ambition 'Six Strong cities with positive happiness' to Six cities with positive happiness'
+Leader and heir now get an additional trait option that is not related to their current job when upgrading 
+Raging tribes will now get a centralized AI whenever they have at least one city in their possession
+Doubled the effect of Righteous and Debauched traits
+Increased Harbor net adjacency bonus from 40% to 60% 
+Units now always advance after kill when attacking camps that are not city sites
+Lowered order amount demanded by the AI when giving tribute for truce
+Darius now takes a -5 Legitimacy hit if he lets Bardiya take the throne (Wonders and Dynasties)
+Autonomous Rule now overrules the Grand Vizier (Autonomous Rule cities do not build units but can spend resources) (Behind the Throne)
+
 
 Programming
-  Increased value AI places on gaining orders 
-  AI now attacks tribe settlements with a higher priority than roaming tribe units 
-  AI takes into account the strength of allies and enemies of both players when deciding whether to go to war or ask for truce 
-  
-  Tweaks to AI diplomacy with Ruthless AI set:
-    AI will not accept a player mission to declare war on a third party, if it would not consider doing so independently
-    AI will not accept truce from a player, if it has zero chance of initiating truce from its side
-    AI will not automatically accept peace or truce when another AI player offers it
-  
-  Improved vizier city build management (Behind the Throne)
-  Steam now respects the DLC checkboxes in the Steam library, treating any DLCs disabled there as unowned. 
-  Steam now uses rich presence and displays information about the current game state
-  Mod Browser change to ensure Mod.io website mod commenting is enabled properly on mods
-  Added the Behind the Throne XML files to the Reference folder
-  Added setsafe console command which sets characterID safe (not able to die) for numberOfTurns
-  Added some logging to better identify client reconnection failures
-  Added SUBJECT_CHARACTER_WORLD_RELIGION for use by modders
+
+AI value for garrisons lowered
+AI is more mindful of danger when moving units from one location to another, if it can't get there on the same turn
+Removed UI XML hotloading
+Added more multiplayer client logging
+Possible fix for occasional reconnection failures in MP
+Mapscript mods consisting of a source file are now deprecated and will show warning message in Manage mods screen
+
 
 UI
-  Game option positions in setup menu re-organised
-  Split "Show Single Objects" into "Show Single Units" and "Show Single Resources" in graphics options
-  Added "Increase Border Visibility" to accessibility
-  Unit effects now show both the general trait and promotion icons when the unit has the same effect from both 
-  Notification reminder button now bigger and shine effect applied
-  Updated Learn by Playing scenario icon
-  Agent candidates are now shown on the Assign Agent tooltip even when they cannot be assigned due to no Spymaster
-  Revised description of traits that do not allow any jobs (e.g. Ascetic) to dynamically include all jobs
-  Changed the art for Shrine of Serapis (Ptolemy's unique shrine) so that the dynasties shrines art are unique (Heroes of the Aegean)
-  Border expansion preview now contains city territory information so that players know which city will get which tile
-  Updated display of rivers when using Minimal graphics setting
+
+Added turn summary entry for new techs and consolidated some categories 
+Border expansion now shown when hovering over the unit widget of a worker constructing an improvement
+Changed 'Default Settings' Option Preset name to 'Standard Settings' to reflect it no longer being the default
+Added loading hourglass cursor to menu screens
+City founding previews now update only borders, rather than all terrain. Borders now only update vegetation when "increase border visibility" is enabled
+Ignore to-be-occupied tile for calculating potential bounces during attack preview
+Tweaks to notification tooltip for Steam Deck
+
 
 Bugs Fixed
-  Fixed a nested link issue with council characters 
-  Fixed some AI issues where it had trouble getting out of its own way 
-  Fixed particle sound effects firing too often
-  Fixed duplicate crest in notification text for units killed or captured 
-  Fixed doubled pillage/burn buttons for allied tribe units
-  Fixed bug allowing fort or road construction in non-allied tribe city territory, including territory of cities being captured 
-  Fixed resource improvement pings not always setting the location for resources for some events that add them
-  Fixed time victory not being disabled by default in some of the game option presets
-  Fixed mod browser tooltips not showing for picture & changelog edit boxes, and dependency/incompatibility/whitelist buttons on mod upload screen 
-  Fixed unrevealed tiles being targetable with ranged units 
-  Fixed bug with tile distance pathfinder that caused nations to be placed too close together
-  Fixed bug with SUBJECT_CITY_DAMAGED
-  Fixed unit combat animations pausing when offscreen and resuming when in view again
-  Fixed heir naming relation tooltip 
-  Fixed autobuild governor not honoring items that it had previously queued
-  Fixed bug with events that remove citizens
-  Fixed gender prerequisites not showing in event options
-  Fixed locked tooltips causing issues on SP setup screen
-  Fixed issue where selecting things between turns could lead to UI issues
-  Fixed ask to declare war mission sometimes failing to lead to a result
-  Fixed resource display issue in the Map Editor
-  Fixed Heroes of the Aegean scenario 4 intrigue techs sometimes not triggering events (Heroes of the Aegean)
-  Fixed Nero wiki link (Wonders and Dynasties)
-  Fixed reform eras getting stuck from imprisoned or exiled viziers (Behind the Throne)
-  Fixed wine harvest goal not failing in event of death or divorce of spouse (Behind the Throne)
-  Fixed delay in victory triggering when final VP came from Opulence project (Behind the Throne)
-  Fixed Behind the Throne being unavailable in World Map and Barbarian Horde scenarios
-  Text and event fixes
+
+Fixed some traits causing the trait display to be inaccurate
+Pharaohs of the Nile scenario 3 raider and unit bounce fixes
+Fixed Seaside map script help text (no longer default)
+Fixed turn summary popup scrolling
+Fixed raiders sometimes not finding the city they are supposed to raid 
+Fixed replay for server games
+Fixed rare bug that could cause city sites to be joined on the Imperium Romanum map
+Fixed game failing to start correctly when username can't be set
+Fixed links breaking in turn summary
+Fixed city health bars sometimes not displaying properly after undo 
+Fixed bug where Developing wonders would grant AI the Weak legitimacy bonus, +2 instead of +4 
+Fixed diplomatic status icon not being removed from city widget when city is no longer owned by a tribe
+Fixed default setup options sometimes not displaying correctly
+Fixed opinion boost from Opulence not showing in the encyclopedia (Behind the Throne)
+Text and event fixes
