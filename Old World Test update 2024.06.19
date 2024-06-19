@@ -1,0 +1,55 @@
+Test Branch 1.0.72816 Test 2024-06-19
+
+Design
+  Added advanced setup option No Events.  This disables all events except those necessary for game progression or for leaders' unique abilities.
+  New crowning ambitions added:
+    8 Elder specialists in each Family Seat 
+    Polytheism and 4 Elder Acolytes in each Family Seat
+    Stockpile 2000 of each resource 
+    Send 20 luxuries
+  Amended crowning ambition 'Six Strong cities with positive happiness' to Six cities with positive happiness'
+
+  Leader and heir now get an additional trait option that is not related to their current job when upgrading 
+  Raging tribes will now get a centralized AI whenever they have at least one city in their possession
+  Doubled the effect of Righteous and Debauched traits
+  Increased Harbor net adjacency bonus from 40% to 60% 
+  Units now always advance after kill when attacking camps that are not city sites
+  Lowered order amount demanded by the AI when giving tribute for truce
+  Darius now takes a -5 Legitimacy hit if he lets Bardiya take the throne (Wonders and Dynasties)
+  Autonomous Rule now overrules the Grand Vizier (Autonomous Rule cities do not build units but can spend resources) (Behind the Throne)
+
+Programming
+  AI value for garrisons lowered
+  AI is more mindful of danger when moving units from one location to another, if it can't get there on the same turn
+  Removed UI XML hotloading
+  Added more multiplayer client logging
+  Possible fix for occasional reconnection failures in MP
+  Script mods now deprecated and will show warning message in Manage mods screen
+
+UI
+  Added turn summary entry for new techs and consolidated some categories 
+  Border expansion now shown when hovering over the unit widget of a worker constructing an improvement
+  Changed 'Default Settings' Option Preset name to 'Standard Settings' to reflect it no longer being the default
+  Added loading hourglass cursor to scenario menu
+  City founding previews now update only borders, rather than all terrain. Borders now only update vegetation when "increase border visibility" is enabled
+  Ignore to-be-occupied tile for calculating potential bounces during attack preview
+  Tweaks to notification tooltip for Steam Deck
+
+Bugs Fixed
+  Fixed some traits causing the trait display to be inaccurate
+  Pharaohs of the Nile scenario 3 raider and unit bounce fixes
+  Fixed Seaside map script help text (no longer default)
+  Fixed turn summary popup scrolling
+  Fixed raiders sometimes not finding the city they are supposed to raid 
+  Fixed replay for server games
+  Fixed rare bug that could cause city sites to be joined on the Imperium Romanum map
+  Fixed game failing to start correctly when username can't be set
+  Fixed links breaking in turn summary
+  Fixed city health bars sometimes not displaying properly after undo 
+  Fixed bug where Developing wonders would grant AI the Weak legitimacy bonus, +2 instead of +4 
+  Fixed diplomatic status icon not being removed from city widget when city is no longer owned by a tribe
+  Fixed default setup options sometimes not displaying correctly
+  Fixed opinion boost from Opulence not showing in the encyclopedia (Behind the Throne)
+  Text and event fixes
+
+
