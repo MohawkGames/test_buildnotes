@@ -1,0 +1,8 @@
+Test Branch 1.0.72906 Release 2024-06-26
+
+Update to match main build
+
+Bugs Fixed
+  Fixed cloud game state being able to be changed by non-active players
+  Fixed unit bounce tile selection
+  Fixed establish State Religion mission failing in No Events mode
