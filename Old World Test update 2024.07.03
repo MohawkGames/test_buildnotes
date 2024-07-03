@@ -53,3 +53,4 @@ Bugs Fixed
   Fixed Barbarian Horde scenario sometimes not finding enough spawn tiles for the Horde
   Fix player power display in German
   Fixed Grand Vizier incorrectly triggering the "no councilors from our family" opinion penalty (Behind the Throne)
+  Text and event fixes
