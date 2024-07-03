@@ -15,6 +15,7 @@ Programming
 
 UI
   Updated localization text
+  No Events toggle moved to Event Level dropdown
   Improved road visibility on minimum terrain detail
   Added new hotkey (Ctrl+L) to toggle between the two most recently used languages
   General name is a now a link on the unit selection panel
