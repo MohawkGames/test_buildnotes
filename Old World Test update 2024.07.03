@@ -1,0 +1,53 @@
+Test Branch 1.0.73017 Test 2024-07-03
+
+Design
+  Inland Sea map script no longer has desert and mountains at the top and bottom of the map
+  Impious characters are no longer restricted from becoming Clergy (Sacred and Profane)
+  Tweaks to eligible events for Minimal Event Level and No Events 
+  Kush Scouts with a Schemer leader are no longer invisible when building Forts
+  Game of the Week will now use all dynasties from Wonders and Dynasties. Temporarily set GoTW to use the No Events setting.
+
+Programming
+  AI no longer builds other projects in border cities if it can build walls
+  AI no longer plans to expand against a player or tribe if it would otherwise have a zero percent chance to declare war against them
+  Mods can now have custom event art
+  Eliminated per-frame heap memory allocations from glowing text
+
+UI
+  Updated localization text
+  Improved road visibility on minimum terrain detail
+  Added new hotkey (Ctrl+L) to toggle between the two most recently used languages
+  General name is a now a link on the unit selection panel
+  Adjusted spacing in unit tooltip bonus table 
+  Rural specialists on non-resource tiles are now shown on the resources/improvements overlay
+  Improvement help reorganization.  Added Potential Bonuses / Other Bonuses links to some improvement tooltips to help readability
+  Added organized tribal unit concept and indication on unit tooltip 
+  Added notification icon for Occurrences (Era of Peace, Civil War etc)
+  Laws screen now potentially scrollable (affects mods that add laws)
+  Units can now be selected through world UI elements (Harvested icon, text from overlays)
+  Improved handling of grammatical gender 
+  Tech cards display now updated when science stockpile changes
+  Tile yield overlay now shows negative yield values (but does not include consumption)
+  Moved All Characters list to the right side of character filters.
+  Character list now sorts by family, with head at top and then by age
+  Family and Religion heads now have their background highlighted in the character list
+
+Bugs Fixed
+  Fixed Garrison/Stronghold/Citadel stone upkeep issue in Barbarian Horde scenario
+  Fixed occasionally-hidden yield costs on production buttons 
+  Fixed null reference in AI bonus value calculation for tribe cities 
+  Fixed artefacts at the edges of fog of war from some viewing angles
+  Fixed stats breakdown tooltips
+  Fixed Learn to Play menu scenario expansion
+  Fixed simple setup screen not correctly applying the difficulty level from the options file 
+  Fixed a No Events event appearing incorrectly
+  Fixed religion opinion tooltip issue 
+  Fixed reign years display for bypassed rightful heir
+  Fixed autobuild cities sometimes not selecting something to build
+  Fixed some issues with in-game language changing 
+  Fixed border expansion preview for building a farm not taking into account the free farmer from the Jerwan Aqueduct
+  Fixed inland tribes setting for Continent map script 
+  Fixed some truncated link hovering issues
+  Fixed AI not advancing to occupy a settlement
+  Fixed Barbarian Horde scenario sometimes not finding enough spawn tiles for the Horde
+  Fixed Grand Vizier incorrectly triggering the "no councilors from our family" opinion penalty (Behind the Throne)
