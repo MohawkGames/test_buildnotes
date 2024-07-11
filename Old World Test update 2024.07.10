@@ -1,7 +1,7 @@
 Test Branch 1.0.73172 Test 2024-07-10
 
 Design
-  Game of the week now always has Hitties and Kush enabled with a 50% chance for each other DLC to be enabled (regardless of DLC ownership)
+  Game of the week now always has Hittites and Kush enabled with a 50% chance for each other DLC to be enabled (regardless of DLC ownership)
   Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units. 
   Cohorts now requires Manor instead of Land Consolidation
   Land units can no longer stun units on water tiles
@@ -26,7 +26,7 @@ Bugs Fixed
   Fixed preset game options from the previous game not being applied on starting a new game
   Fixed selection issues around city widget 
   Fixed clicks on popups / menus affecting the map
-  Fixed manage luxuries button sometimes exiting city
+  Fixed manage luxuries button sometimes closing city screen
   Fixed rebels not appearing if the player has no military tech
   Fixed several load/save errors
   Fixed Game of the week selecting invalid archetype and dynasty option combinations
