@@ -1,0 +1,38 @@
+Test Branch 1.0.73172 Test 2024-07-10
+
+Design
+  Game of the week now always has Hitties and Kush enabled with a 50% chance for each other DLC to be enabled (regardless of DLC ownership)
+  Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units. 
+  Cohorts now requires Manor instead of Land Consolidation
+  Land units can no longer stun units on water tiles
+  Stunned units maintain ZOC 
+  Removed attack penalty for Tactician leader general
+  Starting leaders now have more protection against dying in the first 20 turns (up from 10) 
+  Caravans no longer exist in 1v1 duels or games with one nation
+  Truce with a tribe no longer costs legitimacy in some cases
+
+Programming
+  Many memory optimizations
+
+UI
+  Available DLC section added to menu
+  Active DLC now shown in game parameters
+  Added divider for CTRL-selection helptext for agent/governor button on city widget
+  Simplified MP setup screen and added Advanced Options button
+  Attack preview tooltip prioritized over other world UI tooltips
+
+Bugs Fixed
+  Fixed truce and peace missions having no outcome in No Events mode
+  Fixed preset game options from the previous game not being applied on starting a new game
+  Fixed selection issues around city widget 
+  Fixed clicks on popups / menus affecting the map
+  Fixed manage luxuries button sometimes exiting city
+  Fixed rebels not appearing if the player has no military tech
+  Fixed several load/save errors
+  Fixed Game of the week selecting invalid archetype and dynasty option combinations
+  Fixed premade map MP setup screen with nations that are not enabled 
+  Fixed null reference on improvement tooltip
+  Fixed AI not finishing Wonders left unfinished
+  Fixed Tribes not moving when blocked by another unit that then moves
+  Fixed some missing scenario options
+  Text and event fixes
