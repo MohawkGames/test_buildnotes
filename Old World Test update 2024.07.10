@@ -5,7 +5,7 @@ Design
   Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units
   Cohorts now requires Manor instead of Land Consolidation
   Land units can no longer stun units on water tiles
-  Stunned units maintain ZOC 
+  Stunned units now still exert Zone of Control
   Removed attack penalty for Tactician leader general
   Starting leaders now have more protection against dying in the first 20 turns (up from 10) 
   Caravans no longer exist in 1v1 duels or games with one nation
