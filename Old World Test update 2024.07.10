@@ -2,7 +2,7 @@ Test Branch 1.0.73172 Test 2024-07-10
 
 Design
   Game of the week now always has Hittites and Kush enabled with a 50% chance for each other DLC to be enabled (regardless of DLC ownership)
-  Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units. 
+  Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units
   Cohorts now requires Manor instead of Land Consolidation
   Land units can no longer stun units on water tiles
   Stunned units maintain ZOC 
