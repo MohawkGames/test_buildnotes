@@ -1,0 +1,27 @@
+Valid to 73215
+
+Test Branch 1.0.??? Test 2024-07-17
+
+Design
+  Civilian units (Workers, Caravans, etc) can no longer defend when in a city center and will get bounced out if attacked when the city defences are down
+
+Programming
+  AI performance optimizations
+  Reduced allocations from text icon scaling
+  Reduced resolution on terrain heightmaps to reduce memory footprint 
+
+UI
+  Added sorting dropdown to Hall of Fame with existing sorting methods. Added date sorting 
+  Added Regenerate button to Hall of Fame
+  Added games completed to Hall of Fame achievements page. Games won now shows games actually won 
+
+Bugs Fixed
+  Fixed specialist bug after capturing a city with the Jerwan Aqueduct 
+  Fixed incorrect default nation selection on setup 
+  Fixed Barbarian sites no longer regenerating after the last Barbarian settlement eliminated 
+  Fixed some shaders failing to render on Macs 
+  Fixed law/improvement help indentation in tech tooltip 
+  Fixed a bug related to AI unit upgrading 
+  Fixed null ref in Hall of Fame when scenario doesn't have a scenario class
+  Fixed religion opinion load/save error 
+  Text and event fixes
