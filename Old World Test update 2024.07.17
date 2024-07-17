@@ -15,8 +15,6 @@ Programming
   Reduced resolution on terrain heightmaps to reduce memory footprint 
 
 UI
-  Added sorting dropdown to Hall of Fame with existing sorting methods. Added date sorting 
-  Added Regenerate button to Hall of Fame
   Added games completed to Hall of Fame achievements page. Games won now shows games actually won 
   Enhancements to coloring on recommended improvement widget
 
