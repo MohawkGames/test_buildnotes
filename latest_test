@@ -1,45 +1,38 @@
-Test Branch 1.0.73176 Test 2024-07-11
+Test Branch 1.0.73254 Test 2024-07-17
 
 Design
 
-Game of the week now always has Hittites and Kush enabled with a 50% chance for each other DLC to be enabled (regardless of DLC ownership)
-Only Diplomat leaders can control the units of their national ally.  All leaders can still control tribal allies units
-Cohorts now requires Manor instead of Land Consolidation
-Land units can no longer stun units on water tiles
-Stunned units now keep their Zone of Control
-Removed attack penalty for Tactician leader general
-Starting leaders now have more protection against dying in the first 20 turns (up from 10) 
-Caravans no longer exist in 1v1 duels or games with one nation
-Truce with a tribe no longer costs legitimacy in some cases
+Civilian units (Workers, Caravans, etc) can no longer defend when in a city center and will get bounced out if attacked when the city has no HP
+Caravans can enter Anarchy-owned tiles
+Colosseum now creates a Swordsman every 10 turns instead of 5 (Wonders and Dynasties)
 
 
 Programming
 
-Many memory optimizations
+AI improvements to handle worker blockades
+AI now buys resources for unit upgrades 
+AI performance optimizations
+Reduced allocations from text icon scaling
+Reduced resolution on terrain heightmaps to reduce memory footprint 
 
 
 UI
 
-Available DLC section added to menu
-Active DLC now shown in game parameters
-Added divider for CTRL-selection helptext for agent/governor button on city widget
-Simplified MP setup screen and added Advanced Options button
-Attack preview tooltip prioritized over other world UI tooltips
+Added games completed to Hall of Fame achievements page. Games won now shows games actually won 
+Enhancements to coloring on recommended improvement widget
 
 
 Bugs Fixed
 
-Fixed truce and peace missions having no outcome in No Events mode
-Fixed preset game options from the previous game not being applied on starting a new game
-Fixed selection issues around city widget 
-Fixed clicks on popups / menus affecting the map
-Fixed manage luxuries button sometimes closing city screen
-Fixed rebels not appearing if the player has no military tech
-Fixed several load/save errors
-Fixed Game of the week selecting invalid archetype and dynasty option combinations
-Fixed premade map MP setup screen with nations that are not enabled 
-Fixed null reference on improvement tooltip
-Fixed AI not finishing Wonders left unfinished
-Fixed Tribes not moving when blocked by another unit that then moves
-Fixed some missing scenario options
+Fixed specialist bug after capturing a city with the Jerwan Aqueduct 
+Fixed incorrect default nation selection on setup 
+Fixed Barbarian sites no longer regenerating after the last Barbarian settlement eliminated 
+Fixed some shaders failing to render on Macs 
+Fixed law/improvement help indentation in tech tooltip 
+Fixed a bug related to AI unit upgrading 
+Fixed null ref in Hall of Fame when scenario doesn't have a scenario class
+Fixed religion opinion load/save error 
+Fixed Event Browser scaling
+Fixed AI ignoring targets that are not reachable from its own territory
+Miscellaneous AI fixes
 Text and event fixes
