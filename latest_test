@@ -1,38 +1,8 @@
-Test Branch 1.0.73254 Test 2024-07-17
+Test Branch 1.0.73312 Test 2024-07-24
 
-Design
-
-Civilian units (Workers, Caravans, etc) can no longer defend when in a city center and will get bounced out if attacked when the city has no HP
-Caravans can enter Anarchy-owned tiles
-Colosseum now creates a Swordsman every 10 turns instead of 5 (Wonders and Dynasties)
-
-
-Programming
-
-AI improvements to handle worker blockades
-AI now buys resources for unit upgrades 
-AI performance optimizations
-Reduced allocations from text icon scaling
-Reduced resolution on terrain heightmaps to reduce memory footprint 
-
-
-UI
-
-Added games completed to Hall of Fame achievements page. Games won now shows games actually won 
-Enhancements to coloring on recommended improvement widget
-
+Update to match release build
 
 Bugs Fixed
 
-Fixed specialist bug after capturing a city with the Jerwan Aqueduct 
-Fixed incorrect default nation selection on setup 
-Fixed Barbarian sites no longer regenerating after the last Barbarian settlement eliminated 
-Fixed some shaders failing to render on Macs 
-Fixed law/improvement help indentation in tech tooltip 
-Fixed a bug related to AI unit upgrading 
-Fixed null ref in Hall of Fame when scenario doesn't have a scenario class
-Fixed religion opinion load/save error 
-Fixed Event Browser scaling
-Fixed AI ignoring targets that are not reachable from its own territory
-Miscellaneous AI fixes
-Text and event fixes
+Fixed non default scenario options failing to be applied
+Fixed initialisation of MP games with Human Development and Pick Later
