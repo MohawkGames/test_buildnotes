@@ -1,0 +1,46 @@
+Test Branch 1.0.73413 Test 2024-07-31
+
+Design
+  Game of the week Event Level now has a 4% chance to be each of the non-default settings 
+
+Programming
+  Major Unity version upgrade (2021.3.34f1 to 2022.3.39f1)
+  AI performance and behavior improvements
+  Improved the rare case of the AI defending a city when the city's territory is divided in multiple parts by a mountain range 
+  Exposed minimum turn for 1 city ambitions to XML (for use by modders)
+
+UI
+  Added Notable Characters filter (shows Exploring, Imprisoned, Exiled, Rising Star, Power Hungry, Vengeful, Plotting, and Bypassed characters)
+  Added player notification when their previously hidden units become visible
+  Converting a cloud game into a network game now removes it from the cloud so that there is only one active instance 
+  No longer possible to convert a network game to cloud if there are any unclaimed player slots 
+  MP setup screen now has an Advanced Settings header instead of hiding them behind a toggle
+  Improved tooltip for specialist luxuries
+  Per-specialist and per-religion yields are no longer considered "potential" bonuses in effectCity help text 
+  Added Game of the Week icon to Hall of Fame games
+  Game credits updates 
+
+Bugs Fixed
+  Fixed GIF export path on Mac and Linux
+  Fixed date completed not populating Hall of Fame entry when game completed
+  Fixed some scenario leader names not displaying correctly in Hall of Fame
+  Fixed some completed games being excluded from Hall of Fame
+  Fixed AI assert
+  Fixed AI thinking it cannot occupy a city tile with both land and water units 
+  Fixed opinion rates appearing over multiple lines in tab panels
+  Fixed client assert on load 
+  Fixed invalid player index 
+  Fixed Alliance Victory display in Hall of Fame
+  Fixed hotseat turn state button refresh
+  Fixed hotseat selection issue on player switch
+  Fixed MP join screen for teams with many players 
+  Fixed incorrect religion/city colors in turn summary 
+  Fixed general character tooltip not locking from unit widget archetype icon 
+  Fixed inconsistent ESC key behavior on scenario screen 
+  Fixed AI saying they refuse to declare war when they are already at war
+  Fixed possible resources on urban terrain with mirror maps
+  Fixed turn button label text in MP
+  Fixed unit selection causing flickering on adjacent objects
+  Fixed Pharaohs of the Nile scenario 2 bug where Libyan raid could spawn directly at player city (Pharaohs of the Nile)
+  Fixed Jerwan Aqueduct bug (Wonders and Dynasties)
+  Text and event fixes
