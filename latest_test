@@ -1,53 +1,39 @@
-Test Branch 1.0.73413 Test 2024-07-31
+Test Branch 1.0.73506 Test 2024-08-07
+
 
 Design
 
-Game of the Week Event Level now has a 4% chance to be each of the non-default settings 
+Growth required for next citizen now increases quadratically after 20 growths.  This makes very large population cities harder to achieve
+Revelry and Seek Political Allies missions more likely to succeed (Behind the Throne)
+Lowered Growth bonus for Rising Star governors from 50% to 25% (Behind the Throne)
 
 
 Programming
 
-Major Unity version upgrade (2021.3.34f1 to 2022.3.39f1)
-AI performance and behavior improvements
-Improved the rare case of the AI defending a city when the city's territory is divided in multiple parts by a mountain range 
-Exposed minimum turn for 1 city ambitions to XML (for use by modders)
+Moved some hardcoded AI parameters to globalsAI.xml for use by modders
 
 
 UI
 
-Added Notable Characters filter (shows Exploring, Imprisoned, Exiled, Rising Star, Power Hungry, Vengeful, Plotting, and Bypassed characters)
-Added player notification when their previously hidden units become visible
-Converting a cloud game into a network game now removes it from the cloud so that there is only one active instance 
-No longer possible to convert a network game to cloud if there are any unclaimed player slots 
-MP setup screen now has an Advanced Settings header instead of hiding them behind a toggle
-Improved tooltip for specialist luxuries
-Per-specialist and per-religion yields are no longer considered "potential" bonuses in effectCity help text 
-Added Game of the Week icon to Hall of Fame games
-Game credits updates 
+All characters now have a mission to allow manually pinning and unpinning them to/from the notable characters list
+Ambitions with multiple yield types now show yield progress in the same order as defined in the ambition 
+Improvements to culture tooltips
+Context menus are no longer closed when clicking on a locked tooltip
 
 
 Bugs Fixed
 
-Fixed GIF export path on Mac and Linux
-Fixed date completed not populating Hall of Fame entry when game completed
-Fixed some scenario leader names not displaying correctly in Hall of Fame
-Fixed some completed games being excluded from Hall of Fame
-Fixed AI assert
-Fixed AI thinking it cannot occupy a city tile with both land and water units 
-Fixed opinion rates appearing over multiple lines in tab panels
-Fixed client assert on load 
-Fixed invalid player index 
-Fixed Alliance Victory display in Hall of Fame
-Fixed hotseat turn state button refresh
-Fixed hotseat selection issue on player switch
-Fixed MP join screen for teams with many players 
-Fixed incorrect religion/city colors in turn summary 
-Fixed general character tooltip not locking from unit widget archetype icon 
-Fixed inconsistent ESC key behavior on scenario screen 
-Fixed AI saying they refuse to declare war when they are already at war
-Fixed possible resources on urban terrain with mirror maps
-Fixed turn button label text in MP
-Fixed unit selection causing flickering on adjacent objects
-Fixed Pharaohs of the Nile scenario 2 bug where Libyan raid could spawn directly at player city (Pharaohs of the Nile)
-Fixed Jerwan Aqueduct bug (Wonders and Dynasties)
+Fixed diplomatic missions in No Events mode
+Fixed clicking on city widget selecting units first
+Fixed click issues with family seat icon and city healthbar 
+Fixed display of units in stacks
+Fixed popups not always closing when the active player changes in hotseat 
+Fixed improvement recommendations showing on tiles with recommended improvement already started
+Fixed pagan religion founding notification getting sent to all players (introduced in last test)
+Fixed issue with religion founding game log
+Fixed warrior built event not popping automatically in Learn to Play 2
+Fixed character filter lists not updating immediately
+Fixed errors occuring when rapidly scrolling lists
+Fixed double-submit in file browser when input field is focused 
+Fixed nested link in tutor mission links 
 Text and event fixes
