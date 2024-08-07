@@ -2,6 +2,8 @@ Test Branch 1.0.73506 Test 2024-08-07
 
 Design
   Growth required for next citizen now increases quadratically after 20 growths.  This makes very large population cities harder to achieve
+  Revelry and Seek Political Allies missions more likely to succeed (Behind the Throne)
+  Lowered Growth bonus for Rising Star governors (Behind the Throne)
 
 Programming
   Moved some hardcoded AI parameters to globalsAI.xml for use by modders
