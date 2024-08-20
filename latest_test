@@ -1,3 +1,9 @@
-Test Branch 1.0.73565 Test 2024-08-13
+Test Branch 1.0.73675 Test 2024-08-13
 
 Updated to match main build
+
+Bugs Fixed
+
+Fixed issue with game getting stuck due to looping attack animation
+Fixed hidden units being visible on minimap and selectable
+Added popup to GOG Mac builds run natively offline regarding issues with DLC access
