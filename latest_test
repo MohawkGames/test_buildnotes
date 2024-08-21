@@ -1,9 +1,71 @@
-Test Branch 1.0.73675 Test 2024-08-13
+Test Branch 1.0.73713 Test 2024-08-21
 
-Updated to match main build
+Design
+
+Tech tree changes:
+
+Moved Free Akkadian Archer card to Forestry
+Moved Free Battering Ram and Exotic Fur cards to Spoked Wheel 
+Free Battering Ram, Akkadian Archer and Hoplite card costs brought in line with other nations free level 1 unique unit cards (200 -> 100)
+Moved Free Scholar tech card from Forestry to Metaphysics 
+Moved Architecture and Vaulting back a tier in the tech tree
+Increased the cost of all 7th tier techs to compensate for the reduction in cost of Architecture and Vaulting (1500 -> 1600)
+Architecture requires Drama instead of Portcullis
+Portcullis no longer requires Drama
+Stirrups requires Portcullis instead of Citizenship
+Windlass requires Manor instead of Architecture
+Siege Tower bonus card requires Windlass
+Free Perfume card requires Architecture instead of Portcullis
+  
+Most map scripts in multiplayer now place all human players on the same landmass. 
+Exceptions are Archipelago, Continents, Player Islands and Disjunction
+This is optional on Mediterranean and Lakes and Gulfs maps using 'Connected Player Starts' as this can significantly affect player starting positions
+  
+In MP games using the Player Development setting, extra cities have to obey the connection requirements of starting locations. If they can't the player will not get them
+Significantly increased the effect of Ruthless AI on player opinion and war declaration modifier 
+Laurion Mine now enables a Miner specialist on the tile 
+Undo is no longer available in cloud games using the Strict (Teams) turn style.  This does not affect cloud games using Strict (Players) which still have undo.
+  
+
+Programming
+
+Improved AI unit danger estimate
+AI now helps their allies count down the capture timer for cities 
+
+
+UI
+
+Added notification for units that you kill during your turn 
+City borders now pulse when hovering over the city center
+Pin Character mission removed.  Pinning is now performed with a new star icon found under character actions
+Leader icon changed to a crown and non-succession royals to an asterisk to differentiate them from the pin icon
+Notable characters filter now only shows manually pinned characters and is ordered by turn pinned
+Harvested resource tooltip now shows regrow chance as a percentage instead of a die roll 
+Family tree toggles now remember their previous state 
+Yields are now shown for all agent network cities regardless of agent status when sorting by base yields 
+Added support for a more complete set of stats in No Characters mode
+Refactored ignore reminders code.  Now supports ignoring reminder types separately for characters with multiple roles
+Smaller tech status icons to reduce overlap on mini tech tree 
+  
 
 Bugs Fixed
 
-Fixed issue with game getting stuck due to looping attack animation
-Fixed hidden units being visible on minimap and selectable
-Added popup to GOG Mac builds run natively offline regarding issues with DLC access
+Fixed fatigue increasing effects (Swift, Zealot leader) not always affecting hired tribal units
+Fixed raiding units not raiding after making peace with their original tribe 
+Fixed pinned characters getting removed on leaders death
+Fixed tribe widgets being occluded by terrain in some cases 
+Fixed the effect of multiple holy cities in the same city not stacking
+Fixed abdication sometimes leaving permanently exploring leaders
+Fixed mirror maps sometimes not having symmetric vegetation on resource tiles
+Fixed events not popping up on start of turn in hotseat
+Fixed clicks on locked tooltip links not registering actions (e.g. selecting a character)
+Fixed Rise of Carthage scenario 4 goal to cross the alps sometimes not completing
+Fixed hover effect not showing on tech cards
+Fixed nation/tribe opinion not updating immediately after diplomacy changes
+Fixed city camera state not resetting at start of turn when selecting a city between turns
+Fixed Royal characters sometimes not appearing in family tree 
+Fixed Assyrian capital combat preview being blocked by buildings on adjacent tile 
+Fixed invalid index exception from rebels spawning from a city without a family
+Fixed raiders disappearing while inside city territory or adjacent to Kemet/Aten units in Pharaohs of the Nile scenario 3
+Fixed dynastic mechanics of Ptolemy, Ashur-Uballit, Khufu and Mursili in No Events mode (Wonders and Dynasties)
+Text and event fixes
