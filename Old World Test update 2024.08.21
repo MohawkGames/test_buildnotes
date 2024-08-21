@@ -1,0 +1,32 @@
+Test Branch 1.0.73711 Test 2024-08-21
+
+Design
+  
+  
+Programming
+  Improved AI unit danger estimate
+  AI now helps their allies count down the capture timer for cities 
+
+UI
+  Pin Character mission removed.  Pinning is now performed with a new star icon found under character actions
+  Notable characters filter now only shows manually pinned characters and is ordered by turn pinned
+  Harvested resource tooltip now shows regrow chance as a percentage instead of a die roll 
+  Family tree toggles now remember their previous state 
+  Yields are now shown for all agent network cities regardless of agent status when sorting by base yields 
+  Added support for a more complete set of stats in No Characters mode
+  Refactored ignore reminders code.  Now supports ignoring reminder types separately for characters with multiple roles
+  
+Bugs Fixed
+  Fixed raiding units not raiding after making peace with their original tribe 
+  Fixed the effect of multiple holy cities in the same city not stacking
+  Fixed abdication sometimes leaving permanently exploring leaders
+  Fixed mirror maps sometimes not having symmetric vegetation on resource tiles
+  Fixed events not popping up on start of turn in hotseat
+  Fixed clicks on locked tooltip links not registering actions (e.g. selecting a character)
+  Fixed Rise of Carthage scenario 4 goal to cross the alps sometimes not completing
+  Fixed hover effect not showing on tech cards
+  Fixed nation/tribe opinion not updating immediately after diplomacy changes
+  Fixed city camera state not resetting at start of turn when selecting a city between turns
+  Fixed Royal characters sometimes not appearing in family tree 
+  Fixed dynastic mechanics of Ptolemy, Ashur-Uballit, Khufu and Mursili in No Events mode (Wonders and Dynasties)
+  Text and event fixes
