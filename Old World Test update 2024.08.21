@@ -1,10 +1,10 @@
-Test Branch 1.0.73711 Test 2024-08-21
+Test Branch 1.0.73713 Test 2024-08-21
 
 Design
   Tech tree changes:
     Moved Free Akkadian Archer card to Forestry
     Moved Free Battering Ram and Exotic Fur cards to Spoked Wheel 
-    Free Battering Ram, Akkadian Archer and Hoplite card costs brought in line with other nations (200 -> 100)
+    Free Battering Ram, Akkadian Archer and Hoplite card costs brought in line with other nations free level 1 unique unit cards (200 -> 100)
     Moved Free Scholar tech card from Forestry to Metaphysics 
     Moved Architecture and Vaulting back a tier in the tech tree
     Increased the cost of all 7th tier techs to compensate for the reduction in cost of Architecture and Vaulting (1500 -> 1600)
