@@ -1,72 +1,48 @@
-Test Branch 1.0.73713 Test 2024-08-21
+Test Branch 1.0.73826 Test 2024-08-28
 
 Design
 
-Tech tree changes:
+Law changes:
+ 	Slavery now gives +5 Iron and +5 Stone per city instead of increasing Mine and Quarry output.  No longer gives +1 Discontent
+	Freedom now gives +1 Happiness and +20% Growth instead of Money per Specialist
+	Tyranny now gives +20% Training in all cities instead of a global Training boost. Money per unit in territory increased from 8 to 10
+	Divine Rule now gives +1 Order per Pagan Religion in all cities instead of Happiness per Shrine
+	Pilgrimage now gives +25% State Religion spread.  Holy City Money per Religion boost increased from +5 to +10.  No longer affects Science from Groves 
 
-Moved Free Akkadian Archer card to Forestry
-Moved Free Battering Ram and Exotic Fur cards to Spoked Wheel 
-Free Battering Ram, Akkadian Archer and Hoplite card costs brought in line with other nations free level 1 unique unit cards (200 -> 100)
-Moved Free Scholar tech card from Forestry to Metaphysics 
-Moved Architecture and Vaulting back a tier in the tech tree
-Increased the cost of all 7th tier techs to compensate for the reduction in cost of Architecture and Vaulting (1500 -> 1600)
-Architecture requires Drama instead of Portcullis
-Portcullis no longer requires Drama
-Stirrups requires Portcullis instead of Citizenship
-Martial Code now requires Citizenship 
-Windlass requires Manor instead of Architecture
-Siege Tower bonus card requires Windlass
-Free Perfume card requires Architecture instead of Portcullis
-  
-Most map scripts in multiplayer now place all human players on the same landmass. 
-Exceptions are Archipelago, Continents, Player Islands and Disjunction
-This is optional on Mediterranean and Lakes and Gulfs maps using 'Connected Player Starts' as this can significantly affect player starting positions
-  
-In MP games using the Player Development setting, extra cities have to obey the connection requirements of starting locations. If they can't the player will not get them
-Significantly increased the effect of Ruthless AI on player opinion and war declaration modifier 
-Laurion Mine now enables a Miner specialist on the tile 
-Undo is no longer available in cloud games using the Strict (Teams) turn style.  This does not affect cloud games using Strict (Players) which still have undo.
-  
+Grove improvements now always give +2 Science in addition to previous effects     
+Money Boost bonus card increased from 2000 to 4000 money  Ambition tier adjustments to match tech tree changes from last update
+
 
 Programming
 
-Improved AI unit danger estimate
-AI now helps their allies count down the capture timer for cities 
+Add virtual function for sorting of city site candidates, better for mods
 
 
 UI
 
-Added notification for units that you kill during your turn 
-City borders now pulse when hovering over the city center
-Pin Character mission removed.  Pinning is now performed with a new star icon found under character actions
-Leader icon changed to a crown and non-succession royals to an asterisk to differentiate them from the pin icon
-Notable characters filter now only shows manually pinned characters and is ordered by turn pinned
-Harvested resource tooltip now shows regrow chance as a percentage instead of a die roll 
-Family tree toggles now remember their previous state 
-Yields are now shown for all agent network cities regardless of agent status when sorting by base yields 
-Added support for a more complete set of stats in No Characters mode
-Refactored ignore reminders code.  Now supports ignoring reminder types separately for characters with multiple roles
-Smaller tech status icons to reduce overlap on mini tech tree 
-  
+Added sorting and filtering dropdowns to Hall of Fame 
+Hall of Fame now has a SP/MP (Singleplayer / Multiplayer) column and this is shown on the game tooltip
+Hall of Fame now shows icons instead of text for Load and Delete
+Added audio option for continuing audio track when switching fullscreen tabs
+Added obsoleting information to unit encyclopedia entries 
+Added Religion Opinion tracking to stats screen 
+Goals/Ambitions with time limits now show limit in bonus text
+Removed some details of unlocked missions from tech tooltips
+Tiles are now highlighted when hovering over event options that affect specific tiles
+In Rise of Carthage scenario 4 the anchor command will now show an explanatory tooltip if ships can't anchor due to scenario rules
+
 
 Bugs Fixed
-
-Fixed fatigue increasing effects (Swift, Zealot leader) not always affecting hired tribal units
-Fixed raiding units not raiding after making peace with their original tribe 
-Fixed pinned characters getting removed on leaders death
-Fixed tribe widgets being occluded by terrain in some cases 
-Fixed the effect of multiple holy cities in the same city not stacking
-Fixed abdication sometimes leaving permanently exploring leaders
-Fixed mirror maps sometimes not having symmetric vegetation on resource tiles
-Fixed events not popping up on start of turn in hotseat
-Fixed clicks on locked tooltip links not registering actions (e.g. selecting a character)
-Fixed Rise of Carthage scenario 4 goal to cross the alps sometimes not completing
-Fixed hover effect not showing on tech cards
-Fixed nation/tribe opinion not updating immediately after diplomacy changes
-Fixed city camera state not resetting at start of turn when selecting a city between turns
-Fixed Royal characters sometimes not appearing in family tree 
-Fixed Assyrian capital combat preview being blocked by buildings on adjacent tile 
-Fixed invalid index exception from rebels spawning from a city without a family
-Fixed raiders disappearing while inside city territory or adjacent to Kemet/Aten units in Pharaohs of the Nile scenario 3
-Fixed dynastic mechanics of Ptolemy, Ashur-Uballit, Khufu and Mursili in No Events mode (Wonders and Dynasties)
+ 
+Fixed damaged unit healthbar not always showing 
+Fixed resources staying faded when a unit exits a tile
+Fixed Inheritance screen not updating
+Fixed some reminders starting dismissed 
+Fixed "No Team Movement" game option
+Fixed autonomous rule cities not repairing 
+Fixed units not fully resetting their animation queue when an undo or redo occurs 
+Fixed loading of lost games from the Hall of Fame
+Fixed bug preventing the hire of allied tribal units when in a player city
+Fixed loss of existing border expansion preview after selecting an event option 
+Fixed credits popup null reference on application close
 Text and event fixes
