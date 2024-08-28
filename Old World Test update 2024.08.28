@@ -1,0 +1,43 @@
+Test Branch 1.0.73816 Test 2024-08-28
+
+Design
+  Law changes:
+    	Slavery now gives +5 Iron and +5 Stone per city instead of increasing Mine and Quarry output.  No longer gives +1 Discontent
+	    Freedom now gives +1 Happiness and +20% Growth instead of Money per Specialist
+	    Tyranny now gives +20% Training in all cities instead of a global Training boost. Money per unit in territory increased from 8 to 10
+	    Divine Rule now gives +1 Order per Pagan Religion in all cities instead of Happiness per Shrine
+	    Pilgrimage now gives +25% State Religion spread.  Holy City Money per Religion boost increased from +5 to +10.  No longer affects Science from Groves 
+	    Grove improvements now always give +2 Science in addition to previous effects
+     
+  Money Boost bonus card increased from 2000 to 4000 money
+  Ambition tier adjustments to match tech tree changes from last update
+
+Programming
+    Add virtual function for sorting of city site candidates, better for mods
+
+UI
+   Added audio option for continuing audio track when switching fullscreen tabs
+   Added obsoleting information to unit encyclopedia entries 
+   Added Religion Opinion tracking to stats screen 
+   Goals/Ambitions with time limits now show limit in bonus text
+   Removed some details of unlocked missions from tech tooltips
+   Tiles are now highlighted when hovering over event options that affect specific tiles
+   Added sorting and filtering dropdowns to Hall of Fame 
+   Hall of Fame now has a SP/MP (Singleplayer / Multiplayer) column and this is shown on the game tooltip
+   Hall of Fame now shows icons instead of text for Load and Delete
+   In Rise of Carthage scenario 4 the anchor command will now show an explanatory tooltip if ships can't anchor due to scenario rules
+
+Bugs Fixed
+  Fixed damaged unit healthbar not always showing 
+  Fixed resources staying faded when a unit exits a tile
+  Fixed Inheritance screen not updating
+  Fixed some reminders starting dismissed 
+  Fixed "No Team Movement" game option
+  Fixed autonomous rule cities not repairing 
+  Fixed units not fully resetting their animation queue when an undo or redo occurs 
+  Fixed loading of lost games from the Hall of Fame
+  Fixed bug preventing the hire of allied tribal units when in a player city
+  Fixed unintended text selection when clicking input fields
+  Fixed loss of existing border expansion preview after selecting an event option 
+  Fixed credits popup null reference on application close
+  Text and event fixes
