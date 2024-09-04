@@ -1,0 +1,26 @@
+Test Branch 1.0.73826 Test 2024-08-28
+
+Design
+  Slavery Law now gives +4 Iron and +4 Stone per city (down from +5)
+  Improved player start selection on premade maps that do not dictate specific starting locations 
+  Tribal unit movement AI is now somewhat more sophisticated
+
+UI
+  All laws and theologies now show yield previews where relevant
+  Moved the generic improvement pings to the top of the dropdown list
+  Ambitions and goals with multiple requirements now show progress for each requirement on separate lines 
+  Added yield name and sign in some bonus helptext
+  Improved text selection in ping and bug reporting popups
+  Heroes of the Aegean scenario 6 now highlights goal cities on the map
+  
+Bugs Fixed
+  Heroes of the Aegean campaign polishing pass, many bugs fixed
+  Fixed Rise of Carthage campaign save import bug
+  Fixed Pharaohs of the Nile scenario 4 not completing when playing in Hotseat against the AI
+  Fixed errors with portrait interpolation enabled when portraits are not setup for it
+  Fixed portraits of characters without a tribe or nation 
+  Fixed AI hang
+  Fixed inheritance preview showing wrong character when there will be no heir 
+  Fixed AI danger calculation for units that need to be unlimbered
+  Fixed AI unit protection bug
+  Text and event fixes
