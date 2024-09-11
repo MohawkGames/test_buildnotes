@@ -1,0 +1,23 @@
+Test Branch 1.0.74xxx Test 2024-09-11
+
+Design
+  Slums and Estates are now permanent and cannot be built over or pillaged (Behind the Throne)
+
+Programming
+  Performance improvements relating to unit movement and reminders
+  AI no longer declares war on tribes to expand when it's already actively fighting other players 
+  AI is now more likely to build farms around the Jerwan Aqueduct and less likely to build the Cothon in small seas
+  Added randomization of player start selection on premade maps
+  Achievement code cleanup
+  
+Bugs Fixed
+  Fixed grammar on Unit Killed notification
+  Fixed nested link issue in unit type link with promotions 
+  Fixed many Rise of Carthage and Heroes of the Aegean scenario bugs
+  Fixed Regenerate HOF button and dropdowns incorrectly showing on Achievements screen
+  Fixed Regenerate HOF excluding existing modded games when mods are not active
+  Fixed assert from using waypoints to move units
+  Fixed critical hit icon sometimes briefly appearing before a unit goes on cooldown 
+  Fixed undo crash 
+  Fixed AI building ships where it should not be building any i.e. in small seas
+  Text and event fixes
