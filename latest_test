@@ -1,31 +1,32 @@
-Test Branch 1.0.73918 Test 2024-09-04
+Test Branch 1.0.74025 Test 2024-09-11
 
 Design
 
-Slavery Law now gives +4 Iron and +4 Stone per city (down from +5)
-Improved player start selection on premade maps that do not dictate specific starting locations 
-Tribal unit movement AI is now somewhat more sophisticated
+Two new 1v1 premade maps added:
+  Punic wars: Rome against Carthage 
+  Median wars: Greece against Persia
+  These are accessible using the Premade Map option on the setup screen and from the Scenario menu under World Maps 
+Slums and Estates are now permanent and cannot be built over or pillaged (Behind the Throne)
 
 
-UI
+Programming
 
-All laws and theologies now show yield previews where relevant
-Moved the generic improvement pings to the top of the dropdown list
-Ambitions and goals with multiple requirements now show progress for each requirement on separate lines 
-Added yield name and sign in some bonus helptext
-Improved text selection in ping and bug reporting popups
-Heroes of the Aegean scenario 6 now highlights goal cities on the map
-
+Performance improvements relating to unit movement and reminders
+AI no longer declares war on tribes to expand when it's already actively fighting other players 
+AI is now more likely to build farms around the Jerwan Aqueduct and less likely to build the Cothon in small seas
+Added randomization of player start selection on premade maps
+Achievement code cleanup
+  
 
 Bugs Fixed
 
-Heroes of the Aegean campaign polishing pass, many bugs fixed
-Fixed Rise of Carthage campaign save import bug
-Fixed Pharaohs of the Nile scenario 4 not completing when playing in Hotseat against the AI
-Fixed errors with portrait interpolation enabled when portraits are not setup for it
-Fixed portraits of characters without a tribe or nation 
-Fixed AI hang
-Fixed inheritance preview showing wrong character when there will be no heir 
-Fixed AI danger calculation for units that need to be unlimbered
-Fixed AI unit protection bug
+Fixed grammar on Unit Killed notification
+Fixed nested link issue in unit type link with promotions 
+Fixed many Rise of Carthage and Heroes of the Aegean scenario bugs
+Fixed Regenerate HOF button and dropdowns incorrectly showing on Achievements screen
+Fixed Regenerate HOF excluding existing modded games when mods are not active
+Fixed assert from using waypoints to move units
+Fixed critical hit icon sometimes briefly appearing before a unit goes on cooldown 
+Fixed undo crash 
+Fixed AI building ships where it should not be building any i.e. in small seas
 Text and event fixes
