@@ -1,6 +1,10 @@
-Test Branch 1.0.74014 Test 2024-09-11
+Test Branch 1.0.74025 Test 2024-09-11
 
 Design
+  Two new 1v1 premade maps added.
+    Punic wars: Rome against Carthage 
+    Median wars: Greece against Persia
+    These are accessible using the Premade Map option on the setup screen and from the Scenario menu under World Maps 
   Slums and Estates are now permanent and cannot be built over or pillaged (Behind the Throne)
 
 Programming
