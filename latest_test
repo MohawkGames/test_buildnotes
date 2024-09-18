@@ -1,32 +1,9 @@
-Test Branch 1.0.74025 Test 2024-09-11
+Test Branch 1.0.74110 Test 2024-09-18
 
-Design
+Update to match Main build.
 
-Two new 1v1 premade maps added:
-  Punic wars: Rome against Carthage 
-  Median wars: Greece against Persia
-  These are accessible using the Premade Map option on the setup screen and from the Scenario menu under World Maps 
-Slums and Estates are now permanent and cannot be built over or pillaged (Behind the Throne)
-
-
-Programming
-
-Performance improvements relating to unit movement and reminders
-AI no longer declares war on tribes to expand when it's already actively fighting other players 
-AI is now more likely to build farms around the Jerwan Aqueduct and less likely to build the Cothon in small seas
-Added randomization of player start selection on premade maps
-Achievement code cleanup
-  
-
-Bugs Fixed
-
-Fixed grammar on Unit Killed notification
-Fixed nested link issue in unit type link with promotions 
-Fixed many Rise of Carthage and Heroes of the Aegean scenario bugs
-Fixed Regenerate HOF button and dropdowns incorrectly showing on Achievements screen
-Fixed Regenerate HOF excluding existing modded games when mods are not active
-Fixed assert from using waypoints to move units
-Fixed critical hit icon sometimes briefly appearing before a unit goes on cooldown 
-Fixed undo crash 
-Fixed AI building ships where it should not be building any i.e. in small seas
-Text and event fixes
+Added 19 base game events, 5 Behind the Throne events and 11 new items
+Base game events have a focus on Exploring characters and acquiring items that give your leader unique benefits
+Behind the Throne events relate to Rising Star leaders. The Rising Star trait is no longer automatically removed on becoming leader
+Credits updated
+Fixed Mac display issue with bug report screen
