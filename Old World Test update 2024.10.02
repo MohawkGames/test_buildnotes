@@ -16,11 +16,11 @@ UI
   Made contact event truce flags more consistent in event options
   Religion icon now shown on unit production buttons when applicable
   Simplified religion tooltips
-  Timeline screen map now only shows currently visible city borders
   
 Bugs Fixed
   Fixed religious improvements being affected by other religions theologies
   Fixed yield preview overlays getting stuck
   Fixed ally declared war event trigger
   Fixed monitor option setting
+  Timeline screen map now only shows city borders that player currently has visibility of.  This fixes a bug when unrevealed borders could be shown.
   Text and event fixes
