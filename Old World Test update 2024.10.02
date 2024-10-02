@@ -16,6 +16,7 @@ UI
   Made contact event truce flags more consistent in event options
   Religion icon now shown on unit production buttons when applicable
   Simplified religion tooltips
+  Timeline screen map now only shows currently visible city borders
   
 Bugs Fixed
   Fixed religious improvements being affected by other religions theologies
