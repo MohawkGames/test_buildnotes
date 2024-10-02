@@ -1,55 +1,33 @@
-Test Branch 1.0.74203 Test 2024-09-25
+Test Branch 1.0.74282 Test 2024-10-02
 
 Design
 
-Improvements now take 1 extra turn to build per 5 points of Worker damage (+1 turn at 15-19 HP to +4 turns at 1-4 HP)
-Undo re-enabled for strict(teams) turnstyle cloud games.  Once the game is loaded, a turn must now be completed before other players on the team can take their turn
-Shrine of Water now gives 10 money per nets improvement in the city in addition to previous effects
-Shrine of Healing now gives a free Healer promotion to units built in the city instead of the previous healing ability
-Revised law switch costs. First switch costs 200 civics and each subsequent change costs 100 extra
-Power comparison is now solely calculated on military unit strength, with ships counting for less based on how much water is on the map
-Can no longer upgrade a unit if the upgraded unit is not allowed to be in that tile 
-Can no longer build forts on non-urban tribe settlement ruins (affects non-default City Site Number options)
-Rally Defense now only activates on killing promotable military units (i.e. not Militia)
-Improvements that spawn units (Colosseum, Cothon, Holy Sites, etc) try first to spawn them on the tile of the improvement
-Balance pass on Punic Duel premade map
+Drunk trait now gives -20 opinion to religious and family heads, down from -40
+Water shrines now give 2 money per water tile in the city instead of 10 per nets improvement (from previous test branch update)
+Added turn delay to most event options with random traits or relationships 
 
 
 Programming
 
-Event processing performance optimization
-Raider AI improvements
-AI code cleanup
-Added event triggers EVENTTRIGGER_PLAYER_ALLIANCE_OFFER and EVENTTRIGGER_PLAYER_ALLY_DECLARED_WAR
-Added STAT_CHILDREN_COUNT
-Added InfoGoal.miCityLuxuries
-Old World no longer supports runtime compiled scripts. Standalone compiler removed
-Ctrl-Shift-X (toggle replay) has no effect when it's not your turn in cloud games
+Loading and exiting a team cloud game without changing the game state no longer locks the turn
+Reimplemented Rally Defense to be more robust for mods
+Suppressed Modio errors (i.e. Invalid Token) on game start
 
 
 UI
 
-Removed recently added yield name and sign from helptext, now just shows yield icon as previously
-Added legitimacy graph to Records screen 
-Family unit banner shape now shown on family tab panel 
-Existing specialists now shown on pillaged tiles 
-Improved replay for team games
-Added resource removal warning for Add Urban action 
-Project help text now includes information about other projects that add the project (i.e. Inquiry shows the different levels)
-Reordered trait display order
-Moved opinion yield rate help text from potential to main effects 
-Mod folders that begin with "." are no longer displayed
- 
+Shrine improvement pings can now be placed even if shrine already exists
+Characters in mission target lists now sorted by importance
+Made contact event truce flags more consistent in event options
+Religion icon now shown on unit production buttons when applicable
+Simplified religion tooltips
+  
 
 Bugs Fixed
 
-Fixed workers stopping rout of African and Turreted Elephants
-Fixed occasional doubled religion indicators on tribe widgets 
-Fixed some raycasting issues on tribe widget, character list religion icons
-Fixed former regents affecting succession in some cases
-Fixed yield rates not updating when units move to/from improvements 
-Fixed minimized decision UI not working for diplomacy decisions
-Fixed effectCity improvement yield help text 
-Fixed unit yield consumption estimate for effectPlayer to correctly show yields saved instead of new yields consumed 
-Fixed AI unit protection calculation and possible divide by zero errors when attackers can't do any damage (affects mods)
+Fixed religious improvements being affected by other religions theologies
+Fixed yield preview overlays getting stuck
+Fixed ally declared war event trigger
+Fixed monitor option setting
+Timeline screen map now only shows city borders that player currently has visibility of.  This fixes a bug where unrevealed borders could be shown.
 Text and event fixes
