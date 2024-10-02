@@ -22,5 +22,5 @@ Bugs Fixed
   Fixed yield preview overlays getting stuck
   Fixed ally declared war event trigger
   Fixed monitor option setting
-  Timeline screen map now only shows city borders that player currently has visibility of.  This fixes a bug when unrevealed borders could be shown.
+  Timeline screen map now only shows city borders that player currently has visibility of.  This fixes a bug where unrevealed borders could be shown.
   Text and event fixes
