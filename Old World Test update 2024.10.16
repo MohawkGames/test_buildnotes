@@ -3,8 +3,8 @@ Test Branch 1.0.74469 Test 2024-10-16
 Design
   City damage is now affected by critical hits
   Slander, High Synod, and Trade missions cost Money instead of Civics 
-  Beja Archers no longer have the Pierce effect (Pharaohs of the Nile)
   Grand Vizier position disabled in Competitive mode (Behind the Throne)
+  Beja Archers no longer have the Pierce effect (Pharaohs of the Nile)
   Reduced the chance of an event from the "Scheme Against a Rival" mission (Behind the Throne)
 
 Programming
