@@ -54,18 +54,14 @@ Bugs Fixed
 Notes for modders:
 
   If your mod adds units in unit.xml:
-
     Add a bRegular flag (after bGeneral in the order) to denote a "regular military" unit. 
     The flag makes the unit count as "regular military" in the stats, and the AI also assumes that non-regular units are worth less.
 
   If your mod adds event links in eventLink.xml:
-
     aeSubjectClasses is no longer needed
     The link will save all subjects in the triggering event, it will figure out hte classes by itself
-    If you only want some subjects saved, put iNumSubjects on the link (in eventLink.xml) to save that many subjects.
+    If you only want some subjects saved, put iNumSubjects on the link (in eventLink.xml) to save that many subjects
     Put iNumSubjects = 0 if you don't care about any subjects and are only using the link as a shortcut to trigger something else
-
-  For any event links that are meant to be immediate, and are used with EventLinkStart:
-
-    Tag the link with bImmediate = 1 in eventLink.xml
-    Use EventLinkAdd in eventOption.xml, as with regular links. EventLinkStart will be removed in the future
+    For any event links that are meant to be immediate, and are used with EventLinkStart:
+      Tag the link with bImmediate = 1 in eventLink.xml
+      Use EventLinkAdd in eventOption.xml, as with regular links. EventLinkStart will be removed in the future
