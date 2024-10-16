@@ -9,7 +9,7 @@ Design
 
 Programming
   AI prioritizes building roads, connecting cities, and exploring more  
-  In Simultaneous MP games, the AI now waits for any human players to end their turn, or the turn timer to almost expire, before taking it's turn
+  In Simultaneous MP games, the AI now waits for any human players to end their turn, or the turn timer to almost expire, before taking its turn
   Removed unneeded terrain rebuild on application focus for Macs 
   minRating/maxRating subjects can now check for a value of 0
   Relaxed version checking requirements on modded MP games. A warning only popup is displayed when joining games where mod versions do not match
@@ -17,7 +17,7 @@ Programming
   Added mod support for adding new diplomacy types
   Added mod support for dynamic improvement names
   Yield price calculation values now moddable via XML
-  Map Editor max mapsize increased to 180x180.  This is now moddable via XML
+  Map Editor max map size increased to 180x180.  This is now moddable via XML
   XML changes to units and event links.  See the 'Notes for modders' section
   
 UI
@@ -59,7 +59,7 @@ Notes for modders:
 
   If your mod adds event links in eventLink.xml:
     aeSubjectClasses is no longer needed
-    The link will save all subjects in the triggering event, it will figure out hte classes by itself
+    The link will save all subjects in the triggering event, it will figure out the classes by itself
     If you only want some subjects saved, put iNumSubjects on the link (in eventLink.xml) to save that many subjects
     Put iNumSubjects = 0 if you don't care about any subjects and are only using the link as a shortcut to trigger something else
     For any event links that are meant to be immediate, and are used with EventLinkStart:
