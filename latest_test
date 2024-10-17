@@ -12,7 +12,7 @@ Reduced the chance of an event from the "Scheme Against a Rival" mission (Behind
 Programming
 
 AI prioritizes building roads, connecting cities, and exploring more  
-In Simultaneous MP games, the AI now waits for any human players to end their turn, or the turn timer to almost expire, before taking its turn
+In Simultaneous MP games, the AI now waits for all human players to end their turn, or the turn timer to almost expire, before taking its turn
 Removed unneeded terrain rebuild on application focus for Macs 
 minRating/maxRating subjects can now check for a value of 0
 Relaxed version checking requirements on modded MP games. A warning only popup is displayed when joining games where mod versions do not match
