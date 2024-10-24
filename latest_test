@@ -1,75 +1,7 @@
-Test Branch 1.0.74469 Test 2024-10-16
+Test Branch 1.0.74610 Test 2024-10-24
 
-Design
-
-City damage is now affected by critical hits
-Slander, High Synod, and Trade missions cost Money instead of Civics 
-Grand Vizier position disabled in Competitive mode (Behind the Throne)
-Beja Archers no longer have the Pierce effect (Pharaohs of the Nile)
-Reduced the chance of an event from the "Scheme Against a Rival" mission (Behind the Throne)
-
-
-Programming
-
-AI prioritizes building roads, connecting cities, and exploring more  
-In Simultaneous MP games, the AI now waits for all human players to end their turn, or the turn timer to almost expire, before taking its turn
-Removed unneeded terrain rebuild on application focus for Macs 
-minRating/maxRating subjects can now check for a value of 0
-Relaxed version checking requirements on modded MP games. A warning only popup is displayed when joining games where mod versions do not match
-MP players without identical mods will have a warning "Version Mismatch" in their player tooltip
-Added mod support for adding new diplomacy types
-Added mod support for dynamic improvement names
-Yield price calculation values now moddable via XML
-Map Editor max map size increased to 180x180.  This is now moddable via XML
-XML changes to units and event links.  See the 'Notes for modders' section
-  
-
-UI
-
-Shift-Clicking on recommended improvements now adds them to the worker's queue 
-Any non-leader character can now be pinned (e.g. foreign leaders) and pins are no longer cleared on character death
-Unit tooltip is now scrollable and unit effects are alphabetically ordered
-Cloud game tooltips now show elapsed time since the last upload
-Scenario screen category toggle arrows no longer select scenario class
-Removed total yields display from most effectPlayer and effectCity help text, to simplify tooltips
-Re-aligned game log graphics
-Player luxury management context menu now scrollable
-Clicking on the nation name in a foreign city widget now selects the nation
-Improved accuracy of yields on out of territory improvement pings
-  
+Update to match main build
 
 Bugs Fixed
 
-Fixed missing damage preview for civilian units/ships if they are the only unit in a city
-Fixed Passive AI attacking cities when it shouldn't 
-Fixed EffectCity terrain yields being counted twice 
-Fixed fog reveal animation not clearing tiles it has already animated
-Fixed unit animations sometimes freezing 
-Fixed some bad player start placement asserts
-Fixed hidden units not getting bounced when hostile borders expand to include their location
-Fixed clicks not behaving as expected on city screen
-Fixed replay for games where multiple players can take their turns simultaneously 
-Fixed toggling off "Use Mods" in the MP setup screen not unloading mods 
-Fixed mission results not appearing in target player's turn summary e.g. city damage from treachery 
-Fixed bug which sometimes allowed tribute while at war 
-Fixed issues with starting a multiplayer game from the mods screen
-Fixed null check for notification helptext 
-Fixed exception if right-clicking the empty head of a not-yet-founded religion 
-Fixed missing trait in Hanno II's dynasty tooltip (Wonders and Dynasties)
-Text and event fixes
-
-
-Notes for modders:
-
-If your mod adds units in unit.xml:
-  Add a bRegular flag (after bGeneral in the order) to denote a "regular military" unit. 
-  The flag makes the unit count as "regular military" in the stats, and the AI also assumes that non-regular units are worth less.
-
-If your mod adds event links in eventLink.xml:
-  aeSubjectClasses is no longer needed
-  The link will save all subjects in the triggering event, it will figure out the classes by itself
-  If you only want some subjects saved, put iNumSubjects on the link (in eventLink.xml) to save that many subjects
-  Put iNumSubjects = 0 if you don't care about any subjects and are only using the link as a shortcut to trigger something else
-  For any event links that are meant to be immediate, and are used with EventLinkStart:
-    Tag the link with bImmediate = 1 in eventLink.xml
-    Use EventLinkAdd in eventOption.xml, as with regular links. EventLinkStart will be removed in the future
+Fixed Export GIF and Toggle Fog buttons on Timeline screen
