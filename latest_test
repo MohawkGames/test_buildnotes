@@ -1,7 +1,14 @@
-Test Branch 1.0.74610 Test 2024-10-24
+Test Branch 1.0.74721 Test 2024-10-29
 
 Update to match main build
 
+UI
+
+Improved resolution of icons on family list
+Added stability warning popup for i9-13900K CPUs
+
 Bugs Fixed
 
-Fixed Export GIF and Toggle Fog buttons on Timeline screen
+Fixed Timeline map display after game is completed
+Fixed Offer Tribute for Truce and Demand Tribute for Truce missions silently failing 
+Fixed Map Editor cursor position
