@@ -52,6 +52,7 @@ Fixed improvement max player count not working for improvements with no improvem
 Fixed exception when submenus scrolled off-screen
 Fixed bug where goal subject weight could result in an ineligible subject being chosen
 Fixed acquired techs cost in Encyclopedia and added cost to tooltips in tech tree
+Fixed some rebel spawn issues
 Fixed event cache bug
 Fixed modified collection exception
 Fixed sort exception
