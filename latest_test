@@ -1,14 +1,55 @@
-Test Branch 1.0.74721 Test 2024-10-29
+Test Branch 1.0.74752 Test 2024-10-30
 
-Update to match main build
+Design
+
+Distant raids: No longer include ships
+AI unit building: The traits of Grand Viziers and AI leaders now influence their decisions of how many units they build
+Heroes, Commanders, Tacticians, and Warlike characters build more units and Builders, Scholars, Diplomats, and Timid characters build fewer units
+AI is more likely to build units in cities that give unit promotions and experience
+Alliance events: Most alliance and tribal alliance events now either require a diplomat leader or are disabled in competitive mode
+City reveal: Cities are now revealed from a greater distance, like settlements
+City capture: Cities now take 1 turn longer to capture
+Unit spawn location: Rebels from Slums spawn on Slum tiles and Religious Dissent rebels spawn on religious buildings, if possible 
+Starting units no longer spawn on the same tile, even if they are allowed to do so
+
+Programming
+
+Performance optimizations: Improved performance of terrain rendering, tile ownership changes and event processing
+AI unit selection: Improved AI unit build selection 
+Moving capital: Added support for moving the capital. Player's original capital is now remembered and exposed to the event system
+Roads from improvements: Added support for improvements adding roads to the tile
+ZOC changes from improvements: Added support for improvements allowing units to ignore enemy ZOC
+Mission bonus rework: InfoMission.miXP replaced with SubjectCharacterBonus
 
 UI
 
-Improved resolution of icons on family list
-Added stability warning popup for i9-13900K CPUs
+Nation tooltips: Now always show number of cities on nation tooltips
+Honey resource audio: Reduced volume of honey environmental audio
+Custom campaign audio: Added custom sounds for priest attacks in Pharoahs of the Nile scenario 3
+Tutorial events: Adjusted timing and added more to No Events mode
+Button dragging: Disabled unnecessary button clone when dragging buttons
+Laurion Mines: No longer show extra text on map
+Royal characters: Changed 'your Relative' to 'fellow Royal'
 
 Bugs Fixed
 
-Fixed Timeline map display after game is completed
-Fixed Offer Tribute for Truce and Demand Tribute for Truce missions silently failing 
-Fixed Map Editor cursor position
+Fixed title of MP setup screen when coming from Mod selection screen
+Fixed improvement spawned units not respecting DLC checks
+Fixed project ambitions not respecting DLC checks
+Fixed border expansion preview not updating when selecting option in minimized event
+Fixed issues with unit list scrolling and units becoming unselectable
+Fixed AI value placed on Strongholds and Citadels (will now be built more often)
+Fixed a spurious assert triggering when a nation is eliminated
+Fixed graphical display issue affecting Arid Hills
+Fixed incorrect iTriggerExtra in EVENTTRIGGER_CITY_CAPTURED 
+Fixed inconsistency with the number of capture turns of cities 
+Fixed eliminated tribes being eligible for forming an alliance  
+Fixed improvement max player count not working for improvements with no improvement class
+Fixed exception when submenus scrolled off-screen
+Fixed bug where goal subject weight could result in an ineligible subject being chosen
+Fixed acquired techs cost in Encyclopedia and added cost to tooltips in tech tree
+Fixed some rebel spawn issues
+Fixed event cache bug
+Fixed modified collection exception
+Fixed sort exception
+Text and event fixes
