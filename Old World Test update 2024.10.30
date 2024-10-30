@@ -18,7 +18,6 @@ Event trigger and subject performance optimizations
 Multiple tile ownership change performance optimization
 Terrain rendering performance optimization
 Better AI unit build selection 
-Improved AI decisions regarding which yields to sell
 Player's original capital is now remembered and exposed to the event system
 Added support for moving the capital
 Added support for improvements adding roads to the tile
