@@ -2,37 +2,34 @@ Test Branch 1.0.74752 Test 2024-10-30
 
 Design
 
-Distant raids will no longer include ships
-The traits of Grand Viziers and AI leaders now influence their decisions of how many units they build
+Distant raids: no longer include ships
+AI unit building: The traits of Grand Viziers and AI leaders now influence their decisions of how many units they build
 Heroes, Commanders, Tacticians, and Warlike characters build more units and Builders, Scholars, Diplomats, and Timid characters build fewer units
 AI is more likely to build units in cities that give unit promotions and experience
-Most alliance and tribal alliance events now either require a diplomat leader or are disabled in competitive mode
-Cities are now revealed from a greater distance, like settlements
-Cities now take 1 turn longer to capture
-Rebels from Slums spawn on Slum tiles and Religious Dissent rebels spawn on religious buildings, if possible 
+Alliance events: Most alliance and tribal alliance events now either require a diplomat leader or are disabled in competitive mode
+City reveal: Cities are now revealed from a greater distance, like settlements
+City capture: Cities now take 1 turn longer to capture
+Unit spawn location: Rebels from Slums spawn on Slum tiles and Religious Dissent rebels spawn on religious buildings, if possible 
 Starting units no longer spawn on the same tile, even if they are allowed to do so
 
 Programming
 
-Event trigger and subject performance optimizations
-Multiple tile ownership change performance optimization
-Terrain rendering performance optimization
-Better AI unit build selection 
-Player's original capital is now remembered and exposed to the event system
-Added support for moving the capital
-Added support for improvements adding roads to the tile
-Added support for improvements allowing units to ignore enemy ZOC
-InfoMission.miXP replaced with SubjectCharacterBonus
+Performance optimizations: Improved performance of terrain rendering, tile ownership changes and event processing
+AI unit selection: Improved AI unit build selection 
+Moving capital: Added support for moving the capital. Player's original capital is now remembered and exposed to the event system
+Roads from improvements: Added support for improvements adding roads to the tile
+ZOC changes from improvements: Added support for improvements allowing units to ignore enemy ZOC
+Mission bonus rework: InfoMission.miXP replaced with SubjectCharacterBonus
 
 UI
 
-Nation tooltips now always show number of cities
-Reduced volume of Honey resource audio
-Added custom sounds for priest attacks in Pharoahs of the Nile scenario 3
-Adjusted tutorial event timing and added some more to No Events mode
-Disabled unnecessary button clone when dragging buttons
-Laurion Mines no longer show extra text on map
-Changed 'your Relative' to 'fellow Royal'
+Nation tooltips: Now always show number of cities on nation tooltips
+Honey resource audio: Reduced volume of honey environmental audio
+Custom campaign audio: Added custom sounds for priest attacks in Pharoahs of the Nile scenario 3
+Tutorial events: Adjusted timing and added more to No Events mode
+Button dragging: Disabled unnecessary button clone when dragging buttons
+Laurion Mines: No longer show extra text on map
+Royal characters: Changed 'your Relative' to 'fellow Royal'
 
 Bugs Fixed
 
