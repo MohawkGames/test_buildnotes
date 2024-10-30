@@ -3,7 +3,7 @@ Test Branch 1.0.74752 Test 2024-10-30
 Design
 
 The traits of Grand Viziers and AI leaders now influence their decisions of how many units they build
-Heroes, Commanders, Tacticians, and Warlike build more units and Builders, Scholars, Diplomats, and Timid build fewer units
+Heroes, Commanders, Tacticians, and Warlike characters build more units and Builders, Scholars, Diplomats, and Timid characters build fewer units
 AI is more likely to build units in cities that give unit promotions and experience
 Most alliance and tribal alliance events now either require a diplomat leader or are disabled in competitive mode
 Cities are now revealed from a greater distance, like settlements
