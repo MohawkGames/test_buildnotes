@@ -2,7 +2,7 @@ Test Branch 1.0.74752 Test 2024-10-30
 
 Design
 
-Distant raids: no longer include ships
+Distant raids: No longer include ships
 AI unit building: The traits of Grand Viziers and AI leaders now influence their decisions of how many units they build
 Heroes, Commanders, Tacticians, and Warlike characters build more units and Builders, Scholars, Diplomats, and Timid characters build fewer units
 AI is more likely to build units in cities that give unit promotions and experience
