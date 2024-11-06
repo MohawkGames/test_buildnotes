@@ -1,0 +1,37 @@
+Test Branch 1.0.74860 Test 2024-11-06
+
+Design
+
+Tribal Divorces: Divorcing a tribal spouse now results in a negative opinion with that tribe 
+
+Programming
+
+Headless autoplay: Added support for AI auto-runs in headless mode 
+  Run OldWorldAutorun.bat in the same folder as the game executable
+  All players in the save are controlled by the AI for the specified number of turns, after which the game exits
+  Can examine runs by opening the autosaves that are placed in the Auto folder
+Improvment and Project Legitimacy: now tied to effectCity and always converted to orders in no characters mode 
+Added triggers: EVENTTRIGGER_PLAYER_DIPLOMACY_CHANGED and EVENTTRIGGER_TRIBE_DIPLOMACY_CHANGED
+
+UI
+
+Family tab icons: removed player color
+Marriage missions: now grouped together
+Inheritance and Tech Tree screens: now scrollable with camera keys (WASD)
+Religion Tooltips: Active Clergy and Current Followers no longer shown if there are none.  Added +2 civics to Holy City line
+City Tooltips: Added tile tooltip content to bottom of city tooltip 
+Royal characters: Changed 'fellow Royal' to 'A Royal'
+
+Bugs Fixed
+Fixed the AI broken in last test release 
+Fixed info loading bug that could cause new games to fail to start
+Fixed undo/redo related to tribal invasions 
+Fixed bug with random seed for event story trigger test not matching the seed of the actual triggered event
+Fixed bug with bSingle effectCity effects that spawn rebels possibly being counted multiple times (affects mods only)
+Fixed silent event failures caused by type cast issue
+Fixed units failing to spawn from improvements in Barbarian Horde games after the invasion had started 
+Fixed disable environment audio toggle not taking effect immediately
+Fixed Fickle Band effects not triggering when divorce happened from an event
+Fixed ships exiting Great Cothon not always getting their size updated
+Fixed multiple selection highlights
+Text and event fixes
