@@ -1,4 +1,4 @@
-Test Branch 1.0.74860 Test 2024-11-06
+Improvement Test Branch 1.0.74860 Test 2024-11-06
 
 Design
 
@@ -10,7 +10,7 @@ Headless autoplay: Added support for AI auto-runs in headless mode
   Run OldWorldAutorun.bat in the same folder as the game executable
   All players in the save are controlled by the AI for the specified number of turns, after which the game exits
   Can examine runs by opening the autosaves that are placed in the Auto folder
-Improvment and Project Legitimacy: now tied to effectCity and always converted to orders in no characters mode 
+Improvement and Project Legitimacy: now tied to effectCity and always converted to orders in no characters mode 
 Added triggers: EVENTTRIGGER_PLAYER_DIPLOMACY_CHANGED and EVENTTRIGGER_TRIBE_DIPLOMACY_CHANGED
 
 UI
