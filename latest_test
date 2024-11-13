@@ -1,37 +1,48 @@
-Test Branch 1.0.74860 Test 2024-11-06
+Test Branch 1.0.74986 Test 2024-11-13
 
 Design
 
-Tribal Divorces: Divorcing a tribal spouse now results in a negative opinion with that tribe 
+Childbirth rate: leaders with no children now have a higher chance to have kids
+VP calculation: Points required to win are now affected by projects that grant VP (i.e. Opulence in Behind the Throne)
+Permanent improvements: Shrines, Slums, and Estates are now permanent improvements that can be pillaged but do not get destroyed, and cannot be replaced
 
 Programming
 
-Headless autoplay: Added support for AI auto-runs in headless mode 
-  Run OldWorldAutorun.bat in the same folder as the game executable
-  All players in the save are controlled by the AI for the specified number of turns, after which the game exits
-  Can examine runs by opening the autosaves that are placed in the Auto folder
-Improvement and Project Legitimacy: now tied to effectCity and always converted to orders in no characters mode 
-Added triggers: EVENTTRIGGER_PLAYER_DIPLOMACY_CHANGED and EVENTTRIGGER_TRIBE_DIPLOMACY_CHANGED
+Diplomacy methods: now take players as arguments instead of teams, to that events are triggered for the most relevant players
+AI improvements: 
+Less aggressive in saving yields for many turns, when spending results in an immediate, albeit lesser, benefit
+Better evaluation of laws to properly take into account the unlocking of unique units
+Increased the value of growth for a city that is building Settlers/Workers
+Decreased value of disciples, AI avoids building them if has no use for them
+Revised AI build hurrying priorities
+Improved AI danger assessment and retreating 
 
 UI
 
-Family tab icons: removed player color
-Marriage missions: now grouped together
-Inheritance and Tech Tree screens: now scrollable with camera keys (WASD)
-Religion Tooltips: Active Clergy and Current Followers no longer shown if there are none.  Added +2 civics to Holy City line
-City Tooltips: Added tile tooltip content to bottom of city tooltip 
-Royal characters: Changed 'fellow Royal' to 'A Royal'
+Researched bonus techs: now included in the timeline and turn summary
+Hall of Fame: added difficulty to game tooltips and sort dropdown
+Turn/scenario text: now sorted behind research popup
 
 Bugs Fixed
-Fixed the AI broken in last test release 
-Fixed info loading bug that could cause new games to fail to start
-Fixed undo/redo related to tribal invasions 
-Fixed bug with random seed for event story trigger test not matching the seed of the actual triggered event
-Fixed bug with bSingle effectCity effects that spawn rebels possibly being counted multiple times (affects mods only)
-Fixed silent event failures caused by type cast issue
-Fixed units failing to spawn from improvements in Barbarian Horde games after the invasion had started 
-Fixed disable environment audio toggle not taking effect immediately
-Fixed Fickle Band effects not triggering when divorce happened from an event
-Fixed ships exiting Great Cothon not always getting their size updated
-Fixed multiple selection highlights
+
+Fixed potential crash for players using Simplified Chinese language
+Fixed AI development not adding tile improvements
+Fixed missing Sand Pits event project icon
+Fixed map overlays not updating immediately on improvement changes
+Fixed tribe leader info showing in no characters mode
+Fixed some minor issues with Learn to Play scenarios
+Fixed peace with Thracians blocking completion of Learn to Play 4 
+Fixed bugs with VP threshold calculation
+Fixed religion heads getting duplicated in religion characters list
+Fixed potential issues with save/load dialog system 
+Fixed non-deterministic event seeds in Pharaohs of the Nile scenarios
+Fixed AI bug that was placing undue attack priority on cities 
+Fixed AI bug that caused it not to build enough units in some cases
+Fixed AI improvement priority for stacking workers
+Fixed AI supporting attacks 
+Fixed AI tactics bug where it was not taking full advantage of adjacent unit bonus 
+Fixed Assassination missions not getting canceled if the target becomes a leader
+Fixed fields on Mods Upload page not height expanding when text entered
+Fixed researched bonus techs no longer showing on the tech tree after loading a save
+Fixed build queue information being visible on a foreign nation's cities tooltip
 Text and event fixes
