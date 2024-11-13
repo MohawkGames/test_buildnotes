@@ -44,3 +44,4 @@ Fixed AI tactics bug where it was not taking full advantage of adjacent unit bon
 Fixed Assassination missions not getting canceled if the target becomes a leader
 Fixed fields on Mods Upload page not height expanding when text entered
 Fixed researched bonus techs no longer showing on the tech tree after loading a save
+Fixed build queue information being visible on a foreign nation's cities tooltip
