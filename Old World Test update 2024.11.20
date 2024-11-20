@@ -1,0 +1,9 @@
+Test Branch 1.0.74986 Test 2024-11-13
+
+Update to match main build
+
+Bugs Fixed
+
+Fixed recruitment with legitimacy penalty not getting applied on loading a save
+Fixed founding a city with the same family as the settler not granting an extra citizen
+Fixed Pharaohs of the Nile family crests
