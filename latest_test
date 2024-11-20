@@ -1,48 +1,9 @@
-Test Branch 1.0.74986 Test 2024-11-13
+Test Branch 1.0.75064 Test 2024-11-20
 
-Design
-
-Childbirth rate: leaders with no children now have a higher chance to have kids
-VP calculation: Points required to win are now affected by projects that grant VP (i.e. Opulence in Behind the Throne)
-Permanent improvements: Shrines, Slums, and Estates are now permanent improvements that can be pillaged but do not get destroyed, and cannot be replaced
-
-Programming
-
-Diplomacy methods: now take players as arguments instead of teams, to that events are triggered for the most relevant players
-AI improvements: 
-Less aggressive in saving yields for many turns, when spending results in an immediate, albeit lesser, benefit
-Better evaluation of laws to properly take into account the unlocking of unique units
-Increased the value of growth for a city that is building Settlers/Workers
-Decreased value of disciples, AI avoids building them if has no use for them
-Revised AI build hurrying priorities
-Improved AI danger assessment and retreating 
-
-UI
-
-Researched bonus techs: now included in the timeline and turn summary
-Hall of Fame: added difficulty to game tooltips and sort dropdown
-Turn/scenario text: now sorted behind research popup
+Update to match main build
 
 Bugs Fixed
 
-Fixed potential crash for players using Simplified Chinese language
-Fixed AI development not adding tile improvements
-Fixed missing Sand Pits event project icon
-Fixed map overlays not updating immediately on improvement changes
-Fixed tribe leader info showing in no characters mode
-Fixed some minor issues with Learn to Play scenarios
-Fixed peace with Thracians blocking completion of Learn to Play 4 
-Fixed bugs with VP threshold calculation
-Fixed religion heads getting duplicated in religion characters list
-Fixed potential issues with save/load dialog system 
-Fixed non-deterministic event seeds in Pharaohs of the Nile scenarios
-Fixed AI bug that was placing undue attack priority on cities 
-Fixed AI bug that caused it not to build enough units in some cases
-Fixed AI improvement priority for stacking workers
-Fixed AI supporting attacks 
-Fixed AI tactics bug where it was not taking full advantage of adjacent unit bonus 
-Fixed Assassination missions not getting canceled if the target becomes a leader
-Fixed fields on Mods Upload page not height expanding when text entered
-Fixed researched bonus techs no longer showing on the tech tree after loading a save
-Fixed build queue information being visible on a foreign nation's cities tooltip
-Text and event fixes
+Fixed recruitment with legitimacy penalty not getting applied on loading a save
+Fixed founding a city with the same family as the settler not granting an extra citizen
+Fixed Pharaohs of the Nile family crests
