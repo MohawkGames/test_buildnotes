@@ -40,7 +40,7 @@ Fixed Thracians in Learn to Play 4 being visible before they should be
 Fixed unit widgets failing to display icon and shapes not included in their respective default sprite atlases (affects mods)
 Fixed server games preventing eliminated players from joining one last time to see what happened, and for the game to be saved locally as a loss
 Fixed bug where client could be in a different language to the active player 
-Fixed bug where regenerating HoF was replacing Scenario specific text with Generic game text for Nation, Leader names, and Difficulty
+Fixed Hall of Fame bug where regenerating was replacing Scenario specific text with Generic game text for Nation, Leader names, and Difficulty
 Fixed Hall of Fame difficulty sorting
 Fixed network messages being sent out of order
 Fixed a character suffix bug where a ruler would get the II suffix if a parent had the same name but never was a ruler
