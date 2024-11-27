@@ -1,0 +1,52 @@
+Test Branch 1.0.75158 Test 2024-11-27
+
+Design
+
+Difficulty rename: 
+  The Advanced Difficulty setting is now called Prosperity
+  The Simple Difficulty presets remain as they were
+  Difficulty components are grouped together and indented under difficulty mode in the game parameters tooltip
+  Difficulty will be listed as Custom for combinations outside of the simple difficulty presets
+  Distant raids are now tied to Tribe Level instead of Difficulty
+Alliance victory is now an setup option, default is off
+Ask to Declare War mission disabled for allies
+Upgrading a unit now keeps its fortification state
+Gifting, converting, hiring, or recruiting a unit can no longer result in it being in territory where it should not be
+Can now upgrade units inside your team's cities, even if they are not your own cities
+Vizier courtiers are no longer giftable in MP
+
+Programming
+
+Improved replay so that it still works if there is data only from the current turn
+AI performance optimization
+Added more logging for AI unit priority comparison failure
+
+UI
+
+Character tooltips no longer show trait effects 
+All attacks now listed under Units Attacked notifications (previously kills were not shown)
+Free promotions are now indicated in the city production list and unit type tooltip
+"Death of governor" decision now auto-invalidates if the city can no longer have a governor
+Defeat status now shown when the active player is eliminated in MP even if the game is still ongoing 
+Event browser story preview improvements
+Updated some Law strategy notes
+
+Bugs Fixed
+
+Fixed invalid moves adding undo points
+Fixed some events failing to appear with the Ruthless AI setting enabled
+Fixed player connection state UI for single-player network games
+Fixed Thracians in Learn to Play 4 being visible before they should be
+Fixed unit widgets failing to display icon and shapes not included in their respective default sprite atlases (affects mods)
+Fixed server games preventing eliminated players from joining one last time to see what happened, and for the game to be saved locally as a loss
+Fixed bug where client could be in a different language to the active player 
+Fixed bug where regenerating HoF was replacing Scenario specific text with Generic game text for Nation, Leader names, and Difficulty
+Fixed Hall of Fame difficulty sorting
+Fixed network messages being sent out of order
+Fixed a character suffix bug where a ruler would get the II suffix if a parent had the same name but never was a ruler
+Fixed achievement text that referred to Kushite Cavalry instead of Mounted Lancers
+Fixed Ten Crowns achievement incorrectly counting regents twice
+Fixed Rise of Carthage scenario 2 goals sometimes not getting offered
+Fixed Rise of Carthage starting heirs not being Royal and therefore not tutorable
+Fixed Pharaohs of the Nile scenario 2 event triggering multiple times
+Text and Event fixes
