@@ -1,0 +1,19 @@
+Test Branch 1.0.75221 Test 2024-12-04
+
+Design
+
+Removed two Prosperity levels and renamed using adjectives. The AI now plays on Thriving Prosperity (used in Strong difficulty)
+Achievements related to difficulty are now tied to Difficulty instead of Prosperity
+Achievement 'Alexander the Great' no longer requires the Great cognomen, just have to destroy Persia as Alexander 
+Remove restriction on marrying Libyans in Rise of Carthage scenario 1
+
+Programming
+
+Removed improvement dynamic text object from each tile to save some memory
+
+Bugs Fixed
+
+Fixed improvement pings not appearing when law requirements are not met 
+Fixed vegetation help text to correctly state a ranged attack penalty 
+Fixed possible array out of range for bad event links
+Text and Event fixes
