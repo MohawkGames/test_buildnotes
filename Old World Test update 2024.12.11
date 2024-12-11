@@ -3,12 +3,12 @@ Test Branch 1.0.75334 Test 2024-12-11
 Design
 
 Grand Vizier now acts as a governor in all cities without a governor and controls production in those cities. Removed all other Grand Vizier yields
-Changes to diplomatic Declare War missions
-Ruthless AI denial for Ask to Declare War kicks in at 25% proximity to victory 
-Enable the Ask to Join War mission for allies 
-Shrine randomization improvements
-Crowning Ambition changes
-Removed family preferences from crowning ambitions, created three-option variants of Final Step event 
+Changes to diplomatic Declare War missions:
+  Ask to Declare War mission now requires a Leader with the Schemer archetype.  Removed mission tech requirement and lowered opinion needed to Cautious
+  Ask to Join War mission added, where you must already be at war with the target.  This requires Pleased opinion
+  With Ruthless AI enabled, war requests will be denied if the player is close to victory
+The Random Improvements option now allows any combination of shrine effects instead of picking a set from a random nation
+Removed family preferences from crowning ambitions.  Most crowning ambition events now allow three choices of ambition instead of two.  Along with some bug fixes this should give a much higher variety of crowning ambitions offered
 Launch Offensive can now be used from a unit with a rout cooldown and it removes rout cooldowns from adjacent units
 
 Programming
@@ -26,6 +26,8 @@ User assigned hotkeys now have more flexibility.  Assignments can use previously
 
 Bugs Fixed
 
+Fixed bug preventing some Crowning Ambitions from appearing
+Fixed bug allowing ambitions to appear in events with random ambition selections that should only appear in specific events
 Fixed cycle button position not updating shortuct keys and not getting saved
 Fixed some road pathfinding issues
 Fixed player start location bug in the desert map script and made start location picking more robust in general
