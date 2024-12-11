@@ -1,0 +1,43 @@
+Test Branch 1.0.75334 Test 2024-12-11
+
+Design
+
+Grand Vizier now acts as a governor in all cities without a governor and controls production in those cities. Removed all other Grand Vizier yields
+Changes to diplomatic Declare War missions
+Ruthless AI denial for Ask to Declare War kicks in at 25% proximity to victory 
+Enable the Ask to Join War mission for allies 
+Shrine randomization improvements
+Crowning Ambition changes
+Removed family preferences from crowning ambitions, created three-option variants of Final Step event 
+Launch Offensive can now be used from a unit with a rout cooldown and it removes rout cooldowns from adjacent units
+
+Programming
+
+AI builds fewer duplicate roads
+Improved AI retreat vs attack decision making
+Disabled implicit subject conversion for DiplomacySubjects bonuses
+Hall of Fame games now store the active player so that when you load them the player stays the same
+
+UI
+
+Added minimize toggle to player goals/ambitions display
+Inverted red/green warning text in some cases for negative yields 
+User assigned hotkeys now have more flexibility.  Assignments can use previously reserved keys and conflict with non-assignable hotkeys.
+
+Bugs Fixed
+
+Fixed cycle button position not updating shortuct keys and not getting saved
+Fixed some road pathfinding issues
+Fixed player start location bug in the desert map script and made start location picking more robust in general
+Fixed illegal urban tiles placed in mirror maps 
+Fixed unintended Militia appearing on founding in Learn to Play 2
+Fixed Hall of Fame difficulty showing Prosperity instead of Difficulty
+Fixed character ratings appearing with a divider in some cases 
+Fixed research popup closing after using Redraw
+Fixed null ref in encyclopedia 
+Fixed duplicate Hall of Fame entries when reloading a completed cloud game 
+Fixed General not getting removed when upgrading a unit to a type that cannot have one (affects mods)
+Fixed incorrect suffix on Ptolemy II
+Fixed event system bug that can very rarely lead to valid subjects being deemed invalid
+Fixed tooltip expansion when hotkey changed
+Text and Event fixes
