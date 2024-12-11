@@ -2,7 +2,7 @@ Test Branch 1.0.75334 Test 2024-12-11
 
 Design
 
-Grand Vizier now acts as a governor in all cities without a governor and controls production in those cities. Removed all other Grand Vizier yields
+Grand Vizier now acts as a governor in cities without a governor and controls production only in those cities. Removed all other Grand Vizier yields
 Changes to diplomatic Declare War missions:
   Ask to Declare War mission now requires a Leader with the Schemer archetype.  Removed mission tech requirement and lowered opinion needed to Cautious
   Ask to Join War mission added, where you must already be at war with the target.  This requires Pleased opinion
