@@ -1,19 +1,45 @@
-Test Branch 1.0.75221 Test 2024-12-04
+Test Branch 1.0.75342 Test 2024-12-11
 
 Design
 
-Removed two Prosperity levels and renamed using adjectives. The AI now plays on Thriving Prosperity (used on Strong Difficulty)
-Achievements related to difficulty are now tied to Difficulty instead of Prosperity
-Achievement 'Alexander the Great' no longer requires the Great cognomen, just have to destroy Persia as Alexander 
-Removed restriction on marrying Libyans in Rise of Carthage scenario 1
+Grand Vizier now acts as a governor in cities without a governor and controls production only in those cities. Removed all other Grand Vizier yields
+Changes to diplomatic Declare War missions:
+  Ask to Declare War mission now requires a Leader with the Schemer archetype.  Removed mission tech requirement and lowered opinion needed to Cautious
+  Ask to Join War mission added, where you must already be at war with the target.  This requires Pleased opinion
+  With Ruthless AI enabled, war requests will be denied if the player is close to victory
+The Random Improvements option now allows any combination of shrine effects instead of picking a set from a random nation
+Removed family preferences from crowning ambitions.  Most crowning ambition events now allow three choices of ambition instead of two.  Along with some bug fixes this should give a much higher variety of crowning ambitions offered
+Launch Offensive can now be used from a unit with a rout cooldown and it removes rout cooldowns from adjacent units
 
 Programming
 
-Removed improvement dynamic text object from each tile to save some memory
+AI builds fewer duplicate roads
+Improved AI retreat vs attack decision making
+Disabled implicit subject conversion for DiplomacySubjects bonuses
+Hall of Fame games now store the active player so that when you load them the player stays the same
+
+UI
+
+Added minimize toggle to player goals/ambitions display
+Inverted red/green warning text in some cases for negative yields 
+User assigned hotkeys now have more flexibility.  Assignments can use previously reserved keys and conflict with non-assignable hotkeys.
 
 Bugs Fixed
 
-Fixed improvement pings not appearing when law requirements are not met 
-Fixed vegetation help text to correctly state a ranged attack penalty 
-Fixed possible array out of range for bad event links
+Fixed bug preventing some Crowning Ambitions from appearing
+Fixed bug allowing ambitions to appear in events with random ambition selections that should only appear in specific events
+Fixed cycle button position not updating shortcut keys and not getting saved
+Fixed some road pathfinding issues
+Fixed player start location bug in the desert map script and made start location picking more robust in general
+Fixed illegal urban tiles placed in mirror maps 
+Fixed unintended Militia appearing on founding in Learn to Play 2
+Fixed Hall of Fame difficulty showing Prosperity instead of Difficulty
+Fixed character ratings appearing with a divider in some cases 
+Fixed research popup closing after using Redraw
+Fixed null ref in encyclopedia 
+Fixed duplicate Hall of Fame entries when reloading a completed cloud game 
+Fixed General not getting removed when upgrading a unit to a type that cannot have one (affects mods)
+Fixed incorrect suffix on Ptolemy II
+Fixed event system bug that can very rarely lead to valid subjects being deemed invalid
+Fixed tooltip expansion when hotkey changed
 Text and Event fixes
