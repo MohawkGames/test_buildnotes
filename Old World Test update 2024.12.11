@@ -28,7 +28,7 @@ Bugs Fixed
 
 Fixed bug preventing some Crowning Ambitions from appearing
 Fixed bug allowing ambitions to appear in events with random ambition selections that should only appear in specific events
-Fixed cycle button position not updating shortuct keys and not getting saved
+Fixed cycle button position not updating shortcut keys and not getting saved
 Fixed some road pathfinding issues
 Fixed player start location bug in the desert map script and made start location picking more robust in general
 Fixed illegal urban tiles placed in mirror maps 
