@@ -6,8 +6,8 @@ Pathfinder trait now gives 50% bonus to Camps and Nets as Governor and 20% as Le
 Characters with a religion trait (Clergy, Mani etc.) can no longer be targeted by conversion missions
 Conquered cities can no longer be given to a family that has not yet been founded
 Swapped maintenance costs of Philosophy/Engineering and Professional Army/Volunteers
-Road movement benefit now aplies to all players in the territory of a city being captured (this is considered neutral territory)
-Units with a Hero General can no longer heal in the territory of a nation the player is at peace with (this is not considered neutral territory)
+The territory of a city being captured is considered neutral territory for the purposes of healing and benefiting from Forts and Roads
+The terriorty of a nation the player is at peace with is not considered neutral territory 
 Grand Vizier managed cities can no longer rush buy (Behind the Throne)
 Unpopular trait now gives nationwide 5% rebel spawn chance (Behind the Throne)
 
