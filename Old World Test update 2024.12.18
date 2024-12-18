@@ -1,0 +1,43 @@
+Test Branch 1.0.75427 Test 2024-12-18
+
+Design
+
+Pathfinder trait now gives 50% bonus to Camps and Nets as Governor and 20% as Leader instead of 100/50%
+Characters with a religion trait (Clergy, Mani etc.) can no longer be targeted by conversion missions
+Conquered cities can no longer be given to a family that has not yet been founded
+Swapped maintenance costs of Philosophy/Engineering and Professional Army/Volunteers
+Road movement benefit now aplies to all players in the territory of a city being captured (this is considered neutral territory)
+Units with a Hero General can no longer heal in the territory of a nation the player is at peace with (this is not considered neutral territory)
+Grand Vizier managed cities can no longer rush buy (Behind the Throne)
+Unpopular trait now gives nationwide 5% rebel spawn chance (Behind the Throne)
+
+Programming
+
+Bonuses and EffectCities give only EffectUnits, not Promotions. Promotions are only for units that can gain XP
+Unit effects that come from disabled promotions can now be assigned by bonuses and city effects
+
+UI
+
+Crowning ambitions are now indicated with the legitimacy crown icon
+Added some missing keyboard shortcuts to button help
+Improved Choose Governor tooltip
+Civilian unit effects such as Surveyor are now shown on the city production list
+Pillaged permanent improvements now show a pillaged icon 
+Encyclopedia improvements
+Acting Governor (Grand Vizier) effects now show on the Governor tooltip (Behind the Throne)
+
+Bugs Fixed
+
+Fixed order yield rates not updating when starting/finishing construction 
+Fixed broken Civ Fanatics forum link on main menu
+Fixed AI movement null reference
+Fixed several Portrait Editor bugs
+Fixed load/save bug for mods that give bonus effectUnits
+Fixed duplicated Hittite portrait
+Fixed errors when loading saves with deprecated promotions
+Fixed wrong memory display when giving a conquered city to a family 
+Fixed Macedonia not getting family promotions on their starting units in Heroes of the Aegean scenario 6
+Fixed opinion and legitimacy bonus from founding a family seat getting applied more than once in some cases
+Fixed Grand Vizier traits not affecting the cities where they are acting governor (Behind the Throne)
+Fixed some UI instances where the acting governor was being treated as the actual governor (Behind the Throne)
+Text and event fixes
