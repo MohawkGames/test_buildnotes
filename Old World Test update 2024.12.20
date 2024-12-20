@@ -14,5 +14,5 @@ Turn Lock function removed
 Bugs Fixed
 
 Fixed enlist effect not getting cleared after use
-Fixed cases when opinon and legitimacy for founding a family seat could get applied more than once for the same family
+Fixed cases when opinion and legitimacy for founding a family seat could get applied more than once for the same family
 Fixed null reference errors
