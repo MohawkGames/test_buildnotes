@@ -1,43 +1,18 @@
-Test Branch 1.0.75439 Test 2024-12-18
+Test Branch 1.0.75460 Test 2024-12-20
 
 Design
 
-Pathfinder trait now gives 50% bonus to Camps and Nets as Governor and 20% as Leader instead of 100/50%
-Swapped maintenance costs of Philosophy/Engineering and Professional Army/Volunteers
-The territory of a city being captured is considered neutral territory for the purposes of healing, forts and roads
-The terriorty of a nation the player is at peace with is not considered neutral territory 
-Characters with a religion trait (Clergy, Mani etc.) can no longer be targeted by conversion missions
-Conquered cities can no longer be given to a family that has not yet been founded
-Grand Vizier managed cities can no longer rush buy (Behind the Throne)
-Unpopular trait now gives nationwide 5% rebel spawn chance (Behind the Throne)
+Neutral territory is now defined as either unclaimed, anarchy (city being captured), or owned by a nation or tribe you are not at war with
+Fort defensive bonus, road and exploration river movement, Hero and Fort healing, Scout tree invisibility, all require neutral or friendly territory
+Road and Fort construction requires friendly, unclaimed, or Anarchy territory
+Added regular reminder to complete Influence goal in Learn to Play 3
 
 Programming
 
-Bonuses and EffectCities give only EffectUnits, not Promotions. Promotions are only for units that can gain XP
-Unit effects that come from disabled promotions can now be assigned by bonuses and city effects
-
-UI
-
-Crowning ambitions are now indicated with the legitimacy crown icon
-Added some missing keyboard shortcuts to button help
-Improved Choose Governor tooltip
-Civilian unit effects such as Surveyor are now shown on the city production list
-Pillaged permanent improvements now show a pillaged icon 
-Encyclopedia improvements
-Acting Governor (Grand Vizier) effects now show on the Governor tooltip (Behind the Throne)
+Turn Lock function removed
 
 Bugs Fixed
 
-Fixed order yield rates not updating when starting/finishing construction 
-Fixed broken Civ Fanatics forum link on main menu
-Fixed AI movement null reference
-Fixed several Portrait Editor bugs
-Fixed load/save bug for mods that give bonus effectUnits
-Fixed duplicated Hittite portrait
-Fixed errors when loading saves with deprecated promotions
-Fixed wrong memory display when giving a conquered city to a family 
-Fixed Macedonia not getting family promotions on their starting units in Heroes of the Aegean scenario 6
-Fixed opinion and legitimacy bonus from founding a family seat getting applied more than once in some cases
-Fixed Grand Vizier traits not affecting the cities where they are acting governor (Behind the Throne)
-Fixed some UI instances where the acting governor was being treated as the actual governor (Behind the Throne)
-Text and event fixes
+Fixed enlist effect not getting cleared after use
+Fixed cases when opinion and legitimacy for founding a family seat could get applied more than once for the same family
+Fixed null reference errors
