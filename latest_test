@@ -1,18 +1,18 @@
-Test Branch 1.0.75460 Test 2024-12-20
-
-Design
-
-Neutral territory is now defined as either unclaimed, anarchy (city being captured), or owned by a nation or tribe you are not at war with
-Fort defensive bonus, road and exploration river movement, Hero and Fort healing, Scout tree invisibility, all require neutral or friendly territory
-Road and Fort construction requires friendly, unclaimed, or Anarchy territory
-Added regular reminder to complete Influence goal in Learn to Play 3
-
-Programming
-
-Turn Lock function removed
+Test Branch 1.0.75617 Test 2025-01-08
 
 Bugs Fixed
 
-Fixed enlist effect not getting cleared after use
-Fixed cases when opinion and legitimacy for founding a family seat could get applied more than once for the same family
-Fixed null reference errors
+Fixed game editor unit placement
+Fixed promotions being offered when unit already has the effect (i.e. Champion units won't get offered Steadfast as a promotion)
+Fixed useless promotions being offered ahead of useful ones
+Fixed promotions from player effects getting lost on unit upgrade
+Fixed spymaster context menus sometimes not appearing 
+Fixed agent missions and networks menus appearing on foreign spymasters
+Fixed formatting of tile and city tooltips
+Fixed improvements from inactive DLC showing up in build menus
+Fixed invalid improvements sometimes appearing under Valid Improvements filter
+Fixed goals display spacing
+Fixed AI modified collection exception
+Event audio fix
+Fixed bug in Heroes of the Aegean scenario 6
+Fixed Grand Vizier load/save bug when capturing a city (Behind the Throne)
