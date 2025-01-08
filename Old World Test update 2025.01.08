@@ -1,0 +1,18 @@
+Test Branch 1.0.75617 Test 2025-01-08
+
+Bugs Fixed
+
+Fixed game editor unit placement
+Fixed promotions being offered when unit already has the effect (i.e. Champion units won't get offered Steadfast as a promotion)
+Fixed useless promotions being offered ahead of useful ones
+Fixed promotions from player effects getting lost on unit upgrade
+Fixed spymaster context menus sometimes not appearing 
+Fixed agent missions and networks menus appearing on foreign spymasters
+Fixed formatting of tile and city tooltips
+Fixed improvements from inactive DLC showing up in build menus
+Fixed invalid improvements sometimes appearing under Valid Improvements filter
+Fixed goals display spacing
+Fixed AI modified collection exception
+Event audio fix
+Fixed bug in Heroes of the Aegean scenario 6
+Fixed Grand Vizier load/save bug when capturing a city (Behind the Throne)
