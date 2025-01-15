@@ -1,4 +1,4 @@
-Test branch 1.0.75705 Test 2025-01-15
+Test branch 1.0.75716 Test 2025-01-15
 
 Update to match Release branch
 
@@ -6,3 +6,4 @@ Bugs Fixed:
 
 Fixed Rise of Carthage scenario 2 and 3 olive-counting goals 
 Fixed trait loss causing unrelated events
+Fixed tribal invasions getting stuck
