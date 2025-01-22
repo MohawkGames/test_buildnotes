@@ -2,7 +2,7 @@ Test Branch 1.0.75810 Test 2025-01-22
 
 Design
 
-New advanced setup option 'Balanced starting resources' for single player
+New advanced setup option 'Balanced starting resources' for single player (previously MP only)
 If the AI reaches a victory condition on it's turn and the player also does at the start of their next turn, the player will now be given the victory instead of the AI
 Reduced the effect of Grand Vizier and AI leader traits on the number of units they tend to build
 Reduced cost of Burning improvements to 50 Training (down from 100)
