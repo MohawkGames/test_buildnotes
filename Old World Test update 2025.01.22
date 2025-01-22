@@ -1,0 +1,63 @@
+Test Branch 1.0.75810 Test 2025-01-22
+
+Design
+
+New advanced setup option 'Balanced starting resources' for single player
+If the AI reaches a victory condition on it's turn and the player also does at the start of their turn, the player will now be given the victory instead of the AI
+Reduced the effect of Grand Vizier and AI leader traits on the number of units they tend to build
+Reduced cost of Burning improvements to 50 Training (down from 100)
+Purging a religion from a city now prevents it spreading to the city again without use of a Disciple
+Can no longer gift Family Seats
+Ambition victory now disabled in multiplayer by default (will remain on for ongoing games where it is enabled)
+In Heroes of the Aegean scenario 2, Themistocles now retires after the battle of Salamis
+Tweaks to invasions in Pharaohs of the Nile scenario 5
+
+
+Programming
+
+AI performance optimization
+Tactical AI improvements
+Improved AI use of anchoring
+Improved AI Scout movement under Exploration law
+Improved AI unit movement
+Added command line argument -loadgame 
+
+
+UI
+
+Character tooltips now show trait effects that are relevant to the current position (leader, general, governor) of the character 
+Rearranged city queue display to avoid overlap.  Queue can now display 9 items (up from 4)
+Known visibility button now shows visibility for all rivals if no unit or player is selected
+Buy Orders shortcut key now defaults to SHIFT+O (instead of O)
+Added Leader Archetype dropdown to Basic Setup options for Barbarian Horde scenario
+Added icons for strength and weakness to character tooltips
+MP player UI (team research and gifting options) is now shown in SP when player has AI teammates
+Stats for all players are now shown to observers in MP games
+Removed the 'Edit in Wizard' button from existing events in the Event Browser
+Fixed confusing color of unit fatigue pips when already force marched and there is no movement limit. Force marched units now display flashing "marched" text
+MP scenario tooltips now show scenario subtitle 
+
+
+Bugs Fixed
+
+Fixed ships sometimes being built on the city center instead of the intended water area
+Fixed event syntax bug
+Fixed nested link in generated diplomacy links 
+Fixed hover issue on team research display
+Fixed UI issue with Create Game button being disabled after unloading a server game 
+Fixed some AI confusion about who benefits when performing a mission on a character of a different nation
+Fix for initial city naming - only relevant in mods
+Fixed tribe link in city widget not selecting tribe
+Fixed some UI issues with tile highlighting
+Fixed AI exception with tribal cities
+Fixed missing seat founding bonus in the family class Encyclopedia entries
+Fixed add urban recommendation not showing border preview on hover 
+Fixed regenerating Hall of Fame entries leading to points wins becoming defeats after opulence VP changes 
+Fixed player placement bug for 2-team MP games that also have independent AI nations 
+Fixed portrait interpolation errors for portraits that do not have interpolation settings when interpolation is disabled 
+Fixed boat projectiles causing rendering artifacts on macs 
+Fixed breaking peace with a tribe in no characters mode
+Fixed Learn to Play 2 choose tech goal not completing immediately
+Fixed potential issues with retake islands events in Rise of Carthage scenario 4
+Fixed bugs with rebellion event triggering twice and Aristotle event not triggering in Heroes of the Aegean scenario 4
+Text and event fixes
