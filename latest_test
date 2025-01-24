@@ -2,8 +2,11 @@ Test Branch 1.0.75810 Test 2025-01-22
 
 Design
 
+Repeatable technologies increase by 50% of the original cost each time they are researched (+1000, up from +500)
+All religious buildings (Temples, Monasteries, Cathedrals) are now permanent 
+Crossbowmen bonus against melee now only applies to attack instead of strength
 New advanced setup option 'Balanced starting resources' for single player (previously MP only)
-If the AI reaches a victory condition on it's turn and the player also does at the start of their next turn, the player will now be given the victory instead of the AI
+If the AI reaches a victory condition on its turn and the player also does at the start of their next turn, the player will now be given the victory instead of the AI
 Reduced the effect of Grand Vizier and AI leader traits on the number of units they tend to build
 Reduced cost of Burning improvements to 50 Training (down from 100)
 Purging a religion from a city now prevents it spreading to the city again without use of a Disciple
@@ -21,10 +24,17 @@ Improved AI use of anchoring
 Improved AI Scout movement under Exploration law
 Improved AI unit movement
 Added command line argument -loadgame 
+Refactored opinion levels to be independent of XML order
 
 
 UI
 
+New feature: Generating a parameter string, which players can use in the setup screen to restart the same game from the beginning
+The SP setup screen now has a third tab (Simple/Advanced/Parameter String), where players enter the parameter string
+Parameter Strings can be found on the in game menu
+
+A preview of potential water control is now shown when holding CTRL with ship selected
+Notification display order reversed, now shows oldest notifications at the top
 Character tooltips now show trait effects that are relevant to the current position (leader, general, governor) of the character 
 Rearranged city queue display to avoid overlap.  Queue can now display 9 items (up from 4)
 Known visibility button now shows visibility for all rivals if no unit or player is selected
@@ -36,6 +46,10 @@ Stats for all players are now shown to observers in MP games
 Removed the 'Edit in Wizard' button from existing events in the Event Browser
 Fixed confusing color of unit fatigue pips when already force marched and there is no movement limit. Force marched units now display flashing "marched" text
 MP scenario tooltips now show scenario subtitle 
+Renamed Units Killed stat on stats screen to Military Units Killed
+Removed Raiders and Rebels from game history 
+Improved "Slow AI" tooltip 
+Bonus tech cards now indicate that they are bonus cards
 
 
 Bugs Fixed
@@ -57,6 +71,14 @@ Fixed player placement bug for 2-team MP games that also have independent AI nat
 Fixed portrait interpolation errors for portraits that do not have interpolation settings when interpolation is disabled 
 Fixed boat projectiles causing rendering artifacts on macs 
 Fixed breaking peace with a tribe in no characters mode
+Fixed name display issue in some languages for royal characters with jobs 
+Fixed goals not completing when new units created
+Fixed marauder prefabs being slightly offset 
+Fixed portraits not updating when age interpolation is enabled for the first time in-game
+Fixed portrait editor breaking when interpolation is disabled in graphics options
+Fixed portrait editor portraits not updating correctly when a source portrait 
+Fixed portrait editor opinion tab displays
+Fixed incorrect tile highlighting for event options that affect tiles 
 Fixed Learn to Play 2 choose tech goal not completing immediately
 Fixed potential issues with retake islands events in Rise of Carthage scenario 4
 Fixed bugs with rebellion event triggering twice and Aristotle event not triggering in Heroes of the Aegean scenario 4
