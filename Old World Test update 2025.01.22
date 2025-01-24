@@ -6,7 +6,7 @@ Repeatable technologies increase by 50% of the original cost each time they are 
 All religious buildings (Temples, Monasteries, Cathedrals) are now permanent 
 Crossbowmen bonus against melee now only applies to attack instead of strength
 New advanced setup option 'Balanced starting resources' for single player (previously MP only)
-If the AI reaches a victory condition on it's turn and the player also does at the start of their next turn, the player will now be given the victory instead of the AI
+If the AI reaches a victory condition on its turn and the player also does at the start of their next turn, the player will now be given the victory instead of the AI
 Reduced the effect of Grand Vizier and AI leader traits on the number of units they tend to build
 Reduced cost of Burning improvements to 50 Training (down from 100)
 Purging a religion from a city now prevents it spreading to the city again without use of a Disciple
@@ -34,7 +34,7 @@ The SP setup screen now has a third tab (Simple/Advanced/Parameter String), wher
 Parameter Strings can be found on the in game menu
 
 A preview of potential water control is now shown when holding CTRL with ship selected
-Notification display order reversed, now shows oldest notifcations at the top
+Notification display order reversed, now shows oldest notifications at the top
 Character tooltips now show trait effects that are relevant to the current position (leader, general, governor) of the character 
 Rearranged city queue display to avoid overlap.  Queue can now display 9 items (up from 4)
 Known visibility button now shows visibility for all rivals if no unit or player is selected
