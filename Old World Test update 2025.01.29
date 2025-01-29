@@ -22,7 +22,7 @@ Unit filter for Infantry changed to Melee Infantry
 
 Bugs Fixed
 
-Fixed ambitions that should only come from specific events (i.e. Destroy this Nation) appearing randomly
+Fixed ambitions that should only come from specific events (i.e. Destroy the Rival Nation) appearing randomly
 Fixed AI complaining about the same stolen city site repeatedly
 Fixed Stun preview text incorrectly showing for units in splash radius 
 Fixed years reigned text issue that could occur with regency 
