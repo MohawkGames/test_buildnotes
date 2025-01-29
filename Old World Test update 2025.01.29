@@ -17,7 +17,7 @@ Added player option for one-click map centering
 In MP the turn timer warning sound now plays with 15 seconds remaining (up from 5) and increases the size of the timer text.  Paused text is now shown when the timer is paused.
 In Observer mode, decision popups no longer get removed by clicking on an option
 Character selection for job assignment popups now defaults to an idle character
-Cancel button in character job assignment now deselects current character instead of closing that UI 
+Cancel button in job assignment now deselects current character instead of closing that UI 
 Unit filter for Infantry changed to Melee Infantry 
 
 Bugs Fixed
