@@ -1,0 +1,35 @@
+Test Branch 1.0.75925 Test 2025-01-29
+
+Design
+
+Laurion Mines now cost 10 wood to repair (previously had no cost)
+High Event Level now allows up 10 events per turn (up from 5)
+
+Programming
+
+Improved AI family selection when founding a city 
+Moved default improvement repair cost to XML
+Better scenario difficulty mode support
+
+UI
+
+Added player option for one-click map centering
+In MP the turn timer warning sound now plays with 15 seconds remaining (up from 5) and increases the size of the timer text
+In Observer mode, decision popups no longer get removed by clicking on an option
+Character selection for job assignment popups now defaults to an idle character
+Cancel button in character job assignment now deselects current character instead of closing that UI 
+Unit filter for Infantry changed to Melee Infantry 
+
+Bugs Fixed
+
+Fixed ambitions that should only come from specific events (i.e. Destroy this Nation) appearing randomly
+Fixed AI complaining about the same stolen city site repeatedly
+Fixed Stun preview text incorrectly showing for units in splash radius 
+Fixed years reigned text issue that could occur with regency 
+Fixed empty series warning for opinion graphs
+Fixed some cases of dropdowns getting cut off
+Fixed units with no family sometimes showing incorrect family icon 
+Fixed some Map Editor errors
+Fixed memory leaks
+Fixed Pharaohs of the Nile scenario 5 unit AI
+Text and event fixes
