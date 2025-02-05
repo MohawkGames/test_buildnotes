@@ -1,0 +1,48 @@
+Test Branch 1.0.76xxx Test 2025-02-05
+
+Design
+
+Major expansion of The Old World premade map to accomodate Aksum (upcoming DLC nation)
+Minor adjustments to The Middle East premade map, Aksum starting position added
+Updated resources on The Imperium Romanum premade map, all luxury resources are now present
+Added tribes to The Mediterranean premade map 
+New game option added 'Allow Negative Cognomens'.  Disabled by default
+Better matchmaking for auto-marrying characters.  More likely for characters that are attracted to each other to get married and less likely for characters that hate each other
+Ambition-picking events will try to avoid giving a second crowning ambition, a lower tier fallback will be offered if possible
+Seizing the throne no longer adds bypassed relationships to former leader's succession
+A non-fatal attack that triggers an event that immediately kills the unit is now treated as a unit kill (for kill unit ambitions, routing etc)
+Competitive Mode no longer disables Grand Viziers but does now disable some Rising Star events related to seizing the throne
+Heroes of the Aegean scenario 5 tweaks - easier difficulties are now easier and initial landing goal made clearer
+
+Programming
+
+UI
+
+Added new cause of death field to the character tooltip. Traits with a probability of death are removed after death 
+One-click centering option moved to Accessibility options, no longer deselects unit unless selected tile is already centered
+Riders icon now shown on city widget instead of Connected icon for Riders cities
+Rising Star trait no longer removed upon death 
+Tweaks to job assignment highlighting behavior, selection clearing on the city screen
+Opening the reminders list closes the job assignment menu
+Reverted job assignment cancel button behavior change (from previous test update)
+Simplified and cleaned up some Family help issues 
+Removed some yield clutter from specialist tooltips 
+Encyclopedia and tutorial corrections and improvements
+
+Bugs Fixed
+
+Fixed AI sometimes being unable to declare war on a nation while at peace
+Fixed queued unit moves not happening when destination blocked
+Fixed automated units sometimes not moving 
+Fixed attack preview issues
+Fixed river movement in captured territory
+Fixed religion icons sometimes showing on tribal camps when city site did not have religion 
+Fixed implicit subject conversion issue
+Fixed save game version not being updated
+Fixed game editor unit placement in water
+Fixed city production yield costs sometimes disappearing
+Fixed some succession issues related to usurpers
+Fixed non-active city site on Middle East map 
+Fixed unit effect formatting issues
+Fixed bug that allowed the player to choose invalid nations on premade maps
+Fixed some broken links in Rise of Carthage campagin
