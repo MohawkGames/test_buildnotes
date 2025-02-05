@@ -16,7 +16,7 @@ Heroes of the Aegean scenario 5 tweaks - easier difficulties are now easier and 
 
 UI
 
-Added new cause of death field to the character tooltip. Traits with a probability of death are removed after death 
+Added cause of death field to the character tooltip. Traits with a probability of death are removed after death 
 One-click centering option moved to Accessibility options, no longer deselects unit unless selected tile is already centered
 Riders icon now shown on city widget instead of Connected icon for Riders cities
 Rising Star trait no longer removed upon death 
