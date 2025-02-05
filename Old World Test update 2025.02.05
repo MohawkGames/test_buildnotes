@@ -2,7 +2,7 @@ Test Branch 1.0.76103 Test 2025-02-05
 
 Design
 
-Major expansion of The Old World premade map to accomodate Aksum (upcoming DLC nation)
+Major expansion of The Old World premade map to accommodate Aksum (upcoming DLC nation)
 Minor adjustments to The Middle East premade map, Aksum starting position added
 Updated resources on The Imperium Romanum premade map, all luxury resources are now present
 Added tribes to The Mediterranean premade map 
@@ -43,4 +43,4 @@ Fixed some succession issues related to usurpers
 Fixed non-active city site on Middle East map 
 Fixed unit effect formatting issues
 Fixed bug that allowed the player to choose invalid nations on premade maps
-Fixed some broken links in Rise of Carthage campagin
+Fixed some broken links in Rise of Carthage campaign
