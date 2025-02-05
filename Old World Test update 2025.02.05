@@ -14,8 +14,6 @@ A non-fatal attack that triggers an event that immediately kills the unit is now
 Competitive Mode no longer disables Grand Viziers but does now disable some Rising Star events related to seizing the throne
 Heroes of the Aegean scenario 5 tweaks - easier difficulties are now easier and initial landing goal made clearer
 
-Programming
-
 UI
 
 Added new cause of death field to the character tooltip. Traits with a probability of death are removed after death 
