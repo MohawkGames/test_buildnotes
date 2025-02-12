@@ -2,3 +2,23 @@ Test Branch 1.0.762xx Test 2025-02-12
 
 Design
 
+Commander leaders now always grant +10XP per turn to all units (previously units had to be idle)
+Updates to The Old World premade map, mainly around Kush and Aksum start positions
+New tutorial event added when Warriors can be upgraded to Spearmen (previously only occured for Axemen upgrades)
+In Rise of Carthage scenario 4, tribal allies will automatically declare war on Rome
+In the Caesar Dynasty, Princess Julia will now also take up family Julius if chosen as the first family (Wonders and Dynasties)
+Rising Stars now demand the throne less and to be Grand Viziers more (Behind the Throne)
+
+Programming
+
+Optimization and performance improvements
+
+UI
+
+Standalone scenarios are now shown on the top level of the scenario screen instead of under their own category
+
+Bugs Fixed
+
+Fixed memory leak
+Fixed issues with paramater strings
+Text and event fixes
