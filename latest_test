@@ -1,7 +1,8 @@
-Test Branch 1.0.76452 Test 2025-02-19
+Test Branch 1.0.76331 test 2025-02-28
 
-Update to match release branch
+Hotfix release that fixes a couple of bugs and includes content needed for upcoming DLC
 
 Bugs Fixed
 
-Fixed improvements being buildable in territory of non-allied foreign nations
+Fixed Game of the Week 
+Fixed bug that could cause the game to get stuck on AIs turn
