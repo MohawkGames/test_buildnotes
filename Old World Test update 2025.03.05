@@ -3,28 +3,40 @@ Test Branch 1.0.76691 Test 2025-03-05
 Design
 
 Commander leaders always grant +10XP per turn to all units (previously units had to be idle)
-Placing a free urban improvement on a resource removes the resource without harvesting it, to be consistent with vegetation clearing
-Stun is possible when attacking a unit in a city without any HP left
+Free improvements are now allowed on resource tiles with a generic improvement ping. Placing a free urban improvement on a resource removes the resource without harvesting it
+Stun is now possible when attacking a unit in a city without any HP left
 Critical hits on cities are no longer possible 
 Events where the AI offers Truce on breaching a city now trigger when the city is captured instead
 
 Programming
 
-Added ALLOW_CITY_CRITICAL_HITS to globalsInt.xml, for use by modders
+Performance improvements
+Improved UI responsiveness when cycling through workers
+Added ALLOW_CITY_CRITICAL_HITS to globalsInt, for use by modders
 
 UI
 
 Setup screen changes:
 
-Removed options preset dropdown from simple setup and added Event Level
+Removed Options Preset dropdown from Simple setup and added Event Level
 Added Reset Options button to Advanced and MP setup screens
-Simple setup settings are saved separately from advanced setup settings
+Added difficulty mode to Advanced setup screen
+Simple setup settings are saved separately from advanced setup settings. Going back and forth between Advanced and Simple screens retains only nation and dynasty settings
 Entering the setup screens with a premade map that restricts nation choices stored in the options file will no longer keep that map choice, to ensure all nations are shown
+Enabled DLC no longer gets reset every time
 
-
+Strategic resource icons for unit production shown on city categories when available
+Added worker list to tile tooltip when multiple workers are stacked
 Selecting a character centers the camera on job-relevant city or unit
+Timeline now shows map terrain changes over time
+Timeline now shows current revealed-not-visible state for borders when it is set to show the current turn
+With a land unit selected, hovering over a water tile in anchor range will show "Must end move on land tile"
+Network games are now paused automatically when the game is over
+Cannot surrender a multiplayer game if you are the last player remaining
 World tile text now shows over city UI
 Unworked wonders show Requires Worker text with worker selected
+Right-click toggles tab panel menus off if already open
+Improved unit strength tooltip text
 Removed some of the yield breakdown from the specialist tooltip and added modified total yield
 Removed line break from event option tooltips that start goals
 Removed 'New Event in Wizard' button from Event Browser
@@ -32,6 +44,12 @@ Removed 'New Event in Wizard' button from Event Browser
 Bugs Fixed
 
 Fixed clicks on parts of the UI selecting map elements behind them
+Fixed Continents map script bug
+Fixed Caravans being unable to travel through anarchy territory
+Fixed unit healthbars appearing incorrectly for some attack previews
+Fixed the Ignore Map Nation Starts option not working on some maps
 Fixed Allow Negative Cognomens option appearing when no characters option selected
 Fixed Free Court Mininster encyclopedia entry with null icon
+Fixed enyclcopedia prompt showing on traits with no encyclopedia page
+Fixed encyclopedia null references
 Text and event fixes
