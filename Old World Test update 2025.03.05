@@ -45,7 +45,6 @@ Added ALLOW_CITY_CRITICAL_HITS to globalsInt, for use by modders
 UI
 
 Setup screen changes:
-
 Removed Options Preset dropdown from Simple setup and added Event Level
 Added Reset Options button to Advanced and MP setup screens
 Added difficulty mode to Advanced setup screen
