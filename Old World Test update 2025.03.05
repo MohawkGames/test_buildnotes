@@ -24,10 +24,12 @@ Events where the AI offers Truce on breaching a city now trigger when the city i
 Can no longer build roads and improvements in territory of an ally
 Water tiles no longer need to be adjacent to land in order to transfer them from one of your cities to another
 Units that earn XP past the maximum level convert that XP to training
+Ezana's Evangelist trait only gives new units Christianity/Adept in city where he is governor (Wrath of Gods)
 
 Programming
 
 Rendering API change: Linux / Steam Deck now default to Vulkan. Windows supports Vulkan with a command-line switch
+Epic Mac build now runs natively when run outside of the Epic launcher, i.e. using alternative launcher such as Heroic
 Improved UI responsiveness when cycling through workers
 Performance improvements
 AI combat improvements
@@ -36,6 +38,7 @@ Improved AI order predictions when planning moves
 AI is more aggressive in moving towards enemy cities when at war
 AI more likely to place ranged units in forest when defending its territory with a Tactician leader
 AI fort building now less common
+AI tries harder to delay using anchored units so that land units don't get stranded
 AI now less eager to build some wonders that are not very useful (e.g. Jebel Barkal without world religion)
 Added ALLOW_CITY_CRITICAL_HITS to globalsInt, for use by modders
 
@@ -52,6 +55,7 @@ Enabled DLC no longer gets reset every time
 
 Selected characters now appear in the upper right side of the screen and Ambitions in the upper left
 Strategic resource icons for unit production shown on city categories when available
+Temporary unit effects now show the remaining turn count on their icons
 Changed all happiness/discontent yield displays to use relevant icon instead of signed text
 Added worker list to tile tooltip when multiple workers are stacked
 Selecting a character centers the camera on job-relevant city or unit
@@ -73,6 +77,7 @@ Removed line break from event option tooltips that start goals
 Removed 'New Event in Wizard' button from Event Browser
 City links that do not open the city screen now pan the camera to the city when clicked (i.e. tribal raid notifications)
 Starting a game using a parameter string no longer updates the options file with the game's settings
+Added custom savegame prefix to standalone scenarios
 Added more promotion and effectUnit information to encyclopedia
 Updated Shapur's dynasty description to clarify that Strike applies to melee and ship units (Wonders and Dynasties)
 Plague flies only shown on units with the Plagued effect. Plague fog effect is confined to city territory (Wrath of Gods)
@@ -99,8 +104,12 @@ Fixed Free Court Mininster encyclopedia entry with null icon
 Fixed enyclcopedia prompt showing on traits with no encyclopedia page
 Fixed encyclopedia null references
 Fixed succession law preview tooltip showing wrong law
+Fixed Courtiers Added stat not increasing when recruiting an existing foreign courtier
 Fixed Organized tribes not healing
 Fixed some AI bugs
+Fixed research UI not updating immediately when yield rates change
+Fixed Carthage scenarios giving a lower-tier victory than earned if one of the goals was completed indirectly
+Fixed Calamities causing city sites to become impassable
 Fixed Flood not displaying correctly in some cases (Wrath of Gods)
-Fixed occurrence level showing on in-game difficulty mode and game parameters tooltips, if the content is disabled in the current game (Wrath of Gods)
+Fixed Calamity level showing on in-game difficulty mode and game parameters tooltips, if the content is disabled in the current game (Wrath of Gods)
 Text and event fixes
