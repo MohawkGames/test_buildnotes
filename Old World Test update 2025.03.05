@@ -6,7 +6,7 @@ National Ambitions:
 The final ambition is now called a National Ambition and may be offered early, after a player has completed 5 ambitions
 The offer is triggered soon after the player reaches 75% progress towards one of the national ambitions
 National Ambitions do not count for tier counting purposes i.e. they do not make regular ambition offers harder
-All National Ambitions are listed in the Encylopedia under their own category
+All National Ambitions are listed in the Encyclopedia under their own category
 Added new National Ambition - +250 Food, Iron, Stone, Wood and Money per turn.  This replaces the previous ambition to stockpile 2000 of each resource
 Added new regular Ambition - Control 4 Hamlets
 
@@ -59,7 +59,7 @@ Temporary unit effects now show the remaining turn count on their icons
 Changed all happiness/discontent yield displays to use relevant icon instead of signed text
 Added worker list to tile tooltip when multiple workers are stacked
 Selecting a character centers the camera on job-relevant city or unit
-Resarch UI is now always shown regardless of selection
+Research UI is now always shown regardless of selection
 Added reminder for pillaged tiles
 Added ability to hide improvement tooltips by holding CTRL
 Timeline now shows map terrain changes over time
@@ -80,7 +80,7 @@ Starting a game using a parameter string no longer updates the options file with
 Added custom savegame prefix to standalone scenarios
 Added more promotion and effectUnit information to encyclopedia
 Updated Shapur's dynasty description to clarify that Strike applies to melee and ship units (Wonders and Dynasties)
-Plague flies only shown on units with the Plagued effect. Plague fog effect is confined to city territory (Wrath of Gods)
+Plague flies are only shown on units with the Plagued effect. Plague fog effect is confined to city territory (Wrath of Gods)
 Wildfire visual effect is less extreme (Wrath of Gods)
 
 Bugs Fixed
@@ -90,7 +90,7 @@ Fixed clicks on parts of the UI selecting map elements behind them
 Fixed Continents map script bug
 Fixed Caravans being unable to travel through anarchy territory
 Fixed improvements being repairable inside hostile territory
-Fixed unit healthbars appearing incorrectly for some attack previews
+Fixed unit health bars appearing incorrectly for some attack previews
 Fixed the Ignore Map Nation Starts option not working on some maps
 Fixed Family Seat founding bonus not showing in the setup screens and in game before player has founded their capital
 Fixed Road To overlay not updating when changing mouseover tile
@@ -100,8 +100,8 @@ Fixed goal threshold bug incorrectly making ambitions invalid
 Fixed Barbarian Horde MP achievement not working in hotseat
 Fixed Greek and Assyrian capitol buildings not being shown when adjacent to rivers
 Fixed Allow Negative Cognomens option appearing when no characters option selected
-Fixed Free Court Mininster encyclopedia entry with null icon
-Fixed enyclcopedia prompt showing on traits with no encyclopedia page
+Fixed Free Court Minister encyclopedia entry with null icon
+Fixed encyclopedia prompt showing on traits with no encyclopedia page
 Fixed encyclopedia null references
 Fixed succession law preview tooltip showing wrong law
 Fixed Courtiers Added stat not increasing when recruiting an existing foreign courtier
