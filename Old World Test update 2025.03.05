@@ -1,0 +1,37 @@
+Test Branch 1.0.76691 Test 2025-03-05
+
+Design
+
+Commander leaders always grant +10XP per turn to all units (previously units had to be idle)
+Placing a free urban improvement on a resource removes the resource without harvesting it, to be consistent with vegetation clearing
+Stun is possible when attacking a unit in a city without any HP left
+Critical hits on cities are no longer possible 
+Events where the AI offers Truce on breaching a city now trigger when the city is captured instead
+
+Programming
+
+Added ALLOW_CITY_CRITICAL_HITS to globalsInt.xml, for use by modders
+
+UI
+
+Setup screen changes:
+
+Removed options preset dropdown from simple setup and added Event Level
+Added Reset Options button to Advanced and MP setup screens
+Simple setup settings are saved separately from advanced setup settings
+Entering the setup screens with a premade map that restricts nation choices stored in the options file will no longer keep that map choice, to ensure all nations are shown
+
+
+Selecting a character centers the camera on job-relevant city or unit
+World tile text now shows over city UI
+Unworked wonders show Requires Worker text with worker selected
+Removed some of the yield breakdown from the specialist tooltip and added modified total yield
+Removed line break from event option tooltips that start goals
+Removed 'New Event in Wizard' button from Event Browser
+
+Bugs Fixed
+
+Fixed clicks on parts of the UI selecting map elements behind them
+Fixed Allow Negative Cognomens option appearing when no characters option selected
+Fixed Free Court Mininster encyclopedia entry with null icon
+Text and event fixes
