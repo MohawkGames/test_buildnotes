@@ -24,7 +24,8 @@ Programming
 
 Mod manager no longer fully loads installed maps when fetching subscription info 
 Unit XP overflow into training uses TRAINING_PER_XP for consistency
-Projects now have a meProductionType like units instead of being always built with Civics
+Buildable projects now use a ProductionType such as YIELD_CIVICS. Non-buildable projects do not require this
+iCivics has been renamed to iCost in project.xml
 
 UI
 
