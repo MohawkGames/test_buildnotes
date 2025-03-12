@@ -16,6 +16,7 @@ Continent is now the default map script
 Added new Extreme Terrain suboption 'None' and made this the default
 Tribal Lands placement option removed
 
+Other design changes:
 7 new events relating to Calamities happening to other players (Wrath of Gods)
 Reduced other religion opinion penalty duration for Venerate mission (Wrath of Gods)
 Increased chance of Scrub appearing on new Arid tiles on Ebbing Sea map from 2% to 10% (Wrath of Gods)
