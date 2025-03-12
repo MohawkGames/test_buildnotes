@@ -1,4 +1,4 @@
-Test Branch 1.0.76xxx Test 2025-03-12
+Test Branch 1.0.76797 Test 2025-03-12
 
 Design
 
@@ -11,4 +11,62 @@ Added new National Ambition - +250 Food, Iron, Stone, Wood and Money per turn.  
 Added new regular Ambition - Control 4 Hamlet class improvements
 Adjusted ambition threshold calculations and ambition events to allow a greater variety of ambitions to be offered
 
+Continent map script changes:
+Continent is now the default map script
+Added new Extreme Terrain suboption 'None' and made this the default
+Tribal Lands placement option removed
+
 7 new events relating to Calamities happening to other players (Wrath of Gods)
+Reduced other religion opinion penalty duration for Venerate mission (Wrath of Gods)
+Increased chance of Scrub appearing on new Arid tiles on Ebbing Sea map from 2% to 10% (Wrath of Gods)
+
+Programming
+
+Mod manager no longer fully loads installed maps when fetching subscription info 
+Unit XP overflow into training uses TRAINING_PER_XP for consistency
+Projects now have a meProductionType like units instead of being always built with Civics
+
+UI
+
+Popup text minimum scaling reduced
+Can now queue the same tile multiple times without the unit executing the queued moves
+When the last tile in a move queue is right-clicked, the unit executes the queue
+Flipped luxury panel buttons 
+Tweaked alignment for scenario-specific goal info
+Archetypes now shown in line of succession panel
+Improvement pings are no longer removed by an occurrence rendering a tile impassable (Wrath of Gods)
+Boosted plague fog visibility (Wrath of Gods)
+Boosted volcano animation speed (Wrath of Gods)
+
+Bugs Fixed
+
+Fixed Korean text sometimes not displaying
+Fixed text autosizing issues 
+Fixed popup text not updating immediately after changing scaling
+Fixed assert when removing player ownership from a tile with a religion attached 
+Fixed forest on lake tile in Middle East map 
+Fixed bad city border preview on Old World Map by removing an urban tile to the west of Pella
+Fixed a threading issue that could cause server-side exceptions
+Fixed unit queuing bugs
+Fixed units not being selectable through overlays
+Fixed some UI elements not updating properly after undoing initial found 
+Fixed occasional opinion arrow misalignment in event popup
+Fixed city recommendation assert 
+Fixed hire and recruit buttons not showing for Tribal units (affects previous Test build only)
+Fixed submenus sometimes not appearing or being interactable (affects previous Test build only)
+Fixed inheritance screen submenu positioning (affects previous Test build only)
+Fixed research bar showing in city view (affects previous Test build only)
+Fixed hidden names on mini tech tree (affects previous Test build only)
+Fixed minimized decisions showing on city screen (affects previous Test build only)
+Fixed city production and unit submenus getting cut off (affects previous Test build only)
+Fixed calamity postprocessing profiles overriding postprocessing settings from graphics settings i.e. Motion Blur (Wrath of Gods)
+Fixed some rendering issues when terrain changes height (Wrath of Gods)
+Fixed calamity effects being removed from rivers too early in some cases (Wrath of Gods)
+Fixed eruptions displaying on volcanos obscured by fog of war (Wrath of Gods)
+Fixed double legitimacy penalty when abandoning a Demand (Wrath of Gods) 
+Fixed trees removed from building improvements not being counted for demands (Wrath of Gods)
+Fixed issue where some global calamities that target tiles were instead targeting all tiles (Wrath of Gods)
+Fixed Wrath of Gods scenario failure when random nation and random archetype chosen (Wrath of Gods)
+Fixed Wrath of Gods scenario victory event not triggering when next victory becomes impossible (Wrath of Gods)
+Fixed Wrath of Gods scenario duplicate victory threshold events in some cases 
+Text and event fixes
