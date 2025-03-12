@@ -7,8 +7,8 @@ The final ambition is now called a National Ambition and may be offered early, a
 The offer is triggered soon after the player reaches 75% progress towards one of the national ambitions
 National Ambitions are not used for tier counting purposes i.e. they do not make regular ambition offers harder
 All National Ambitions are listed in the Encyclopedia under their own category
-Added new National Ambition - +250 Food, Iron, Stone, Wood and Money per turn.  This replaces the previous ambition to stockpile 2000 of each resource
-Added new regular Ambition - Control 4 Hamlet class improvements
+Added new National Ambition '+250 Food, Iron, Stone, Wood and Money per turn'.  This replaces the previous ambition to stockpile 2000 of each resource
+Added new regular Ambition 'Control 4 Hamlet class improvements'
 Adjusted ambition threshold calculations and ambition events to allow a greater variety of ambitions to be offered
 
 Continent map script changes:
