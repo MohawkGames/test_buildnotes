@@ -32,7 +32,6 @@ Bugs Fixed
 
 Fixed Portrait Editor loading issue
 Fixed portrait models potentially obscuring each other
-Fixed Hurricanes not displaying correctly in some cases
 Fixed unit cycle tooltip sometimes not locking
 Fixed ship building on a tile that has turned to land
 Fixed nested link issue in governor candidate tooltip
@@ -49,6 +48,7 @@ Fixed suppress dissent projects not showing (introduced in previous Test build)
 Fixed score list tooltips not appearing with unit selected (introduced in previous Test build)
 UI fixes for submenus (introduced in previous Test build)
 Fixed repair yield purchase for Stateira (Wonders and Dynasties)
+Fixed Hurricanes not displaying correctly in some cases (Wrath of Gods)
 Fixed wrath generation issues casued by Undo / Restart Map (Wrath of Gods)
 Fixed mid and major raid Occurrences being invalidated (Wrath of Gods)
 Global Occurrence fixes (Wrath of Gods)
