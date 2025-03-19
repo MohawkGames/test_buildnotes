@@ -1,74 +1,56 @@
-Test Branch 1.0.76797 Test 2025-03-12
+Test Branch 1.0.76900 Test 2025-03-19
 
 Design
 
-National Ambitions:
-The final ambition is now called a National Ambition and may be offered early, after a player has completed 5 ambitions
-The offer is triggered soon after the player reaches 75% progress towards one of the national ambitions
-National Ambitions are not used for tier counting purposes i.e. they do not make regular ambition offers harder
-All National Ambitions are listed in the Encyclopedia under their own category
-Added new National Ambition '+250 Food, Iron, Stone, Wood and Money per turn'.  This replaces the previous ambition to stockpile 2000 of each resource
-Added new regular Ambition 'Control 4 Hamlet class improvements'
-Adjusted ambition threshold calculations and ambition events to allow a greater variety of ambitions to be offered
-
-Continent map script changes:
-Continent is now the default map script
-Added new Extreme Terrain suboption 'None' and made this the default
-Tribal Lands placement option removed
-
-Other design changes:
-7 new events relating to Calamities happening to other players (Wrath of Gods)
-Reduced other religion opinion penalty duration for Venerate mission (Wrath of Gods)
-Increased chance of Scrub appearing on new Arid tiles on Ebbing Sea map from 2% to 10% (Wrath of Gods)
+Panic now causes units that cannot retreat to become Disarmed instead of Stunned 
+Enlisted units by a Zealot leader now return to full health
+Hidden units now always ignore ZOC 
+Money Boost bonus card swapped with Free Trireme (available at Coinage / Navigation)
+National ambitions now offered at 70% completion instead of 75%
+National Ambitions event enabled in no events mode
+Fire shrines now have adjacent modifier to any improvement in the Mine class (now also affects Laurion Mines)
+Eruption and Earthquake intensities tweaked (Wrath of Gods)
+Made Calamities less common on the Rare and Very Rare settings (Wrath of Gods)
+Wrath of Gods scenario now uses a customized map script with more Volcanoes
 
 Programming
 
-Mod manager no longer fully loads installed maps when fetching subscription info 
-Unit XP overflow into training uses TRAINING_PER_XP for consistency
-Buildable projects now use a ProductionType such as YIELD_CIVICS. Non-buildable projects do not require this
-iCivics has been renamed to iCost in project.xml
+AI improvements and fixes
+AI cares a little more about culture 
+Invading organized tribes are less timid 
 
 UI
 
-Popup text minimum scaling reduced
-Can now queue the same tile multiple times without the unit executing the queued moves
-When the last tile in a move queue is right-clicked, the unit executes the queue
-Flipped luxury panel buttons 
-Tweaked alignment for scenario-specific goal info
-Archetypes now shown in line of succession panel
-Improvement pings are no longer removed by an occurrence rendering a tile impassable (Wrath of Gods)
-Boosted plague fog visibility (Wrath of Gods)
-Boosted volcano animation speed (Wrath of Gods)
+Added Net Yield Change to specialist build tooltip, which takes modifiers into account and subtracts yields for any replaced specialist
+Removed background UI blur when events are active
+EffectUnit links now also include the effect icon by default
+Timeline screen slider is now disabled while advancing by season or by year 
+Clarified City Site Number help text 
+Wonder legitimacy bonuses now named per culture tier to differentiate them
+Updated credits
 
 Bugs Fixed
 
-Fixed Korean text sometimes not displaying
-Fixed text autosizing issues 
-Fixed popup text not updating immediately after changing scaling
-Fixed assert when removing player ownership from a tile with a religion attached 
-Fixed forest on lake tile in Middle East map 
-Fixed bad city border preview on Old World Map by removing an urban tile to the west of Pella
-Fixed a threading issue that could cause server-side exceptions
-Fixed unit queuing bugs
-Fixed units not being selectable through overlays
-Fixed some UI elements not updating properly after undoing initial found 
-Fixed occasional opinion arrow misalignment in event popup
-Fixed city recommendation assert 
-Fixed hire and recruit buttons not showing for Tribal units (affects previous Test build only)
-Fixed submenus sometimes not appearing or being interactable (affects previous Test build only)
-Fixed inheritance screen submenu positioning (affects previous Test build only)
-Fixed research bar showing in city view (affects previous Test build only)
-Fixed hidden names on mini tech tree (affects previous Test build only)
-Fixed minimized decisions showing on city screen (affects previous Test build only)
-Fixed city production and unit submenus getting cut off (affects previous Test build only)
-Fixed calamity postprocessing profiles overriding postprocessing settings from graphics settings i.e. Motion Blur (Wrath of Gods)
-Fixed some rendering issues when terrain changes height (Wrath of Gods)
-Fixed calamity effects being removed from rivers too early in some cases (Wrath of Gods)
-Fixed eruptions displaying on volcanos obscured by fog of war (Wrath of Gods)
-Fixed double legitimacy penalty when abandoning a Demand (Wrath of Gods) 
-Fixed trees removed from building improvements not being counted for demands (Wrath of Gods)
-Fixed issue where some global calamities that target tiles were instead targeting all tiles (Wrath of Gods)
-Fixed Wrath of Gods scenario failure when random nation and random archetype chosen (Wrath of Gods)
-Fixed Wrath of Gods scenario victory event not triggering when next victory becomes impossible (Wrath of Gods)
-Fixed Wrath of Gods scenario duplicate victory threshold events in some cases 
+Fixed Portrait Editor loading issue
+Fixed portrait models potentially obscuring each other
+Fixed unit cycle tooltip sometimes not locking
+Fixed ship building on a tile that has turned to land
+Fixed nested link issue in governor candidate tooltip
+Fixed team color intensity slider 
+Fixed map timeline GIF palette not representing border colors correctly 
+Fixed citrus grove configuration
+Fixed ZOC display exception
+Fixed pillage notification links selecting units
+Fixed some dropdown appearance issues
+Fixed autobuild cities not repairing upon being founded with a damaged settler
+Fixed bug in effectCity help text yield breakdown
+Fixed aiUnitTraitConsumptionModifier help text bug (only affects mods)
+Fixed suppress dissent projects not showing (introduced in previous Test build)
+Fixed score list tooltips not appearing with unit selected (introduced in previous Test build)
+UI fixes for submenus (introduced in previous Test build)
+Fixed repair yield purchase for Stateira (Wonders and Dynasties)
+Fixed Hurricanes not displaying correctly in some cases (Wrath of Gods)
+Fixed wrath generation issues casued by Undo / Restart Map (Wrath of Gods)
+Fixed mid and major raid Occurrences being invalidated (Wrath of Gods)
+Global Occurrence fixes (Wrath of Gods)
 Text and event fixes
