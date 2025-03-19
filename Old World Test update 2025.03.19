@@ -25,6 +25,7 @@ Added Net Yield Change to specialist build tooltip, which takes modifiers into a
 EffectUnit links now also include the effect icon by default
 Timeline screen slider is now disabled while advancing by season or by year 
 Clarified City Site Number help text 
+Wonder legitimacy bonuses now named per culture tier to differentiate them
 Updated credits
 
 Bugs Fixed
