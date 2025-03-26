@@ -1,56 +1,17 @@
-Test Branch 1.0.76900 Test 2025-03-19
+Test Branch 1.0.76987 test 2025-03-26
+
+Update to match Main branch
 
 Design
 
-Panic now causes units that cannot retreat to become Disarmed instead of Stunned 
-Enlisted units by a Zealot leader now return to full health
-Hidden units now always ignore ZOC 
-Money Boost bonus card swapped with Free Trireme (available at Coinage / Navigation)
-National ambitions now offered at 70% completion instead of 75%
-National Ambitions event enabled in no events mode
-Fire shrines now have adjacent modifier to any improvement in the Mine class (now also affects Laurion Mines)
-Eruption and Earthquake intensities tweaked (Wrath of Gods)
-Made Calamities less common on the Rare and Very Rare settings (Wrath of Gods)
-Wrath of Gods scenario now uses a customized map script with more Volcanoes
-
-Programming
-
-AI improvements and fixes
-AI cares a little more about culture 
-Invading organized tribes are less timid 
-
-UI
-
-Added Net Yield Change to specialist build tooltip, which takes modifiers into account and subtracts yields for any replaced specialist
-Removed background UI blur when events are active
-EffectUnit links now also include the effect icon by default
-Timeline screen slider is now disabled while advancing by season or by year 
-Clarified City Site Number help text 
-Wonder legitimacy bonuses now named per culture tier to differentiate them
-Updated credits
+Free Trireme and Free Dromon tech cards removed
 
 Bugs Fixed
 
-Fixed Portrait Editor loading issue
-Fixed portrait models potentially obscuring each other
-Fixed unit cycle tooltip sometimes not locking
-Fixed ship building on a tile that has turned to land
-Fixed nested link issue in governor candidate tooltip
-Fixed team color intensity slider 
-Fixed map timeline GIF palette not representing border colors correctly 
-Fixed citrus grove configuration
-Fixed ZOC display exception
-Fixed pillage notification links selecting units
-Fixed some dropdown appearance issues
-Fixed autobuild cities not repairing upon being founded with a damaged settler
+Fixed Game of the Week not saving
+Fixed sporadic disconnections in network and server games when one or more player slots are open
+Fixed pathfinding for hidden units
+Fixed AI bug that caused it to sometimes move units back and forth between the same tiles
+Fixed missing Centurion text sprite
 Fixed bug in effectCity help text yield breakdown
-Fixed aiUnitTraitConsumptionModifier help text bug (only affects mods)
-Fixed suppress dissent projects not showing (introduced in previous Test build)
-Fixed score list tooltips not appearing with unit selected (introduced in previous Test build)
-UI fixes for submenus (introduced in previous Test build)
-Fixed repair yield purchase for Stateira (Wonders and Dynasties)
-Fixed Hurricanes not displaying correctly in some cases (Wrath of Gods)
-Fixed wrath generation issues casued by Undo / Restart Map (Wrath of Gods)
-Fixed mid and major raid Occurrences being invalidated (Wrath of Gods)
-Global Occurrence fixes (Wrath of Gods)
-Text and event fixes
+Fixed occurrence effects after a new city has been founded 
