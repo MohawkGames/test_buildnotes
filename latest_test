@@ -1,17 +1,52 @@
-Test Branch 1.0.76987 test 2025-03-26
-
-Update to match Main branch
+Test Branch 1.0.77137 Test 2025-04-02
 
 Design
 
-Free Trireme and Free Dromon tech cards removed
+Ships receive 2HP counterattack damage (up from 1)
+Grappler promotion immobilizes ships instead of stunning them and no longer has an attack penalty
+Fireship promotion no longer gives +10% attack
+Cockswain promotion gives +20% strength in National Territory instead of Rout 
+AI more likely to break alliances with poor opinion 
+Ruthless AI declares war on a winning player even if it's not completely ready to do so 
+Slums worker discount removed and militia discount increased (Behind the Throne)
+
+Programming
+
+Pathfinder performance optimization
+Added support for council positions that don't require any traits
+Moved project spread to the Player class
+
+UI
+
+Selection panel tooltips appear on the left
+Score/ambitions panel hidden with attack preview active
+Ambition display tweaks
+Added Net Yield Change to project build tooltips 
+Improvement and specialist tooltip tweaks
+Added reminder count on tooltip for pillage reminders 
+Decreased size of religion icons on city widgets and archetype/family icons near leader portrait
+Discord/Steam rich presence now updated after loading a save
+Added Save button to cloud host controls screen
+Notification URL icon shown in cloud game list
+Observer hosts of MP games can send messages only to everyone 
+Added notification icon for City Damaged
+Tidied Occurrences in Encyclopedia (Wrath of Gods)
 
 Bugs Fixed
 
-Fixed Game of the Week not saving
-Fixed sporadic disconnections in network and server games when one or more player slots are open
-Fixed pathfinding for hidden units
-Fixed AI bug that caused it to sometimes move units back and forth between the same tiles
-Fixed missing Centurion text sprite
-Fixed bug in effectCity help text yield breakdown
-Fixed occurrence effects after a new city has been founded 
+Fixed DLC that is not owned being marked as disabled 
+Fixed missing available luxury highlights
+Fixed UI exception for non-civics projects when AI build recommendations are enabled (affects mods only)
+Fixed non-civics projects displaying the incorrect yield above the build queue (affects mods only)
+Fixed issues with loading mod units from asset bundles
+Fixed event browser not using selected language for event preview
+Fixed Governor gendered helptext issue
+Fixed broken river segments in mirror maps
+Fixed enlisted unit of eliminated nation becoming a rebel 
+Fixed bug with AI understanding of how city attacks work
+Fixed character mission tooltip positioning inconsistency 
+Fixed left unit healthbar always showing 0 damage in attack preview
+Fixed Rise of Carthage scenario 3 issue with rebels capturing cities
+Fixed missing Clergy in Wrath of Gods scenario
+Fixed Stele appearing in improvements list when it cannot be built manually (Wrath of Gods)
+Fixed crash caused by Inferno (Wrath of Gods)
