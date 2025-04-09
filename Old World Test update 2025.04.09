@@ -1,4 +1,4 @@
-Test Branch 1.0.77251 Test 2025-04-09
+Test Branch 1.0.77261 Test 2025-04-09
 
 Design
 
@@ -23,7 +23,6 @@ Added Increase Unit Movement Radius Visibility button to accessibility options t
 Added spacing between archetype/ratings/items on character cards 
 Source of counterattack damage in the combat preview is more specific
 Improved tooltip alignment and positioning
-Adjusted settings for archetype icons, religion icons, and the UI HUD atlas to improve quality
 Law tooltips now show F1 Encylopedia links
 Encylopedia updates
 
