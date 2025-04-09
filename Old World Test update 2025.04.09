@@ -3,7 +3,7 @@ Test Branch 1.0.77261 Test 2025-04-09
 Design
 
 Ships can enter defensive formation, giving +10% defence against Ships per turn, up to a max of 30%
-Revereted Ship counterattack damage back to 1 (from 2)
+Reverted Ship counterattack damage back to 1 (from 2)
 When a tribal alliance ends and there are tribal units in the same tile as player units, the tribal units are bounced, not the player units
 When a national alliance ends, a unit in its own territory never gets bounced
 Heroes of the Aegean scenario 2 and Rise of Carthage scenario 3 rebalanced 
@@ -23,8 +23,8 @@ Added Increase Unit Movement Radius Visibility button to accessibility options t
 Added spacing between archetype/ratings/items on character cards 
 Source of counterattack damage in the combat preview is more specific
 Improved tooltip alignment and positioning
-Law tooltips now show F1 Encylopedia links
-Encylopedia updates
+Law tooltips now show F1 Encyclopedia links
+Encyclopedia updates
 
 Bugs Fixed
 
@@ -44,5 +44,5 @@ Fixed modio maps not updating properly
 Fixed a couple of issues with maps on Workshop
 Fixed Modio API errors on uploading mods
 Fixed Rise of Carthage scenario 3 not taking into account the final turn's yields for determining goal completion
-Fixed Occurrences sometimes occuring more often than they should for a given player (Wrath of Gods)
+Fixed Occurrences sometimes occurring more often than they should for a given player (Wrath of Gods)
 Text and event fixes
