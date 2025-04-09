@@ -1,52 +1,54 @@
-Test Branch 1.0.77137 Test 2025-04-02
+Test Branch 1.0.77261 Test 2025-04-09
 
 Design
 
-Ships receive 2HP counterattack damage (up from 1)
-Grappler promotion immobilizes ships instead of stunning them and no longer has an attack penalty
-Fireship promotion no longer gives +10% attack
-Cockswain promotion gives +20% strength in National Territory instead of Rout 
-AI more likely to break alliances with poor opinion 
-Ruthless AI declares war on a winning player even if it's not completely ready to do so 
-Slums worker discount removed and militia discount increased (Behind the Throne)
+Ships can enter defensive formation, giving +10% defence against Ships per turn, up to a max of 30%
+Reverted Ship counterattack damage back to 1 (from 2)
+When a tribal alliance ends and there are tribal units in the same tile as player units, the tribal units are bounced, not the player units
+When a national alliance ends, a unit in its own territory never gets bounced
+Heroes of the Aegean scenario 2 and Rise of Carthage scenario 3 rebalanced 
+New map script Rejuvenation added (Wrath of Gods)
+Occurrences that affect water movement (eg Hurricane) affect player-controlled water as well, both for water units and land units using anchored tiles (Wrath of Gods)
+Hurricanes remove Anchored status from ships (Wrath of Gods)
 
 Programming
 
-Pathfinder performance optimization
-Added support for council positions that don't require any traits
-Moved project spread to the Player class
+Added support in the game class for adding visual effects to tiles independently from the occurrence system
+Memory refactor
+Testudo is now a unit effect
 
 UI
 
-Selection panel tooltips appear on the left
-Score/ambitions panel hidden with attack preview active
-Ambition display tweaks
-Added Net Yield Change to project build tooltips 
-Improvement and specialist tooltip tweaks
-Added reminder count on tooltip for pillage reminders 
-Decreased size of religion icons on city widgets and archetype/family icons near leader portrait
-Discord/Steam rich presence now updated after loading a save
-Added Save button to cloud host controls screen
-Notification URL icon shown in cloud game list
-Observer hosts of MP games can send messages only to everyone 
-Added notification icon for City Damaged
-Tidied Occurrences in Encyclopedia (Wrath of Gods)
+Added Increase Unit Movement Radius Visibility button to accessibility options to allow players to boost unit movement radius contrast 
+Added spacing between archetype/ratings/items on character cards 
+Source of counterattack damage in the combat preview is more specific
+Improved tooltip alignment and positioning
+Law tooltips now show F1 Encyclopedia links
+Encyclopedia updates
 
 Bugs Fixed
 
-Fixed DLC that is not owned being marked as disabled 
-Fixed missing available luxury highlights
-Fixed UI exception for non-civics projects when AI build recommendations are enabled (affects mods only)
-Fixed non-civics projects displaying the incorrect yield above the build queue (affects mods only)
-Fixed issues with loading mod units from asset bundles
-Fixed event browser not using selected language for event preview
-Fixed Governor gendered helptext issue
-Fixed broken river segments in mirror maps
-Fixed enlisted unit of eliminated nation becoming a rebel 
-Fixed bug with AI understanding of how city attacks work
-Fixed character mission tooltip positioning inconsistency 
-Fixed left unit healthbar always showing 0 damage in attack preview
-Fixed Rise of Carthage scenario 3 issue with rebels capturing cities
-Fixed missing Clergy in Wrath of Gods scenario
-Fixed Stele appearing in improvements list when it cannot be built manually (Wrath of Gods)
-Fixed crash caused by Inferno (Wrath of Gods)
+Fixed missing yields on Council tooltip 
+Fixed missing city build recommendations
+Fixed specialist tooltip net yield change to correctly account for the loss of a citizen
+Fixed tribe widget display issues
+Fixed tile tooltips revealing yields for foreign improvements when at Peace
+Fixed restarting a hotseat game losing player information
+Fixed map selection clickthrough issues
+Fixed F7 city list not sorting when agent tab is selected
+Fixed incorrect default number of opponents set in single player setup screen 
+Fixed configuration of female scout and female worker combat portrait prefabs
+Fixed Enlist killing enlisted units if the enlist-on-heal amount was too low
+Fixed modio maps not showing in mod browser 
+Fixed modio maps not updating properly
+Fixed a couple of issues with maps on Workshop
+Fixed Modio API errors on uploading mods
+Fixed Rise of Carthage scenario 3 not taking into account the final turn's yields for determining goal completion
+Fixed Occurrences sometimes occurring more often than they should for a given player (Wrath of Gods)
+Text and event fixes
+
+Notes for Modders
+
+Five separate memory types (MemoryCharacter, MemoryTribe, MemorReligion, MemoryFamily, MemoryPlayer) are now one type, Memory. The base file name is memory.xml
+Mods that add memories need to rename files, e.g. memoryCharacter-add.xml should be memory-character-add or just memory-add. The dash after memory is the important part
+Event bonuses are now just Memory / Forget, for all memory types. Events should take care to apply the bonus to the right subject. For example, a Memory bonus applied to a SUBJECTCLASS_CHARACTER subject is the equivalent of the earlier MemoryCharacter bonus
