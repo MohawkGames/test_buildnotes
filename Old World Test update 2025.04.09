@@ -46,3 +46,9 @@ Fixed Modio API errors on uploading mods
 Fixed Rise of Carthage scenario 3 not taking into account the final turn's yields for determining goal completion
 Fixed Occurrences sometimes occurring more often than they should for a given player (Wrath of Gods)
 Text and event fixes
+
+Notes for Modders
+
+Six separate memory types (MemoryCharacter, MemoryTribe, MemorReligion, MemoryFamily, MemoryPlayer, MemoryCharacter) are now one type, Memory. The base file name is memory.xml
+Mods that add memories need to rename files, e.g. memoryCharacter-add.xml should be memory-character-add or just memory-add. The dash after memory is the important part
+Event bonuses are now just Memory / Forget, for all memory types. Events should take care to apply the bonus to the right subject. For example, a Memory bonus applied to a SUBJECTCLASS_CHARACTER subject is the equivalent of the earlier MemoryCharacter bonus
