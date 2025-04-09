@@ -1,0 +1,49 @@
+Test Branch 1.0.77251 Test 2025-04-09
+
+Design
+
+Ships can enter defensive formation, giving +10% defence against Ships per turn, up to a max of 30%
+Revereted Ship counterattack damage back to 1 (from 2)
+When a tribal alliance ends and there are tribal units in the same tile as player units, the tribal units are bounced, not the player units
+When a national alliance ends, a unit in its own territory never gets bounced
+Heroes of the Aegean scenario 2 and Rise of Carthage scenario 3 rebalanced 
+New map script Rejuvenation added (Wrath of Gods)
+Occurrences that affect water movement (eg Hurricane) affect player-controlled water as well, both for water units and land units using anchored tiles (Wrath of Gods)
+Hurricanes remove Anchored status from ships (Wrath of Gods)
+
+Programming
+
+Added support in the game class for adding visual effects to tiles independently from the occurrence system
+Memory refactor
+Testudo is now a unit effect
+
+UI
+
+Added Increase Unit Movement Radius Visibility button to accessibility options to allow players to boost unit movement radius contrast 
+Added spacing between archetype/ratings/items on character cards 
+Source of counterattack damage in the combat preview is more specific
+Improved tooltip alignment and positioning
+Adjusted settings for archetype icons, religion icons, and the UI HUD atlas to improve quality
+Law tooltips now show F1 Encylopedia links
+Encylopedia updates
+
+Bugs Fixed
+
+Fixed missing yields on Council tooltip 
+Fixed missing city build recommendations
+Fixed specialist tooltip net yield change to correctly account for the loss of a citizen
+Fixed tribe widget display issues
+Fixed tile tooltips revealing yields for foreign improvements when at Peace
+Fixed restarting a hotseat game losing player information
+Fixed map selection clickthrough issues
+Fixed F7 city list not sorting when agent tab is selected
+Fixed incorrect default number of opponents set in single player setup screen 
+Fixed configuration of female scout and female worker combat portrait prefabs
+Fixed Enlist killing enlisted units if the enlist-on-heal amount was too low
+Fixed modio maps not showing in mod browser 
+Fixed modio maps not updating properly
+Fixed a couple of issues with maps on Workshop
+Fixed Modio API errors on uploading mods
+Fixed Rise of Carthage scenario 3 not taking into account the final turn's yields for determining goal completion
+Fixed Occurrences sometimes occuring more often than they should for a given player (Wrath of Gods)
+Text and event fixes
