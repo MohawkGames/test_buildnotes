@@ -54,3 +54,7 @@ Fixed mod uninstall button not working on Install tab immediately after an insta
 Fixed Civil War affecting all players (Behind the Throne)
 Fixed map Occurrences not being added to mirror maps (Wrath of Gods)
 Text and event fixes
+
+Notes for Modders
+
+It is recommended to upload new versions of map mods in order to take advantage of fixes and new features
