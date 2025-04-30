@@ -1,0 +1,9 @@
+Test Branch 1.0.77502 Test 2025-04-30
+
+Update to match Main build
+
+Bugs Fixed
+
+Fixed a bug that sometimes prevented the AI from declaring war to expand
+Fixed Steles not appearing on Aksum leaders death
+Added backwards compatibility for mods with zero-cost projects (notably fixes freezes in Projects+ mod)
