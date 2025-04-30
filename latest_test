@@ -1,60 +1,9 @@
-Test Branch 1.0.77393 Test 2025-04-23
+Test Branch 1.0.77502 Test 2025-04-30
 
-Design
-
-Expose Agent mission takes 1 turn to complete (was 2)
-Rise of Carthage campaign tweaks 
-
-Programming
-
-Restart Game and New Map now generate a new game ID so that a new entry can be recorded in the Hall of Fame 
-AI less averse to building Militia and Conscripts when it cannot build a latest upgrade regular military unit
-Added support for yields with negative demand
-Added delete functionality to Manage Mods tab for mapfiles with no ModioID/WorkshopID
-Added support for showing images of workshop maps in Manage Mods tab
-
-UI
-
-Added upgrade icon to city production buttons for specialists that replace an existing specialist
-Added year of discovery to each acquired tech on the Tech Tree
-Added explanation popup to target player when a mission has resulted in an AI or a tribe agreeing to declare war on that player
-Can no longer see citizens, specialists, and happiness level of foreign cities without an agent
-Shrines are listed in city pagan religion help text, just as monasteries, temples, etc are listed for world religions 
-Agent networks with agents now shown in Spymasters Agent Networks submenu
-Added minimum range to unit encyclopedia entries where relevant 
-Improved helptext for traits that can replace other traits 
-Localization text updates
-Removed the Text tab from the Event Browser
+Update to match Main build
 
 Bugs Fixed
 
-Fixed repair recommendation and improvement ping hover issues
-Fixed production queue buttons
-Fixed increasing player count disabling Allow Duplicate Nations option
-Fixed character memories also getting applied to the character's family 
-Fixed city recommendation icons appear for non-visible production buttons 
-Fixed agent networks submenu player colors 
-Fixed issues with city widget capture text
-Fixed data issue for culture on city tab
-Fixed data issues for specialist widgets and pings 
-Fixed improvements placed in the map editor always getting raised to the hill height offset 
-Fixed irrelevant tribes appearing in the tooltip of some character bonuses 
-Fixed team/tribe diplomacy icon not updating in score area when diplomacy changes
-Fixed bug that forced some map scripts to put all players on the same continent
-Fixed event text/goal mismatch
-Fixed incorrect number of players stored in the options file for multiplayer settings
-Fixed hotseat games restarting with the wrong active player
-Fixed modio uploading all files in Maps folder 
-Fixed modio maps reporting version issues if modVersion is blank 
-Fixed modio maps sometimes not getting metadata embedded in the mapfile
-Fixed modio maps images not showing on manage mods tab
-Fixed possible null reference when map filename isn't the same as map display name
-Fixed mods with file information showing private full path filename 
-Fixed mod uninstall button not working on Install tab immediately after an installation
-Fixed Civil War affecting all players (Behind the Throne)
-Fixed map Occurrences not being added to mirror maps (Wrath of Gods)
-Text and event fixes
-
-Notes for Modders
-
-It is recommended to upload new versions of map mods in order to take advantage of fixes and new features
+Fixed a bug that sometimes prevented the AI from declaring war to expand
+Fixed Steles not appearing on Aksum leaders death
+Added backwards compatibility for mods with zero-cost projects (notably fixes freezes in Projects+ mod)
