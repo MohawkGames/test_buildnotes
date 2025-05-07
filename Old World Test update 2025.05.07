@@ -19,8 +19,8 @@ The Old World premade map edits - boundaries slightly expanded, marshes added an
 When a unit move cannot be completed because a lack of orders, a partial 1-tile move results in a unit swap, if possible
 In Rise of Carthage scenario 3, Orator-recruited mercenaries now count as hired and contribute to the optional merc hiring goal 
 Drought effect tweaks (Wrath of Gods)
-Ocurrences that result in small seas (18 tiles or less) convert that water to lakes.  Mainly affects Ebbing Sea mapscript (Wrath of Gods)
-Ocurrences can now cause terrain changes on improved tiles, as long as the improvement remains legal for that tile (Wrath of Gods)
+Occurrences that result in small seas (18 tiles or less) convert that water to lakes.  Mainly affects Ebbing Sea mapscript (Wrath of Gods)
+Occurrences can now cause terrain changes on improved tiles, as long as the improvement remains legal for that tile (Wrath of Gods)
 
 New Events
 
