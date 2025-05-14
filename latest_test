@@ -1,93 +1,42 @@
-Test Branch 1.0.77641 Test 2025-05-07
+Test Branch 1.0.77780 Test 2025-05-14
 
 Design
 
-Law changes:
-
-Guilds now gives +10 money per specialist type per city instead of -10% Rebel chance
-Freedom now gives -5% Rebel chance instead of +1 happiness per city
-Calligraphy now gives +10 culture per city instead of +4 culture per library
-Swapped Calligraphy and Iconography upkeep costs
-Swapped Colonies and Serfdom upkeep costs
-
-Other design changes:
-
-Ruthless AI declares war on a winning player even if that player is not directly reachable
-Ruthless AI gets more chances to conduct diplomacy when a player is close to winning 
-Ruthless AI now takes alliances and national ambitions into account for determining if a player is close to winning
-The Old World premade map edits - boundaries slightly expanded, marshes added and resources redistributed
-When a unit move cannot be completed because a lack of orders, a partial 1-tile move results in a unit swap, if possible
-In Rise of Carthage scenario 3, Orator-recruited mercenaries now count as hired and contribute to the optional merc hiring goal 
-Drought effect tweaks (Wrath of Gods)
-Occurrences that result in small seas (18 tiles or less) convert that water to lakes.  Mainly affects Ebbing Sea mapscript (Wrath of Gods)
-Occurrences can now cause terrain changes on improved tiles, as long as the improvement remains legal for that tile (Wrath of Gods)
-
-New Events
-
-14 new events added - 11 for base game and 3 for Behind the Throne DLC
-
-A City Like No Other
-Deadly Inheritance
-I Love It When A Plan Comes Together!
-New Front
-No War Declaration
-Not to Be Trusted
-Offensive Remarks
-Reaping the Whirlwind
-The God Queen
-Triple Cross!
-Tutorial: Upgrade Mercenaries
-No Longer of Use (x2) (Behind the Throne)
-Support or Scheme (Behind the Throne)
+Leaders can be assigned as a Governor without a Garrison. Free Garrison in the Capital removed. Garrisons no longer require a Law 
+Library class improvements Science increase changed from 20%/30%/50% to 10%/20%/30%
+Courthouse class improvements Civics increase changed from 20%/30%/50% to 20%/30%/40%
+Market class improvements Money increase changed from 20%/30%/50% to 30%/40%/50%
+Rider family Import projects allow cities to build relevant units directly instead of adding resources to map. Added extra order to rider seat (1 -> 2)
+Increased AI penalites on The New difficulty (20% -> 25%)
+Damaged cities cannot be gifted to another team 
+Added 'No city gifting' option to MP setup
+Ruthless AI no longer counts VPs of player allies as a double victory threat 
+Disjunction mapscript with King of the Hill option balance improvements
 
 Programming
 
-Improved AI chokepoint management and attacks with high unit density
-Memory allocation improvements
-Occurrence terrain change refactor, now more mod friendly
-Changed opinion-calculating functions to return a tuple
-Event triggers can now have an arbitrary number of subjects
+The AI claims cleared city sites more urgently (with force march, if necessary) 
+Performance optimization
+Replaced valid terrain fields by TerrainTargetType to make improvement requirements more flexible 
+Family bonuses now check whether the bonus player has that family
 
 UI
 
-Foreign city citizen and specialist numbers now shown if the city tile is visible
-Foreign city tooltips no longer show defense and damaged state unless the city is visible 
-Jobs are no longer shown on foreign character tooltips, unless their unit is visible (for Generals) or player has an agent in the relevant city (for Governors)
-Stacked worker count shown on tooltip even when not actively building an improvement 
-Added "Improvements (Special)" section to the Encyclopedia, to include non-buildable Improvements
-Added dynamic helptext for Attribute effects and tweaked Attribute helptext 
-Added Prosperity to Wrath of Gods setup 
+Ship unit icons replaced to make the differences between them clearer
+Added missing improvement warning text to unique unit production buttons
+Added opinion gain line to Make Agent tooltip
+Religions now always show founding requirements in the Encyclopedia
+Improved Encyclopedia entries for Captial and Citizen concepts
+Characters entries in Encyclopedia now list unique events and missions
+Encyclopedia, when viewed in-game, show entries based on currently enabled DLC instead of owned DLC
+Improved German grammar for character relationships
 
 Bugs Fixed
 
-Fixed occurrence notification localization when playing MP with players using different languages
-Fixed tech names not showing up on cards in some languages 
-Fixed changing a tile improvement affecting city build queue specialists on other tiles
-Fixed character card not selecting tribe leader 
-Fixed occurrence overlay getting stuck in some cases
-Fixed temporary overlays not getting cleared when blocking popups are active
-Fixed units being bounced by an Occurrence before taking damage from it
-Fixed bug with Player.canEverHaveEffectCity
-Fixed tile territory assignment in game editor 
-Fixed Grand Vizier interfering with automated unit management 
-Fixed camera zooming to fog when clicking foreign character with job
-Fixed Towers giving extra height instead of extra range
-Fixed movement bug that resulted in allied units not getting bounced out of your territory
-Fixed some AI retreat confusion
-Fixed promotion button icons not aligning to right of button
-Fixed nation crest color issues 
-Fixed tooltip positioning issues with HUD scaling 
-Fixed missing source traits on some effectCity entries
-Fixed Opulence project not granting family opinion bonus
-Fixed tooltip for event options that marry away characters
-Fixed Learn to Play ambitions not displaying correctly in Hall of Fame
-Fixed mods not showing in Upload tab in some cases
-Fixed map mod attributes not being checked in setup screen
-Fixed Rise of Carthage scenario 3 Epic Victory achievement sometimes not unlocking 
-Fixed Pharaohs of the Nile scenario 2 Tribal peace/truce/war missions
-Fixed Pharaohs of the Nile scenario issues with Urusalim not being a city site 
-Fixed Pharaohs of the Nile overlapping goals UI
-Fixed unwanted VPs in The Hill scenario 
-Fixed "Wrath of Gods" map script showing with "show hidden map scripts" enabled and content not owned
-Fixed occurrences causing rivers with deltas flowing into land tiles (Wrath of Gods)
+Fixed city production text not updating after builds finish 
+Fixed founded city territory bug 
+Fixed extra mission buttons appearing in some cases 
+Fixed missing at sea bonus description
+Fixed production text sometimes not appearing in some languages when city healthbar is visible
+Fixed Chancellors with negative discipline not reducing money income
 Text and event fixes
