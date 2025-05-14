@@ -1,0 +1,42 @@
+Test Branch 1.0.77758 Test 2025-05-14
+
+Design
+
+Leaders can be assigned as governors without a Garrison. Free Garrison in the Capital removed. Garrisons no longer require a Law 
+Library class improvements Science increase changed from 20%/30%/50% to 10%/20%/30%
+Courthouse class improvements Civics increase changed from 20%/30%/50% to 20%/30%/40%
+Market class improvements Money increase changed from 20%/30%/50% to 30%/40%/50%
+Rider family Import projects allow cities to build relevant units directly instead of adding resources to map. Added extra order to rider seat (1 -> 2)
+Increased AI penalites on The New difficulty (20% -> 25%)
+Damaged cities cannot be gifted to another team 
+Added 'No city gifting' option to MP setup
+Ruthless AI no longer counts VPs of player allies as a double victory threat 
+Disjunction mapscript with King of the Hill option balance improvements
+
+Programming
+
+The AI claims cleared city sites more urgently (with force march, if necessary) 
+Performance optimization
+Replaced valid terrain fields by TerrainTargetType to make improvement requirements more flexible 
+Family bonuses now check whether the bonus player has that family
+
+UI
+
+Ship unit icons replaced to make the differences between them clearer
+Added missing improvement warning text to unique unit production buttons
+Added opinion gain line to Make Agent tooltip
+Religions now always show founding requirements in the Encyclopedia
+Improved Encyclopedia entries for Captial and Citizen concepts
+Characters entries in Encyclopedia now list unique events and missions
+Encyclopedia, when viewed in-game, show entries based on currently enabled DLC instead of owned DLC
+Improved German grammar for character relationships
+
+Bugs Fixed
+
+Fixed city production text not updating after builds finish 
+Fixed founded city territory bug 
+Fixed extra mission buttons appearing in some cases 
+Fixed missing at sea bonus description
+Fixed production text sometimes not appearing in some languages when city healthbar is visible
+Fixed Chancellors with negative discipline not reducing money income
+Text and event fixes
