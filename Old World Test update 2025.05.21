@@ -1,0 +1,59 @@
+Test Branch 1.0.77936 Test 2025-05-21
+
+Design
+
+Garrison changes:
+
+Governors no longer require a Garrison
+Garrisons require 1 Law again
+Garrisons now give +1 order (up from 0.5)
+Garrison and Stronghold stone cost reduced by 20 (80/100 -> 60/80)
+Darius dynasty now gives 50% discount to appointing Governors (Wonders and Dynasties)
+
+Other design changes:
+
+Minor cities can be created even if the site is occupied
+Borders with team-owned tiles on opposite sites are now claimed by the city with the most adjacent tiles
+Barbarian Horde will now spawn inside player territory if there are not enough tiles available otherwise
+
+Programming
+
+Added EffectUnits miAdjacentDifferentModifier, maeBuyTile, mbPillage, mabHideTerrainTarget and miMarchCostModifier
+Added EffectCity aiYieldRateSpecialistRural 
+Allow the road pathfinder to accept TeamType.NONE, returning a road path which ignores visibility or diplomacy
+Promoted Infos validator from ModPath to GameFactory so mods can supply custom validators
+Added support for Religions to have a law opinion directly, not just through theologies
+
+UI
+
+Added improvement net yields in tooltip
+Ambitions display no longer gets minimized when clicking on listed ambitions
+Pin Character icon has higher saturation when character is pinned
+General traits which only affect some unit types now display affected unit types
+Character relatives display now left-aligned
+Improved border expansion predictions
+Leader now shown on Court tab
+Leader concept added to Encyclopedia
+Horse trait now shown in Encyclopedia
+
+
+Bugs Fixed
+
+Fixed lumbermills, granaries and harbors not being buildable (affected previous test build)
+Fixed rename cities button
+Fixed SP setup screen not reappearing after backing out 
+Fixed some ethnicity-based opinion bonuses for foreign nations
+Fixed some incorrect breakdown listings 
+Fixed minor cities not always being created when they should be 
+Fixed Send Goods icon display
+Fixed load/save error from border expansion
+Fixed null reference when tribe sites sit outside map boundaries 
+Fixed incorrect default value for resource hill height offset
+Fixed improvement culture prereqs not working with modded culture
+Fixed family opinion penalty from the Imprison mission getting applied to the character instead
+Fixed net yields for projects to include secondary effects
+Fixed sign error in specialist net yield help text
+Fixed Heroes of the Aegean scenario 4 tech tree completion achievement triggering too early
+Fixed Heroes of the Aegean scenario 4 state religion adoption
+XML ordering fixes
+Text and event fixes
