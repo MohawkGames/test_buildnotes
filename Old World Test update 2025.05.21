@@ -40,6 +40,7 @@ Horse trait now shown in Encyclopedia
 Bugs Fixed
 
 Fixed lumbermills, granaries and harbors not being buildable (affected previous test build)
+Fixed tribal diplomacy cooldown not being enforced
 Fixed rename cities button
 Fixed SP setup screen not reappearing after backing out 
 Fixed some ethnicity-based opinion bonuses for foreign nations
