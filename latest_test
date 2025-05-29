@@ -1,6 +1,7 @@
-Test Branch 1.0.78052 Test 2025-05-28
+Test Branch 1.0.78069 Test 2025-05-29
 
 Update to match release branch
 
 Garrisons reverted to 0.5 orders
 Fixed scenario victory achievements sometimes not completing
+Fixed some events causing the game to get stuck
