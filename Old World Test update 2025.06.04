@@ -1,0 +1,46 @@
+Test Branch 1.0.78163 Test 2025-06-04
+
+Design
+
+Reduced probability of Occurrence ready events (Wrath of Gods)
+Projects and specialists that are automatically removed from the build queue because they are no longer valid now add any progress to the player's yield stockpile 
+AI governors now emphasize growth and build fewer growth units when city has no citizens 
+
+MP Turn Style changes 
+
+Loose turn style can be selected only with a turn timer
+Renamed normal turn style to adaptive
+Tight turn style is now the default
+Strict turn styles no longer allow players to perform any actions when not their turn
+
+Programming
+
+Performance optimization
+Bug reporting system improvements
+Added 3 additional resource categories to the default map script for use by mods
+Added support for partial counterattack strength for use by mods (replaced InfoUnit.mbMeleeCounter with miMeleeCounterPercent)
+Added support for upgrading rural improvements for use by mods
+
+UI
+
+Free improvements and resources are now added to the event queue and placed by clicking a valid tile
+Games with custom names (i.e. Game of the Week) now show their name in the parameters tooltip
+Improvement net yield now includes Patrons Precious Resource culture bonus
+Border expansion preview has the correct border colors for families
+Added Items to Encyclopedia in their own category, with unique events listed
+Tooltip in tech tree shows the date observers or team mates have discovered each tech, as well as for all players when game is completed
+
+Bugs Fixed
+
+Fixed leader bio paragraph indentation inconsistencies 
+Fixed farm model roof bug
+Fixed visibility load/save error from terrain height change
+Fixed an AI bug that made it misjudge large battle outcomes and attack when it should be retreating 
+Fixed number of improvement ambitions becoming impossible after losing control of a city
+Fixed mini tech tree names not being accounted for in scroll area 
+Fixed council character tooltip positioning with selection active
+Fixed reference to Stun in Retreat helptext
+Fixed Guilds help text inconsistency 
+Fixed top bar yield arrows for selected character
+Fixed Pharoahs of the Nile scenario 4 being continueable after winning
+Text and event fixes
