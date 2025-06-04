@@ -1,8 +1,55 @@
-Test Branch 1.0.78113 Test 2025-06-02
+Test Branch 1.0.78165 Test 2025-06-04
 
-Update to match release branch
+Design
 
-Garrisons reverted to 0.5 orders
-Fixed scenario victory achievements sometimes not completing
-Fixed some events causing the game to get stuck
-Fixed automated workers causing the game to get stuck
+Clerics Seat can now build Disciples of any religion founded by any nation. Removed free Monasticism and Found Religion Project from Clerics
+Projects and specialists that are automatically removed from the build queue because they are no longer valid now add any progress to the player's yield stockpile 
+AI governors now emphasize growth and build fewer growth units when city has no citizens 
+Opulence project now requires a luxury in addition to estates (Behind the Throne)
+Reduced probability of Occurrence ready events (Wrath of Gods)
+
+Multiplayer Turn Style changes 
+
+Loose turn style can be selected only with a turn timer
+Renamed normal turn style to adaptive
+Tight turn style is now the default
+Strict turn styles no longer allow players to perform any actions when not their turn (this also affects single player)
+
+Programming
+
+Performance optimization
+Bug reporting system improvements
+Improved sprite loading thread safety 
+Added safeguards against unexpected UI resets from a game restart 
+Added 3 additional resource categories to the default map script for use by mods
+Added support for partial counterattack strength for use by mods (replaced InfoUnit.mbMeleeCounter with miMeleeCounterPercent)
+Added support for upgrading rural improvements for use by mods
+
+UI
+
+Free improvements and resources are now added to the event queue and placed by clicking a valid tile
+Tooltip in tech tree shows the date team mates have discovered each tech, as well as for observers in MP games, and all players when the game is completed
+Games with custom names (i.e. Game of the Week) now show their name in the parameters tooltip
+Improvement net yield now includes Patrons Precious Resource culture bonus
+Border expansion preview has the correct border colors for families
+Added Items to Encyclopedia in their own category, with unique events listed
+Encyclopedia now lists DLC source for traits where applicable
+ESC clears luxury selection before opening menu 
+City luxury tooltip improvements
+
+Bugs Fixed
+
+Fixed leader bio paragraph indentation inconsistencies 
+Fixed farm model roof bug
+Fixed visibility load/save error from terrain height change
+Fixed an AI bug that made it misjudge large battle outcomes and attack when it should be retreating 
+Fixed number of improvement ambitions becoming impossible after losing control of a city
+Fixed mini tech tree names not being accounted for in scroll area 
+Fixed council character tooltip positioning with selection active
+Fixed reference to Stun in Retreat helptext
+Fixed Guilds help text inconsistency 
+Fixed top bar yield arrows for selected character
+Fixed events giving characters jobs getting invalidated when character is general of a unit on cooldown
+Fixed Pharoahs of the Nile scenario 4 being continuable after winning
+UI modding fixes
+Text and event fixes
