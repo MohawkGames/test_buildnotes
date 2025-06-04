@@ -50,6 +50,6 @@ Fixed reference to Stun in Retreat helptext
 Fixed Guilds help text inconsistency 
 Fixed top bar yield arrows for selected character
 Fixed events giving characters jobs getting invalidated when character is general of a unit on cooldown
-Fixed Pharoahs of the Nile scenario 4 being continueable after winning
+Fixed Pharoahs of the Nile scenario 4 being continuable after winning
 UI modding fixes
 Text and event fixes
