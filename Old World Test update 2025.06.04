@@ -8,12 +8,12 @@ AI governors now emphasize growth and build fewer growth units when city has no 
 Opulence project now requires a luxury in addition to estates (Behind the Throne)
 Reduced probability of Occurrence ready events (Wrath of Gods)
 
-MP Turn Style changes 
+Multiplayer Turn Style changes 
 
 Loose turn style can be selected only with a turn timer
 Renamed normal turn style to adaptive
 Tight turn style is now the default
-Strict turn styles no longer allow players to perform any actions when not their turn
+Strict turn styles no longer allow players to perform any actions when not their turn (this also affects single player)
 
 Programming
 
