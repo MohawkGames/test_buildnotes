@@ -2,7 +2,7 @@ Test Branch 1.0.78163 Test 2025-06-04
 
 Design
 
-Clerics Seat can now build Disciples of any founded Religion. Removed free Monasticism, double speed Disciples and Found Religion Project from Clerics
+Clerics Seat can now build Disciples of any Religion founded by any nation. Removed free Monasticism and Found Religion Project from Clerics
 Projects and specialists that are automatically removed from the build queue because they are no longer valid now add any progress to the player's yield stockpile 
 AI governors now emphasize growth and build fewer growth units when city has no citizens 
 Opulence project now requires a luxury in addition to estates (Behind the Throne)
