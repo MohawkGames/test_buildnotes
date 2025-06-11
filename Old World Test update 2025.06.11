@@ -1,0 +1,46 @@
+Test Branch 1.0.78xxx Test 2025-06-11
+
+Design
+
+Cleric family now gets free Divine Rule law on founding
+Cleric seats have double speed Disciples only for State Religion and can only build Christian and Manicheist Disciples without the religion being present
+Guilds Law now allows building Elder specialists directly, replacing the Happiness per Hamlet effect
+Tribe-owned units no longer get a strength modifier against other tribes at strong and raging tribe levels
+Regents now become Royal if they usurp the throne or continue ruling after the rightful heir's death
+Persia's Shapur dynasty gets the Found Religion project (Wonders and Dynasties)
+Rising Stars are now less common and won't ask to become a Grand Vizier as often (Behind the Throne)
+
+Programming
+
+Improved AI valuation of Disciples and Religions
+AI now uses Cleric seat ability to build disciples of non-present religions
+AI checks whether a city can have an effect from resources before building a project that gives that same effect (i.e. Riders Import Horses)
+AI knows to use units that do not require orders when it's out of orders 
+UI mod files (UI/includes and UI/styles) are excluded from game CRC
+Added UI/templates to UI modding paths
+
+UI
+
+Valid unit types now listed for 'New units start with <promotion>' helptext 
+Improved luxury tooltip positioning 
+Removed tile raw yield from the city net yield tooltip
+Added min height for OK button on turn summary popup 
+Scripted tutorial events blur the background UI, preventing events being bypassed
+Added strength/weakness icons to concept links
+Improved Riders 'Import Resource' project helptext 
+
+Bugs Fixed
+
+Fixed event job forcing not always working 
+Fixed trade breakdown tooltip
+Fixed governor marker showing in city widget for No Characters 
+Fixes to the Old World premade map - re-added dynasty start positions and fixed empty tiles warning
+Fixes to the Punic Duel premade map - removed underwater trees and fixed missing city name
+Fixed border expansion preview not updating after changes in player decision queue 
+Fixed Stele placement not being restricted to chosen city 
+Fixed a bug with AI unit effect evaluation
+Fixed Game.canStartOccurrence modifying the game state
+Fixed players being unable to surrender in MP games when they are the last active human player
+Fixed events checking for mutual attraction selecting divorced spouses 
+Fixed incorrect amount of orders when ending the turn without founding a city
+Text and event fixes
