@@ -42,4 +42,5 @@ Fixed Game.canStartOccurrence modifying the game state
 Fixed players being unable to surrender in MP games when they are the last active human player
 Fixed events checking for mutual attraction selecting divorced spouses 
 Fixed incorrect amount of orders when ending the turn without founding a city
+Fixed temporarily impassable tiles getting counted for minor city creation
 Text and event fixes
