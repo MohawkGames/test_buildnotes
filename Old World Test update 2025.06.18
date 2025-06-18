@@ -1,0 +1,35 @@
+Test Branch 1.0.78401 Test 2025-06-18
+
+Design
+
+Guilds law now allows building Elder Specialists directly, skipping any prerequisuite specialists.  Hamlet happiness bonus removed
+Religion spread no longer has a distance limit from the Holy City 
+
+Programming
+
+Improved AI use of unit staging before an attack
+Memory allocation optimization
+Generalized event subject picking so it no longer needs an event, just a list of subjects
+Various missions started by the leader now no longer block all events with a leader subject
+
+UI
+
+Yield and unit strength previews when assigning jobs now take into account the opinion change caused by the job switch
+Hid mission requirements tooltips in some situations where these requirements are all met
+Ratings shown on character tooltip when they are 0 if they produce a yield (i.e. Schemer Agents)
+Removed resource ping from improvements dropdown. This was made obsolete by the new UI to place free resources 
+Improved tooltips and interactions between Behind the Throne traits and imprison/assassinate missions
+
+Bugs Fixed
+
+Fixed yield preview showing incorrectly when replacing an improvement with a specialist
+Fixed duplicate characters getting generated from events
+Fixed AI bug that caused retreat from non hostile AI units
+Fixed critical hit chance not resetting on General wisdom change 
+Fixed flicker when hovering over improvement recommendations
+Fixed border expansion algorithm 
+Fixed family and religion crest color and opinion display
+Fixed another case of Carthage scenario 4 Epic Victory achievement not being granted
+Fixed potential infinite recursion in AI bonusValue calculations
+Fixed Calamity frequency issues introduced in last test build (Wrath of Gods)
+Text and event fixes
