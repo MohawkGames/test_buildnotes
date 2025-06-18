@@ -2,7 +2,7 @@ Test Branch 1.0.78401 Test 2025-06-18
 
 Design
 
-Guilds law now allows building Elder Specialists directly, skipping any prerequisuite specialists.  Hamlet happiness bonus removed
+Guilds law now allows building Elder Specialists directly, skipping any prerequisite specialists.  Hamlet happiness bonus removed
 Religion spread no longer has a distance limit from the Holy City 
 
 Programming
@@ -15,7 +15,7 @@ Various missions started by the leader now no longer block all events with a lea
 UI
 
 Yield and unit strength previews when assigning jobs now take into account the opinion change caused by the job switch
-Hid mission requirements tooltips in some situations where these requirements are all met
+Mission requirements in tooltips are no longer shown in some situations where these requirements are all met
 Ratings shown on character tooltip when they are 0 if they produce a yield (i.e. Schemer Agents)
 Removed resource ping from improvements dropdown. This was made obsolete by the new UI to place free resources 
 Improved tooltips and interactions between Behind the Throne traits and imprison/assassinate missions
