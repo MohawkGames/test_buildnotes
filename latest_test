@@ -1,46 +1,35 @@
-Test Branch 1.0.78315 Test 2025-06-12
+Test Branch 1.0.78413 Test 2025-06-19
 
 Design
 
-Cleric family now gets free Divine Rule law on founding
-Cleric seats have double speed Disciples only for State Religion and can only build Christian and Manicheist Disciples without the religion being present
-Tribe-owned units no longer get a strength modifier against other tribes at strong and raging tribe levels
-Regents now become Royal if they usurp the throne or continue ruling after the rightful heir's death
-Persia's Shapur dynasty gets the Found Religion project (Wonders and Dynasties)
-Rising Stars are now less common and ask to become a Grand Vizier less (Behind the Throne)
+Guilds law now allows building Elder Specialists directly, skipping any prerequisite specialists.  Hamlet happiness bonus removed
+Religion spread no longer has a distance limit from the Holy City 
 
 Programming
 
-Improved AI valuation of Disciples and Religions
-AI now uses Cleric seat ability to build disciples of non-present religions
-AI checks whether a city can have an effect from resources before building a project that gives that same effect (i.e. Riders Import Horses)
-AI knows to use units that do not require orders when it's out of orders 
-UI mod files (UI/includes and UI/styles) are excluded from game CRC
-Added UI/templates to UI modding paths
+Improved AI use of unit staging before an attack
+Memory allocation optimization
+Generalized event subject picking so it no longer needs an event, just a list of subjects
+Various missions started by the leader now no longer block all events with a leader subject
 
 UI
 
-Valid unit types now listed for 'New units start with <promotion>' helptext 
-Improved luxury tooltip positioning 
-Removed tile raw yield from the city net yield tooltip
-Added min height for OK button on turn summary popup 
-Scripted tutorial events blur the background UI, preventing events being bypassed
-Added strength/weakness icons to concept links
-Improved Riders 'Import Resource' project helptext 
+Yield and unit strength previews when assigning jobs now take into account the opinion change caused by the job switch
+Mission requirements in tooltips are no longer shown in some situations where these requirements are all met
+Ratings shown on character tooltip when they are 0 if they produce a yield (i.e. Schemer Agents)
+Removed resource ping from improvements dropdown. This was made obsolete by the new UI to place free resources 
+Improved tooltips and interactions between Behind the Throne traits and imprison/assassinate missions
 
 Bugs Fixed
 
-Fixed event job forcing not always working 
-Fixed trade breakdown tooltip
-Fixed governor marker showing in city widget for No Characters 
-Fixes to the Old World premade map - re-added dynasty start positions and fixed empty tiles warning
-Fixes to the Punic Duel premade map - removed underwater trees and fixed missing city name
-Fixed border expansion preview not updating after changes in player decision queue 
-Fixed Stele placement not being restricted to chosen city 
-Fixed a bug with AI unit effect evaluation
-Fixed Game.canStartOccurrence modifying the game state
-Fixed players being unable to surrender in MP games when they are the last active human player
-Fixed events checking for mutual attraction selecting divorced spouses 
-Fixed incorrect amount of orders when ending the turn without founding a city
-Fixed temporarily impassable tiles getting counted for minor city creation
+Fixed yield preview showing incorrectly when replacing an improvement with a specialist
+Fixed duplicate characters getting generated from events
+Fixed AI bug that caused retreat from non hostile AI units
+Fixed critical hit chance not resetting on General wisdom change 
+Fixed flicker when hovering over improvement recommendations
+Fixed border expansion algorithm 
+Fixed family and religion crest color and opinion display
+Fixed another case of Carthage scenario 4 Epic Victory achievement not being granted
+Fixed potential infinite recursion in AI bonusValue calculations
+Fixed Calamity frequency issues introduced in last test build (Wrath of Gods)
 Text and event fixes
