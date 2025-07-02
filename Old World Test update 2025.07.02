@@ -34,6 +34,7 @@ Added visual flood effect for extreme Iteru flooding in Pharaohs of the Nile cam
 
 Bugs Fixed
 
+Fixed yield previews getting stuck
 Fixed map generation for games with 2 human teams where the middle of the map is not suitable for player starts (e.g. Hardwood Forest) 
 Fixed border expansions sometimes including urban tiles that belong to other city sites
 Fixed free improvement UI not triggering when completing Jebel Barkal
