@@ -23,7 +23,6 @@ UI
 
 Custom Map Overlay added, giving a lot more flexibility in what is shown on a map overlay
 Map pins can now be added and removed using a grid of icons from the Overlay Customizer
-
 Added new player option: Advanced Help Text.  Some tooltip information removed when this option is not enabled 
 Added starting characters to SP setup stats screen
 Added support for cycling through occurrence tiles on click 
