@@ -24,12 +24,6 @@ UI
 Custom Map Overlay added, giving a lot more flexibility in what is shown on a map overlay
 Map pins can now be added and removed using a grid of icons from the Overlay Customizer
 
-Added 'Send to Player' option to in game menu for Single Player games
-This is designed to support Succession games and can also be used generally for sharing saves
-Select a friend from the dropdown or enter their platform ID
-Games will appear on both the sender and recipients Current Games list on the main menu
-The Current Games entry will be deleted automatically after the recipient loads the game and can be manually deleted in Host Controls by both parties
-
 Added new player option: Advanced Help Text.  Some tooltip information removed when this option is not enabled 
 Added starting characters to SP setup stats screen
 Added support for cycling through occurrence tiles on click 
