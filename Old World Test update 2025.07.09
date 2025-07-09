@@ -1,0 +1,36 @@
+Test Branch 1.0.78714 Test 2025-07-09
+
+Design
+
+Holy site legitimacy events are now guaranteed to trigger on improvement completion
+Gadarat's Subjugator trait spawns worker at cleared site rather than capital (Wonders and Dynasties)
+
+Programming
+
+Enabled cloud games on test builds
+AI attack tweak
+Added some AI flexibility in still getting kills when an attack doesn't go as predicted
+
+UI
+
+Map Pin UI improvements 
+Map Overlays can now be locked with right click
+Event triggers are now displayed at the top of events where relevant
+Added popup notifications for some bonuses (Diplomatic, Subjugator, King of Kings, Fickle Band)
+Landmark discovery popups no longer shown when starting an alliance 
+Cloud games that were last played on a different version will be greyed out with a warning.  Use Ctrl+click to load a game from an earlier version.  Saves from later version cannot be loaded
+
+Bugs Fixed
+
+Fixed AI build choices not respecting the Guilds law
+Fixed selected city widget not being interactable
+Fixed tribal units not getting allied territory water movement bonus 
+Fixed toggle sizing on some resolutions 
+Fixed Event Browser not using full screen
+Fixed Encyclopedia errors
+Fixed anarchy road building bug 
+Fixed Lose a City goal not completing when losing a city due to an event
+Fixed ship harvest helptext showing xp is gained from harvesting 
+Fixed issues when removing tile visual effects, which were causing problems in the Pharaohs of the Nile scenarios
+Fixed minor victory broken link in Pharaohs of the Nile scenario 6
+Text and event fixes
