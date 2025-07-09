@@ -1,58 +1,37 @@
-Test Branch 1.0.78617 Test 2025-07-02
+Test Branch 1.0.78719 Test 2025-07-09
 
 Design
 
-Multiple Victory support added.  On achieving a Double, Points or Ambition victory, players will be prompted to either accept victory or try to pursue another victory condition. Multiple victories are tracked in the Hall of Fame. 
-Religious improvements may now be adjacent to improvements of different religions
-Launch Offensive now gives the unit and leader 20 XP
-Events can no longer end a war with a tribe that has a player ally
-Resources added during the game (events or other bonuses) can now be placed adjacent resources of different types
-Akhenaten can build Altar of the Aten improvements which spread Atenism, a new unique religion for this dynasty.  Disciple bonuses removed. (Wonders and Dynasties)
-Nebuchadnezzar I's brother now recognized as Royal (Wonders and Dynasties)
-Occurrences no longer change or remove existing resources, or add resources to improved tiles unless the existing improvement matches the new resource (Wrath of Gods)
-Occurrences no longer add vegetation to tiles with resources that don't allow that vegetation (Wrath of Gods)
+Holy site legitimacy events are now guaranteed to trigger on improvement completion
+Gadarat's Subjugator trait spawns worker at cleared site rather than capital (Wonders and Dynasties)
 
 Programming
 
-AI retreat tweak
-AI is a little more careful with sacrificing its good units
-Decoupled subject picking from events
-Missions now take an arbitrary list of subjects and relations
+Enabled cloud games on test builds
+AI attack tweak
+Added some AI flexibility in still getting kills when an attack doesn't go as predicted
 
 UI
 
-Custom Map Overlay added, giving a lot more flexibility in what is shown on a map overlay
-Map pins can now be added and removed using a grid of icons from the Overlay Customizer
-Added new player option: Advanced Help Text.  Some tooltip information removed when this option is not enabled 
-Added starting characters to SP setup stats screen
-Added support for cycling through occurrence tiles on click 
-Added turns of/since conflict to player and tribe tooltips 
-Mission subject info now shown in Encyclopedia
-Up/Down arrows cycle through encyclopedia entries
-Added yellow warning text to specialist "replaces" text
-Added visual flood effect for extreme Iteru flooding in Pharaohs of the Nile campaign
+Map Pin UI improvements 
+Map Overlays can now be locked with right click
+Event triggers are now displayed at the top of events where relevant
+Added popup notifications for some bonuses (Diplomatic, Subjugator, King of Kings, Fickle Band)
+Landmark discovery popups no longer shown when starting an alliance 
+Cloud games that were last played on a different version will be greyed out with a warning.  Use Ctrl+click to load a game from an earlier version.  Saves from later version cannot be loaded
 
 Bugs Fixed
 
-Fixed yield previews getting stuck
-Fixed map generation for games with 2 human teams where the middle of the map is not suitable for player starts (e.g. Hardwood Forest) 
-Fixed border expansions sometimes including urban tiles that belong to other city sites
-Fixed free improvement UI not triggering when completing Jebel Barkal
-Fixed free improvement UI not showing dynamic improvement text (i.e leader name on Stele)
-Fixed data issue with some tile status text
-Fixed succession list character links showing effects of being a leader instead of current character effects
-Fixed empty categories in cloud emails
-Fixed project net yield bug
-Fixed MP setup spacing and text wrapping issues
-Fixed Occurrence overlay sometimes not clearing
-Fixed Occurrence terrain change notifications appearing for out of bounds tiles
-Fixed rout preview sometimes being shown incorrectly
-Fixed Caravans consuming orders when they cannot move
-Fixed subject matching for characters in eventlinks
-Fixed Road To overlay not clearing after selecting tile
-Fixed some parts of the research UI sometimes being uninteractable
-Fixed note map pings
-Fixed Pharaohs of the Niles scenario 1 undo back over army deployment
-Fixed mod upload error 
-Mod browser and upload page fixes
+Fixed AI build choices not respecting the Guilds law
+Fixed selected city widget not being interactable
+Fixed tribal units not getting allied territory water movement bonus 
+Fixed toggle sizing on some resolutions 
+Fixed Event Browser not using full screen
+Fixed Encyclopedia errors
+Fixed anarchy road building bug 
+Fixed Lose a City goal not completing when losing a city due to an event
+Fixed ship harvest helptext showing xp is gained from harvesting 
+Fixed issues when removing tile visual effects, which were causing problems in the Pharaohs of the Nile scenarios
+Fixed minor victory broken link in Pharaohs of the Nile scenario 6
+Fixed Occurrence effects applying multiple times to cities (Wrath of Gods)
 Text and event fixes
