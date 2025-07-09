@@ -33,4 +33,5 @@ Fixed Lose a City goal not completing when losing a city due to an event
 Fixed ship harvest helptext showing xp is gained from harvesting 
 Fixed issues when removing tile visual effects, which were causing problems in the Pharaohs of the Nile scenarios
 Fixed minor victory broken link in Pharaohs of the Nile scenario 6
+Fixed Occurrence effects applying multiple times to cities (Wrath of Gods)
 Text and event fixes
