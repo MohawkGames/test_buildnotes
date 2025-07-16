@@ -31,7 +31,7 @@ Bugs Fixed
 
 Fixed bug that could cause games to fail to start after selecting Learn to Play scenarios
 Fixed player count not resetting when switching from premade to random map
-Fixed units counterattacking when they could not have targetted the attacking unit on their own turn 
+Fixed units counterattacking when they could not have targeted the attacking unit on their own turn 
 Fixed AI trying to start a Caravan mission over and over when it's not possible
 Fixed heir sometimes getting auto-married instead of getting a marriage offer 
 Fixed Occurrence effect sometimes applying multiple times to cities
