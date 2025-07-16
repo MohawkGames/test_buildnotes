@@ -3,7 +3,7 @@ Test Branch 1.0.78805 Test 2025-07-16
 Design
 
 Succession game support
-Added 'Send to Player' option to in game menu for Single Player games
+Added 'Send to Player' option to in-game menu for Single Player games
 This is designed to support Succession games and can also be used generally for sharing saves
 Select a friend from the dropdown or enter their platform ID
 Games will appear on both the sender and recipients Current Games list on the main menu
