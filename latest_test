@@ -1,37 +1,42 @@
-Test Branch 1.0.78719 Test 2025-07-09
+Test Branch 1.0.78805 Test 2025-07-16
 
 Design
 
-Holy site legitimacy events are now guaranteed to trigger on improvement completion
-Gadarat's Subjugator trait spawns worker at cleared site rather than capital (Wonders and Dynasties)
+Succession game support
+Added 'Send to Player' option to in-game menu for Single Player games
+This is designed to support Succession games and can also be used generally for sharing saves
+Select a friend from the dropdown or enter their platform ID
+Games will appear on both the sender and recipients Current Games list on the main menu
+The Current Games entry will be deleted automatically after the recipient loads the game and can be manually deleted in Host Controls by both parties
+
+Other design changes
+Distant raid probabilities are now based on each player's Prosperity rather than global Tribe Level
+Added goal Declare War on Tribes Three Times to the Wrath of Gods scenario
 
 Programming
 
-Enabled cloud games on test builds
-AI attack tweak
-Added some AI flexibility in still getting kills when an attack doesn't go as predicted
+AI is less eager to buy tiles
+AI makes truce with other AI more easily when it detects a stalemate
+Adjusted the target number of units for the AI 
+AI places more value on walls after reaching its unit target
+AI now tries to explore rival territory, if possible, to reveal cities
 
 UI
 
-Map Pin UI improvements 
-Map Overlays can now be locked with right click
-Event triggers are now displayed at the top of events where relevant
-Added popup notifications for some bonuses (Diplomatic, Subjugator, King of Kings, Fickle Band)
-Landmark discovery popups no longer shown when starting an alliance 
-Cloud games that were last played on a different version will be greyed out with a warning.  Use Ctrl+click to load a game from an earlier version.  Saves from later version cannot be loaded
+Added option to set default map overlay 
+Added Governor Project reminder category for religious dissent (Sacred and Profane)
+Added custom helptext for Ebbing Sea occurrence (Wrath of Gods)
 
 Bugs Fixed
 
-Fixed AI build choices not respecting the Guilds law
-Fixed selected city widget not being interactable
-Fixed tribal units not getting allied territory water movement bonus 
-Fixed toggle sizing on some resolutions 
-Fixed Event Browser not using full screen
-Fixed Encyclopedia errors
-Fixed anarchy road building bug 
-Fixed Lose a City goal not completing when losing a city due to an event
-Fixed ship harvest helptext showing xp is gained from harvesting 
-Fixed issues when removing tile visual effects, which were causing problems in the Pharaohs of the Nile scenarios
-Fixed minor victory broken link in Pharaohs of the Nile scenario 6
-Fixed Occurrence effects applying multiple times to cities (Wrath of Gods)
+Fixed bug that could cause games to fail to start after selecting Learn to Play scenarios
+Fixed player count not resetting when switching from premade to random map
+Fixed units counterattacking when they could not have targeted the attacking unit on their own turn 
+Fixed AI trying to start a Caravan mission over and over when it's not possible
+Fixed heir sometimes getting auto-married instead of getting a marriage offer 
+Fixed Occurrence effect sometimes applying multiple times to cities
+Fixed portrait loading error when toggling mods in SP setup 
+Fixed custom nicknames for leaders not being applied from events
+Fixed chat and pings not working when not your turn in network MP games
+Fixed players not being able to act after ending their turn when still their their teams turn with Strict (Teams) turn style active
 Text and event fixes
