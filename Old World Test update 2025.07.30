@@ -1,0 +1,47 @@
+Test Branch 1.0.xxxx Test 2025-07-30
+
+Design
+
+Duel map size is now smaller (45x45) and defaults to 2 players
+Added new map size Tiny, which is the same size as the old Duel
+Maximum Number of Opponents allowed is now set per map size at twice the default number of players
+Random map size can no longer result in an actual map size that is too small to accommodate the chosen number of players
+Added new Ultra-wide aspect ratio option to MP setup (map width is 40% of map height)
+The AI avoids founding a religion for a certain number of turns, depending on AI aggression and development levels 
+The AI can no longer start with improvements that are required for founding a religion (Shrines and Pastures)
+Units that are no longer hidden because of an effect being removed remain hidden until they move or attack
+Hidden scouts no longer get bounced several tiles away just to remain hidden in Trees
+Make Peace/Alliance with a Tribe goals no longer require tribe contact and don't fail if the last contacted tribe is eliminated 
+Added new map script Desolation, a fertile land with deserts that expand over time (Wrath of Gods) 
+Occurrences no longer change terrain on a tile with an improvement (excluding roads) to a terrain type that is not supported by that improvement (Wrath of Gods)
+Occurrences no longer remove roads when changing terrain to a type that doesn't support roads, unless impassable (Wrath of Gods)
+Added new Sacrifice Courtier goal to the Wrath of Gods scenario
+
+Programming
+
+Occurrences are processed for each player separately during their turn  
+Revised AI specialist and improvement building priorities
+
+UI
+
+Replaced icons for Strength and Weakness
+Removed tile change notifications from game log
+Localization text updates
+More UI related actions allowed during another players turn (i.e. renaming cities, setting reminders)
+
+Bugs Fixed
+
+Fixed game hang when Send Caravan mission is completed in one turn
+Fixed game hang when city site urban tiles are outside the map playable area
+Fixed 11th ambition / 2nd National ambition sometimes getting offered
+Fixed null reference on exit to menu
+Fixed tooltips clearing unnecessarily between turns 
+Fixed governor icon not updating after losing control of a city
+Fixed tile recommendation icon interactability when tile status is active
+Fixed possible crash if a mod eliminates a council position
+Fixed tile border expansion when using the Game Editor
+Fixed leader trait achievements not working when new leader already has trait
+Fixed AI behavior for congested battlefields
+Fixed pinned characters being shared between players
+Fixed global Occurrences (e.g. Drought, Plague) being more frequent than intended (Wrath of Gods)
+Text and event fixes
