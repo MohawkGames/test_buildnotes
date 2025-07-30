@@ -11,7 +11,7 @@ The AI avoids founding a religion for a certain number of turns, depending on AI
 The AI can no longer start with improvements that are required for founding a religion (Shrines and Pastures)
 Units that are no longer hidden because of an effect being removed remain hidden until they move or attack
 Hidden scouts no longer get bounced several tiles away just to remain hidden in Trees
-Make Peace/Alliance with a Tribe goals no longer require tribe contact and don't fail if the last contacted tribe is eliminated 
+Make Peace/Alliance with a Tribe amitions no longer require tribe contact and don't fail if the last contacted tribe is eliminated 
 Added new map script Desolation, a fertile land with deserts that expand over time (Wrath of Gods) 
 Occurrences no longer change terrain on a tile with an improvement (excluding roads) to a terrain type that is not supported by that improvement (Wrath of Gods)
 Occurrences no longer remove roads when changing terrain to a type that doesn't support roads, unless impassable (Wrath of Gods)
