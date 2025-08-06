@@ -1,0 +1,23 @@
+Test Branch 1.0.79055 Test 2025-08-06
+
+Design
+
+Adad-Guppi and Ramesses II cannot die for the first 50 years (Wonders and Dynasties)
+
+Programming
+
+Improved AI movement plans on congested maps 
+New game loading screen no longer waits for the prehistory to finish, improving load times on fast machines
+Better handling of modded XML paths on Windows
+
+Bugs Fixed
+
+Fixed some game editor actions not working when it's not the active player's turn
+Fixed AI building too many forts and in bad locations
+Fixed incorrect AI danger calculations
+Fixed Caravan animation being affected by "Follow AI moves" setting
+Fixes to Multiple Continents map script
+Fixed trigger text for some city culture events
+Fixed assign governor tooltip showing incorrect opinion change
+Fixed some duplicate titles in cloud email notifications
+Fixed Kingship god icon positioning (Wrath of Gods)
