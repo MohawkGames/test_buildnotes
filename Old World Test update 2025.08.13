@@ -2,8 +2,8 @@ Test Branch 1.0.79137 Test 2025-08-13
 
 Design
 
+Each Victory condition is disabled for other players after first being achieved
 It is no longer possible to lose the game after being the first to complete a victory condition
-Victory conditions are disabled for other players after being achieved
 All members of a team with a nation allied to a tribe can found cities on that tribe's sites, for an extra cost
 Drought raid event in the Wrath of Gods scenario can no longer occur in the first 20 turns or at all on Weak Tribe Level
 
