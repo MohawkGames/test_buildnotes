@@ -1,23 +1,37 @@
-Test Branch 1.0.79055 Test 2025-08-06
+Test Branch 1.0.79137 Test 2025-08-13
 
 Design
 
-Adad-Guppi and Ramesses II cannot die for the first 50 years (Wonders and Dynasties)
+Each Victory condition is disabled for other players after first being achieved
+It is no longer possible to lose the game after being the first to complete a victory condition
+All members of a team with a nation allied to a tribe can found cities on that tribe's sites, for an extra cost
+Drought raid event in the Wrath of Gods scenario can no longer occur in the first 20 turns or at all on Weak Tribe Level
 
 Programming
 
-Improved AI movement plans on congested maps 
-New game loading screen no longer waits for the prehistory to finish, improving load times on fast machines
-Better handling of modded XML paths on Windows
+Improved unit movement responsiveness
+Minor performance improvements
+
+AI improvements: 
+More urgent repair of pillaged improvements
+Anchored ships are higher priority targets
+Found cities for protection instead of retreating
+Less likely to retreat healthy units after attacking in the same area
+Better accounting for enemy power when allocating units to city defense and attack staging
+Fixed AI being less aggressive against other players than intended
+
+UI
+
+Cloud notification emails no longer show details in Summary section if they appear in another category
+Network games are now removed from the Current Games list for eliminated players
 
 Bugs Fixed
 
-Fixed some game editor actions not working when it's not the active player's turn
-Fixed AI building too many forts and in bad locations
-Fixed incorrect AI danger calculations
-Fixed Caravan animation being affected by "Follow AI moves" setting
-Fixes to Multiple Continents map script
-Fixed trigger text for some city culture events
-Fixed assign governor tooltip showing incorrect opinion change
-Fixed some duplicate titles in cloud email notifications
-Fixed Kingship god icon positioning (Wrath of Gods)
+Fixed caravan missions not being able to be completed through unrevealed territory 
+Fixed governor project reminders not being dismissable
+Fixed toggle buttons closing reminders panel 
+Fixed yield previews showing for improvement placement on invalid tiles with map tacks 
+Fixed custom overlay not restoring properly after hovering to build a road
+Fixed a city site assignment bug that could result in AI cities on higher development levels not being grouped together
+Fixed null icon in eliminated player text on MP game tooltips
+Text and event fixes
