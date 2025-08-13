@@ -1,0 +1,37 @@
+Test Branch 1.0.79137 Test 2025-08-13
+
+Design
+
+All members of a team with a nation allied to a tribe can found cities on that tribe's sites, for an extra cost
+Drought raid event in the Wrath of Gods scenario can no longer occur in the first 20 turns or at all on Weak Tribe Level
+It is no longer possible to lose the game after being the first to complete a victory condition
+Victory conditions are disabled for other players after being achieved
+
+Programming
+
+Improved unit movement responsiveness
+Minor performance improvements
+
+AI improvements: 
+More urgent repair of pillaged improvements
+Anchored ships are higher priority targets
+Found cities for protection instead of retreating
+Less likely to retreat healthy units after attacking in the same area
+Better accounting for enemy power when allocating units to city defense and attack staging
+Fixed AI being less aggressive against other players than intended
+
+UI
+
+Cloud notification emails no longer show details in Summary section if they appear in another category
+Network games are now removed from the Current Games list for eliminated players
+
+Bugs Fixed
+
+Fixed caravan missions not being able to be completed through unrevealed territory 
+Fixed governor project reminders not being dismissable
+Fixed toggle buttons closing reminders panel 
+Fixed yield previews showing for improvement placement on invalid tiles with map tacks 
+Fixed custom overlay not restoring properly after hovering to build a road
+Fixed a city site assignment bug that could result in AI cities on higher development levels not being grouped together
+Fixed null icon in eliminated player text on MP game tooltips
+Text and event fixes
