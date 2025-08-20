@@ -1,37 +1,40 @@
-Test Branch 1.0.79137 Test 2025-08-13
+Test Branch 1.0.79327 Test 2025-08-20
 
 Design
 
-Each Victory condition is disabled for other players after first being achieved
-It is no longer possible to lose the game after being the first to complete a victory condition
-All members of a team with a nation allied to a tribe can found cities on that tribe's sites, for an extra cost
-Drought raid event in the Wrath of Gods scenario can no longer occur in the first 20 turns or at all on Weak Tribe Level
+Tribes, Raiders, Rebels and Barbarians now more likely to pillage improvements and attack units rather than cities
+Slum improvements are now Urban (Behind the Throne)
 
 Programming
 
-Improved unit movement responsiveness
-Minor performance improvements
+AI pathfinder enhancements
+AI combat tactics improvements
+Improved AI attacks out of staging areas
+Expanded and tweaked wording of warning of potential crashes on Raptor Lake CPUs 
+Owned DLCs on GoG are now cached in memory after receiving ownership 
 
-AI improvements: 
-More urgent repair of pillaged improvements
-Anchored ships are higher priority targets
-Found cities for protection instead of retreating
-Less likely to retreat healthy units after attacking in the same area
-Better accounting for enemy power when allocating units to city defense and attack staging
-Fixed AI being less aggressive against other players than intended
+UI 
 
-UI
-
-Cloud notification emails no longer show details in Summary section if they appear in another category
-Network games are now removed from the Current Games list for eliminated players
+Victory screen is updated when a player has met one of the victory conditions
+Victory popup on game over mentions the last victory earned instead of the first
+Score threshold for victory no longer shown after double/points victory achieved
+Net yield tooltip now groups yields that subtract from each other (affects mods only)
+Added loading screen hint about Advanced Help Text
+Specialist help text without the advanced help text option now includes a simple yield total in the place of net modified yields
+Cleaned up culture help text 
+Player and tribe tooltips no longer show relationship with unmet entities
 
 Bugs Fixed
 
-Fixed caravan missions not being able to be completed through unrevealed territory 
-Fixed governor project reminders not being dismissable
-Fixed toggle buttons closing reminders panel 
-Fixed yield previews showing for improvement placement on invalid tiles with map tacks 
-Fixed custom overlay not restoring properly after hovering to build a road
-Fixed a city site assignment bug that could result in AI cities on higher development levels not being grouped together
-Fixed null icon in eliminated player text on MP game tooltips
+Fixed cities not being able to be razed in no-character mode 
+Fixed AI sometimes not clearing or claiming city sites
+Fixed net yield change tooltip for adjacent improvement modifiers 
+Fix events incorrectly showing origin of foreign occurrence
+Fixed display of family tab when large numbers of luxuries are sent to family
+Fixed helptext performance issue
+Fixed units sometimes not getting bounced from occurrence impassable tiles
+Fixed XP floating text sometimes not appearing 
+Fixed map scripts allowing unreachable non-boundary tiles
+Fixed missing Tribal Truce and Peace missions in No Characters
+Fixed ethnicity helptext issue in Heroes of the Aegean 6
 Text and event fixes
