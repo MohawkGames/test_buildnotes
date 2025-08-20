@@ -30,7 +30,7 @@ Fixed cities not being able to be razed in no-character mode
 Fixed AI sometimes not clearing or claiming city sites
 Fixed net yield change tooltip for adjacent improvement modifiers 
 Fix events incorrectly showing origin of foreign occurrence
-Fixed display of family tab when large numbers of luxuries are sent to fmaily
+Fixed display of family tab when large numbers of luxuries are sent to family
 Fixed helptext performance issue
 Fixed units sometimes not getting bounced from occurrence impassable tiles
 Fixed XP floating text sometimes not appearing 
