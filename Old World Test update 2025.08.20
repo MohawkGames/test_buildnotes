@@ -1,1 +1,40 @@
+Test Branch 1.0.79179 Test 2025-08-20
 
+Design
+
+Tribes, Raiders, Rebels and Barbarians now more likely to pillage improvements and attack units rather than cities
+Slum improvements are now Urban (Behind the Throne)
+
+Programming
+
+AI pathfinder enhancements
+AI combat tactics improvements
+Improved AI attacks out of staging areas
+Expanded and tweaked wording of warning of potential crashes on Raptor Lake CPUs 
+Owned DLCs on GoG are now cached in memory after receiving ownership 
+
+UI 
+
+Victory screen is updated when a player has met one of the victory conditions
+Victory popup on game over mentions the last victory earned instead of the first
+Score threshold for victory no longer shown after double/points victory achieved
+Net yield tooltip now groups yields that subtract from each other (affects mods only)
+Added loading screen hint about Advanced Help Text
+Specialist help text without the advanced help text option now includes a simple yield total in the place of net modified yields
+Cleaned up culture help text 
+Player and tribe tooltips no longer show relationship with unmet entities
+
+Bugs Fixed
+
+Fixed cities not being able to be razed in no-character mode 
+Fixed AI sometimes not clearing or claiming city sites
+Fixed net yield change tooltip for adjacent improvement modifiers 
+Fix events incorrectly showing origin of foreign occurrence
+Fixed display of family tab when large numbers of luxuries are sent to fmaily
+Fixed helptext performance issue
+Fixed units sometimes not getting bounced from occurrence impassable tiles
+Fixed XP floating text sometimes not appearing 
+Fixed map scripts allowing unreachable non-boundary tiles
+Fixed missing Tribal Truce and Peace missions in No Characters
+Fixed ethnicity helptext issue in Heroes of the Aegean 6
+Text and event fixes
