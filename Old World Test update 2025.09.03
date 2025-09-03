@@ -3,6 +3,7 @@ Test Branch 1.0.79611 Test 2025-09-03
 Design
 
 Tribe unit behavior is less predictable 
+Bypassed events are less frequent and tied to event level
 Bypassed relationship penalty increased from 60 to 80
 Automatic (non-event) marriage will prefer candidates with a lower age difference 
 Removed orders for refusing tribal truce in No Characters 
