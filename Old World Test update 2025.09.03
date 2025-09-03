@@ -29,7 +29,7 @@ Added help text for event options that give archetypes in Roleplaying mode
 
 Bugs Fixed
 
-Fixed city and culture limits not showing on Encylopedia entries for relevant improvements
+Fixed city and culture limits not showing on Encyclopedia entries for relevant improvements
 Fixed uneven distribution of tribal unit types
 Fixed some bugs with AI use of missions
 Fixed converting a game to play-by-cloud not working when not your turn in Strict turnstyle
@@ -40,9 +40,11 @@ Fixed modded asset bundles not loading in some cases
 Fixed load/save error from adjacent unit effects
 Fixed bug with AI exploring units trying to harvest when they cannot
 Fixed unbuildable units and tech cards showing on the tech tooltip (affects mods)
-Fixed foreign occurence effects on units, movement and visibility not being applied immediately (Wrath of Gods)
+Fixed foreign occurrence effects on units, movement and visibility not being applied immediately (Wrath of Gods)
 Fixed some occurrence load/save issues (Wrath of Gods)
 Fixed some non-global Occurrences showing as global in helptext (Wrath of Gods)
 Fixed wrath from difficulty not being applied in the Wrath of Gods scenario
 Fixed displayed prosperity level not matching effect in the Wrath of Gods scenario
 Text and Event fixes
+
+
