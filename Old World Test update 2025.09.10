@@ -1,0 +1,32 @@
+Test Branch 1.0.79688 Test 2025-09-10
+
+Design
+
+Highlands map script now has 27% more tiles to compensate for less useable area
+Veneration Theology gives +10% spread chance, up from 5%
+Revelation Theology gives +20% spread chance, down from 25% 
+Enlightenment Theology gives 2 Happiness per Monk, down from 3
+Barbarians cannot enter a nation's territory before raids are possible
+Tribes can only adopt world religions
+Poet trait gives positive opinion of other poets
+Further decreased likelihood of AI founding religions early based on AI Development and Aggression (applies for at most first 16 turns)
+
+Programming
+
+Performance optimization
+AI performance improvements
+
+UI
+
+Renamed Rider projects from Import to Supply 
+Imprisoned trait removed from characters on death
+
+Bugs Fixed
+
+Fixed AI peace offers sometimes using the no events popup when events are enabled 
+Fixed yield stockpiling ambitions being offered when close to already being completed
+Fixed duplicate event option archetype help text
+Fixed tribal camp events not resetting with Reset Random Seed on Load option enabled
+Fixed bug preventing DLC related hints being shown in Encyclopedia
+Tribe AI fixes
+Text and event fixes
