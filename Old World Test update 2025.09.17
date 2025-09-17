@@ -26,7 +26,6 @@ Second warning triggers at 15 seconds remaining, increases timer text size and p
 These times are configurable using a mod in globalsInt.xml
 
 Other UI changes:
-
 Improvement helptext and unit build option prereqs take into account tile owner rather than unit owner
 Added helptext warning when trying to build Improvement for teammate who doesn't have required Tech 
 Improved some luxury trade help text
