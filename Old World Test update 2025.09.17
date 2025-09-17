@@ -3,7 +3,7 @@ Test Branch 1.0.79755 Test 2025-09-17
 Design
 
 Temporarily hidden units (i.e. Scouts bounced out of Trees) now become visible after 5 turns (or after attacking or moving)
-Temporarily hidden units can no longer occupy territory that they would not be able to occupy if not hidden 
+Temporarily hidden units can no longer occupy territory that they would not be able to occupy if not hidden (i.e. foreign territory while at Truce)
 Scouts are no longer removed from the map after establishing an Agent Network and instead get a 5 turn cooldown and are hidden for 10 turns
 Enlightenment now gives +3 Happiness only for Monks in Monasteries of Religions that have that Theology 
 Assault bonus to attack against forts no longer applies when forts give no defensive bonus
