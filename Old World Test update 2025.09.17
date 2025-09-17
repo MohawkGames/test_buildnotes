@@ -1,0 +1,36 @@
+Test Branch 1.0.79748 Test 2025-09-17
+
+Design
+
+Units that become temporarily hidden now become visible after 5 turns (or after attacking or moving)
+Temporarily hidden units can no longer occupy territory that they would not be able to occupy if not hidden 
+Scouts are no longer removed from the map after establishing an Agent Network and instead get a 5 turn cooldown and are hidden for 10 turns
+Enlightenment now gives +3 Happiness only for Monks in Monasteries of Religions that have that Theology 
+Assault bonus to attack against forts no longer applies when forts give no defensive bonus
+Disabled some more ambitions in One City Challenge
+Added ambitions for building Wonders added in Wonders and Dynasties
+Delvers have an opinion penalty towards Stewards of the Land.  These traits are now mutually exclusive (Wrath of Gods)
+
+Programming
+
+Performance optimization for trade network recalculations
+AI water control improvements and bug fixes
+
+UI
+
+Improvement helptext and unit build option prereqs take into account tile owner rather than unit owner
+Added helptext warning when trying to build Improvement for teammate who doesn't have required Tech 
+Improved some luxury trade help text
+Yield production graphs also display the total accumulated up until the hovered point (after game is over and for observers)
+'Only Show Map Tacks For Worker' option now shows improvement pings whenever a worker or disciple is selected, for any type of improvement 
+Added second turn timer warning, audio alerts now play at 30 and 15 seconds remaining.  These times are configurable using a mod in globalsInt.xml
+
+Bugs Fixed
+
+Fixed potential null reference in Map Editor
+Fixed some temporary invisibility issues 
+Fixed audio tracks not always being listed in Main Menu audio options
+Fixed tribal units with a raid target counting towards a tribal camp's defend threshold or raid start threshold 
+Fixed edge case with Carthage3 African Invasion goal not completing
+Fixed iGovernorCostModifier applying to orders (affects Darius dynasty and mods)
+Fixed Wrath of Gods scenario map size
