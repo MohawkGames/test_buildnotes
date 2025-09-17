@@ -1,4 +1,4 @@
-Test Branch 1.0.79748 Test 2025-09-17
+Test Branch 1.0.79753 Test 2025-09-17
 
 Design
 
@@ -18,12 +18,19 @@ AI water control improvements and bug fixes
 
 UI
 
+Turn timer changes (MP):
+There are now 2 warnings that turn time is running out
+First warning triggers at 30 seconds remaining, turns timer text red and plays audio warning
+Second warning triggers at 15 seconds remaining, increases timer text size and plays audio warning again
+These times are configurable using a mod in globalsInt.xml
+
+Other UI changes:
+
 Improvement helptext and unit build option prereqs take into account tile owner rather than unit owner
 Added helptext warning when trying to build Improvement for teammate who doesn't have required Tech 
 Improved some luxury trade help text
 Yield production graphs also display the total accumulated up until the hovered point (after game is over and for observers)
-'Only Show Map Tacks For Worker' option now shows improvement pings whenever a worker or disciple is selected, for any type of improvement 
-Added second turn timer warning, audio alerts now play at 30 and 15 seconds remaining.  These times are configurable using a mod in globalsInt.xml
+'Only Show Map Tacks For Worker' option renamed to 'Contextual Map Tacks'. Now shows improvement pings whenever workers, settlers or disciples are selected
 
 Bugs Fixed
 
