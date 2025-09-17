@@ -1,32 +1,43 @@
-Test Branch 1.0.79688 Test 2025-09-10
+Test Branch 1.0.79755 Test 2025-09-17
 
 Design
 
-Highlands map script now has 27% more tiles to compensate for less useable area
-Veneration Theology gives +10% spread chance, up from 5%
-Revelation Theology gives +20% spread chance, down from 25% 
-Enlightenment Theology gives 2 Happiness per Monk, down from 3
-Barbarians cannot enter a nation's territory before raids are possible
-Tribes can only adopt world religions
-Poet trait gives positive opinion of other poets
-Further decreased likelihood of AI founding religions early based on AI Development and Aggression (applies for at most first 16 turns)
+Temporarily hidden units (i.e. Scouts bounced out of Trees) now become visible after 5 turns (or after attacking or moving)
+Temporarily hidden units can no longer occupy territory that they would not be able to occupy if not hidden (i.e. foreign territory while at Truce)
+Scouts are no longer removed from the map after establishing an Agent Network and instead get a 5 turn cooldown and are hidden for 10 turns
+Enlightenment now gives +3 Happiness only for Monks in Monasteries of Religions that have that Theology 
+Assault bonus to attack against forts no longer applies when forts give no defensive bonus
+Disabled some more ambitions in One City Challenge
+Rightful Heirs can no longer become Missing, Exiled, Imprisoned or Fugitive
+Added ambitions for building Wonders added in Wonders and Dynasties
+Delvers have an opinion penalty towards Stewards of the Land.  These traits are now mutually exclusive (Wrath of Gods)
 
 Programming
 
-Performance optimization
-AI performance improvements
+Performance optimization for trade network recalculations
+AI water control improvements and bug fixes
 
 UI
 
-Renamed Rider projects from Import to Supply 
-Imprisoned trait removed from characters on death
+Turn timer changes (MP):
+There are now 2 warnings that turn time is running out
+First warning triggers at 30 seconds remaining, turns timer text red and plays audio warning
+Second warning triggers at 15 seconds remaining, increases timer text size and plays audio warning again
+These times are configurable using a mod in globalsInt.xml
+
+Other UI changes:
+Improvement helptext and unit build option prereqs take into account tile owner rather than unit owner
+Added helptext warning when trying to build Improvement for teammate who doesn't have required Tech 
+Improved some luxury trade help text
+Yield production graphs also display the total accumulated up until the hovered point (after game is over and for observers)
+'Only Show Map Tacks For Worker' option renamed to 'Contextual Map Tacks'. Now shows improvement pings whenever workers, settlers or disciples are selected
 
 Bugs Fixed
 
-Fixed AI peace offers sometimes using the no events popup when events are enabled 
-Fixed yield stockpiling ambitions being offered when close to already being completed
-Fixed duplicate event option archetype help text
-Fixed tribal camp events not resetting with Reset Random Seed on Load option enabled
-Fixed bug preventing DLC related hints being shown in Encyclopedia
-Tribe AI fixes
-Text and event fixes
+Fixed potential null reference in Map Editor
+Fixed some temporary invisibility issues 
+Fixed audio tracks not always being listed in Main Menu audio options
+Fixed tribal units with a raid target counting towards a tribal camp's defend threshold or raid start threshold 
+Fixed edge case with Carthage3 African Invasion goal not completing
+Fixed iGovernorCostModifier applying to orders (affects Darius dynasty and mods)
+Fixed Wrath of Gods scenario map size
