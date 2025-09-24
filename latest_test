@@ -1,43 +1,17 @@
-Test Branch 1.0.79755 Test 2025-09-17
+Test Branch 1.0.79871 Test 2025-09-24
+
+Update to match Main branch
 
 Design
 
-Temporarily hidden units (i.e. Scouts bounced out of Trees) now become visible after 5 turns (or after attacking or moving)
-Temporarily hidden units can no longer occupy territory that they would not be able to occupy if not hidden (i.e. foreign territory while at Truce)
-Scouts are no longer removed from the map after establishing an Agent Network and instead get a 5 turn cooldown and are hidden for 10 turns
-Enlightenment now gives +3 Happiness only for Monks in Monasteries of Religions that have that Theology 
-Assault bonus to attack against forts no longer applies when forts give no defensive bonus
-Disabled some more ambitions in One City Challenge
-Rightful Heirs can no longer become Missing, Exiled, Imprisoned or Fugitive
-Added ambitions for building Wonders added in Wonders and Dynasties
-Delvers have an opinion penalty towards Stewards of the Land.  These traits are now mutually exclusive (Wrath of Gods)
-
-Programming
-
-Performance optimization for trade network recalculations
-AI water control improvements and bug fixes
+Increased Discontent per turn on Sufficient, Modest and Fragile Prosperity levels (Glorious, Magnificent and Great difficulty levels)
+Removed free Crossbowmen bonus tech
+Nomad effect now gives +25% strength in Arid as well as Sand tiles - affects Camel Archer, Libyan Cavalry and Elite Libyan Cavalry
 
 UI
 
-Turn timer changes (MP):
-There are now 2 warnings that turn time is running out
-First warning triggers at 30 seconds remaining, turns timer text red and plays audio warning
-Second warning triggers at 15 seconds remaining, increases timer text size and plays audio warning again
-These times are configurable using a mod in globalsInt.xml
-
-Other UI changes:
-Improvement helptext and unit build option prereqs take into account tile owner rather than unit owner
-Added helptext warning when trying to build Improvement for teammate who doesn't have required Tech 
-Improved some luxury trade help text
-Yield production graphs also display the total accumulated up until the hovered point (after game is over and for observers)
-'Only Show Map Tacks For Worker' option renamed to 'Contextual Map Tacks'. Now shows improvement pings whenever workers, settlers or disciples are selected
+Updated difficulty descriptions
 
 Bugs Fixed
 
-Fixed potential null reference in Map Editor
-Fixed some temporary invisibility issues 
-Fixed audio tracks not always being listed in Main Menu audio options
-Fixed tribal units with a raid target counting towards a tribal camp's defend threshold or raid start threshold 
-Fixed edge case with Carthage3 African Invasion goal not completing
-Fixed iGovernorCostModifier applying to orders (affects Darius dynasty and mods)
-Fixed Wrath of Gods scenario map size
+Fixed AI not knowing how to repair improvements that cannot be built (e.g. Towns)
