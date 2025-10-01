@@ -1,17 +1,54 @@
-Test Branch 1.0.79871 Test 2025-09-24
-
-Update to match Main branch
+Test Branch 1.0.79976 Test 2025-10-01
 
 Design
 
-Increased Discontent per turn on Sufficient, Modest and Fragile Prosperity levels (Glorious, Magnificent and Great difficulty levels)
-Removed free Crossbowmen bonus tech
-Nomad effect now gives +25% strength in Arid as well as Sand tiles - affects Camel Archer, Libyan Cavalry and Elite Libyan Cavalry
+AI now requires a Diplomat leader to start a National Alliance. Increased probability of an alliance offer 
+Map options limiting the number of city sites now concentrate sites around player starts
+Consorts can now be Regents without needing to be Royal.  Ill characters will not be picked to be Regents
+Added repair cost to Town and Village improvements
+Free-for-all player starts no longer try to separate human players
+Ambitions that require Wonders now consider Wonders owned by teammates to be impossible to acquire
+
+Programming
+
+Improved AI for Zealot leader enlisting
+AI no longer attacks civilians if doing so puts their units in danger of being killed
+Modio version upgrade 
+Added option for CRC tracing when loading mods
 
 UI
 
-Updated difficulty descriptions
+In sequential turn network games, observer view automatically switches to the next player when the observed player's turn ends.  This is disabled after manually switching to a different player
+Observers now use their set language rather than the language of the observed player
+Cities with effects that give Rebel chance are marked with a Rebels icon in the city list screen and city tooltip 
+Population in the city list screen is now a link to city specialists 
+Worker build action button yields no longer subtract unimproved tile yields
+Map Overlay Customizer now has seperate options for Urban and Rural Improvements
+Renamed the City Number options and City Site Density to City Site Spacing 
+Chat hotkey no longer works for non-host observers 
+Show Foreign Family Colors option now also applies to city widget crests 
+Clicking a General portrait on a selected unit now selects the character
+Law tooltips now show family opinion changes instead of family class opinion
+New Place Bonus decisions get sorted to the front of the event queue 
+Improvement pings no longer removed after a terrain change if the improvement is still valid or after a resource is added if the improvement matches the resource
+Added foreign opinion helptext to specify the portion of the Ruthless AI opinion that is due to a player alliance
+Network server name is now the username of the player on the current online platform, where available
 
 Bugs Fixed
 
-Fixed AI not knowing how to repair improvements that cannot be built (e.g. Towns)
+Fixed AI development claiming more than the nation's share of city sites when using limited City Site Number options
+Fixed agent tab not properly updating after assigning agent character
+Fixed setup screen bug with number of players 
+Fixed modified trade values not being calculated in trade bonus helptext 
+Fixed city culture tooltip flicker
+Fixed overlay customizer not updating toggles when re-opening after making unsaved changes
+Fixed locked overlay highlight switching off of Custom when toggling customizer 
+Fixed improvement filter issues, include unfinished improvements 
+Fixed pillaging, burn and launch offensive not clearing hidden status
+Fixed some issues with temporarily hidden units 
+Fixed retry cloud upload directing to succession UI 
+Fixed map selection with character assignment UI active
+Fixed double state religion reference in happiness help text 
+Fixed AI leaving Wonders unfinished if interrupted
+Fixed not being able to change language when it's not your turn 
+Text and event fixes
