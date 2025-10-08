@@ -1,0 +1,39 @@
+Test Branch 1.0.80078 Test 2025-10-08
+
+Design
+
+Hero leaders can now Launch Offensive after attacking.  This still puts the unit on cooldown, so they cannot attack twice
+Harbors give 100% bonus to adjacent nets, up from 60%
+Specialist builds are allowed to continue after their improvement has been pillaged
+When a preset character joins a preferred family their children now join the same family 
+Reduced the amount of Forest on the Desert map script. Removed option to specify starting inland or on the coast
+Tribe units can now heal after moving
+
+Programming
+
+Unity package updates
+Minor MP performance optimization
+
+UI
+
+Added character archetype crest to mission targets
+Default player name in MP is now taken from the online platform nickname
+When a unit cannot complete a move, camera pans back to unit location and fatigued sound is played 
+Right-clicks on UI widgets now work with a tooltip locked 
+Moved some player help text to the advanced help text option
+
+Bugs Fixed
+
+Fixed popup and decision processing when not the active player's turn
+Fixed foreign characters showing on 1st turn of Hotseat game
+Fixed custom nickname bugs
+Fixed improvement net yield help text to include income from adjacent tiles that belong to a different city
+Fixed game reload inconsistent state
+Fixed pathfinder not being reset when a new tile is revealed 
+Fixed implicit conversion with maiMinStats/maiMaxStats 
+Fixed Recruit button not appearing with no orders 
+Fixed assassinating heir mission not giving achievement when heir exploring
+Fixed Kush non-worker units not being able to build Forts outside their borders (affected previous Test only)
+Fixed Modio not initialising on GOG builds (affected previous Test only)
+Fixed mod infos initialization, source effects were not being properly set on new game.  Fixes Rebel text in the Wrath of Gods scenario
+Text and event fixes
