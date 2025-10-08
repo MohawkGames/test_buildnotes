@@ -1,57 +1,39 @@
-Test Branch 1.0.79976 Test 2025-10-01
-Test Hotfix 1.0.80042 Test 2025-10-07
-
-Hotfix updates Unity version to resolve a security vulnerability and fixes a potential AI hang
+Test Branch 1.0.80078 Test 2025-10-08
 
 Design
 
-AI now requires a Diplomat leader to start a National Alliance. Increased probability of an alliance offer 
-Map options limiting the number of city sites now concentrate sites around player starts
-Consorts can now be Regents without needing to be Royal.  Ill characters will not be picked to be Regents
-Added repair cost to Town and Village improvements
-Free-for-all player starts no longer try to separate human players
-Ambitions that require Wonders now consider Wonders owned by teammates to be impossible to acquire
+Hero leaders can now Launch Offensive after attacking.  This still puts the Hero unit on cooldown, so they cannot act after Launch Offensive
+Harbors give 100% bonus to adjacent nets, up from 60%
+Specialist builds are allowed to continue after their improvement has been pillaged
+When a preset character joins a preferred family their children now join the same family 
+Reduced the amount of Forest on the Desert map script. Removed option to specify starting inland or on the coast
+Tribe units can now heal after moving
 
 Programming
 
-Improved AI for Zealot leader enlisting
-AI no longer attacks civilians if doing so puts their units in danger of being killed
-Modio version upgrade 
-Added option for CRC tracing when loading mods
+Unity package updates
+Minor MP performance optimization
 
 UI
 
-In sequential turn network games, observer view automatically switches to the next player when the observed player's turn ends.  This is disabled after manually switching to a different player
-Observers now use their set language rather than the language of the observed player
-Cities with effects that give Rebel chance are marked with a Rebels icon in the city list screen and city tooltip 
-Population in the city list screen is now a link to city specialists 
-Worker build action button yields no longer subtract unimproved tile yields
-Map Overlay Customizer now has seperate options for Urban and Rural Improvements
-Renamed the City Number options and City Site Density to City Site Spacing 
-Chat hotkey no longer works for non-host observers 
-Show Foreign Family Colors option now also applies to city widget crests 
-Clicking a General portrait on a selected unit now selects the character
-Law tooltips now show family opinion changes instead of family class opinion
-New Place Bonus decisions get sorted to the front of the event queue 
-Improvement pings no longer removed after a terrain change if the improvement is still valid or after a resource is added if the improvement matches the resource
-Added foreign opinion helptext to specify the portion of the Ruthless AI opinion that is due to a player alliance
-Network server name is now the username of the player on the current online platform, where available
+Added character archetype crest to mission targets
+Default player name in MP is now taken from the online platform nickname
+When a unit cannot complete a move, camera pans back to unit location and fatigued sound is played 
+Right-clicks on UI widgets now work with a tooltip locked 
+Moved some player help text to the advanced help text option
 
 Bugs Fixed
 
-Fixed AI development claiming more than the nation's share of city sites when using limited City Site Number options
-Fixed agent tab not properly updating after assigning agent character
-Fixed setup screen bug with number of players 
-Fixed modified trade values not being calculated in trade bonus helptext 
-Fixed city culture tooltip flicker
-Fixed overlay customizer not updating toggles when re-opening after making unsaved changes
-Fixed locked overlay highlight switching off of Custom when toggling customizer 
-Fixed improvement filter issues, include unfinished improvements 
-Fixed pillaging, burn and launch offensive not clearing hidden status
-Fixed some issues with temporarily hidden units 
-Fixed retry cloud upload directing to succession UI 
-Fixed map selection with character assignment UI active
-Fixed double state religion reference in happiness help text 
-Fixed AI leaving Wonders unfinished if interrupted
-Fixed not being able to change language when it's not your turn 
+Fixed popup and decision processing when not the active player's turn
+Fixed foreign characters showing on 1st turn of Hotseat game
+Fixed custom nickname bugs
+Fixed improvement net yield help text to include income from adjacent tiles that belong to a different city
+Fixed game reload inconsistent state
+Fixed pathfinder not being reset when a new tile is revealed 
+Fixed implicit conversion with maiMinStats/maiMaxStats 
+Fixed Recruit button not appearing with no orders 
+Fixed assassinating heir mission not giving achievement when heir exploring
+Fixed Kush non-worker units not being able to build Forts outside their borders (affected previous Test only)
+Fixed Modio not initialising on GOG builds (affected previous Test only)
+Fixed mod infos initialization, source effects were not being properly set on new game.  Fixes Rebel text in the Wrath of Gods scenario
 Text and event fixes
