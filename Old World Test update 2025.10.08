@@ -2,7 +2,7 @@ Test Branch 1.0.80078 Test 2025-10-08
 
 Design
 
-Hero leaders can now Launch Offensive after attacking.  This still puts the unit on cooldown, so they cannot attack twice
+Hero leaders can now Launch Offensive after attacking.  This still puts the Hero unit on cooldown, so they cannot act after Launch Offensive
 Harbors give 100% bonus to adjacent nets, up from 60%
 Specialist builds are allowed to continue after their improvement has been pillaged
 When a preset character joins a preferred family their children now join the same family 
