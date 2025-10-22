@@ -26,7 +26,7 @@ UI
 
 Added Road improvement ping
 Temporarily hidden units show a timer 
-Temporay hidden status is ignored for damage preview if unit has to move for previewed attack
+Temporary hidden status is ignored for damage preview if unit has to move for previewed attack
 Last choices for customized leaders are remembered
 Cloud game hosts can now rename the game using the host control popup 
 Succession list helptext (tooltip for the Inheritance button) shows archetype icons 
@@ -47,7 +47,7 @@ Fixed characters incorrectly showing under Court filter
 Fixed tile widgets not always updating after place bonus decision resolved 
 Fixed not being able to retire when there are no opponents in SP
 Fixed possible null reference when a city is razed
-Fixed Mounted unit attack bonus incorectly being listed in tooltips as a negative defensive modifier
+Fixed Mounted unit attack bonus incorrectly being listed in tooltips as a negative defensive modifier
 Fixed tribal unit movement bug
 Fixed extra divider in improvement tooltip for improvements with no yields 
 Fixed event trigger text not always showing correctly
