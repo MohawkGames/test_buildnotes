@@ -1,57 +1,10 @@
-Test Branch 1.0.80302 Test 2025-10-22
+Test Branch 1.0.80395 Test 2025-10-29
 
-Design
+Update to match main branch
 
-Mounted units no longer get attack bonus into Marsh. Renamed Flat to Open for Mounted Attack bonus
-Adding urban tiles (Builder Leader ability) stone costs doubled (20 on flat and 40 on hill)
-Eliminating the last unit of a tribe outside of a camp now also counts as eliminating the tribe and triggers elimination events
-Spending Civics to Enlist (Zealot Leader ability) no longer expires after 3 turns, but the effect is removed when the leader is removed from the unit
-Duplicate nations are now allowed even with preset leaders, as long as dynasties are not duplicated 
-In No Events / No Characters, truce offers cost nothing if you're winning the war
-Unit position swaps clears temporarily hidden state of the swap initiating unit 
-Characters with an active mission on them (like marriage) cannot be auto-married in the meantime
-Great Lighthouse now applies faster upgrade bonus to existing hamlet class improvements, not only newly constructed ones 
-AI now aims to have have a minimum of about a tenth of its units be its Unique Unit
-Added initial turn timer time stockpile.  Slow adds 3 minutes, Medium 2 and Fast 1
+Bugs Fixed:
 
-Programming
-
-Fixed several memory leaks
-Memory allocation optimization
-Improved AI use of Enlist
-Unhardcoded some AI diplomacy parameters, made warState.xml more mod-friendly
-Updated AWS SDK to 3.7
-
-UI
-
-Added Road improvement ping
-Temporarily hidden units show a timer 
-Temporary hidden status is ignored for damage preview if unit has to move for previewed attack
-Last choices for customized leaders are remembered
-Cloud game hosts can now rename the game using the host control popup 
-Succession list helptext (tooltip for the Inheritance button) shows archetype icons 
-Removed Follower list when selecting families 
-Remove the separate popups for dead/retiring governor, agent and general 
-Improved goal instructions in Learn to Play scenarios
-Moved some tooltip text to advanced help text
-MP Setup screen newly added players duplicate the parameters of the previous player
-City religious improvement tooltip now includes unfinished and pillaged improvements 
-Added tribe elimination notification
-
-Bugs Fixed
-
-Fixed AI not building most projects
-Fixed map scripts sometimes generating marsh on hills
-Fixed Regicide achievement not always triggering
-Fixed characters incorrectly showing under Court filter
-Fixed tile widgets not always updating after place bonus decision resolved 
-Fixed not being able to retire when there are no opponents in SP
-Fixed possible null reference when a city is razed
-Fixed Mounted unit attack bonus incorrectly being listed in tooltips as a negative defensive modifier
-Fixed tribal unit movement bug
-Fixed extra divider in improvement tooltip for improvements with no yields 
-Fixed event trigger text not always showing correctly
-Fixed camera hotkeys not working in map editor
-Fixed MP setup when playing scenarios where player order doesn't match scenario save
-Fixed new tribe leaders not following their tribe's religion in Wrath of Gods scenario
-Text and event fixes
+Fixed some event text variables not displaying correctly
+Fixed character tab icon always been highlit
+Fixed marriage bug
+Reversed the accidental increase in urban improvement stone cost
