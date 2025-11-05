@@ -68,5 +68,5 @@ Fixed timeline borders for final turn when game is over
 Fixed Envoy trait tooltip
 Fixed player luxuries not being correctly updated when a resource was removed from a tile with a specialist
 Fixed city unit production buttons missing unit traits 
-Fixed caravans causing game crash in Pharoahs of the Nile scenario 2
+Fixed caravans causing game crash in Pharaohs of the Nile scenario 2
 Fixed unit action cost labels sometimes getting applied to mission buttons (affects mods) 
