@@ -4,8 +4,6 @@ Design
 
 Leader Generals immune to Disarm and Immobilization (Grappler), in addition to Panic, Stun, and Enlisting
 Caravans can't spawn on a tile with a Caravan, although they can still occupy the same tile as one when moving 
-Tribal Truce missions when you are at war with their ally will always result in a refusal
-AI will not offer a Truce to a tribe while at war with that tribe's ally
 
 Programming
 
