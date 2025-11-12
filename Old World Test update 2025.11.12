@@ -1,0 +1,43 @@
+Test Branch 1.0.80669 Test 2025-11-12
+
+Design
+
+Leader Generals immune to Disarm and Immobilization (Grappler), in addition to Panic, Stun, and Enlisting
+Caravans can't spawn on a tile with a Caravan, although they can still occupy the same tile as one when moving 
+Tribal Truce missions when you are at war with their ally will always result in a refusal
+AI will not offer a Truce to a tribe while at war with that tribe's ally
+
+Programming
+
+Improved AI attack planning to reduce the effect of counterattacks
+
+UI
+
+Holding Alt with a selected unit displays the unit's movement path/range assuming water control in all water tiles 
+Unit attacked log now shows damage done instead of health left
+Notifications now appear when invisible units are soon to become visible 
+Added a longer camera delay to AI attacks 
+Relatives panel now shows dead characters
+Player tooltip reveals yields information when game is over, similar to observer mode 
+Updated text for some law Encylopedia entries
+
+Bugs Fixed
+
+Fixed Cathedral happiness adjacency not working
+Fixed question marks appearing in some event text
+Fixed memories for assassination getting applied to dead character instead of family
+Fixed tile improvement highlights being shown for non-team units
+Fixed appearance of fortify bar on unit banner for Testudo 
+Fixed some AI and UI revealed terrain knowledge
+Fixed net yield help text for projects with effects with improvement modifiers 
+Fixed imprisoned mission succeeding on dead characters
+Fixed null reference on shutdown 
+Fixed observers getting achievements from the player they are observing
+Fixed religious dissent projects being valid without associated religion
+Fixed Tribal truce missions failing silently when tribe has an ally
+Fixed some issues with the leader customization settings feature 
+Fixed history popup not always showing fog of war
+Fixed tile reveal not being reset after an Occurrence changes visibility (Wrath of Gods)
+Minor Worker/Occurrence fix for better mod support
+More robust null handling from ModCache lookup
+Text and event fixes
