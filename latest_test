@@ -1,72 +1,41 @@
-Test Branch 1.0.80559 Test 2025-11-05
+Test Branch 1.0.80669 Test 2025-11-12
 
 Design
 
-Civilian units defend cities instead of getting pushed out
-Units with Leader Generals are immune to stun, panic, enlistment 
-Can no longer hire Barbarian units (affects Carthage and Orator leaders)
-Added tribal unit upgrade cost of money equal to its upgrade cost in training 
-Increased Prosperous trait money from 5/10 per culture level to 8/16
-Halved Intelligent trait science output
-Assassination attempts that fail have a chance to avoid negative consequences
-Enlisting a unit replaces any existing cooldown by the enlisted cooldown 
-Capturing city timer no longer counts back up when city is left vacant
-Cities in the capturing state no longer go to Anarchy if no capturing progress has been made
-Units can pass through capturable cities without capturing them as long as they don't stop inside 
-Ocean depth tiles are safe from Tsunami's (Wrath of Gods) 
+Leader Generals immune to Disarm and Immobilization (Grappler), in addition to Panic, Stun, and Enlisting
+Caravans can't spawn on a tile with a Caravan, although they can still occupy the same tile as one when moving 
 
 Programming
 
-Memory management cleanup, fixed more memory leaks 
-AI builds more strongholds, citadels and unique units
-AI now uses units with disarm effect early, so that later attacks can take advantage of it 
-Tribe placement improvements on map generation
-Automated workers now take into account road pings
-ModManager improvements
+Improved AI attack planning to reduce the effect of counterattacks
 
 UI
 
-Added "Polearm" instead of "Rout" to combat preview, to make it clear when polearm units prevent a rout 
-Holding Ctrl with a worker selected adds the improvement on the worker's tile (if any) to the unit action buttons
-Cloud games are now sorted by whether or not it's your turn first, time since last upload second, and alphabetically third
-Added selection to dropdown list for customizable leader portrait, name, age, gender, and trait, so that these can be reset to random after being selected 
-Capitalized some game terms (Unit, City, Nation, Character, Tile, etc)
-Tweaked adjacent terrain target help text 
-Improvement name is shown for bonus placements of improvements that produce no yields
-Planned specific improvements/roads for players on your team now listed on the tile tooltip (but still not as tile widgets) 
-Camera no longer pans to failed unit movement if instant unit movement is turned on, or in Network games
-City screen button tooltip now differentiates between increasing and decreasing happiness
-Effect of free specialists now shown in improvement yield previews
-Unit modifiers to improvement yields only shown if unit on the tile 
-Forced March button tooltip clarification 
-Blocked abandoning ambitions in Learn to Play scenarios
-Changed High Vision icon effect color for Scouts 
-Changed capture progress bar appearance on city widget when paused
+Holding Alt with a selected unit displays the unit's movement path/range assuming water control in all water tiles 
+Unit attacked log now shows damage done instead of health left
+Notifications now appear when invisible units are soon to become visible 
+Added a longer camera delay to AI attacks 
+Relatives panel now shows dead characters
+Player tooltip reveals yields information when game is over, similar to observer mode 
+Updated text for some law Encyclopedia entries
 
 Bugs Fixed
 
-Fixed attack preview not always updating
-Fixed error logged on shutdown
-Fixed unit repair recommendations
-Fixed Resources sometimes being listed multiple times in Encyclopedia
-Fixed never-buildable improvements appearing in map pin UI 
-Fixed null reference in overlay customizer map pins 
-Fixed mod manager UI when session is not already valid 
-Fixed Atalia wikipedia link
-Fixed formatting of Zealot enlist tooltip
-Fixed 'Consumes X Orders' line showing when order cost is already shown
-Fixed enlisting a unit that had been capturing one of your cities not capturing it back for you
-Fixed effectCity help sometimes not appearing 
-Fixed observer visibility update 
-Fixed observer not being able to cycle decisions
-Fixed camera sometimes not panning to a unit that could not complete its movement
-Fixed movement preview when moving into a capturable city
-Fixed Tribe Elimination event and stat if eliminating a tribe through hiring a unit
-Fixed null reference caused by blank note pings
-Fixed yield panel not updating with changes to player trade network connections 
-Fixed timeline borders for final turn when game is over
-Fixed Envoy trait tooltip
-Fixed player luxuries not being correctly updated when a resource was removed from a tile with a specialist
-Fixed city unit production buttons missing unit traits 
-Fixed caravans causing game crash in Pharaohs of the Nile scenario 2
-Fixed unit action cost labels sometimes getting applied to mission buttons (affects mods) 
+Fixed Cathedral happiness adjacency not working
+Fixed question marks appearing in some event text
+Fixed memories for assassination getting applied to dead character instead of family
+Fixed tile improvement highlights being shown for non-team units
+Fixed appearance of fortify bar on unit banner for Testudo 
+Fixed some AI and UI revealed terrain knowledge
+Fixed net yield help text for projects with effects with improvement modifiers 
+Fixed imprisoned mission succeeding on dead characters
+Fixed null reference on shutdown 
+Fixed observers getting achievements from the player they are observing
+Fixed religious dissent projects being valid without associated religion
+Fixed Tribal truce missions failing silently when tribe has an ally
+Fixed some issues with the leader customization settings feature 
+Fixed history popup not always showing fog of war
+Fixed tile reveal not being reset after an Occurrence changes visibility (Wrath of Gods)
+Minor Worker/Occurrence fix for better mod support
+More robust null handling from ModCache lookup
+Text and event fixes
