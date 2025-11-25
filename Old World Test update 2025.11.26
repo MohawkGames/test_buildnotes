@@ -1,0 +1,9 @@
+Test Branch 1.0.80893 Test 2025-11-26
+
+Update to match Main build
+
+Bugs Fixed
+
+Fixed marriage offers not happening unless the character had been recently widowed
+Fixed UI null reference
+Fixed AI retreat bug
