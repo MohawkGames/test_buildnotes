@@ -1,51 +1,9 @@
-Test Branch 1.0.80794 Test 2025-11-19
+Test Branch 1.0.80893 Test 2025-11-26
 
-Design
-
-Citrus is now a luxury resource
-Changing the Succession Law no longer results in characters becoming Bypassed and suffering opinion penalties
-Stunned units no longer counterattack
-Characters are more likely to get a strength or weakness before reaching adulthood 
-In 2 team MP games, leaders initial strength is now mirrored when set randomly 
-
-AI Improvements
-
-Better AI improvement selection, improvement unit movement decisions after founding a city
-Improved AI worker order efficiency and management
-Damaged workers heal more often
-Existing improvements get replaced less often 
-AI places less emphasis on building Garrisons early
-AI anchoring improvements
-AI tries harder to have an up-to-date army
-
-UI
-
-Enabled Mirror Map option with Random map script selected in MP
-Cleaned up governor candidate text on city list screen 
-Updated Clergy helptext
-'Unlocks Project:' helptext no longer shown for hidden projects 
-Renamed From Tribute to Cancelled Tribute in bonus help when relevant
-Removed "Each:..." helptext from Specialists if you don't have that effect 
-De-cluttered EffectCity help text 
-Added more specific turn summary text for when a regent or a rightful heir takes over the throne of a rival nation
-Removed scenario save import option from Carthage campaigns
+Update to match Main build
 
 Bugs Fixed
 
-Fixed rebels and raiders pillaging tiles that don't belong to their target nations
-Fixed the definition of an open tile to include no vegetation
-Fixed Send Caravan ambitions auto-failing if you lose the ability to build Caravans 
-Fixed trade values showing total trade for individual trades 
-Fixed missing mask in bug reporting Description box 
-Fixed redundant trait check
-Fixed Found Capital icon alignment in Pick Later
-Fixed tribal camp not being cleared when defender killed by an event following a ranged attack
-Fixed Regents taking the throne not being announced to other players 
-Fixed repair tooltip with action queue 
-Fixed AI repeated unit movement
-Fixed AI not considering danger from immobile units 
-Fixed AI civilian unit retreat 
-Fixed tooltips showing effects from disabled DLCs 
-Fixed Event Browser errors when loading a mod that uses -change on an -add entry
-Fixed Minor Earthquake sometimes targeting water tile and not propagating (Wrath of Gods)
-Text and event fixes
+Fixed marriage offers not happening unless the character had been recently widowed
+Fixed UI null reference
+Fixed AI retreat bug
