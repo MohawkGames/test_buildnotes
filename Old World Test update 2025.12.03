@@ -1,0 +1,52 @@
+Test Branch 1.0.81011 Test 2025-12-03
+
+Design
+
+Added Point Symmetry option to MP setup when Mirror Map option is selected. This enables radial mirroring around the map's midpoint, producing a layout symmetric in all directions from the center
+Added event for when AI forfeits a city site due to player having attacked the camp more
+
+Programming
+
+AI avoids building Wonders in border cities, and especially in cities that are in danger of being captured 
+AI uses disciples to build religious improvements before further spreading the religion, if possible
+Pathfinder prefers to keep units hidden, have them occupy good defensive terrain, and avoid marsh, all else being equal
+Added support for local storage for persistent scenario data
+
+UI 
+
+All Improvements filter shows all non-wonder improvements that can ever be built
+Removed crit chance from attack preview window when not applicable (i.e. attacking cities)
+Clicking cities listed for a selected luxury pans to city center
+Dead character portraits faded in Characters tab
+Trashed bonus cards faded in tech tree
+Non-improvement yield lost when building an improvement on a resource now shown on tooltip (with Advanced Help Text active)
+Leader General control immunity bonus no longer shown in archetype helptext, merged with extra movement unit effect
+Leading and trailing whitespace characters are now removed from manually entered player online IDs 
+Help text for multiple traits from a bonus now properly takes fallbacks into account 
+Renamed terrain target of Volcanoes or Mountains (Jerwan requirement) from "Mountains" to "Peaks" 
+Actions panel now hidden when it would otherwise be empty
+DLC name shown in parentheses in dropdowns for map scripts
+Included map scripts shown on DLC Mechanics page in Encyclopedia
+Hid some redundant-looking missions in Encyclopedia
+Mod Browser UI is refreshed once workshop mod list is retrieved 
+
+Bugs Fixed
+
+Fixed combat notification log categories
+Fixed children gaining archetypes randomly
+Fixed improvements from bonuses not being auto-placed on their intended tiles
+Fixed religion founding city randomisation
+Fixed Hamlet development turns tooltip being wrong before the hamlet has been completed and the Lighthouse is active
+Fixed Mirror Map being selected on map scripts that do not support that option
+Fixed entering observer mode and following a different nation after surrendering from a network game
+Fixed client Hall of Fame not being updated after completing a network game 
+Fixed governor availability text not updating consistently
+Fixed options menu tooltips getting hidden behind dropdowns 
+Fixed map generation bug that could result in a river delta on land
+Fixed trade network save/load bug
+Fixed a threading issue
+Fixed improvements with city effects that modify a city's overall yield not showing up on calculations before building improvement (i.e Patrons culture bonus)
+Fixed some combat events potentially displaying incorrectly in Heroes of the Aegean scenario 5
+Fixed Wrath icon in Wrath of Gods scenario sometimes not displaying colour 
+Fixed mods subbed from Steam client not copying from workshop cache to Old World mods folder 
+Text and event fixes
