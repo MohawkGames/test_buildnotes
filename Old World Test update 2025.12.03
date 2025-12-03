@@ -2,7 +2,7 @@ Test Branch 1.0.81020 Test 2025-12-03
 
 Design
 
-Added Point Symmetry option to MP setup when Mirror Map option is selected. This enables radial mirroring around the map's midpoint, producing a layout symmetric in all directions from the center
+Added Point Symmetry option to MP setup when Mirror Map option is selected. This enables radial mirroring around the map's midpoint, producing a layout symmetric in all directions from the center.  Players will start in opposite corners of the map
 Added event for when AI forfeits a city site due to player having attacked the camp more
 
 Programming
