@@ -1,0 +1,27 @@
+Test Branch 1.0.81109 Test 2025-12-10
+
+Design
+
+Healing Shrines give Healer effect to both civilian and military units
+Mausoleum gives Guard effect to non-promotable military units (i.e. Militia)
+Heliopolis gives 0.5 orders per shrine instead of 1
+Mourning trait no longer has a chance to make characters ill 
+If the player doesn't have enough yields to sell to cover debts, then a queued build with no progress is cleared to get enough yields to sell, if possible
+
+UI
+
+Traits that give yields now always show totals with Advanced Help Text enabled
+Orders history graph no longer subtracts unit consumption 
+
+Bugs Fixed
+
+Fixed events not firing for killed units
+Fixed character tooltip position
+Fixed some random seed quirks causing courtiers appearing on the same turn to be identical
+Fixed luxury availability not updating immediately on canceling a trade deal 
+Fixed AI making urban over resources
+Fixed invalid trait warning text color being reversed
+Fixed tile tooltip null reference 
+Fixed resources getting added outside of map boundary
+Fixed difficulty defaulting to Custom and preset difficulty showing as Custom in the Barbarian Horde scenario
+Fixed Duel and Tiny map sizes and Tumbling Mountain map script being available in the Barbarian Horde scenario
