@@ -2,9 +2,9 @@ Test Branch 1.0.81109 Test 2025-12-10
 
 Design
 
+Heliopolis gives 0.5 orders per shrine instead of 1
 Healing Shrines give Healer effect to both civilian and military units
 Mausoleum gives Guard effect to non-promotable military units (i.e. Militia)
-Heliopolis gives 0.5 orders per shrine instead of 1
 Mourning trait no longer has a chance to make characters ill 
 If the player doesn't have enough yields to sell to cover debts, then a queued build with no progress is cleared to get enough yields to sell, if possible
 
