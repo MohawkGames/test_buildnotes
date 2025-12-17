@@ -1,27 +1,32 @@
-Test Branch 1.0.81109 Test 2025-12-10
+Test Branch 1.0.81204 Test 2025-12-17
 
 Design
 
-Heliopolis gives 0.5 orders per shrine instead of 1
-Healing Shrines give Healer effect to both civilian and military units
-Mausoleum gives Guard effect to non-promotable military units (i.e. Militia)
-Mourning trait no longer has a chance to make characters ill 
-If the player doesn't have enough yields to sell to cover debts, then a queued build with no progress is cleared to get enough yields to sell, if possible
+Zone of Control no longer extends across rivers
+Many event tweaks including a buff for the Shrine of the Unknown God
 
 UI
 
-Traits that give yields now always show totals with Advanced Help Text enabled
-Orders history graph no longer subtracts unit consumption 
+New Ballista unit icon added
+Schemer's Adopt mission now shows a reminder when available
+Yield totals in the stats screen graphs now include all sources, not just income
+Alt-1 to Alt-9 switch players when observing a network game
+Improved eligible unit trait help text  
+Made tech unlocks helptext more specific and consistent 
+Removed outdated references to save importing in Carthage scenario descriptions
 
 Bugs Fixed
 
-Fixed events not firing for killed units
-Fixed character tooltip position
-Fixed some random seed quirks causing courtiers appearing on the same turn to be identical
-Fixed luxury availability not updating immediately on canceling a trade deal 
-Fixed AI making urban over resources
-Fixed invalid trait warning text color being reversed
-Fixed tile tooltip null reference 
-Fixed resources getting added outside of map boundary
-Fixed difficulty defaulting to Custom and preset difficulty showing as Custom in the Barbarian Horde scenario
-Fixed Duel and Tiny map sizes and Tumbling Mountain map script being available in the Barbarian Horde scenario
+Fixed being able to target non-visible tiles 
+Fixed Tough promotion double-counted on defense 
+Fixed tribe units sometimes not healing
+Fixed tribe elimination events firing twice 
+Fixed AI sometimes taking over player units that are not automated, if there was at least one actually automated unit 
+Fixed automated workers unstacking
+Fixed Barbarians not moving in players territory when they end up there whilst not allowed to enter 
+Fixed Theology help not showing potential effects that do not currently apply
+Fixed MP scenarios overwriting the game name 
+Fixed religion opinion graph disappearing after player defeat 
+Fixed mod sub checker not being able to check again if modio authentication is slow
+Fixed mod sub checker sometimes not closing
+Text and event fixes
