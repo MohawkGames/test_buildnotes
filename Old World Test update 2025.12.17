@@ -1,0 +1,32 @@
+Test Branch 1.0.81202 Test 2025-12-17
+
+Design
+
+Zone of Control no longer extends to the opposite side of a river
+Many event tweaks including a buff for the Shrine of the Unknown God
+
+UI
+
+New Ballista unit icon added
+Schemer's Adopt mission now shows a reminder when available
+Yield totals in the stats screen graphs now include all sources, not just income
+Alt-1 to Alt-9 switch players when observing a network game
+Improved eligible unit trait help text  
+Made tech unlocks helptext more specific and consistent 
+Removed outdated references to save importing in Carthage scenario descriptions
+
+Bugs Fixed
+
+Fixed being able to target non-visible tiles 
+Fixed Tough promotion double-counted on defense 
+Fixed tribe units sometimes not healing
+Fixed tribe elimination events firing twice 
+Fixed AI sometimes taking over player units that are not automated, if there was at least one actually automated unit 
+Fixed automated workers unstacking
+Fixed Barbarians not moving in players territory when they end up there whilst not allowed to enter 
+Fixed Theology help not showing potential effects that do not currently apply
+Fixed MP scenarios overwriting the game name 
+Fixed religion opinion graph disappearing after player defeat 
+Fixed mod sub checker not being able to check again if modio authentication is slow
+Fixed mod sub checker sometimes not closing
+Text and event fixes
