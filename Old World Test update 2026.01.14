@@ -1,0 +1,74 @@
+Test Branch 1.0.81xxx Test 2026-01-14
+
+Up to 81472 (13/01/26)
+
+Design
+
+Added new national ambition - Control three of each Legendary Improvement
+Changed Control Six Legenedary Cities national ambition to Control Five Legendary Cities
+Send 20 luxuries is now a tier 9 ambition instead of a national ambition
+Prevented building improvements on Marsh, except for Farms with Centralization
+All fresh water sources supply fresh water to their own tile in addition to adjacent tiles
+Remove Free Silk and Free Ebony bonus tech cards
+Moved Free Porcelain bonus card to be unlockd by Coinage and reduced tech cost accordingly
+Free Porcelain and Free Perfume bonus cards now give 2 instances of their luxuries
+Autonomous Rule project is removed when a city is breached
+Characters cannot give birth more than once a year (relevant for non-yearly turn scales)
+Free laws that replace an existing law do not increment the law change count
+Raiders can capture empty cities and city sites
+Carthage scenario 2 now automatically uses the families that were founded in the first scenario and carries over goal memories
+Increased maximum effect of god opinion on religion opinion in Wrath of Gods scenario (200 -> 500)
+Reduced Tribal raid range in Wrath of Gods scenario
+Disabled Venerate mission for and demands being given by Abandoned god in Wrath of Gods scenario 
+
+Programming
+
+Many UI optimizations
+Memory leak fixes
+Improvements to Safe Mode
+AI border expansion tweaks
+AI law value correction to avoid frequent changes
+
+UI
+
+Added on-map icon to units that have been disarmed
+Added hotkey for extending turn time (Alt-E)
+Updated ZOC help text
+Enabled gold cost to buy yields for recommended improvements tooltip
+Added color-coding for Send/Return text in Luxury Management
+Improved consistency of city build production cost tooltips
+Trait opinion of leader now shown in trait tooltip even without advanced help text
+Pagan religions are shown in the Adopt State Religion menu even without Divine Rule, with explanatory text
+Yields from disciples on improvements are shown when disciples are selected
+Anchor mission help text includes water control range
+Condensed enlist ability help text
+Greyed out effect for dead character portraits applied more consistenly
+Improved Settler Found City tooltip
+Cities with zero yield are included in the nation yield breakdown
+
+Bugs Fixed
+
+Fixed stun, immobilize, and panic effects sometimes being applied to units inside cities
+Fixed events that kill units not incrementing stats and goal counters
+Fixed temporarily hidden unit pathfinding
+Fixed some AI unit movement cases where it would trip over itself when there were units in the way
+Fixed some minor AI combat issues
+Fixed audio bug that occurred when only one music track was enabled
+Fixed some unit panel icon issues
+Fixed some tribal events incorrectly remaining after tribal elimination
+Fixed Caravan mission button saying that there are no players when out of orders
+Fixed some cases where city effects were not displayed
+Fixed boundary tiles in Caucasus on the Old World map
+Fixed character opinion load/save bugs
+Fixed family seat icon data bug
+Fixed State Religion reminder not opening submenu
+Fixed build specialist tile highlights not showing with border expansion
+Fixed Foreign Marrage mission in No Events mode
+Fixed temporarily hidden units sometimes still being rendered for other players
+Fixed village upgrade turns and improvement help text with Lighthouse
+Fixed Occurrence effects not being removed when ended by an event/bonus (Wrath of Gods)
+Fixed Veneration jealousy penalty being applied to both religion and god in Wrath of Gods scenario 
+Fixed tech helptext not listing non religion-based project unlocks in Wrath of Gods scenario
+Fixed Carthage scenario 3 load/save bug
+Fixed ModManager panel trying to update when not active
+Text and event fixes
