@@ -53,7 +53,7 @@ Improvements to Ruins moel
 
 Bugs Fixed
 
-Fixed Valid Improvements filter not checking tech requirements 
+Fixed Valid Improvements worker filter 
 Fixed stun, immobilize, and panic effects sometimes being applied to units inside cities
 Fixed events that kill units not incrementing stats and goal counters
 Fixed temporarily hidden unit pathfinding
