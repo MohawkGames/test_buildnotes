@@ -1,4 +1,4 @@
-Test Branch 1.0.81xxx Test 2026-01-14
+Test Branch 1.0.81498 Test 2026-01-14
 
 Up to 81472 (13/01/26)
 
@@ -7,6 +7,9 @@ Design
 Added new national ambition - Control three of each Legendary Improvement
 Changed Control Six Legenedary Cities national ambition to Control Five Legendary Cities
 Send 20 luxuries is now a tier 9 ambition instead of a national ambition
+Disciples can now clear vegetation
+Cannot build an improvement that removes vegetation if the unit cannot clear the vegetation
+Traders no longer get a court merchant when founding their seat 
 Prevented building improvements on Marsh, except for Farms with Centralization
 All fresh water sources supply fresh water to their own tile in addition to adjacent tiles
 Remove Free Silk and Free Ebony bonus tech cards
@@ -31,6 +34,7 @@ AI law value correction to avoid frequent changes
 
 UI
 
+Added Peak Legitimacy and Peak Legitimacy per Leader to Hall of Fame (requires regenerating HOF for existing games, won't display on very old saves)
 Added on-map icon to units that have been disarmed
 Added hotkey for extending turn time (Alt-E)
 Updated ZOC help text
@@ -45,9 +49,13 @@ Condensed enlist ability help text
 Greyed out effect for dead character portraits applied more consistenly
 Improved Settler Found City tooltip
 Cities with zero yield are included in the nation yield breakdown
+When a non-server network game has disconnected human players and the turn timer is counting down, a warning is displayed next to the turn time 
+Improvements to Citrus resource and Grove models
+Improvements to Ruins moel
 
 Bugs Fixed
 
+Fixed Valid Improvements filter not checking tech requirements 
 Fixed stun, immobilize, and panic effects sometimes being applied to units inside cities
 Fixed events that kill units not incrementing stats and goal counters
 Fixed temporarily hidden unit pathfinding
