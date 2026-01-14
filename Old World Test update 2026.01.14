@@ -3,7 +3,7 @@ Test Branch 1.0.81509 Test 2026-01-14
 Design
 
 Added new national ambition - Control three of each Legendary Improvement
-Changed Control Six Legenedary Cities national ambition to Control Five Legendary Cities
+Changed Control Six Legendary Cities national ambition to Control Five Legendary Cities
 Send 20 luxuries is now a tier 9 ambition instead of a national ambition
 Disciples can now clear vegetation
 Cannot build an improvement that removes vegetation if the unit cannot clear the vegetation
@@ -44,12 +44,12 @@ Pagan religions are shown in the Adopt State Religion menu even without Divine R
 Yields from disciples on improvements are shown when disciples are selected
 Anchor mission help text includes water control range
 Condensed enlist ability help text
-Greyed out effect for dead character portraits applied more consistenly
+Greyed out effect for dead character portraits applied more consistently
 Improved Settler Found City tooltip
 Cities with zero yield are included in the nation yield breakdown
 When a non-server network game has disconnected human players and the turn timer is counting down, a warning is displayed next to the turn time 
 Improvements to Citrus resource and Grove models
-Improvements to Ruins moel
+Improvements to Ruins model
 
 Bugs Fixed
 
@@ -69,7 +69,7 @@ Fixed character opinion load/save bugs
 Fixed family seat icon data bug
 Fixed State Religion reminder not opening submenu
 Fixed build specialist tile highlights not showing with border expansion
-Fixed Foreign Marrage mission in No Events mode
+Fixed Foreign Marriage mission in No Events mode
 Fixed temporarily hidden units sometimes still being rendered for other players
 Fixed village upgrade turns and improvement help text with Lighthouse
 Fixed Occurrence effects not being removed when ended by an event/bonus (Wrath of Gods)
