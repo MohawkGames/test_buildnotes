@@ -1,0 +1,46 @@
+Test Branch 1.0.816?? Test 2026-01-21
+
+This update contains a major systems upgrade. The engine has been upgraded to Unity 6.3 and the graphics rendering code reworked.
+Bugs are expected, please refer to the Known Issues list below and report any other issues you encounter via the in game bug report system.
+
+Known Issues
+
+Portrait Age Interpolation is not working and has been disabled regardless of the player setting
+General icons are partially hidden behind unit icons
+World elements, notably unit healthbars and damage previews, can in some cases get hidden behind clouds
+City widget production icons can be obscured by water
+Tile visibility can flash on and off
+Timeline screen does not always render fog of war correctly
+Volcano display issues
+Brightness/Contrast issues
+
+Design
+
+Adjustments to Family Archetype character tendencies:
+Champions have more Zealots and less Heroes
+Riders have more Heroes and less Zealots
+Improvements to Carthage campaign persistency
+
+Programming
+
+Unity updated from 2022.3 to 6.3
+Graphics code converted to Unity's Universal Rendering Pipeline
+The URP upgrade improves graphics performance, letting the game render with fewer draw calls and use fewer shader variants
+
+UI
+
+Restart Game button renamed Reroll Game. This keeps the same map and preserves nation/dynasty of random AI opponents but now rerolls the random seed
+New Map button renamed to Reroll Map. This button is not shown for games on predefined maps
+Valid Improvements, Rural, and Urban worker filters show improvements valid anywhere in the city rather than just for current tile
+Character XP is now shown when they have upgraded at least once but progress to next level is 0
+
+
+Bugs Fixed
+
+Fixed character peak legitimacy including previous leader's ending legitimacy. "Legitimacy" in the HoF tooltip now "Final Legitimacy"
+Fixed Bulwark Cuirass UI issue
+Fixed Unyielding Banner reassigning general to non-player units
+Fixed scores not updating after effectPlayers change
+Fixed event decisions not getting restored after clearing selection
+Fixed tutorial videos not showing in the encyclopedia on Linux
+Fixed Wrath of Gods scenario warnings
