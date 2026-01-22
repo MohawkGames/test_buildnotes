@@ -6,8 +6,15 @@ Bugs are expected, please refer to the Known Issues list below and report any ot
 Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
+Changing graphics settings whilst in game can cause a Unity crash to desktop
+Egypt scenarios do not render correctly and are not playable
+Assyrian Urban tiles can cause errors on display and do not render correctly
 Timeline screen does not always render fog of war correctly
+Cataphract Archer texture is missing in combat previews
+Specialist tile highlights can get stuck after exiting a city
 Volcano display issues
+Menu display issues on some resolutions
+Improvement recommendation icons can be hidden behind city widgets
 
 Design
 
