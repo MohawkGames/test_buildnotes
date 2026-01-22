@@ -1,4 +1,4 @@
-Test Branch 1.0.816?? Test 2026-01-21
+Test Branch 1.0.816?? Test 2026-01-22
 
 This update contains a major systems upgrade. The engine has been upgraded to Unity 6.3 and the graphics rendering code reworked.
 Bugs are expected, please refer to the Known Issues list below and report any other issues you encounter via the in game bug report system.
@@ -7,7 +7,6 @@ Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
 General icons are partially hidden behind unit icons
-World elements, notably unit healthbars and damage previews, can in some cases get hidden behind clouds
 City widget production icons can be obscured by water
 Tile visibility can flash on and off
 Timeline screen does not always render fog of war correctly
