@@ -6,12 +6,8 @@ Bugs are expected, please refer to the Known Issues list below and report any ot
 Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
-General icons are partially hidden behind unit icons
-City widget production icons can be obscured by water
-Tile visibility can flash on and off
 Timeline screen does not always render fog of war correctly
 Volcano display issues
-Brightness/Contrast issues
 
 Design
 
