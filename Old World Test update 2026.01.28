@@ -1,0 +1,42 @@
+Test Branch 1.0.81790 Test 2026-01-28
+
+Design
+
+When randomly assigning archetypes, characters with governor effect traits are much more likely to be assigned a governor archetype, and similarly general archetypes for characters with general traits
+Killing Raiders now contributes towards goals to kill units of their original tribe
+Raiders are less stubborn about raiding, if the shortest path is blocked, and will hit opportunity targets instead
+Doubled Master/Elder Scribe money per Citizen, to +2/+4
+Anchoring and Unlimbering states are not interrupted by attacks that apply new cooldowns (i.e. Immobilize, Stun)
+Killed civilian units now count for Assyrian orders, Hero Leader Training, Epics Culture, etc
+Units can pass through hostile civilian units, as long as they don't end their movement on their tile
+Families and Religions get upset when their civilian units get killed and suffer -20 opinion for 40 turns per unit killed
+
+Programming
+
+Added Latin supplemental characters U+100 to U+17F to Avalon, Trajan and Judson assets, to assist Polish translation mods
+
+UI
+
+End Turn button now always eligible to be clicked with 0 orders, will cycle to required items when clicked
+Added Reset option when editing hotkeys
+
+Bugs Fixed
+
+Fixed map generation sometimes placing trees under water
+Fixed some popup scaling aspect ratio issues
+Fixed incorrect material on cataphract archer combat portrait
+Fixed blur vignette rendering incorrectly in Pharaohs of the Nile scenarios
+Fixed changing graphics preset in game causing a crash
+Fixed Assyria urban tiles displaying incorrectly
+Fixed rivers drawing over and display of city widget idle production icon
+Fixed barbarian widget being partially occluded by unit models
+Fixed exception during loading of incompatible asset bundles
+Fixed Coastal Rain Basin boundary mountain range
+Fixed Hardwood Forest player start position issues
+Fixed missing clutter materials on Honey groves
+Fixed opinion graph hover exception
+Fixed hotkey assignments sometimes incorrectly being labeled as conflicts
+Fixed inaccurate opinion sometimes showing in city governor tooltip for Grand Viziers
+Fixed timeline FOW rendering incorrectly
+Fixed some Chinese text localization issues
+Fixed Drought and Earthquake display issues (Wrath of Gods)
