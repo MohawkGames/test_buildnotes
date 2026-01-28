@@ -5,7 +5,7 @@ Known Issues
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
 Timeline screen does not always render fog of war correctly
 Volcano display issues
-Improvement recommendation icons can be hidden behind city widgets
+Improvement recommendation and unit icons can be hidden behind city widgets
 
 Design
 
