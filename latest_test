@@ -1,49 +1,46 @@
-Test Branch 1.0.81799 Test 2026-01-28
+Test Branch 1.0.81964 Test 2026-02-04
 
 Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
-Timeline screen does not always render fog of war correctly
 Volcano display issues
-Improvement recommendation and unit icons can be hidden behind city widgets
+Improvement building animations missing texture
 
 Design
 
-When randomly assigning archetypes, characters with governor effect traits are much more likely to be assigned a governor archetype, and similarly general archetypes for characters with general traits
-Killing Raiders now contributes towards goals to kill units of their original tribe
-Raiders are less stubborn about raiding, if the shortest path is blocked, and will hit opportunity targets instead
-Doubled Master/Elder Scribe money per Citizen, to +2/+4
-Anchoring and Unlimbering states are not interrupted by attacks that apply new cooldowns (i.e. Immobilize, Stun)
-Killed civilian units now count for Assyrian orders, Hero Leader Training, Epics Culture, etc
-Units can pass through hostile civilian units, as long as they don't end their movement on their tile
-Families and Religions get upset when their civilian units get killed and suffer -20 opinion for 40 turns per unit killed
+Negative opinion for civilian unit loss now applies only to Workers and Disciples, changed to -40 opinion for 20 turns
 
 Programming
 
-Added Latin supplemental characters U+100 to U+17F to Avalon, Trajan and Judson assets, to assist Polish translation mods
+Better AI legitimacy evaluation
+Added support for bonus cards to use bonus names in tooltips (affects mods only)
 
 UI
 
-End Turn button now always eligible to be clicked with 0 orders, will cycle to required items when clicked
-Added Reset option when editing hotkeys
+Added hotkey for suppressing tooltips (hold Ctrl + X)
+Added Unimproved Resources overlay to Overlay Customizer
+Improvements to Luxury Management display, especially when no luxuries available
+End Turn button now always active, clicking it will cycle to decisions preventing turn from ending
+Free improvement bonuses now show as normal event popups first
+Place improvement overlay not shown while bonus event is active
+When placing free improvements, ctrl+click is required to replace existing improvements
+Games with custom victories are skipped for unloaded scenario mods in Hall of Fame
 
 Bugs Fixed
 
-Fixed map generation sometimes placing trees under water
-Fixed some popup scaling aspect ratio issues
-Fixed incorrect material on cataphract archer combat portrait
-Fixed blur vignette rendering incorrectly in Pharaohs of the Nile scenarios
-Fixed changing graphics preset in game causing a crash
-Fixed Assyria urban tiles displaying incorrectly
-Fixed rivers drawing over and display of city widget idle production icon
-Fixed barbarian widget being partially occluded by unit models
-Fixed exception during loading of incompatible asset bundles
-Fixed Coastal Rain Basin boundary mountain range
-Fixed Hardwood Forest player start position issues
-Fixed missing clutter materials on Honey groves
-Fixed opinion graph hover exception
-Fixed hotkey assignments sometimes incorrectly being labeled as conflicts
-Fixed inaccurate opinion sometimes showing in city governor tooltip for Grand Viziers
-Fixed timeline FOW rendering incorrectly
-Fixed some Chinese text localization issues
-Fixed Drought and Earthquake display issues (Wrath of Gods)
+Fixed unit promotion icon rendering behind unit banners
+Fixed tile production icons drawing behind city widgets and transparent elements
+Fixed unit icons drawing partially behind city widgets sometimes
+Fixed scenario selection getting cleared when moving to MP setup screen
+Fixed missing theology info on tech tooltips
+Fixed bonus yield text bug
+Fixed Unit Seen notification not firing if unit becomes visible mid-move
+Fixed Default Governor bugs
+Fixed Peaks adjacency requirement being ignored by Clerics on Sand tiles
+Fixed encyclopedia display issue
+Fixed Research UI not showing after renaming landmark
+Fixed the Low graphics preset using the minimum rendering quality
+Fixed dirt particle effects causing pink cubes to appear in the center of the map
+Fixed MP games one human team getting stuck after victory
+Fixed Ask to Declare War mission helptext
+Fixed tile tooltip to show improvement defensive modifier in neutral territory
