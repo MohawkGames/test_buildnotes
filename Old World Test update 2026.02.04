@@ -1,4 +1,4 @@
-Test Branch 1.0.819xx Test 2026-02-04
+Test Branch 1.0.81948 Test 2026-02-04
 
 Known Issues
 
@@ -19,12 +19,13 @@ Added support for bonus cards to use bonus names in tooltips (affects mods only)
 UI
 
 Added hotkey for suppressing tooltips (hold Ctrl + X)
-Added Unimproved Resources (in-territory) overlay to Overlay Customizer
+Added Unimproved Resources overlay to Overlay Customizer
 Improvements to Luxury Management display, especially when no luxuries available
 End Turn button now always active, clicking it will cycle to decisions preventing turn from ending
 Free improvement bonuses now show as normal event popups first
 Place improvement overlay not shown while bonus event is active
 When placing free improvements, ctrl+click is required to replace existing improvements
+Games with custom victories are skipped for unloaded scenario mods in Hall of Fame
 
 Bugs Fixed
 
@@ -41,3 +42,6 @@ Fixed encyclopedia display issue
 Fixed Research UI not showing after renaming landmark
 Fixed the Low graphics preset using the minimum rendering quality
 Fixed dirt particle effects causing pink cubes to appear in the center of the map
+Fixed MP games one human team getting stuck after victory
+Fixed Ask to Declare War mission helptext
+Fixed tile tooltip to show improvement defensive modifier in neutral territory -
