@@ -43,4 +43,4 @@ Fixed the Low graphics preset using the minimum rendering quality
 Fixed dirt particle effects causing pink cubes to appear in the center of the map
 Fixed MP games one human team getting stuck after victory
 Fixed Ask to Declare War mission helptext
-Fixed tile tooltip to show improvement defensive modifier in neutral territory -
+Fixed tile tooltip to show improvement defensive modifier in neutral territory
