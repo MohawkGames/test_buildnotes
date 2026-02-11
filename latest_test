@@ -1,46 +1,52 @@
-Test Branch 1.0.81964 Test 2026-02-04
+Test Branch 1.0.82044 Test 2026-02-11
 
 Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
-Volcano display issues
-Improvement building animations missing texture
+Volcano and Harbor display issues
+Water Shrine graphical effects showing above specialist icon
+Resources not fading when unit on tile
+City widget shows on top of unit icons
+Fog of War flickering
+Unit display issues during AI turn 
+Show Single Units graphics option issues
 
 Design
 
-Negative opinion for civilian unit loss now applies only to Workers and Disciples, changed to -40 opinion for 20 turns
+Unique Unit (UU) tech bonus cards are now unlocked through culture instead of tech
+First tier UU bonus cards have had their cost increased from 100 to 200, give 2 units, and require a city with Strong culture
+Second tier UU bonus cards require a city with Legendary culture
+Zealot leader general now performs a Heal action after each kill, instead of being able to Apply Enlist
+Fervent (Piye's unique trait) now enables Apply Enlist as a leader general, at a cost of 100 civics (Wonders and Dynasties)
+Ballista strength reduced from 6 to 5
+Carthage city founding bonus reduced from 200 to 100 civics
+Founding Christianity no longer requires ownership of a Jewish city, now requires 3 Jewish cities globally
+Engineer promotion and general trait allows road building instead of bonus against siege/ships
 
 Programming
 
-Better AI legitimacy evaluation
-Added support for bonus cards to use bonus names in tooltips (affects mods only)
+Updated unity packages (relay and lobby replaced by multiplayer services)
 
 UI
 
-Added hotkey for suppressing tooltips (hold Ctrl + X)
-Added Unimproved Resources overlay to Overlay Customizer
-Improvements to Luxury Management display, especially when no luxuries available
-End Turn button now always active, clicking it will cycle to decisions preventing turn from ending
-Free improvement bonuses now show as normal event popups first
-Place improvement overlay not shown while bonus event is active
-When placing free improvements, ctrl+click is required to replace existing improvements
-Games with custom victories are skipped for unloaded scenario mods in Hall of Fame
+Families are now shown before Religions on the tab panel
 
 Bugs Fixed
 
-Fixed unit promotion icon rendering behind unit banners
-Fixed tile production icons drawing behind city widgets and transparent elements
-Fixed unit icons drawing partially behind city widgets sometimes
-Fixed scenario selection getting cleared when moving to MP setup screen
-Fixed missing theology info on tech tooltips
-Fixed bonus yield text bug
-Fixed Unit Seen notification not firing if unit becomes visible mid-move
-Fixed Default Governor bugs
-Fixed Peaks adjacency requirement being ignored by Clerics on Sand tiles
-Fixed encyclopedia display issue
-Fixed Research UI not showing after renaming landmark
-Fixed the Low graphics preset using the minimum rendering quality
-Fixed dirt particle effects causing pink cubes to appear in the center of the map
-Fixed MP games one human team getting stuck after victory
-Fixed Ask to Declare War mission helptext
-Fixed tile tooltip to show improvement defensive modifier in neutral territory
+Fixed Hall of Fame display for scenario custom victories
+Fixed units passing through hostile civilians cancelling under construction improvements 
+Fixed Dynasty being displayed as "default" with selected Archetype
+Fixed starting a game with more instances of a nation using a preset leader than existing dynasties for that nation
+Fixed Server game Host Controls screen not appearing
+Fixed world space text sometimes not showing tooltips
+Fixed hotkeys not triggering unit cycling
+Fixed per citizen generic specialist help text
+Fied lumbermills not being replaceable
+Fixed animations when Reduce Animation Detail is enabled
+Fixed movement range lines drawing in front of floating world UI
+Fixed worker particle effects display
+Fixed unit cooldowns rendering under cloud
+Fixed Timeline screen display issues
+Fixed overflowing tooltips in Encyclopedia
+Fixed Marshes affecting display of adjacent tiles
+Fixed Rebel units from events sometimes not being assigned to a player
