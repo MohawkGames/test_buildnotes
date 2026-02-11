@@ -1,0 +1,22 @@
+Test Branch 1.0.82035 Test 2026-02-11
+
+Known Issues
+
+Portrait Age Interpolation is not working and has been disabled regardless of the player setting
+Volcano display issues
+Water Shrine graphical effects showing above specialist icon
+Resources not fading when unit on tile
+City widget shows on top of unit icons
+Fog of War and unit display issues during AI turn 
+Show Single Units option issues
+
+
+Design
+
+
+Programming
+
+UI
+
+Bugs Fixed
+
