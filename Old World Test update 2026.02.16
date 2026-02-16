@@ -5,7 +5,7 @@ Known Issues
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
 Volcano display issues
 Fog of War can flicker on and off following movement in some cases
-Unit display issues during AI turn 
+Unit models and banners can fail to display consistently during AI turn
 
 Programming
 
