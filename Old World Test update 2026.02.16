@@ -1,12 +1,9 @@
-Test Branch 1.0.82xxx Test 2026-02-16
-
-Up to date as of 82101
+Test Branch 1.0.82132 Test 2026-02-16
 
 Known Issues
 
 Portrait Age Interpolation is not working and has been disabled regardless of the player setting
 Volcano display issues
-City widget shows on top of unit icons
 Fog of War can flicker on and off following movement in some cases
 Unit display issues during AI turn 
 
@@ -33,3 +30,7 @@ Fixed resources displaying with multiple models while "show single resources" is
 Fixed load/save error that was possibly invalidating replay data
 Fixed some water effects drawing in front of specialist icons
 Fixed fuzzy text on minimum rendering quality
+Fixed non-improvement worker recommendation data issue
+Fixed Other Religions header toggling improperly
+Fixed Learn To Play save/load corrupt replay data issue
+Fixed unit widgets showing behind city widgets
