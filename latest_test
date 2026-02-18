@@ -1,36 +1,8 @@
-Test Branch 1.0.82135 Test 2026-02-16
+Test Branch 1.0.82188 Test 2026-02-18
 
-Known Issues
-
-Portrait Age Interpolation is not working and has been disabled regardless of the player setting
-Volcano display issues
-Fog of War can flicker on and off following movement in some cases
-Unit models and banners can fail to display consistently during AI turn
-
-Programming
-
-AI builds slightly fewer units
-
-UI
-
-Swapped Worker Filters and basic actions panels on Selected Worker UI
-Improved fidelity of shadows on high settings
-Improved display of Alter of the Aten improvement
+Update to match Main branch
 
 Bugs Fixed
 
-Fixed overlay customizer issues
-Fixed nation score potentially overlapping turn display
-Fixed Recommendation icons drawing behind unit widget icons
-Fixed unit widgets partially obscuring tribe widgets
-Fixed gaps between adjacent terrain cells when graphics are set to minimum
-Fixed sunken harbor model
-Fixed resources not fading when tile occupied
-Fixed resources displaying with multiple models while "show single resources" is enabled when a unit enters the resource's tile
-Fixed load/save error that was possibly invalidating replay data
-Fixed some water effects drawing in front of specialist icons
-Fixed fuzzy text on minimum rendering quality
-Fixed non-improvement worker recommendation data issue
-Fixed Other Religions header toggling improperly
-Fixed Learn To Play save/load corrupt replay data issue
-Fixed unit widgets showing behind city widgets
+Fixed city widget mouseover issue
+Fixed minimap icon brightness
