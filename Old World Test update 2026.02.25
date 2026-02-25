@@ -2,7 +2,7 @@ Test Branch 1.0.82355 Test 2026-02-25
 
 Design
 
-All units can now flank. Flanking protects from counterattack damage
+Flanking now protects from counterattack damage for all units
 Yield per opinion level effect now starts from 0 at Furious to a maximum of 5 at Friendly. Affects Statesmen Civics, Estates Training and Culture, and Corruption Reform Civics
 Enlightenment Cathedrals give growth per population, not per citizen
 Redemption gives +50% to harbors and hamlets (was +20%)
