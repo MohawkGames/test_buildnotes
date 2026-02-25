@@ -4,19 +4,27 @@ Design
 
 All units can now flank. Flanking protects from counterattack damage
 Yield per opinion level effect now starts from 0 at Furious to a maximum of 5 at Friendly. Affects Statesmen Civics, Estates Training and Culture, and Corruption Reform Civics
+Enlightenment Cathedrals give growth per population, not per citizen
+Redemption gives +50% to harbors and hamlets (was +20%)
+Redemption Cathedrals allow hurrying specialists and projects with training
+Zealot leaders can now only rush units with training
 Disciples generate 1 Culture per turn on their Holy Sites
+Guilds maintenance is now orders instead of money
 The presence of Rebels in Hunters family cities no longer affects family opinion
 Clergy traits now have a minimum age of 18 (Sacred and Profane)
-Player now starts with Divine Rule active in Pharoahs of the Nile scenarios 2 and 3
-Major defeat/victory in Pharoahs of the Nile scenarios also awards minor defeat/victory achievements
+Player now starts with Divine Rule active in Pharaohs of the Nile scenarios 2 and 3
+Major defeat/victory in Pharaohs of the Nile scenarios also awards minor defeat/victory achievements
 
 Programming
 
 UI
 
+Non-hostile and hidden unit damage is now included in the text on mouseover
+Health bar shows damage only from hostile units with visibility, as before
 Added Disable Turn Start Cycling and Disable Automatic Cycling player options
 Improvement tooltip shows unit cooldown warning when relevant
 Changed ship anchoring color from white to a more transparent version of the already anchored color
+Removed camera snapback when clicking on minimap on city screen
 Non-host observers of network games can now send chat messages
 Added an in-game menu button to directly rehost a network game if it becomes unlisted, which otherwise prevents additional players from joining
 Add Worker Turns stat to Records Screen
@@ -38,7 +46,6 @@ Fixed network game timeout issues
 Fixed ping wheel initial position
 Fixed specialist icon display
 Fixed Event Browser loading of dependent mods
-Fixed missing pan to city center when first cycling to city
 Fixed city counterattack not being shown in the preview
 Fixed unit damage text sometimes being incorrectly updated
 Fixed roadbuilding pathfinder to not pass through rival nation territory
@@ -60,3 +67,6 @@ Fixed governor tooltip flickering on city list screen
 Fixed family/religion order on tab tooltip
 Fixed tribe units sometimes not moving when they wanted to move
 Fixed anchor ranges sometimes not showing
+Fixed selection not clearing when closing event popups
+Fixed timeline rendering on the first turn in Pharaohs of the Nile scenarios
+Fixed mod-loading strict mode on startup when loading external mods
