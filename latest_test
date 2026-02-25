@@ -1,8 +1,70 @@
-Test Branch 1.0.82188 Test 2026-02-18
+Test Branch 1.0.82358 Test 2026-02-25
 
-Update to match Main branch
+Design
+
+Flanking now protects from counterattack damage (affects all units)
+Yield per opinion level effect now starts from 0 at Furious to a maximum of 5 at Friendly. Affects Statesmen Civics, Estates Training and Culture, and Corruption Reform Civics
+Enlightenment Cathedrals give growth per population, not per citizen
+Redemption gives +50% to harbors and hamlets (was +20%)
+Redemption Cathedrals allow hurrying specialists and projects with training
+Zealot leaders can now only rush units with training
+Disciples generate 1 Culture per turn on their Holy Sites
+Guilds maintenance is now orders instead of money
+The presence of Rebels in Hunters family cities no longer affects family opinion
+Clergy traits now have a minimum age of 18 (Sacred and Profane)
+Player now starts with Divine Rule active in Pharaohs of the Nile scenarios 2 and 3
+Major defeat/victory in Pharaohs of the Nile scenarios also awards minor defeat/victory achievements
+
+UI
+
+Non-hostile and hidden unit damage is now included in the text on mouseover
+Health bar shows damage only from hostile units with visibility, as before
+Added Disable Turn Start Cycling and Disable Automatic Cycling player options
+Improvement tooltip shows unit cooldown warning when relevant
+Changed ship anchoring color from white to a more transparent version of the already anchored color
+Removed camera snapback when clicking on minimap on city screen
+Non-host observers of network games can now send chat messages
+Added an in-game menu button to directly rehost a network game if it becomes unlisted, which otherwise prevents additional players from joining
+Add Worker Turns stat to Records Screen
+Added some explanation text to the hurry tooltip when an invalid specialist cannot be hurried
+Added "Tutorial: Grand Vizier" to Encyclopedia
+Added "Councilors" section to DLC Summary pages
+Removed unhelpful Clergy links on Clergy Encyclopedia help
+Merged Council Encyclopedia concept with Councilor concept
+Updated Caravan Mission concept text to include how to gain Caravan access
+Increased sampling point size for better Cyrillic support
+Family tag grammar pass
 
 Bugs Fixed
 
-Fixed city widget mouseover issue
-Fixed minimap icon brightness
+Fixed Portrait Interpolation and re-enabled
+Fixed terrain display issues
+Fixed partially hidden free promotion icon
+Fixed network game timeout issues
+Fixed ping wheel initial position
+Fixed specialist icon display
+Fixed Event Browser loading of dependent mods
+Fixed city counterattack not being shown in the preview
+Fixed unit damage text sometimes being incorrectly updated
+Fixed roadbuilding pathfinder to not pass through rival nation territory
+Fixed Cmd key interaction when assigning hotkeys on Mac
+Fixed some Custom Overlay interaction issues
+Fixed damage text showing on units other than the top defender
+Fixed Remove Dissent projects being able to be queued multiple times
+Fixed Marsh tiles being replaced by Urban during map generation
+Fixed Egypt getting improvement cost discounts for adjacent improvements of a different team
+Fixed Rebel and Anarchy units receiving Tribe Level fatigue bonus
+Fixed automatic placement of bonus improvements sometimes being placed on a bad tile
+Fixed map script not being preserved when using Reroll Game option with random map script selected
+Fixed Player 1 name and player archetypes not being saved from MP setup screen
+Fixed help text typo about alliance with Ruthless AI
+Fixed "Blackmailed by" relationship text
+Fixed some player info panels not getting hidden when selecting unmet nation
+Fixed icons sometimes not showing on city production list
+Fixed governor tooltip flickering on city list screen
+Fixed family/religion order on tab tooltip
+Fixed tribe units sometimes not moving when they wanted to move
+Fixed anchor ranges sometimes not showing
+Fixed selection not clearing when closing event popups
+Fixed timeline rendering on the first turn in Pharaohs of the Nile scenarios
+Fixed mod-loading strict mode on startup when loading external mods
