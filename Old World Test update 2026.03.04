@@ -1,4 +1,4 @@
-Test Branch 1.0.82545 Test 2026-03-04
+Test Branch 1.0.82556 Test 2026-03-04
 
 Design
 
@@ -49,3 +49,5 @@ Fixed pink models in burning cut scrub during wildfires
 Fixed main menu color looking different on minimum detail settings
 Fixed Family, Tribe, and Nation sometimes not being assigned to premade characters
 Fixed archetype assignment bug
+Fixed colors getting applied to links that no longer exist
+Fixed issue with characters both leaving the nation and becoming a governor or general in simultaneous events
