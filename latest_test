@@ -1,70 +1,53 @@
-Test Branch 1.0.82358 Test 2026-02-25
+Test Branch 1.0.82566 Test 2026-03-04
 
 Design
 
-Flanking now protects from counterattack damage (affects all units)
-Yield per opinion level effect now starts from 0 at Furious to a maximum of 5 at Friendly. Affects Statesmen Civics, Estates Training and Culture, and Corruption Reform Civics
-Enlightenment Cathedrals give growth per population, not per citizen
-Redemption gives +50% to harbors and hamlets (was +20%)
-Redemption Cathedrals allow hurrying specialists and projects with training
-Zealot leaders can now only rush units with training
-Disciples generate 1 Culture per turn on their Holy Sites
-Guilds maintenance is now orders instead of money
-The presence of Rebels in Hunters family cities no longer affects family opinion
-Clergy traits now have a minimum age of 18 (Sacred and Profane)
-Player now starts with Divine Rule active in Pharaohs of the Nile scenarios 2 and 3
-Major defeat/victory in Pharaohs of the Nile scenarios also awards minor defeat/victory achievements
+Legal Code law upkeep now 6 Money per city (instead of 0.2 Orders)
+Divine Rule law upkeep now 0.5 Science per city (instead of 6 Money)
+Guilds law upkeep now 0.5 Orders per city (instead of 1 Order)
+Besieger effect now valid for Melee and Ranged (previously Melee and Siege)
+Increased Growth required for new population now occurs after 30 growths instead of 20
+
+New Events
+
+Grief
+Last of the Pack
+<Religion> Founded (lost tie) x4
+The Wanderers
+Tribal Truce Offer (no war due to alliance)
+
+Programming
+
+More frequent updates in the network games browser
 
 UI
 
-Non-hostile and hidden unit damage is now included in the text on mouseover
-Health bar shows damage only from hostile units with visibility, as before
-Added Disable Turn Start Cycling and Disable Automatic Cycling player options
-Improvement tooltip shows unit cooldown warning when relevant
-Changed ship anchoring color from white to a more transparent version of the already anchored color
-Removed camera snapback when clicking on minimap on city screen
-Non-host observers of network games can now send chat messages
-Added an in-game menu button to directly rehost a network game if it becomes unlisted, which otherwise prevents additional players from joining
-Add Worker Turns stat to Records Screen
-Added some explanation text to the hurry tooltip when an invalid specialist cannot be hurried
-Added "Tutorial: Grand Vizier" to Encyclopedia
-Added "Councilors" section to DLC Summary pages
-Removed unhelpful Clergy links on Clergy Encyclopedia help
-Merged Council Encyclopedia concept with Councilor concept
-Updated Caravan Mission concept text to include how to gain Caravan access
-Increased sampling point size for better Cyrillic support
-Family tag grammar pass
+Added tech tree search
+Text localization updates
+Records screen displays Improvements Controlled and Improvements Finished stats separately
+Disciples no longer counted in the Workers Produced stat
+Added improvement theology potential bonuses to help text
+Improvements to Critical Hit and Culture Level concept text
 
 Bugs Fixed
 
-Fixed Portrait Interpolation and re-enabled
-Fixed terrain display issues
-Fixed partially hidden free promotion icon
-Fixed network game timeout issues
-Fixed ping wheel initial position
-Fixed specialist icon display
-Fixed Event Browser loading of dependent mods
-Fixed city counterattack not being shown in the preview
-Fixed unit damage text sometimes being incorrectly updated
-Fixed roadbuilding pathfinder to not pass through rival nation territory
-Fixed Cmd key interaction when assigning hotkeys on Mac
-Fixed some Custom Overlay interaction issues
-Fixed damage text showing on units other than the top defender
-Fixed Remove Dissent projects being able to be queued multiple times
-Fixed Marsh tiles being replaced by Urban during map generation
-Fixed Egypt getting improvement cost discounts for adjacent improvements of a different team
-Fixed Rebel and Anarchy units receiving Tribe Level fatigue bonus
-Fixed automatic placement of bonus improvements sometimes being placed on a bad tile
-Fixed map script not being preserved when using Reroll Game option with random map script selected
-Fixed Player 1 name and player archetypes not being saved from MP setup screen
-Fixed help text typo about alliance with Ruthless AI
-Fixed "Blackmailed by" relationship text
-Fixed some player info panels not getting hidden when selecting unmet nation
-Fixed icons sometimes not showing on city production list
-Fixed governor tooltip flickering on city list screen
-Fixed family/religion order on tab tooltip
-Fixed tribe units sometimes not moving when they wanted to move
-Fixed anchor ranges sometimes not showing
-Fixed selection not clearing when closing event popups
-Fixed timeline rendering on the first turn in Pharaohs of the Nile scenarios
-Fixed mod-loading strict mode on startup when loading external mods
+Fixed unit widgets stacking incorrectly
+Fixed unit widgets in the back of the stack having their icons sorted behind water
+Fixed kill preview icon drawing behind city widget
+Fixed reversed logic for Unit Cycling option
+Fixed unit cycling after attacking with Unit Cycling option on
+Fixed worker filters showing for non-allied units
+Fixed unit build list not showing valid Improvements on mouseover tile (w. Ctrl) if vegetation is present but not enough Orders are available to remove it
+Fixed Occurrence showing as started in notifications when set as pending via bonus
+Fixed some broken links in Chinese event text
+Fixed raider AI
+Fixed game UI registering clicks while file browser is open
+Fixed custom overlay getting cleared by temporary road overlay
+Fixed menu transparent backgrounds rendering as blank when colorblind filter is on
+Fixed female worker tools being tinted by team color
+Fixed pink models in burning cut scrub during wildfires
+Fixed main menu color looking different on minimum detail settings
+Fixed Family, Tribe, and Nation sometimes not being assigned to premade characters
+Fixed archetype assignment bug
+Fixed colors getting applied to links that no longer exist
+Fixed issue with characters both leaving the nation and becoming a governor or general in simultaneous events
