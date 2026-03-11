@@ -2,7 +2,8 @@ Test Branch 1.0.82651 Test 2026-03-11
 
 Design
 
-Clerics can build Monasteries without Monasticism, no longer start with Divine Rule
+Monasteries can be built in Clerics family cities without Monasticism
+Clerics no longer start with Divine Rule
 Baths can no longer be built on sand (except for Clerics)
 Events that spread a religion now contribute to religion spread goals
 
