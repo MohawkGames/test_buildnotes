@@ -1,0 +1,30 @@
+Test Branch 1.0.82651 Test 2026-03-11
+
+Design
+
+Clerics can build Monasteries without Monasticism, no longer start with Divine Rule
+Baths can no longer be built on sand (except for Clerics)
+Events that spread a religion now contribute to religion spread goals
+
+Programming
+
+Added support for mapscripts to set a maximum number of teams
+
+UI
+
+Rural and Urban worker filters now show improvements that are not currently valid due to culture level restrictions
+Dynasty entries in Encyclopedia are labelled with Dynasty name instead of first ruler name for clarity
+
+Bugs Fixed
+
+Fixed Point Symmetry city sites and resources not always being symmetric near the center
+Fixed visual issue where units that exit fog of war and make an attack immediately during AI's turn disappear after attacking
+Fixed Suppress Dissent projects only being completable once per city
+Fixed yield previews sticking when cycling units
+Fixed unit crit chance not updating properly on attack preview
+Fixed doubled notifications for starting/ending tribal alliances
+Fixed One Continent per Team map option with multiple players per team
+Fixed tile ownership not being revealed to an agent player when new tiles are added to the city territory
+Fixed some terrain tiles not rendering their normals correctly
+Fixed flickering fog of war from allied vision
+Text and event fixes
