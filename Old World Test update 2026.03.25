@@ -28,7 +28,7 @@ Border renderer and shader optimizations
 
 UI
 
-Added player option Manual Bonus Placement
+Added player option Manual Bonus Placement.  This skips the popup prompt when placing a bonus improvement from an event or city founding bonus
 Tribe sites now display both Next Unit turns and Development turns 
 Road map pins now appear with the Contextual Map Tacks option enabled when Engineer units are selected 
 Added tooltips to ping improvement dropdown
