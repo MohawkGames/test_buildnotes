@@ -24,7 +24,7 @@ AI no longer skips laws and basic improvements in order to save for future Wonde
 AI pushes culture harder in its highest culture cities
 Non-raider tribe AI tweaked to keep them more focused on nearby targets
 Pathfinder tweak to prefer single tile paths whenever possible
-Border renderder and shader optimizations
+Border renderer and shader optimizations
 
 UI
 
