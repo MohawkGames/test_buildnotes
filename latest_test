@@ -1,11 +1,75 @@
-Test Branch 1.0.82740 Test 2026-03-18
-Hotfix 1.0.82840 Test 2026-03-24
+Test Branch 1.0.82854 Test 2026-03-25
 
-Hotfix fixes bugs with MP connectivity and improves the display of UI text
+Design
 
-Update to match main branch
+Crossbow strength reduced to 6 from 8
+Polybolos strength reduced to 8 from 10
+Windlass now requires Coinage instead of Manor
+Windmills require Windlass instead of Hydraulics.  Watermills are still available at Hydraulics
+Free Court Soldier moved from Infantry Square to Stirrups
+Free Court Merchant moved from Chain Drive to Cartography
+Free Court Merchant moved from Fiscal Policy to Manor
+Free Longbowmen moved from Manor to Battle Line
+Free Horse Archer moved from Land Consolidation to Composite Bow
+Schemer order buying now costs an extra Legitimacy point every time it's used. Cost increase resets for each leader
+Lowered civics cost of Fisher, Trapper, Rancher, and Gardner specialists to match other rural specialists
+Judaism no longer requires Labor Force
+Kartir event triggers less often
+AI no longer gets shrines and pastures for free as part of their initial development handicap, to prevent very early religion founding
+Game of the Week no longer varies city site numbers
+
+Programming
+
+AI no longer skips laws and basic improvements in order to save for future Wonders
+AI pushes culture harder in its highest culture cities
+Non-raider tribe AI tweaked to keep them more focused on nearby targets
+Pathfinder tweak to prefer single tile paths whenever possible
+Border renderer and shader optimizations
+
+UI
+
+Added player option Manual Bonus Placement.  This skips the popup prompt when placing a bonus improvement from an event or city founding bonus
+Tribe sites now display both Next Unit turns and Development turns 
+Road map pins now appear with the Contextual Map Tacks option enabled when Engineer units are selected 
+Added tooltips to ping improvement dropdown
+Renamed 'Exploring' trait to 'Traveling Afar'
+Adjustments to reduce blur on text displayed on world UI
+Reintroduced very simple lighting to the minimum detail level for standard shaders
+Removed random option from City Site Number options
+Added explanation to non-city site camp tile tooltips
+Improved helptext for General traits which aren't valid for some units
+Worker positions with and without height overrides are no longer mutually exclusive
+Cities owned by Tribes or in Anarchy now show in the Timeline Screen
+When gifting, hiring, or recruiting a unit, the helptext specifies that the cooldown is for the unit (and not the action)
+Disabled Mirror Map option on Desolation & Ebbing Sea mapscripts (Wrath of Gods)
+
 
 Bugs Fixed
 
-Fixed missing bonus card text
-Fixed missing requirements for improvements with no improvement class
+Fixed Cyrillic text display regression
+Fixed text outside of viewport bounds sometimes not clipping
+Fixed custom overlay icons not showing correctly on first opening
+Fixed barbarian widget sorting incorrectly with rivers
+Fixed barbarian widget cutting out the revealed-not-visible effect past the edges of the icon widget
+Fixed pathfinder avoiding ZOC tiles from unseen units
+Fixed color of requirements for adopting State Religion when you have no cities of that religion
+Fixed units getting temporarily rendered twice when upgrading
+Fixed AI sometimes moving its ranged siege units when it doesn't need to
+Fixed characters getting randomly married if currently targeted by a marriage mission
+Fixed skull highlights for attack previews
+Fixed fog of war revealing the same tiles multiple times
+Fixed rivers not updating their appearance in sync with changes to terrain detail level
+Fixed world pins over vegetation having the shadowed outlines of vegetation drawn on top of them
+Fixed volcano effects sometimes not applying to mountains when the volcano is on the edge of the map or in MP games
+Fixed AI saying it will leave a city site and then not doing so
+Fixed Next Unit tooltip hitbox
+Fixed women being able to birth children from different fathers on the same turn
+Fixed player notification issue with occurrences
+Fixed prereqs for repeatable techs showing up in searches that bring them up
+Fixed non-urban city sites in Donut map script
+Fixed lakes sometimes being placed next to ocean
+Fixed worker particles turning pink when a worker is selected in some cases
+Fixed Trade Network overlay getting locked on after building roads
+Fixed Jerwan Aqueduct flickering between turns (Wonders and Dynasties)
+Fixed Rejuvenation replacing Trees with Scrub (Wrath of Gods)
+Text and event fixes
