@@ -1,75 +1,44 @@
-Test Branch 1.0.82854 Test 2026-03-25
+Test Branch 1.0.82968 Test 2026-04-01
 
 Design
 
-Crossbow strength reduced to 6 from 8
-Polybolos strength reduced to 8 from 10
-Windlass now requires Coinage instead of Manor
-Windmills require Windlass instead of Hydraulics.  Watermills are still available at Hydraulics
-Free Court Soldier moved from Infantry Square to Stirrups
-Free Court Merchant moved from Chain Drive to Cartography
-Free Court Merchant moved from Fiscal Policy to Manor
-Free Longbowmen moved from Manor to Battle Line
-Free Horse Archer moved from Land Consolidation to Composite Bow
-Schemer order buying now costs an extra Legitimacy point every time it's used. Cost increase resets for each leader
-Lowered civics cost of Fisher, Trapper, Rancher, and Gardner specialists to match other rural specialists
-Judaism no longer requires Labor Force
-Kartir event triggers less often
-AI no longer gets shrines and pastures for free as part of their initial development handicap, to prevent very early religion founding
-Game of the Week no longer varies city site numbers
-
-Programming
-
-AI no longer skips laws and basic improvements in order to save for future Wonders
-AI pushes culture harder in its highest culture cities
-Non-raider tribe AI tweaked to keep them more focused on nearby targets
-Pathfinder tweak to prefer single tile paths whenever possible
-Border renderer and shader optimizations
+Slight rebalance to Gatherer cognomen line (Empires of the Indus)
 
 UI
 
-Added player option Manual Bonus Placement.  This skips the popup prompt when placing a bonus improvement from an event or city founding bonus
-Tribe sites now display both Next Unit turns and Development turns 
-Road map pins now appear with the Contextual Map Tacks option enabled when Engineer units are selected 
-Added tooltips to ping improvement dropdown
-Renamed 'Exploring' trait to 'Traveling Afar'
-Adjustments to reduce blur on text displayed on world UI
-Reintroduced very simple lighting to the minimum detail level for standard shaders
-Removed random option from City Site Number options
-Added explanation to non-city site camp tile tooltips
-Improved helptext for General traits which aren't valid for some units
-Worker positions with and without height overrides are no longer mutually exclusive
-Cities owned by Tribes or in Anarchy now show in the Timeline Screen
-When gifting, hiring, or recruiting a unit, the helptext specifies that the cooldown is for the unit (and not the action)
-Disabled Mirror Map option on Desolation & Ebbing Sea mapscripts (Wrath of Gods)
-
+Rendering layer cleanup
+Added rendering layer for minimum detail objects, which will always render to the timeline and minimap. This means minimum detail rivers will now always render in the timeline and minimap
+Removed "Reduce Animation Detail" option and replaced with "Disable Idle Animations"
+Occurrence end chance increment, current and minimum durations added to Occurrence helptext
+Changed color of unit health bar difference to green, when health is increasing (Zealot kill or heal action)
+Order movement now shows below yield preview
+Adjusted selection circle animation for tutorial
+Added some references to bonus UU techs to Tech Encyclopedia and Culture links (with advanced help)
+Added description for Vassalize Tribe mission (Empires of the Indus)
+Added description to the Hinduism tooltip (Empires of the Indus)
+Edited World Religion concept to include Buddhism (Empires of the Indus)
 
 Bugs Fixed
 
-Fixed Cyrillic text display regression
-Fixed text outside of viewport bounds sometimes not clipping
-Fixed custom overlay icons not showing correctly on first opening
-Fixed barbarian widget sorting incorrectly with rivers
-Fixed barbarian widget cutting out the revealed-not-visible effect past the edges of the icon widget
-Fixed pathfinder avoiding ZOC tiles from unseen units
-Fixed color of requirements for adopting State Religion when you have no cities of that religion
-Fixed units getting temporarily rendered twice when upgrading
-Fixed AI sometimes moving its ranged siege units when it doesn't need to
-Fixed characters getting randomly married if currently targeted by a marriage mission
-Fixed skull highlights for attack previews
-Fixed fog of war revealing the same tiles multiple times
-Fixed rivers not updating their appearance in sync with changes to terrain detail level
-Fixed world pins over vegetation having the shadowed outlines of vegetation drawn on top of them
-Fixed volcano effects sometimes not applying to mountains when the volcano is on the edge of the map or in MP games
-Fixed AI saying it will leave a city site and then not doing so
-Fixed Next Unit tooltip hitbox
-Fixed women being able to birth children from different fathers on the same turn
-Fixed player notification issue with occurrences
-Fixed prereqs for repeatable techs showing up in searches that bring them up
-Fixed non-urban city sites in Donut map script
-Fixed lakes sometimes being placed next to ocean
-Fixed worker particles turning pink when a worker is selected in some cases
-Fixed Trade Network overlay getting locked on after building roads
-Fixed Jerwan Aqueduct flickering between turns (Wonders and Dynasties)
-Fixed Rejuvenation replacing Trees with Scrub (Wrath of Gods)
-Text and event fixes
+Fixed header display in some languages
+Fixed bug that allowed very small islands to count as connected to a continent for player start placement purposes
+Fixed Tumbling Mountain script creating occasional gaps in the mountain
+Fixed hotkeys getting evaluated multiple times per frame
+Fixed null reference in tech tree search
+Fixed bonus card search issue
+Fixed a bug with AI evaluation of city effects that give Legitimacy, should build Kushite Pyramids more urgently now
+Fixed floating text produced by combat causing visual issues with fog of war
+Fixed pathfinder path simplification bug
+Fixed pathfinder not updating correctly when a unit receives a new effect or loses an existing one
+Fixed map editor null reference
+Fixed Ask to Declare War mission (tribe) having no effect in No Events mode
+Fixed Traits added or removed by Occurrences intermittently not working on Semester/Season turn styles
+Fixed tribe AI sometimes not moving
+Fixed improvement yields from adjacent improvements that belong to a different team
+Fixed minimum detail rivers not showing when initially loading a game with minimum settings
+Fixed blocky rivers on minimum terrain detail in some scenarios
+Fixed tribe widget upgrade timer text cutting box out of clouds
+Game Editor UI fixes
+Fixed hide vegetation not working during Calamities in some cases (Wrath of Gods)
+Fixed portrait interpolation issues with Hun portraits (Empires of the Indus)
+Fixed iTradeValueModifier not being reflected in Nation summary (affects mods only)
