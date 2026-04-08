@@ -1,4 +1,6 @@
-Test Branch 1.0.82968 Test 2026-04-01
+Test Branch 1.0.83034 Test 2026-04-08
+
+Update to match main build
 
 Design
 
@@ -6,39 +8,9 @@ Slight rebalance to Gatherer cognomen line (Empires of the Indus)
 
 UI
 
-Rendering layer cleanup
-Added rendering layer for minimum detail objects, which will always render to the timeline and minimap. This means minimum detail rivers will now always render in the timeline and minimap
-Removed "Reduce Animation Detail" option and replaced with "Disable Idle Animations"
-Occurrence end chance increment, current and minimum durations added to Occurrence helptext
-Changed color of unit health bar difference to green, when health is increasing (Zealot kill or heal action)
-Order movement now shows below yield preview
-Adjusted selection circle animation for tutorial
-Added some references to bonus UU techs to Tech Encyclopedia and Culture links (with advanced help)
-Added description for Vassalize Tribe mission (Empires of the Indus)
-Added description to the Hinduism tooltip (Empires of the Indus)
-Edited World Religion concept to include Buddhism (Empires of the Indus)
+Forest and Jungle on Mountains are now partly hidden, for clarity
 
 Bugs Fixed
 
-Fixed header display in some languages
-Fixed bug that allowed very small islands to count as connected to a continent for player start placement purposes
-Fixed Tumbling Mountain script creating occasional gaps in the mountain
-Fixed hotkeys getting evaluated multiple times per frame
-Fixed null reference in tech tree search
-Fixed bonus card search issue
-Fixed a bug with AI evaluation of city effects that give Legitimacy, should build Kushite Pyramids more urgently now
-Fixed floating text produced by combat causing visual issues with fog of war
-Fixed pathfinder path simplification bug
-Fixed pathfinder not updating correctly when a unit receives a new effect or loses an existing one
-Fixed map editor null reference
-Fixed Ask to Declare War mission (tribe) having no effect in No Events mode
-Fixed Traits added or removed by Occurrences intermittently not working on Semester/Season turn styles
-Fixed tribe AI sometimes not moving
-Fixed improvement yields from adjacent improvements that belong to a different team
-Fixed minimum detail rivers not showing when initially loading a game with minimum settings
-Fixed blocky rivers on minimum terrain detail in some scenarios
-Fixed tribe widget upgrade timer text cutting box out of clouds
-Game Editor UI fixes
-Fixed hide vegetation not working during Calamities in some cases (Wrath of Gods)
-Fixed portrait interpolation issues with Hun portraits (Empires of the Indus)
-Fixed iTradeValueModifier not being reflected in Nation summary (affects mods only)
+Fixed unit banners being visible when they shouldn't in some cases during hotseat games
+Fixed inconsistent capitalisation in DLC names 
