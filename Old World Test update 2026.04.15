@@ -1,0 +1,62 @@
+Test Branch 1.0.83168 Test 2026-04-15
+
+Design
+
+Tech costs for columns in the tech tree changed to 100, 150, 250, 400, 700, 1100, 1600 (from 80, 120, 200, 400, 600, 1000, 1600)
+Increased flat science from difficulty level by 2
+At least two non-trashable tech cards will be offered if possible, to prevent all tech choices being bonus cards
+Slingers are now obsolete at Bodkin arrow
+Rising Star trait now replaces Infamous and Unpopular
+Slightly reduced frequency of Jade spawning (Empires of the Indus)
+
+Programming
+
+Renderer initialization split across four 4 frames instead of 1
+Replaced custom map element names with TextTypes on Empires of the Indus premade maps
+Family Control scores are now moddable (Empires of the Indus)
+
+UI
+
+Added Map Search function, accessed via the magnifying glass icon on the top left of minimap.  Can search for Cities, Units, Improvements and Resources, by player
+When selecting a unit with a General, the General name is now shown in brackets instead of replacing the unit name
+No Organized Tribes option renamed to mention the Huns
+Added a Mission concept to help explain the Maurya ability
+Score list now sorts Wonders and Holy Site VPs together
+Map element names now take priority over family-defined first city names
+Unit effect tooltips show to the right of the promotions panel
+Tamil leaders show their preset family on the dynasty selection tooltip (Empires of the Indus)
+Updated portrait selections for some Hun portrait sequences to reduce artifacting (Empires of the Indus)
+
+Bugs Fixed
+
+Fixed map overlays something getting stuck while scrolling
+Fixed fog of war toggle in timeline screen
+Fixed tribe AI sometimes hanging the game after an invasion is over
+Fixed unit selection circle being rotated incorrectly
+Fixed repeated unit movement on server after network reconnection
+Fixed Ask to Declare War mission result text not accounting for possibility of declining to pay for war dec
+Fixed Esc not closing console/editor
+Fixed some mission target text not actually taking a target name parameter, leading to confusing mission button text (e.g. "Divorce")
+Fixed addition of temporary characters not updating characters tab
+Fixed disabled city family option being clickable in minimized event UI
+Fixed large unit models occluding unit widget status icons
+Fixed unit models obscuring some elements on tribe widgets
+Fixed world map state not returning to normal correctly when timeline screen is closed in cases where the timeline displays changes to terrain type
+Fixed tooltip hitbox on stacked unit widgets being in the wrong order
+Fixed the AI sometimes not attacking cities that have no defender
+Fixed attack preview so that it doesn't show the effects of hidden units to the active player
+Fixed counterattack preview being wrong for flanking with hidden units
+Fixed dropdowns sometimes getting cut off
+Fixed Akhetaten AI getting initial development that does not have a Cleric capital
+Fixed succession gendered helptext issue
+Fixed some Spanish localization errors
+Fixed several scenario loss events not working correctly
+Fixed council missions showing in tooltips without required content enabled
+Fixed tribe attacks not being included in turn summary emails
+Fixed modio ModBuilder bug
+Fixed The Monumental Buddhas not being buildable in the Wrath of Gods scenario (Wrath of Gods)
+Fixed Venerate mission working for Exiled and other invalid Character Traits in the Wrath of Gods scenario (Wrath of Gods)
+Fixed misplaced Fish in Empires of the East premade map (Empires of The Indus)
+Fixed Family Control text not updating when council assignments change (Empires of The Indus)
+Fixed wood from Jungle replacement by an improvement not equaling the wood from a double chop (Empires of The Indus)
+Text and event fixes
