@@ -1,0 +1,56 @@
+Test Branch 1.0.83288 Test 2026-04-22
+
+Design
+
+Units can repair any improvement they can build (affects Disciples and Brahmins)
+Ship build queue options added for each harbor in a city, in addition to each body of water that does not have a harbor, to allow choosing where the ship spawns
+Improved city site distribution for 2-team maps
+Added Phidias, a Builder Artist, as a starting courtier to the Pericles dynasty (Wonders and Dynasties)
+Can no longer recruit Fanatic Raid units in the Wrath of Gods scenario (Wrath of Gods)
+
+Programming
+
+Improved performance when rendering timeline GIFs
+Moved the minimum number of non-trashable techs offered to XML (MIN_NON_TRASHABLE_TECHS_AVAILABLE)
+Stale network games are cleared from the database on failed connection
+Potential improvements to Bluetooth audio output
+
+UI
+
+Added Tech Tree to Extras menu, to allow viewing the tree without being in a game
+Pressing ALT now shows health bar damage preview of non-hostile units, in addition to the damage preview text that is displayed without ALT
+Specialists on pillaged tiles are now shown in most city UI counts, with warning color
+Map cameras now adjust the center of their view to avoid featuring large out-of-bounds areas
+Handling of possessive character names now language dependent
+Updated Map Size tooltip to show the actual maximum player count
+Bridges now only render over rivers when a road segment is present on the tile leading up to it
+AddImprovement bonus is no longer valid when the only valid tiles already have improvements
+Added warning text and hint to use CTRL when placing a bonus improvement on a tile with an existing improvement
+Religion overlay is now displayed, at a lower opacity, for cities that will soon have a religion (eg via Shrine construction)
+Added Ruthless AI text explanation to AI opinion due to being close to winning or having an alliance
+
+Bugs Fixed
+
+Fixed network games sometimes not getting relisted after getting unlisted
+Fixed Allied Tribes being able to respawn settlements that are being claimed by player units
+Fixed Map Search player dropdown options
+Fixed disciple construction animation not being affected by Disable Idle Animations
+Fixed minimum detail rivers occluding unit widgets
+Fixed positive yield modifier on negative yield issue
+Fixed issue when two volcanic eruptions overlap
+Fixed some river materials having an incorrect stencil buffer value
+Fixed Tribes paying tribute while at war
+Fixed Close button being hidden behind Console in Game Editor
+Fixed tech buttons not updating in Game Editor consistently
+Fixed mission cooldown helptext issue
+Fixed SP setup display on ultrawide resolutions
+Fixed tooltips spawned from Reminders panel not being lockable
+Fixed yield rates not updating after getting units from events
+Fixed Hall of Fame Regenerate HOF issues
+Fixed mirror map generation artifacts
+Fixed scouts getting stuck in foreign territory after Schemer leader change
+Fixed some ZOC issues related to visibility
+Fixed Heroes of the Aegean scenario 5 fire display issues (Heroes of the Aegean)
+Fixed Elephant Archer achievement text (Empires of the Indus)
+Fixed Attila the Hun appearing as a player character instead of a Hun (Empires of the Indus)
+Event and text fixes
