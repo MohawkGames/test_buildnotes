@@ -1,62 +1,56 @@
-Test Branch 1.0.83168 Test 2026-04-15
+Test Branch 1.0.83288 Test 2026-04-22
 
 Design
 
-Tech costs for columns in the tech tree changed to 100, 150, 250, 400, 700, 1100, 1600 (from 80, 120, 200, 400, 600, 1000, 1600)
-Increased flat science from difficulty level by 2
-At least two non-trashable tech cards will be offered if possible, to prevent all tech choices being bonus cards
-Slingers are now obsolete at Bodkin arrow
-Rising Star trait now replaces Infamous and Unpopular
-Slightly reduced frequency of Jade spawning (Empires of the Indus)
+Units can repair any improvement they can build (affects Disciples and Brahmins)
+Ship build queue options added for each harbor in a city, in addition to each body of water that does not have a harbor, to allow choosing where the ship spawns
+Improved city site distribution for 2-team maps
+Added Phidias, a Builder Artist, as a starting courtier to the Pericles dynasty (Heroes of the Aegean / Wonders and Dynasties)
+Can no longer recruit Fanatic Raid units in the Wrath of Gods scenario (Wrath of Gods)
 
 Programming
 
-Renderer initialization split across four 4 frames instead of 1
-Replaced custom map element names with TextTypes on Empires of the Indus premade maps
-Family Control scores are now moddable (Empires of the Indus)
+Improved performance when rendering timeline GIFs
+Moved the minimum number of non-trashable techs offered to XML (MIN_NON_TRASHABLE_TECHS_AVAILABLE)
+Stale network games are cleared from the database on failed connection
+Potential improvements to Bluetooth audio output
 
 UI
 
-Added Map Search function, accessed via the magnifying glass icon on the top left of minimap.  Can search for Cities, Units, Improvements and Resources, by player
-When selecting a unit with a General, the General name is now shown in brackets instead of replacing the unit name
-No Organized Tribes option renamed to mention the Huns
-Added a Mission concept to help explain the Maurya ability
-Score list now sorts Wonders and Holy Site VPs together
-Map element names now take priority over family-defined first city names
-Unit effect tooltips show to the right of the promotions panel
-Tamil leaders show their preset family on the dynasty selection tooltip (Empires of the Indus)
-Updated portrait selections for some Hun portrait sequences to reduce artifacting (Empires of the Indus)
+Added Tech Tree to Extras menu, to allow viewing the tree without being in a game
+Pressing ALT now shows health bar damage preview of non-hostile units, in addition to the damage preview text that is displayed without ALT
+Specialists on pillaged tiles are now shown in most city UI counts, with warning color
+Map cameras now adjust the center of their view to avoid featuring large out-of-bounds areas
+Handling of possessive character names now language dependent
+Updated Map Size tooltip to show the actual maximum player count
+Bridges now only render over rivers when a road segment is present on the tile leading up to it
+AddImprovement bonus is no longer valid when the only valid tiles already have improvements
+Added warning text and hint to use CTRL when placing a bonus improvement on a tile with an existing improvement
+Religion overlay is now displayed, at a lower opacity, for cities that will soon have a religion (eg via Shrine construction)
+Added Ruthless AI text explanation to AI opinion due to being close to winning or having an alliance
 
 Bugs Fixed
 
-Fixed map overlays something getting stuck while scrolling
-Fixed fog of war toggle in timeline screen
-Fixed tribe AI sometimes hanging the game after an invasion is over
-Fixed unit selection circle being rotated incorrectly
-Fixed repeated unit movement on server after network reconnection
-Fixed Ask to Declare War mission result text not accounting for possibility of declining to pay for war dec
-Fixed Esc not closing console/editor
-Fixed some mission target text not actually taking a target name parameter, leading to confusing mission button text (e.g. "Divorce")
-Fixed addition of temporary characters not updating characters tab
-Fixed disabled city family option being clickable in minimized event UI
-Fixed large unit models occluding unit widget status icons
-Fixed unit models obscuring some elements on tribe widgets
-Fixed world map state not returning to normal correctly when timeline screen is closed in cases where the timeline displays changes to terrain type
-Fixed tooltip hitbox on stacked unit widgets being in the wrong order
-Fixed the AI sometimes not attacking cities that have no defender
-Fixed attack preview so that it doesn't show the effects of hidden units to the active player
-Fixed counterattack preview being wrong for flanking with hidden units
-Fixed dropdowns sometimes getting cut off
-Fixed Akhetaten AI getting initial development that does not have a Cleric capital
-Fixed succession gendered helptext issue
-Fixed some Spanish localization errors
-Fixed several scenario loss events not working correctly
-Fixed council missions showing in tooltips without required content enabled
-Fixed tribe attacks not being included in turn summary emails
-Fixed modio ModBuilder bug
-Fixed The Monumental Buddhas not being buildable in the Wrath of Gods scenario (Wrath of Gods)
-Fixed Venerate mission working for Exiled and other invalid Character Traits in the Wrath of Gods scenario (Wrath of Gods)
-Fixed misplaced Fish in Empires of the East premade map (Empires of The Indus)
-Fixed Family Control text not updating when council assignments change (Empires of The Indus)
-Fixed wood from Jungle replacement by an improvement not equaling the wood from a double chop (Empires of The Indus)
-Text and event fixes
+Fixed network games sometimes not getting relisted after getting unlisted
+Fixed Allied Tribes being able to respawn settlements that are being claimed by player units
+Fixed Map Search player dropdown options
+Fixed disciple construction animation not being affected by Disable Idle Animations
+Fixed minimum detail rivers occluding unit widgets
+Fixed positive yield modifier on negative yield issue
+Fixed issue when two volcanic eruptions overlap
+Fixed some river materials having an incorrect stencil buffer value
+Fixed Tribes paying tribute while at war
+Fixed Close button being hidden behind Console in Game Editor
+Fixed tech buttons not updating in Game Editor consistently
+Fixed mission cooldown helptext issue
+Fixed SP setup display on ultrawide resolutions
+Fixed tooltips spawned from Reminders panel not being lockable
+Fixed yield rates not updating after getting units from events
+Fixed Hall of Fame Regenerate HOF issues
+Fixed mirror map generation artifacts
+Fixed scouts getting stuck in foreign territory after Schemer leader change
+Fixed some ZOC issues related to visibility
+Fixed Heroes of the Aegean scenario 5 fire display issues (Heroes of the Aegean)
+Fixed Elephant Archer achievement text (Empires of the Indus)
+Fixed Attila the Hun appearing as a player character instead of a Hun (Empires of the Indus)
+Event and text fixes
