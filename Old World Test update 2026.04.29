@@ -1,0 +1,39 @@
+Test Branch 1.0.83288 Test 2026-04-22
+
+Design
+
+Crossbows now have +50% strength against melee instead of +50% attack
+AIs will no longer have child leaders, instead using the next adult in the succesison or generating a new character if needed
+All Hindu cities can now build Brahmins, without requiring Holy City/State Religion/Tolerance (Empires of the Indus)
+Decreased Indian Unique Unit vision to be in line with other units, with the exception of Steppe Riders which retain extra vision (Empires of the Indus)
+The owner of the unit, not the upgrading player, needs Polis to upgrade Steppe Riders (Empires of the Indus)
+Mahapadma's unknown mother now has a name (Empires of the Indus)
+
+UI
+
+Added banded overlay effect for cities that will soon have a religion
+Reworked event helptext for "subject not" - "Not Character is X" is now "Character is not X"
+Added more detailed mission menu button info
+Premade map selection with restricted nations is no longer saved, to prevent issues with leaders not appearing on Choose Leader screen
+
+Bugs Fixed
+
+Fixed double client initialization on network reconnection that could crash the host
+Fixed tribes not capturing other tribes' settlements
+Fixed improvements that spread religion not being highlighted when a religion is selected
+Fix a rare Hall of Fame regeneration issue
+Fixed some AI issues
+Fixed missing opinion rate for marriage help when Tribal suitor marries heir
+Fixed event portrait tooltip positioning
+Fixed being able to push a an allied unit from its own territory
+Fixed water control previews not updating with changes in vision
+fixed some main menu Tech Tree issues
+Fixed event helptext issue with Player/Leader/IndexSubjectNotAny
+Fixed TRIBE_F, RELIGION_F, and TRAIT_F event text tags not working
+Fixed some ambiguous map element name types
+Fixed some Spanish text localization issues
+Fixed map terrain not reverting correctly after closing timeline screen 
+Fixed Modio & local maps not showing in mod browser
+Fixed Modio upload not including mod version number (fixes incorrent update ! on install tab for local up-to-date mods)
+Fixed null reference when clicking on maps in Mods Manage tab
+Fixed leader customization panel breaking if characters exist with fixed portraits but no names (affects mods)
