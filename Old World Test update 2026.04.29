@@ -11,7 +11,7 @@ Mahapadma's unknown mother now has a name (Empires of the Indus)
 
 UI
 
-Added banded overlay effect for cities that will soon have a religion when religion is selected
+Added banded overlay effect for cities that will soon have a religion due to building a shrine when the religion is selected
 Reworked event helptext for "subject not" - "Not Character is X" is now "Character is not X"
 Added more detailed mission menu button info
 Premade map selection with restricted nations is no longer saved, to prevent issues with leaders not appearing on Choose Leader screen
