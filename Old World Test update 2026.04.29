@@ -15,6 +15,7 @@ Added banded overlay effect for cities that will soon have a religion due to bui
 Reworked event helptext for "subject not" - "Not Character is X" is now "Character is not X"
 Added more detailed mission menu button info
 Premade map selection with restricted nations is no longer saved, to prevent issues with leaders not appearing on Choose Leader screen
+Localized text updates
 
 Bugs Fixed
 
@@ -37,3 +38,4 @@ Fixed Modio & local maps not showing in mod browser
 Fixed Modio upload not including mod version number (fixes incorrent update ! on install tab for local up-to-date mods)
 Fixed null reference when clicking on maps in Mods Manage tab
 Fixed leader customization panel breaking if characters exist with fixed portraits but no names (affects mods)
+Fixed Improvement yield breakdown showing base yield with mabNoYieldOutput when resource yield is of same type (affects mods)
