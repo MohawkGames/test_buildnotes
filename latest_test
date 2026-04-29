@@ -1,56 +1,41 @@
-Test Branch 1.0.83288 Test 2026-04-22
+Test Branch 1.0.83396 Test 2026-04-29
 
 Design
 
-Units can repair any improvement they can build (affects Disciples and Brahmins)
-Ship build queue options added for each harbor in a city, in addition to each body of water that does not have a harbor, to allow choosing where the ship spawns
-Improved city site distribution for 2-team maps
-Added Phidias, a Builder Artist, as a starting courtier to the Pericles dynasty (Heroes of the Aegean / Wonders and Dynasties)
-Can no longer recruit Fanatic Raid units in the Wrath of Gods scenario (Wrath of Gods)
-
-Programming
-
-Improved performance when rendering timeline GIFs
-Moved the minimum number of non-trashable techs offered to XML (MIN_NON_TRASHABLE_TECHS_AVAILABLE)
-Stale network games are cleared from the database on failed connection
-Potential improvements to Bluetooth audio output
+Crossbows now have +50% strength against melee, instead of +50% attack
+AIs will no longer have child leaders, instead using the next adult in the succession or generating a new character if needed
+All Hindu cities can now build Brahmins, without requiring Holy City/State Religion/Tolerance (Empires of the Indus)
+Decreased Indian Unique Unit vision to be in line with other units, with the exception of Steppe Riders which retain extra vision (Empires of the Indus)
+The owner of the unit, not the upgrading player, needs Polis to upgrade Steppe Riders (Empires of the Indus)
+Mahapadma's unknown mother now has a name (Empires of the Indus)
 
 UI
 
-Added Tech Tree to Extras menu, to allow viewing the tree without being in a game
-Pressing ALT now shows health bar damage preview of non-hostile units, in addition to the damage preview text that is displayed without ALT
-Specialists on pillaged tiles are now shown in most city UI counts, with warning color
-Map cameras now adjust the center of their view to avoid featuring large out-of-bounds areas
-Handling of possessive character names now language dependent
-Updated Map Size tooltip to show the actual maximum player count
-Bridges now only render over rivers when a road segment is present on the tile leading up to it
-AddImprovement bonus is no longer valid when the only valid tiles already have improvements
-Added warning text and hint to use CTRL when placing a bonus improvement on a tile with an existing improvement
-Religion overlay is now displayed, at a lower opacity, for cities that will soon have a religion (eg via Shrine construction)
-Added Ruthless AI text explanation to AI opinion due to being close to winning or having an alliance
+Added banded overlay effect for cities that will soon have a religion due to building a shrine when the religion is selected
+Reworked event helptext for "subject not" - "Not Character is X" is now "Character is not X"
+Added more detailed mission menu button info
+Premade map selection with restricted nations is no longer saved, to prevent issues with leaders not appearing on Choose Leader screen
+Localized text updates
 
 Bugs Fixed
 
-Fixed network games sometimes not getting relisted after getting unlisted
-Fixed Allied Tribes being able to respawn settlements that are being claimed by player units
-Fixed Map Search player dropdown options
-Fixed disciple construction animation not being affected by Disable Idle Animations
-Fixed minimum detail rivers occluding unit widgets
-Fixed positive yield modifier on negative yield issue
-Fixed issue when two volcanic eruptions overlap
-Fixed some river materials having an incorrect stencil buffer value
-Fixed Tribes paying tribute while at war
-Fixed Close button being hidden behind Console in Game Editor
-Fixed tech buttons not updating in Game Editor consistently
-Fixed mission cooldown helptext issue
-Fixed SP setup display on ultrawide resolutions
-Fixed tooltips spawned from Reminders panel not being lockable
-Fixed yield rates not updating after getting units from events
-Fixed Hall of Fame Regenerate HOF issues
-Fixed mirror map generation artifacts
-Fixed scouts getting stuck in foreign territory after Schemer leader change
-Fixed some ZOC issues related to visibility
-Fixed Heroes of the Aegean scenario 5 fire display issues (Heroes of the Aegean)
-Fixed Elephant Archer achievement text (Empires of the Indus)
-Fixed Attila the Hun appearing as a player character instead of a Hun (Empires of the Indus)
-Event and text fixes
+Fixed double client initialization on network reconnection that could crash the host
+Fixed tribes not capturing other tribes' settlements
+Fixed improvements that spread religion not being highlighted when a religion is selected
+Fix a rare Hall of Fame regeneration issue
+Fixed some AI issues
+Fixed missing opinion rate for marriage help when Tribal suitor marries heir
+Fixed event portrait tooltip positioning
+Fixed being able to push a an allied unit from its own territory
+Fixed water control previews not updating with changes in vision
+fixed some main menu Tech Tree issues
+Fixed event helptext issue with Player/Leader/IndexSubjectNotAny
+Fixed TRIBE_F, RELIGION_F, and TRAIT_F event text tags not working
+Fixed some ambiguous map element name types
+Fixed some Spanish text localization issues
+Fixed map terrain not reverting correctly after closing timeline screen 
+Fixed Modio & local maps not showing in mod browser
+Fixed Modio upload not including mod version number (fixes incorrent update ! on install tab for local up-to-date mods)
+Fixed null reference when clicking on maps in Mods Manage tab
+Fixed leader customization panel breaking if characters exist with fixed portraits but no names (affects mods)
+Fixed Improvement yield breakdown showing base yield with mabNoYieldOutput when resource yield is of same type (affects mods)
