@@ -2,8 +2,8 @@ Test Branch 1.0.83390 Test 2026-04-29
 
 Design
 
-Crossbows now have +50% strength against melee instead of +50% attack
-AIs will no longer have child leaders, instead using the next adult in the succesison or generating a new character if needed
+Crossbows now have +50% strength against melee, instead of +50% attack
+AIs will no longer have child leaders, instead using the next adult in the succession or generating a new character if needed
 All Hindu cities can now build Brahmins, without requiring Holy City/State Religion/Tolerance (Empires of the Indus)
 Decreased Indian Unique Unit vision to be in line with other units, with the exception of Steppe Riders which retain extra vision (Empires of the Indus)
 The owner of the unit, not the upgrading player, needs Polis to upgrade Steppe Riders (Empires of the Indus)
