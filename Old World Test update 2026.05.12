@@ -1,0 +1,46 @@
+Test Branch 1.0.83xxx Test 2026-05-13
+
+Design
+
+2nd tier tech costs increased to 160 from 150
+Winning at a difficulty gives the achievements for that level and lower. Hardcore now gives all difficulty achievements
+Rebels no longer attack your teammates, unless there is nothing better for them to do
+Organized tribes (The Huns) are placed farther away from human starts and their settlements are mirrored in mirror maps (Empires of the Indus)
+Charge (Yuezhi Unqiue Unit ability) is now only blocked by Improvements or Vegetation, not terrain type (Empires of the Indus)
+Tamilakam Supremacy change now gives XP to the new leader and makes them Royal (Empires of the Indus)
+The number of Rebels for avoiding a change in Supremacy now depends on culture level of family seat (Empires of the Indus)
+
+Programming
+
+Significant improvements to late game worker recommendation lag
+AI performance optimizations
+Increased range that AI can anchor ships to bridge lands from 10 to 20 tiles
+
+UI
+
+Hide Orders cost on "Add Urban" button
+Selected tab is now un-highlighted when map search is open
+Tribe opinion rate shown even when leader opinion modifiers sum to 0
+
+Bugs Fixed
+
+Fixed city widgets getting occluded by clouds and world geometry
+Fixed units only partially occluding city widgets when selected
+Fixed scrollbar getting hidden on popups
+Fixed road objects not being removed correctly
+Fixed overlays not toggling off with a worker selected
+Fixed helptext for tribal peace in no characters mode
+Fixed AI not using engineer generals to build roads as often as expected
+Fixed map script dropdown data issues
+Fixed some Spanish text issues
+Fixed tech tree state not persisting
+Fixed network hang
+Fixed some UI glitches in observer mode
+Fixed city assets not drawing in revealed observer territory
+Fixed Alliance victory not getting recorded in some cases
+Fixes text getting cut off in bug report popup
+Fixed Rise of Carthage scenario 3 goal failing to trigger when Syracuse eliminated quickly
+Fixed Heroes of the Aegean scenario 1 loss achievement not triggering
+Fixed family tree screen for Tamilakam following Supremacy leader changes
+Fix mod overwriting from subbed Modio mods. Better logic for version mismatch ! display on Manage tab
+Fixed mod uploads with line endings on Mac
