@@ -5,7 +5,7 @@ Design
 Initial leader death immunity changed to 30 turns on Lengthy Mortality and 10 turns on Realistic Mortality (from always being 20 turns)
 Moved some AI functionality from Ruthless AI to Competitive AI Aggression Level: Stealing Cities and Sites being attacked by other players, shorter grace period before building Wonders, founding Religions or claiming vacant City Sites near other players, not accepting Truce when about to capture a City
 Ruthless AI now just gives opinion penalty towards the player when they are close to victory or in a strong alliance
-Reduced frequency of 1-tile-wide inland mountain passes, most are now increased to a wdith of 2
+Reduced frequency of 1-tile-wide inland mountain passes, most are now increased to a width of 2
 Tight turn style now prevents all actions with military units when not your turn (instead of just preventing attack and movement)
 
 Programming
