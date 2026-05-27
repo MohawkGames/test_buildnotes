@@ -1,0 +1,19 @@
+Test Branch 1.0.83739 Test 2026-05-27
+
+Design
+
+Invested tech progress is reimbursed when a player receives the tech for free
+Eagle Eye promotion now available to range 1 units that don't have a fixed range (Persian Unique Units)
+Builder workers can no longer stack inside a teammates territory
+Jungle can no longer be cut outside of city territory (Empires of the Indus)
+
+Bugs Fixed
+
+Fixed duplicated icon for Tactician Leader General units
+Fixed some shrines sometimes being unavailable when using Randomized Improvements option without all DLC
+Fixed tech requirement sometimes not showing on improvement helptext
+Fixed mirror maps not enforcing connected human starts
+Fixed some unintended 1-tile-wide mountain passes that were possible to occur in mirror maps
+Fixed SubjectAny trait check for characters
+Fixed SubjectNot helptext display
+Text and event fixes
