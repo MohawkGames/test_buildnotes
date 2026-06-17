@@ -1,0 +1,34 @@
+Test Branch 1.0.83935 Test 2026-06-17
+
+Design
+
+Minor Cities now count as urban improvements (relevant for ambitions)
+DOTA mapscript Seperating Terrain choice split into Inner and Outer Terrain, random option added (Empires of the Indus)
+
+UI
+
+Landmark discovery notification added even if popup is shown
+When a character mission (eg Imprison) can't be started due to a blocking memory, turns left until the memory will be removed are now shown
+Updated law prerequisite event helptext to be clearer
+Trait effects on city effects are not listed in a neutral tile tooltip text unless the player has a character with that trait i.e. camp effect from the Butcher's Mask
+Yields from military units in territory are always shown in help text, even if there is no military unit present i.e. Happiness from Walls
+
+Bugs Fixed
+
+Fixed lighting regression for standard shader
+Fixed dune display on Sand Hill tiles
+Fixed Hovel Ruins floor rendering incorrectly
+Fixed black circle in city widget religion list
+Fixed tech tree button behavior
+Fixed unit occlusion issues with city widget religion icons
+Fixed map editor null reference errors
+Fixed governor rating-affected yield showing wrong value if net yield is negative
+Fixed some color issues on events with 'not' requirements
+Fixed some help text for improvements in team territory
+Fixed settings indicating mirror map when that option is invalid for the map script
+Fixed FFA achievement triggering with 2 players
+Fixed volcano occurrence not showing when it first appears in MP games (Wrath of Gods)
+Fixed Buddhist Disciple and Hindu Brahmin vision ranges (Empires of the Indus)
+Fixed invalid resource tiles on Indus Valley Duel premade map (Empires of the Indus)
+AI fixes
+Text and event fixes
