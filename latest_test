@@ -1,34 +1,34 @@
-Test Branch 1.0.83866 Test 2026-06-10
+Test Branch 1.0.83935 Test 2026-06-17
 
 Design
 
-Christianity no longer has a tech requirement
-Manichaeism requires Metaphysics instead of Monasticism
-Ruthless AI takes into account Time Victory condition
-Tweaked Influence Mission events with negative outcomes to be better or rarer
-Tile buying costs increase slightly slower and more discretely
-Drought no longer creates sand tiles, minimum duration reduced from 3 to 2 turns (Wrath of Gods) 
-DOTA maps no longer have central lake tiles for jungle and sand separation and instead have ocean adjacent to edge paths (Empires of the Indus)
-DOTA maps now have a minimum path width of 3 tiles (Empires of the Indus)
-
-Programming
-
-Fixed memory leak caused by renderer per-frame allocations
-AI avoids building non-Settler growth units from cities that have zero citizens
+Minor Cities now count as urban improvements (relevant for ambitions)
+DOTA mapscript Separating Terrain choice split into Inner and Outer Terrain, random option added (Empires of the Indus)
 
 UI
 
-Only player owned occurrence-affected tiles are listed in the turn summary. All visible tiles are still listed in the turn notifications
-Tribal Invasion bonus & concept helptext now mention that war will be declared as well
-Improvement pings are cleared when making tiles urban
-Points to victory no longer shown when points victory is inactive
+Landmark discovery notification added even if popup is shown
+When a character mission (eg Imprison) can't be started due to a blocking memory, turns left until the memory will be removed are now shown
+Updated law prerequisite event helptext to be clearer
+Trait effects on city effects are not listed in a neutral tile tooltip text unless the player has a character with that trait i.e. camp effect from the Butcher's Mask
+Yields from military units in territory are always shown in help text, even if there is no military unit present i.e. Happiness from Walls
 
 Bugs Fixed
 
-Fixed Huns appearing near player starts
-Fixed units without harvest animations playing broken animations when cutting trees
-Fixed observer mode visibility after observed player surrender
-Fixed event predicates failing in Japanese and Chinese due to use of localized commas
-Fixed bug where wrong city is sometimes selected in bonuses
-Fixed Buddhist/Hindu religious improvements being referenced in Tech helptext in Wrath of Gods scenario
+Fixed lighting regression for standard shader
+Fixed dune display on Sand Hill tiles
+Fixed Hovel Ruins floor rendering incorrectly
+Fixed black circle in city widget religion list
+Fixed tech tree button behavior
+Fixed unit occlusion issues with city widget religion icons
+Fixed map editor null reference errors
+Fixed governor rating-affected yield showing wrong value if net yield is negative
+Fixed some color issues on events with 'not' requirements
+Fixed some help text for improvements in team territory
+Fixed settings indicating mirror map when that option is invalid for the map script
+Fixed FFA achievement triggering with 2 players
+Fixed volcano occurrence not showing when it first appears in MP games (Wrath of Gods)
+Fixed Buddhist Disciple and Hindu Brahmin vision ranges (Empires of the Indus)
+Fixed invalid resource tiles on Indus Valley Duel premade map (Empires of the Indus)
+AI fixes
 Text and event fixes
