@@ -1,4 +1,4 @@
-Test Branch 1.0.83999 Test 2026-06-24
+Test Branch 1.0.84002 Test 2026-06-24
 
 Design
 
@@ -19,3 +19,4 @@ Fixed duplicate elimination notifications after undo
 Fixed hotseat surrender behavior
 Fixed territory labels not displaying in map editor
 Fixed event subject requirement text color issues
+Text and event fixes
