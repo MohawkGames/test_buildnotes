@@ -1,0 +1,24 @@
+Test Branch 1.0.84169 Test 2026-07-15
+
+Design
+
+Luxury resources are now more common on randomly generated maps
+
+Programming
+
+Improved AI character selection for governors and generals
+
+UI
+
+Text localization updates
+
+Bugs Fixed
+
+Possible fix for MP serialization errors that result in ghost units and repeated animations
+Japaense text localization fixes
+Fixed Korean decimal & thousands separator
+Fixed Game of the Week mapscript potentially differing depending on owned DLC
+Fixed terrain sometimes not updating after closing timeline
+Fixed Rise of Carthage scenario 1 goals potentially not triggering when Tribe Level set to Weak/Passive
+Fixed some missing source improvement / project lists (affects mods)
+Fixed UI fragment modding with Remove tags
