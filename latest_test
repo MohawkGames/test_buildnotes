@@ -1,35 +1,24 @@
-Test Branch 1.0.84111 Test 2026-07-08
+Test Branch 1.0.84169 Test 2026-07-15
 
 Design
 
-Added new City Site Number game option choice - 6 per player
-The more expensive (350+ science cost) Courtier bonus card techs give two Courtiers instead of one
-Changed Tribe unit cooldown behavior to be consisent with player units
-Tribe units receive a 2-turn cooldown if acting on another players turn (was 1)
-Tribe units cooldowns are processed (reduced) before unit movement, not after
-Tribe units Stun cooldown becomes Attacked cooldown on turn end
-Increased tiers of later religion (Christianity, Manichaeism, Buddhism) disciple ambitions
-Removed repair improvements ambitions
-Carved Ivory (Aksum) is now a Precious Resource (Wrath of Gods)
-Added missing event for completing the Buddhist holy site (Empires of the Indus)
+Luxury resources are now more common on randomly generated maps
+
+Programming
+
+Improved AI character selection for governors and generals
 
 UI
 
-Repair recommendation no longer always assumes buying goods, instead depends on ALT
-Modifier signs for negative yields are no longed reversed
+Text localization updates
 
 Bugs Fixed
 
-Fixed missing holy city icons on city widget
-Fixed screen visibliity lag after history screen has been opened
-Fixed units being valid to convert to a different owner if the unit is on its own city or settlement
-Fixed consistency for yield help text with negative multipliers
-Fixed team color on mines
-Fixed repair recommendations always showing as dimmed
-Fixed tooltips remaining frozen when switching screens
-Fixed yield previews showing for invalid tiles with Current Tile or General filters selected
-Fixed event cycling while bonus placement is active
-Fixed popup processing after surrendering
-Fixed possible portrait duplication in Rise of Carthage Game One scenario
-Fixed score list for The Hill scenario
-Text and event fixes
+Possible fix for MP serialization errors that result in ghost units and repeated animations
+Japaense text localization fixes
+Fixed Korean decimal & thousands separator
+Fixed Game of the Week mapscript potentially differing depending on owned DLC
+Fixed terrain sometimes not updating after closing timeline
+Fixed Rise of Carthage scenario 1 goals potentially not triggering when Tribe Level set to Weak/Passive
+Fixed some missing source improvement / project lists (affects mods)
+Fixed UI fragment modding with Remove tags
