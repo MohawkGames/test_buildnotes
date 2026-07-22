@@ -17,7 +17,7 @@ Renamed Game option 'No Organized Tribes' to 'Disable Organized Tribes'
 
 Bugs Fixed
 
-Fixed stun and immobilize in Simultaneous and Loose turn styles 
+Fixed tribal stun and immobilize in Simultaneous and Loose turn styles 
 Fixed AZERTY keyboard shortcut issues
 Fixed Map Search player/tribe filter
 Fixed Precious Resource help text
