@@ -1,0 +1,24 @@
+Test Branch 1.0.84257 Test 2026-07-22
+
+Design
+
+Killing a tribe unit no longer immediately changes the number of turns until the next tribe unit spawns from the closest site
+Immobile cooldown gets converted to Attacked at the end of the unit's turn, similar to what happens with Stunned
+In the Barbarian Horde scenario, the Huns are no longer organized
+
+UI
+
+Added new player UI option 'High contrast Player Colors'
+Added All Player filter to Map Search
+Map Search can now be closed by clicking any top tab, in addition to clicking the Map Search icon
+Updated Luxuries concept/link text to list all luxuries dynamically
+Added succession to Upgrade Character text
+Renamed Game option 'No Organized Tribes' to 'Disable Organized Tribes'
+
+Bugs Fixed
+
+Fixed stun and immobilize in Simultaneous and Loose turn styles 
+Fixed AZERTY keyboard shortcut issues
+Fixed Map Search player/tribe filter
+Fixed Precious Resource help text
+Fixed occurrences still affecting tiles after they became invalid for it i.e. Wildfire on water (Wrath of Gods)
