@@ -2,7 +2,7 @@ Test Branch 1.0.84257 Test 2026-07-22
 
 Design
 
-Killing a tribe unit no longer immediately changes the number of turns until the next tribe unit spawns from the closest site
+Killing or hiring a tribe unit no longer immediately changes the number of turns until the next tribe unit spawns from the closest site
 Immobile cooldown gets converted to Attacked at the end of the unit's turn, similar to what happens with Stunned
 In the Barbarian Horde scenario, the Huns are no longer organized
 
