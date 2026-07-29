@@ -2,9 +2,8 @@ Test Branch 1.0.84325 Test 2026-07-29
 
 Design
 
-Priest specialists now give 1/2/3 happiness (from 1/1.5/2)
-Priest specialists increase religion opinion by 2/4/6
-Bishop specialists increase religion opinion by 3/6/9
+Priest specialists increase happiness by 1/2/3 (from 1/1.5/2) and religion opinion by 2/4/6 (from 1/2/3)
+Bishop specialists increase religion opinion by 3/6/9 (from 1/2/3)
 Schemers can be Ambassadors and Chancellors in addition to Spymasters and Agents
 In team games where one player has a tribal alliance, tribes are less likely to demand tribute from non-allied teammates
 Huns won't ask for tribute before turn 20 or repeat demands until at least 10 turns after first being met (Empires of the Indus)
