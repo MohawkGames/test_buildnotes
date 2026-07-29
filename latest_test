@@ -1,24 +1,32 @@
-Test Branch 1.0.84257 Test 2026-07-22
+Test Branch 1.0.84325 Test 2026-07-29
 
 Design
 
-Killing or hiring a tribe unit no longer immediately changes the number of turns until the next tribe unit spawns from the closest site
-Immobile cooldown gets converted to Attacked at the end of the unit's turn, similar to what happens with Stunned
-In the Barbarian Horde scenario, the Huns are no longer organized
+Priest specialists increase happiness by 1/2/3 (from 1/1.5/2) and religion opinion by 2/4/6 (from 1/2/3)
+Bishop specialists increase religion opinion by 3/6/9 (from 1/2/3)
+Schemers can be Ambassadors and Chancellors in addition to Spymasters and Agents
+In team games where one player has a tribal alliance, tribes are less likely to demand tribute from non-allied teammates
+Huns won't ask for tribute before turn 20 or repeat demands until at least 10 turns after first being met (Empires of the Indus)
 
 UI
 
-Added new player UI option 'High contrast Player Colors'
-Added All Player filter to Map Search
-Map Search can now be closed by clicking any top tab, in addition to clicking the Map Search icon
-Updated Luxuries concept/link text to list all luxuries dynamically
-Added succession to Upgrade Character text
-Renamed Game option 'No Organized Tribes' to 'Disable Organized Tribes'
+Added modsets functionality to mods screen, to allow grouping mods that can all be enabled at once 
+Increased visibility of attack range outline for ranged units
+Added Urban to map pin options
+Improved color selection for High Contrast Player Colors option
+Luxury/source helptext improvements
+Updated Discord channel helptext on MP join screen
+Added tech path history to saves. Not shown in-game, for use by community save analyzers
+Added Disable SRP Batcher troubleshooting option
 
 Bugs Fixed
 
-Fixed tribal stun and immobilize in Simultaneous and Loose turn styles 
-Fixed AZERTY keyboard shortcut issues
-Fixed Map Search player/tribe filter
-Fixed Precious Resource help text
-Fixed occurrences still affecting tiles after they became invalid for it i.e. Wildfire on water (Wrath of Gods)
+Fixed characters sometimes showing wrong nation color with high contrast option enabled
+Fixed event kills not advancing/routing when they should
+Fixed tribe killing goal getting invalidated too early in some cases
+Fixed duplicate floating text in some cases
+Fixed Buy Yields text on Road ping tooltip
+Fixed resource overlay and harvested icons overlaying each other when both are present
+Fixed unit widget healthbars rendering behind resource overlay
+Fixed character portrait interpolation settings (Tamil Male 05 and Rome Female 11)
+Fixed occurrences that reduce vegetation pillaging and destroying improvements by that mechanic (Wrath of Gods)
