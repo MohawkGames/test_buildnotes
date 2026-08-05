@@ -1,32 +1,7 @@
-Test Branch 1.0.84325 Test 2026-07-29
+Test Branch 1.0.84361 Test 2026-08-05
 
-Design
-
-Priest specialists increase happiness by 1/2/3 (from 1/1.5/2) and religion opinion by 2/4/6 (from 1/2/3)
-Bishop specialists increase religion opinion by 3/6/9 (from 1/2/3)
-Schemers can be Ambassadors and Chancellors in addition to Spymasters and Agents
-In team games where one player has a tribal alliance, tribes are less likely to demand tribute from non-allied teammates
-Huns won't ask for tribute before turn 20 or repeat demands until at least 10 turns after first being met (Empires of the Indus)
-
-UI
-
-Added modsets functionality to mods screen, to allow grouping mods that can all be enabled at once 
-Increased visibility of attack range outline for ranged units
-Added Urban to map pin options
-Improved color selection for High Contrast Player Colors option
-Luxury/source helptext improvements
-Updated Discord channel helptext on MP join screen
-Added tech path history to saves. Not shown in-game, for use by community save analyzers
-Added Disable SRP Batcher troubleshooting option
+Update to match Main branch
 
 Bugs Fixed
 
-Fixed characters sometimes showing wrong nation color with high contrast option enabled
-Fixed event kills not advancing/routing when they should
-Fixed tribe killing goal getting invalidated too early in some cases
-Fixed duplicate floating text in some cases
-Fixed Buy Yields text on Road ping tooltip
-Fixed resource overlay and harvested icons overlaying each other when both are present
-Fixed unit widget healthbars rendering behind resource overlay
-Fixed character portrait interpolation settings (Tamil Male 05 and Rome Female 11)
-Fixed occurrences that reduce vegetation pillaging and destroying improvements by that mechanic (Wrath of Gods)
+Fixed terrain detail getting lowered after viewing Timeline Screen
