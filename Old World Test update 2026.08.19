@@ -1,0 +1,32 @@
+Test Branch 1.0.84446 test 2026-08-19
+
+Design
+
+Polybolos now have +50% attack against all units (was +50% vs Ranged)
+Tribal units no longer move if they have been previously moved by their ally on that turn
+Tribal units no longer retreat to their settlement when closer to allied territory
+Increased water margin at map edges for some mirrored map scripts, to ensure both sides have a water pass
+
+Programming
+
+Added some Mac crash debugging
+
+UI
+
+Hovering on timeline shows year at hovered position instead of currently displayed year
+Add Urban / Road ping tooltip improvements
+Legacy helptext adjustment
+
+Bugs Fixed
+
+Fixed conquest games as Tamilakam sometimes not getting marked as completed
+Fixed hotseat surrender issue
+Fixed point mirrored Coastal Rain Basin and Arid Plateau map scripts sometimes not generating enough mountains, leading to strange river generation
+Fixed missing religion opinion details on city happiness/discontent helptext
+Fixed trashed UU tech cards being placed on the discard pile on culture growth
+Fixed some client null reference exceptions
+Fixed cognomen help null reference
+Fixed tooltip buy costs
+Fixed unit consumption link always showing the active player's unit breakdown
+Possible fix for some UI system issues
+Fixed text in Rise of Carthage scenario 2
