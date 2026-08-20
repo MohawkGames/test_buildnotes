@@ -2,7 +2,7 @@ Test Branch 1.0.84446 test 2026-08-19
 
 Design
 
-Polybolos now have +50% attack against all units (was +50% vs Ranged)
+Polybolos now have +50% attack (was +50% attack vs Ranged)
 Tribal units no longer move if they have been previously moved by their ally on that turn
 Tribal units no longer retreat to their settlement when closer to allied territory
 Increased water margin at map edges for some mirrored map scripts, to ensure both sides have a water pass
