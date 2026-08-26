@@ -1,32 +1,19 @@
-Test Branch 1.0.84446 test 2026-08-19
+Test Branch 1.0.84493 test 2026-08-26
 
 Design
 
-Polybolos now have +50% attack (was +50% attack vs Ranged)
-Tribal units no longer move if they have been previously moved by their ally on that turn
-Tribal units no longer retreat to their settlement when closer to allied territory
-Increased water margin at map edges for some mirrored map scripts, to ensure both sides have a water pass
-
-Programming
-
-Added some Mac crash debugging
+Swapped base ratings for Schemers and Scholars
 
 UI
 
-Hovering on timeline shows year at hovered position instead of currently displayed year
-Add Urban / Road ping tooltip improvements
-Legacy helptext adjustment
+Added reign time to character help for former leaders
 
 Bugs Fixed
 
-Fixed conquest games as Tamilakam sometimes not getting marked as completed
-Fixed hotseat surrender issue
-Fixed point mirrored Coastal Rain Basin and Arid Plateau map scripts sometimes not generating enough mountains, leading to strange river generation
-Fixed missing religion opinion details on city happiness/discontent helptext
-Fixed trashed UU tech cards being placed on the discard pile on culture growth
-Fixed some client null reference exceptions
-Fixed cognomen help null reference
-Fixed tooltip buy costs
-Fixed unit consumption link always showing the active player's unit breakdown
-Possible fix for some UI system issues
-Fixed text in Rise of Carthage scenario 2
+Fixed minimap ping placement 
+Fixed player alliance ambitions being offered games with 1 or 2 teams
+Fixed some heir and leader assassination achievement issues
+Fixed religion context menus not being clickable in some situations
+Fixed city effects sometimes being counted twice in previews and helptext
+Fixed text issue with abdicate mission helptext
+Fixed building improvements over jungle not granting cut jungle achievement (Empires of the Indus)
