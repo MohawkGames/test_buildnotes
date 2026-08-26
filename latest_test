@@ -11,7 +11,7 @@ Added reign time to character help for former leaders
 Bugs Fixed
 
 Fixed minimap ping placement 
-Fixed player alliance ambitions being offered games with 1 or 2 teams
+Fixed player alliance ambitions being offered in games with 1 or 2 teams
 Fixed some heir and leader assassination achievement issues
 Fixed religion context menus not being clickable in some situations
 Fixed city effects sometimes being counted twice in previews and helptext
