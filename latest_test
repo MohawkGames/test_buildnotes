@@ -1,19 +1,31 @@
-Test Branch 1.0.84493 test 2026-08-26
+Old World test branch update 1.0.84582 Test 2026-09-02
 
 Design
 
-Swapped base ratings for Schemers and Scholars
+Forts cannot be adjacent to other Forts
+Increased defensive modifier of Garrison/Stronghold/Citadel by 10%
+Lowered The Gatherer and The Resourceful cognomen levels (from 30/50 legitimacy to 20/40) and values (300/100 for harvest/chop to 200/50) (Empires of the Indus)
+
+Programming
+
+AI builds fewer Militia, Conscripts and obsolete units
+AI places a lower priority on attacking expansion targets if it's short on orders
+AI no longer risks not claiming city sites when it believes no other player is nearby
 
 UI
 
-Added reign time to character help for former leaders
+Improved display of rivers on tundra tiles
+Added Pillaged filter for Improvements in Map Search
+Unit type help improvement
+Cut down on character life event announcements
+Random traits and ratings are now only shown in the turn summary for the leader and the heir
+Religion conversions are only shown for leader, heir, family heads and the first character to convert after founding
 
 Bugs Fixed
 
-Fixed minimap ping placement 
-Fixed player alliance ambitions being offered in games with 1 or 2 teams
-Fixed some heir and leader assassination achievement issues
-Fixed religion context menus not being clickable in some situations
-Fixed city effects sometimes being counted twice in previews and helptext
-Fixed text issue with abdicate mission helptext
-Fixed building improvements over jungle not granting cut jungle achievement (Empires of the Indus)
+
+Fixed some bugs with AI movement
+Fixed loading save with no settlement improvement on a city site
+Fixed cycling through Map Search results
+Fixed team alliance contact inconsistencies
+Fixed unlimber audio overriding subsequent selections
