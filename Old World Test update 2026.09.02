@@ -10,7 +10,7 @@ Programming
 
 AI builds fewer Militia, Conscripts and obsolete units
 AI places a lower priority on attacking expansion targets if it's short on orders
-AI no longer risks not claiming city sites when it believes no other player is nearby
+AI always guards city sites even when it believes no other player is nearby
 
 UI
 
