@@ -1,0 +1,38 @@
+Old World test branch update 1.0.84726 Test 2026-09-16
+
+Design
+
+    Sages no longer get a free Archive on founding a city, instead they can build Archives without Metaphysics
+    Units with leader generals are now immune to the Fireship effect
+    Generic religion building ambitions are no longer offered (religion-specific building ambitions remain)
+    Event review and tweaks based on analytics and player feedback
+
+Programming
+
+    AI anchoring and overseas expansion improvements
+    Transport layer changes to potentially fix issues with MP not connecting to cloud VM servers. Removed duplicate log spam when the send queue is full
+    Moved some event bonuses from multiple independent trait rolls to a single uniform roll
+
+UI
+
+    Added the ability to trigger the combat preview panel for tiles other than the selected unit's current tile. To use this, add a waypoint using CTRL+click, then mouse over the attack tile from the waypoint.
+    In network games with observers allowed, players can send chat messages that only observers can see and observers can send messages to specific players
+    Cloud game order reversed so that the more urgent ones are at the bottom
+    AI no longer plays the rest of the turn after a player surrenders in a 1v1 game
+    Added email field to bug reporting popup
+
+Bugs Fixed
+
+    Fixed Hittite portraits showing the Egyptian portrait background
+    Fixed city widget not being hoverable with city open, which prevented renaming a city
+    Fixed Chittogarh (Empires of the Indus) and Blessing of Healing (Wrath of Gods) healing all units, now only heals team and allied units
+    Fixed inheritance screen and family/religion tab text potentially displaying outside of their windows
+    Fixed undo delay and redo issues
+    Fixed random traits from events sometimes applying multiple times
+    Fixed point symmetry resource issue
+    Fixed MP chat dropdown issue
+    Fixed bug preventing servers running on Linux
+    Fixed cloud games with non-ASCII characters in the game name failing to upload
+    Fixed promotions being available for Workers upgraded from Steppe Riders (Empires of the Indus)
+    Fixed potential Family Control null reference (Empires of the Indus)
+    Text and event fixes
