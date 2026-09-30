@@ -1,0 +1,28 @@
+Old World test branch update 1.0.84814 Test 2026-09-23
+
+Design
+
+Disbanding Workers/Disciples gives the same opinion penalty as having them killed
+Sword of the Gods now gives +50% attack vs infantry (was +50% strength)
+
+Programming
+
+Eliminated some unnecessary network traffic
+
+UI
+
+Added player notification for rejection of human proposal for alliance/peace/truce/map sharing
+Added headers for pinned and notable characters
+Savegames from completed named games will include the game name in the filename
+Mod Editor property buttons expand vertically to cater for text wrap
+
+Bugs Fixed
+
+Fixed AI losing the game due to no heir
+Fixed UU card being moved from draw pile to discard pile on culture growth
+Fixed Nation/Tribe crest being shown twice in "unit seen" notifications
+Fixed an issue where Occurrence Ready events could happen on back-to-back turns
+Fixed AI overvaluing border expansion
+Fixed ursurper succession load/save bug
+Fixed Exchange map (with human player) mission issues
+Fixed duplicate Sin-Muballit name
