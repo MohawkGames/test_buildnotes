@@ -1,32 +1,28 @@
-Old World test branch update 1.0.84814 Test 2026-09-23
+Old World test branch update 1.0.84897 Test 2026-09-30
 
 Design
 
-Olympiad projects up to 100/200/300/400 Training (from 50/100/150/200)
-Added mission to exchange maps with another human player
-Improved symmetry of free city sites on mirror maps
-Free Settler bonus card no longer appears if all city sites are settled
+Disbanding Workers/Disciples gives the same opinion penalty as having them killed
+Sword of the Gods now gives +50% attack vs infantry (was +50% strength)
 
 Programming
 
-Characters are processed before units at turn start
-Improved AI anchoring performance
-Reduced some heap memory allocations when calculating water control
+Eliminated some unnecessary network traffic
 
 UI
 
-Added a Mod Editor, available from the Extras menu
-Unit list filter left click now shows only that type instead of hiding them, shift+click toggles type
-Notable characters (Exploring, Imprisoned, Exiled, Rising Star, Power Hungry, Trade Venture, Distant Claimant, Vengeful, Plotting, Bypassed) now added automatically to the pinned characters tab
-Added a hint for attack preview from a different tile
-Active mods popup no longer shown when starting or loading a game with mods. The loading screen now displays active mods in the bottom left
+Added player notification for rejection of human proposal for alliance/peace/truce/map sharing
+Added headers for pinned and notable characters
+Savegames from completed named games will include the game name in the filename
+Mod Editor property buttons expand vertically to cater for text wrap
 
 Bugs Fixed
 
-Fixed pending critical sometimes not happening when it should
-Fixed clicking unit name on unit list not selecting unit
-Fixed panic into a hidden unit's tile sometimes resulting in Disarm instead
-Fixed ambitions to send X luxuries to tribes failing if fewer than X tribes are alive
-Fixed hostile unit notification and Schapur suffix shown incorrectly in German translation
-Fixed some religion mission translation issues
-Fixed events sometimes not displaying 'not' requirements correctly
+Fixed AI losing the game due to no heir
+Fixed UU card being moved from draw pile to discard pile on culture growth
+Fixed Nation/Tribe crest being shown twice in "unit seen" notifications
+Fixed an issue where Occurrence Ready events could happen on back-to-back turns
+Fixed AI overvaluing border expansion
+Fixed ursurper succession load/save bug
+Fixed Exchange map (with human player) mission issues
+Fixed duplicate Sin-Muballit name
