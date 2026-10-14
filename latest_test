@@ -1,7 +1,43 @@
-Old World test branch update 1.0.84976 Test 2026-10-07
+Old World test branch update 1.0.85087 Test 2026-10-14
 
-Update to match main branch
+Design
+
+Tribe units with an alliance to another player are more expensive to hire and recruit
+Religious conversion now happens immediately on founding a religion, to ensure that the initial religion head will belong to the founding player
+Religion head priority is given to characters from a family with a city of that religion
+Reduced the size of Duel of the Ancient maps that don't have water outside or between the paths
+Empires of the Indus DLC now enabled 50% of the time in Game of the Week, as for other DLCs
+Default map scripts no longer allow the distance between city sites to go below the minimum (8)
+
+
+Programming
+
+Improved pathfinder efficiency
+Optimized game saving to XML
+Changed Immobile to a unit effect instead of a cooldown
+
+
+UI
+
+Added a Players Screen (F9) showing a consolidated view of all known nations
+CTRL+clicking a mission now allows cancelling an active character mission and starting the new one in one click
+Notable (pinned or with notable trait or relationship) character updates are among those included in notifications
+Added game list refresh button to the main menu
+Cycle buttons are now only draggable with right click, to prevent accidental re-ordering
+Important character notifications are shown in the notification icon tooltips even if they are not included in the turn summary
+Reversed Cloud Games screen listing order
+
 
 Bugs Fixed
 
-Fixed character tab icon always being highlit
+Fixed worker kill opinion penalty not being applied
+Fixed UU tech cards going directly in the draw pile when their culture requirement is satisfied
+Fixed player email not being updated when not done from within an ongoing game
+Fixed AI issue with not clearing cached current military unit number
+Fixed bug in water control tile prediction for anchored tiles that are farther than the ship's water control range
+Fixed network not being disconnected after multiple attempts with a full send queue
+Fixed nested submenus closing when clicking on the text area of context buttons
+Fixed family head not updating immediately when current head leaves the nation
+Fixed scenarios showing The New for difficulty in Hall of Fame (will now show Custom)
+Fixed Korean age helptext
+Fixed bug where hiring a player unit would increase as you hired more tribal units (affects mods only)
