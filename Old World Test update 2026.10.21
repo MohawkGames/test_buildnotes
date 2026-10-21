@@ -8,6 +8,7 @@ Added No Mountains option to Wetlands map script (Empires of the Indus)
 
 
 Programming
+
 Performance optimization
 Units processed before characters again
 Converted Stun cooldown to a unit effect
@@ -25,6 +26,7 @@ Removed some redundant terrain checks for Bath improvements
 
 
 Bugs Fixed
+
 Fixed AI giving non-military units (especially Settlers) lower priority than intended
 Fixed pathfinder bugs
 Fixed random event options not being truly random
