@@ -1,0 +1,39 @@
+Old World test branch update 1.0.85174 Test 2026-10-21
+
+Design
+
+Stunned units are immune from being re-stunned
+Increased Ruthless AI war declaration probability when the player is close to winning
+Added No Mountains option to Wetlands map script (Empires of the Indus)
+
+
+Programming
+Performance optimization
+Units processed before characters again
+Converted Stun cooldown to a unit effect
+
+
+UI
+
+Added new notifications about known rival player state changes: relative power, relative knowledge, increase in best city culture, when they get 1, 4, or 7 laws
+Added diplomacy column to the player screen
+Added color to family opinion text in player screen
+Player screen no longer reveals family opinion breakdown
+Added additional helptext for right-click & drag to reorder cycle buttons
+Moved inactive bonuses to Potential Bonuses link on Connected and Citizen tooltips. Potential Bonuses are hidden when Advanced Help Text is not enabled
+Removed some redundant terrain checks for Bath improvements
+
+
+Bugs Fixed
+Fixed AI giving non-military units (especially Settlers) lower priority than intended
+Fixed pathfinder bugs
+Fixed random event options not being truly random
+Fixed AI development extra starting units not getting allocated a family
+Fixed Ruthless AI war declaration probability increase not being applied
+Fixed improvement ambitions not completing the turn of a leader's death
+Fixed player screen so it works with No Characters option
+Fixed an AI assert
+Fixed event granted critical chance modifier bonus not resetting after attack
+Fixed free specialist border expansion not happening when tile is pillaged
+Fixed load/save error
+Fixed extra Antigonid vision at the start of Heroes of the Aegean scenario 6
