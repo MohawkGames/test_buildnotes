@@ -1,43 +1,39 @@
-Old World test branch update 1.0.85087 Test 2026-10-14
+Old World test branch update 1.0.85174 Test 2026-10-21
 
 Design
 
-Tribe units with an alliance to another player are more expensive to hire and recruit
-Religious conversion now happens immediately on founding a religion, to ensure that the initial religion head will belong to the founding player
-Religion head priority is given to characters from a family with a city of that religion
-Reduced the size of Duel of the Ancient maps that don't have water outside or between the paths
-Empires of the Indus DLC now enabled 50% of the time in Game of the Week, as for other DLCs
-Default map scripts no longer allow the distance between city sites to go below the minimum (8)
+Stunned units are immune from being re-stunned
+Increased Ruthless AI war declaration probability when the player is close to winning
+Added No Mountains option to Wetlands map script (Empires of the Indus)
 
 
 Programming
-
-Improved pathfinder efficiency
-Optimized game saving to XML
-Changed Immobile to a unit effect instead of a cooldown
+Performance optimization
+Units processed before characters again
+Converted Stun cooldown to a unit effect
 
 
 UI
 
-Added a Players Screen (F9) showing a consolidated view of all known nations
-CTRL+clicking a mission now allows cancelling an active character mission and starting the new one in one click
-Notable (pinned or with notable trait or relationship) character updates are among those included in notifications
-Added game list refresh button to the main menu
-Cycle buttons are now only draggable with right click, to prevent accidental re-ordering
-Important character notifications are shown in the notification icon tooltips even if they are not included in the turn summary
-Reversed Cloud Games screen listing order
+Added new notifications about known rival player state changes: relative power, relative knowledge, increase in best city culture, when they get 1, 4, or 7 laws
+Added diplomacy column to the player screen
+Added color to family opinion text in player screen
+Player screen no longer reveals family opinion breakdown
+Added additional helptext for right-click & drag to reorder cycle buttons
+Moved inactive bonuses to Potential Bonuses link on Connected and Citizen tooltips. Potential Bonuses are hidden when Advanced Help Text is not enabled
+Removed some redundant terrain checks for Bath improvements
 
 
 Bugs Fixed
-
-Fixed worker kill opinion penalty not being applied
-Fixed UU tech cards going directly in the draw pile when their culture requirement is satisfied
-Fixed player email not being updated when not done from within an ongoing game
-Fixed AI issue with not clearing cached current military unit number
-Fixed bug in water control tile prediction for anchored tiles that are farther than the ship's water control range
-Fixed network not being disconnected after multiple attempts with a full send queue
-Fixed nested submenus closing when clicking on the text area of context buttons
-Fixed family head not updating immediately when current head leaves the nation
-Fixed scenarios showing The New for difficulty in Hall of Fame (will now show Custom)
-Fixed Korean age helptext
-Fixed bug where hiring a player unit would increase as you hired more tribal units (affects mods only)
+Fixed AI giving non-military units (especially Settlers) lower priority than intended
+Fixed pathfinder bugs
+Fixed random event options not being truly random
+Fixed AI development extra starting units not getting allocated a family
+Fixed Ruthless AI war declaration probability increase not being applied
+Fixed improvement ambitions not completing the turn of a leader's death
+Fixed player screen so it works with No Characters option
+Fixed an AI assert
+Fixed event granted critical chance modifier bonus not resetting after attack
+Fixed free specialist border expansion not happening when tile is pillaged
+Fixed load/save error
+Fixed extra Antigonid vision at the start of Heroes of the Aegean scenario 6
