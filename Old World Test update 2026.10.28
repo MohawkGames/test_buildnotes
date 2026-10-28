@@ -1,0 +1,30 @@
+Old World test branch update 1.0.85247 Test 2026-10-28
+
+Design
+
+Tribe camp clear events now only trigger once per camp, subsequent camp clears give resources instead
+
+
+UI
+
+OS user name is no longer used as a fallback for player name when platform nickname not available
+Player Screen cities column is now a link
+Tweaked display of turns remaining on applied unit effect tooltips
+Appended tech card concept help to the tech tree status icon tooltip
+Rival nation updates are not longer part of the permanent log
+Pending decisions can be skipped to end your turn early if there is an unpaused dynamic turn timer, or if the turn style is not strict
+
+
+Bugs Fixed
+
+Fixed applied effects (disarm, grappler) also stunning the defender
+Fixed Ascetic in the Woods event causing permanent stun
+Fixed knowledge and power change notifications sent without contact
+Fixed observer momentarily auto-switching to observe AI players
+Fixed victory conditions sometimes being triggered by temporary effectPlayer changes
+Fixed bug with event system seed consistency
+Fixed remote server sometimes changing AI players to human on load
+Fixed server mode not being properly set on load
+Fixed switching observed players resetting the chat options
+Fixed attempting to join a network game when join already in progress causing an error
+Fixed German event text translation issues
