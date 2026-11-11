@@ -1,30 +1,60 @@
-Old World test branch update 1.0.85247 Test 2026-10-28
+Old World test branch update 1.0.85451 Test 2026-11-11
+
+Note: This update is not available on GOG due to ongoing technical issues. We hope to have this resolved by the next update.
 
 Design
 
-Tribe camp clear events now only trigger once per camp, subsequent camp clears give resources instead
+Sentinel (Hunter family bonus) gives attack instead of strength
+Increased the upkeep of laws that cost science (Divine Rule, Holy War, Autarky)
+Polytheism gives 2 growth per acolyte in addition to existing effect
+Re-added Free Crossbowman bonus tech card, requires Stirrups
+Cooldown when using an allied unit lasts one turn, not two, so the acting player retains control of the unit the turn after using it
+AI can help capture allied breached cities
+Organized tribe raiders are less timid and have better target selection
+Trade mission ambition no longer offered in multiplayer games
+Tribe units are allowed to clear other tribe settlements without occupying them
+Event balancing
+
+
+Programming
+
+Event system cleanup
+Minor Unity upgrade to 6000.3.27f2
+Minor RNG improvement
+Added helper functions to compare player power, knowledge, and proximity in a way that does not rely on the ordering of infos entries (Important for mods only)
+All bundles are now loaded before remapping materials, which helps mods that have a material that needs remapping to a shader that is in a different bundle
 
 
 UI
 
-OS user name is no longer used as a fallback for player name when platform nickname not available
-Player Screen cities column is now a link
-Tweaked display of turns remaining on applied unit effect tooltips
-Appended tech card concept help to the tech tree status icon tooltip
-Rival nation updates are not longer part of the permanent log
-Pending decisions can be skipped to end your turn early if there is an unpaused dynamic turn timer, or if the turn style is not strict
+Added an event option to remove the fog of war after a single player game has ended
+Tiles now highlighted when appearing in Map Search results
+Rotated Longbow and Beja Archer icons 90 degrees, to make more distinguishable from Archers and Medjay Archers
+Trait helptext now lists all player characters with that trait instead of only notable characters (requires Advanced Help Text enabled)
+Death of councilors, generals, governors, and agents re-added to turn summary
+Grand Vizier notifications re-added to turn summary
+Renamed "Units Killed" to "Military Units Killed" in the Records Screen
+Adjusted slow and medium turn timers to have a higher base time but to increase less rapidly as the game progresses
+Updated turn timer helptext for dynamic timers
+When a sleeping or sentried unit levels up, it wakes up
+Localization text updates
 
 
 Bugs Fixed
 
-Fixed applied effects (disarm, grappler) also stunning the defender
-Fixed Ascetic in the Woods event causing permanent stun
-Fixed knowledge and power change notifications sent without contact
-Fixed observer momentarily auto-switching to observe AI players
-Fixed victory conditions sometimes being triggered by temporary effectPlayer changes
-Fixed bug with event system seed consistency
-Fixed remote server sometimes changing AI players to human on load
-Fixed server mode not being properly set on load
-Fixed switching observed players resetting the chat options
-Fixed attempting to join a network game when join already in progress causing an error
-Fixed German event text translation issues
+Fixed stunned workers not having their non-Wonder improvement destroyed when forced off their tile
+Fixed issue with family head not updating immediately in UI in some cases
+Fixed left-click dragging sometimes rearranging buttons when it's not supposed to
+Fixed civilian unit kills counting towards the military stats
+Fixed a character opinion strength related load/save error
+Fixed AI occupying city sites when it shouldn't
+Fixed duplicate bonus card mention from culture tooltips
+Fixed culture tooltips sometimes showing wrong player for enabled tech cards
+Fixed unit cycling getting reset after upgrading the selected unit
+Fixed modal events encountered during unit movement deselecting unit on dismissal
+Event fixes
+Fixed Hattusili introduction text
+Fixed German text bugs
+Fixed missing event subject validation log
+Fixed Rise of Carthage scenario 3 load/save error
+Fixed Heroes of the Aegean scenario 3 tribal marriage issues
