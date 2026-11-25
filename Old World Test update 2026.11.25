@@ -1,0 +1,29 @@
+Old World test branch update 1.0.85640 Test 2026-11-25
+
+Design
+
+Pagan Clergy Sacrifice to the Gods Mission food cost halved (200->100) and slightly increased happiness gained (60->80) (Sacred and Profane)
+
+
+Programming
+
+Improved map generation performance
+
+
+UI
+
+Map preview now works for premade maps and seed is kept when changing most settings for random maps
+Added “Precious Resource” Concept to Encyclopedia
+
+
+Bugs Fixed
+
+Fixed newly unlocked techs bypassing the discard pile, techs now stay in the discard pile until the draw pile is empty
+Fixed hired tribal units not gaining fatigue from Swift/Zealot leaders
+Fixed Resume not popping up missing mods prompt
+Fixed some pathfinder bugs
+Fixed correlation between techs that are randomly available
+Fixed Ask to Declare War on Tribe mission
+Fixed map preview inaccuracy
+Fixed bug in AI hostile unit cache
+Event fixes
