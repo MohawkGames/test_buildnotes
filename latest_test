@@ -1,26 +1,29 @@
-Old World test branch update 1.0.85540 Test 2026-11-18
+Old World test branch update 1.0.85640 Test 2026-11-25
+
+Design
+
+Pagan Clergy Sacrifice to the Gods Mission food cost halved (200->100) and slightly increased happiness gained (60->80) (Sacred and Profane)
+
 
 Programming
 
-Pathfinder improvements
+Improved map generation performance
+
 
 UI
 
-Added map visualizer to single player setup screens. Click 'Map Preview' to see an example map using the currently selected settings, and select 'Use this Map' if you would like to play on this exact map
-Added potential bonuses link to specialist tooltips (requires Advanced Help option)
-Improved yield format consistency in specialist and some other helptext
+Map preview now works for premade maps and seed is kept when changing most settings for random maps
+Added “Precious Resource” Concept to Encyclopedia
+
 
 Bugs Fixed
 
-Fixed discard pile techs sometimes bypassing the draw pile when they shouldn’t
-Fixed map scrolling lag when not using High Rendering setting
-Fixed free improvement placement overlay not appearing until selection is cleared
-Fixed cloud game list not refreshing correctly after deleting game
-Fixed regents being counted for cognomen legitimacy decay
-Ffixed incorrect Player Screen law row spacing with many laws
-Fixed Mourning trait not being removed on death
-Fixed Patrons helptext inconsistency
-Fixed leader reign text for dead rightful heirs
-Fixed eliminated players remaining on player screen
-Fixed Learn to Play scenario 4 bug when trying to settle 4th city on island
-Text and event fixes
+Fixed newly unlocked techs bypassing the discard pile, techs now stay in the discard pile until the draw pile is empty
+Fixed hired tribal units not gaining fatigue from Swift/Zealot leaders
+Fixed Resume not popping up missing mods prompt
+Fixed some pathfinder bugs
+Fixed correlation between techs that are randomly available
+Fixed Ask to Declare War on Tribe mission
+Fixed map preview inaccuracy
+Fixed bug in AI hostile unit cache
+Event fixes
